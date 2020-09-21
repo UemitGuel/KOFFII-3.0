@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3F3F3BA25188A1100D91190 /* KOFFII_CGN_2_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3B925188A1100D91190 /* KOFFII_CGN_2_0App.swift */; };
+		B3F3F3BC25188A1100D91190 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3BB25188A1100D91190 /* ContentView.swift */; };
+		B3F3F3BE25188A1300D91190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3F3F3BD25188A1300D91190 /* Assets.xcassets */; };
+		B3F3F3C125188A1300D91190 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3F3F3C025188A1300D91190 /* Preview Assets.xcassets */; };
+		B3F3F3CC25188A1300D91190 /* KOFFII_CGN_2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3CB25188A1300D91190 /* KOFFII_CGN_2_0Tests.swift */; };
+		B3F3F3D725188A1300D91190 /* KOFFII_CGN_2_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3D625188A1300D91190 /* KOFFII_CGN_2_0UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3F3F3C825188A1300D91190 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3F3F3AE25188A1000D91190 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3F3F3B525188A1000D91190;
+			remoteInfo = "KOFFII CGN 2.0";
+		};
+		B3F3F3D325188A1300D91190 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3F3F3AE25188A1000D91190 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3F3F3B525188A1000D91190;
+			remoteInfo = "KOFFII CGN 2.0";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B3F3F3B625188A1000D91190 /* KOFFII CGN 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KOFFII CGN 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F3F3B925188A1100D91190 /* KOFFII_CGN_2_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KOFFII_CGN_2_0App.swift; sourceTree = "<group>"; };
+		B3F3F3BB25188A1100D91190 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B3F3F3BD25188A1300D91190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3F3F3C025188A1300D91190 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B3F3F3C225188A1300D91190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3F3F3C725188A1300D91190 /* KOFFII CGN 2.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KOFFII CGN 2.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F3F3CB25188A1300D91190 /* KOFFII_CGN_2_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KOFFII_CGN_2_0Tests.swift; sourceTree = "<group>"; };
+		B3F3F3CD25188A1300D91190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3F3F3D225188A1300D91190 /* KOFFII CGN 2.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KOFFII CGN 2.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F3F3D625188A1300D91190 /* KOFFII_CGN_2_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KOFFII_CGN_2_0UITests.swift; sourceTree = "<group>"; };
+		B3F3F3D825188A1300D91190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3F3F3B325188A1000D91190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F3F3C425188A1300D91190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F3F3CF25188A1300D91190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3F3F3AD25188A1000D91190 = {
+			isa = PBXGroup;
+			children = (
+				B3F3F3B825188A1100D91190 /* KOFFII CGN 2.0 */,
+				B3F3F3CA25188A1300D91190 /* KOFFII CGN 2.0Tests */,
+				B3F3F3D525188A1300D91190 /* KOFFII CGN 2.0UITests */,
+				B3F3F3B725188A1000D91190 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3F3F3B725188A1000D91190 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3F3F3B625188A1000D91190 /* KOFFII CGN 2.0.app */,
+				B3F3F3C725188A1300D91190 /* KOFFII CGN 2.0Tests.xctest */,
+				B3F3F3D225188A1300D91190 /* KOFFII CGN 2.0UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3F3F3B825188A1100D91190 /* KOFFII CGN 2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				B3F3F3B925188A1100D91190 /* KOFFII_CGN_2_0App.swift */,
+				B3F3F3BB25188A1100D91190 /* ContentView.swift */,
+				B3F3F3BD25188A1300D91190 /* Assets.xcassets */,
+				B3F3F3C225188A1300D91190 /* Info.plist */,
+				B3F3F3BF25188A1300D91190 /* Preview Content */,
+			);
+			path = "KOFFII CGN 2.0";
+			sourceTree = "<group>";
+		};
+		B3F3F3BF25188A1300D91190 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B3F3F3C025188A1300D91190 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B3F3F3CA25188A1300D91190 /* KOFFII CGN 2.0Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B3F3F3CB25188A1300D91190 /* KOFFII_CGN_2_0Tests.swift */,
+				B3F3F3CD25188A1300D91190 /* Info.plist */,
+			);
+			path = "KOFFII CGN 2.0Tests";
+			sourceTree = "<group>";
+		};
+		B3F3F3D525188A1300D91190 /* KOFFII CGN 2.0UITests */ = {
+			isa = PBXGroup;
+			children = (
+				B3F3F3D625188A1300D91190 /* KOFFII_CGN_2_0UITests.swift */,
+				B3F3F3D825188A1300D91190 /* Info.plist */,
+			);
+			path = "KOFFII CGN 2.0UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3F3F3B525188A1000D91190 /* KOFFII CGN 2.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3F3F3DB25188A1300D91190 /* Build configuration list for PBXNativeTarget "KOFFII CGN 2.0" */;
+			buildPhases = (
+				B3F3F3B225188A1000D91190 /* Sources */,
+				B3F3F3B325188A1000D91190 /* Frameworks */,
+				B3F3F3B425188A1000D91190 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KOFFII CGN 2.0";
+			productName = "KOFFII CGN 2.0";
+			productReference = B3F3F3B625188A1000D91190 /* KOFFII CGN 2.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3F3F3C625188A1300D91190 /* KOFFII CGN 2.0Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3F3F3DE25188A1300D91190 /* Build configuration list for PBXNativeTarget "KOFFII CGN 2.0Tests" */;
+			buildPhases = (
+				B3F3F3C325188A1300D91190 /* Sources */,
+				B3F3F3C425188A1300D91190 /* Frameworks */,
+				B3F3F3C525188A1300D91190 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3F3F3C925188A1300D91190 /* PBXTargetDependency */,
+			);
+			name = "KOFFII CGN 2.0Tests";
+			productName = "KOFFII CGN 2.0Tests";
+			productReference = B3F3F3C725188A1300D91190 /* KOFFII CGN 2.0Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B3F3F3D125188A1300D91190 /* KOFFII CGN 2.0UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3F3F3E125188A1300D91190 /* Build configuration list for PBXNativeTarget "KOFFII CGN 2.0UITests" */;
+			buildPhases = (
+				B3F3F3CE25188A1300D91190 /* Sources */,
+				B3F3F3CF25188A1300D91190 /* Frameworks */,
+				B3F3F3D025188A1300D91190 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3F3F3D425188A1300D91190 /* PBXTargetDependency */,
+			);
+			name = "KOFFII CGN 2.0UITests";
+			productName = "KOFFII CGN 2.0UITests";
+			productReference = B3F3F3D225188A1300D91190 /* KOFFII CGN 2.0UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3F3F3AE25188A1000D91190 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					B3F3F3B525188A1000D91190 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					B3F3F3C625188A1300D91190 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = B3F3F3B525188A1000D91190;
+					};
+					B3F3F3D125188A1300D91190 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = B3F3F3B525188A1000D91190;
+					};
+				};
+			};
+			buildConfigurationList = B3F3F3B125188A1000D91190 /* Build configuration list for PBXProject "KOFFII CGN 2.0" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3F3F3AD25188A1000D91190;
+			productRefGroup = B3F3F3B725188A1000D91190 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3F3F3B525188A1000D91190 /* KOFFII CGN 2.0 */,
+				B3F3F3C625188A1300D91190 /* KOFFII CGN 2.0Tests */,
+				B3F3F3D125188A1300D91190 /* KOFFII CGN 2.0UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3F3F3B425188A1000D91190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3F3F3C125188A1300D91190 /* Preview Assets.xcassets in Resources */,
+				B3F3F3BE25188A1300D91190 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F3F3C525188A1300D91190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F3F3D025188A1300D91190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3F3F3B225188A1000D91190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3F3F3BC25188A1100D91190 /* ContentView.swift in Sources */,
+				B3F3F3BA25188A1100D91190 /* KOFFII_CGN_2_0App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F3F3C325188A1300D91190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3F3F3CC25188A1300D91190 /* KOFFII_CGN_2_0Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F3F3CE25188A1300D91190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3F3F3D725188A1300D91190 /* KOFFII_CGN_2_0UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3F3F3C925188A1300D91190 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3F3F3B525188A1000D91190 /* KOFFII CGN 2.0 */;
+			targetProxy = B3F3F3C825188A1300D91190 /* PBXContainerItemProxy */;
+		};
+		B3F3F3D425188A1300D91190 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3F3F3B525188A1000D91190 /* KOFFII CGN 2.0 */;
+			targetProxy = B3F3F3D325188A1300D91190 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B3F3F3D925188A1300D91190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3F3F3DA25188A1300D91190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3F3F3DC25188A1300D91190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"KOFFII CGN 2.0/Preview Content\"";
+				DEVELOPMENT_TEAM = YLGTKU7SLK;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "KOFFII CGN 2.0/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "quechup.KOFFII-CGN-2-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3F3F3DD25188A1300D91190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"KOFFII CGN 2.0/Preview Content\"";
+				DEVELOPMENT_TEAM = YLGTKU7SLK;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "KOFFII CGN 2.0/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "quechup.KOFFII-CGN-2-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B3F3F3DF25188A1300D91190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YLGTKU7SLK;
+				INFOPLIST_FILE = "KOFFII CGN 2.0Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "quechup.KOFFII-CGN-2-0Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KOFFII CGN 2.0.app/KOFFII CGN 2.0";
+			};
+			name = Debug;
+		};
+		B3F3F3E025188A1300D91190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YLGTKU7SLK;
+				INFOPLIST_FILE = "KOFFII CGN 2.0Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "quechup.KOFFII-CGN-2-0Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KOFFII CGN 2.0.app/KOFFII CGN 2.0";
+			};
+			name = Release;
+		};
+		B3F3F3E225188A1300D91190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YLGTKU7SLK;
+				INFOPLIST_FILE = "KOFFII CGN 2.0UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "quechup.KOFFII-CGN-2-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "KOFFII CGN 2.0";
+			};
+			name = Debug;
+		};
+		B3F3F3E325188A1300D91190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YLGTKU7SLK;
+				INFOPLIST_FILE = "KOFFII CGN 2.0UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "quechup.KOFFII-CGN-2-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "KOFFII CGN 2.0";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3F3F3B125188A1000D91190 /* Build configuration list for PBXProject "KOFFII CGN 2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3F3F3D925188A1300D91190 /* Debug */,
+				B3F3F3DA25188A1300D91190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3F3F3DB25188A1300D91190 /* Build configuration list for PBXNativeTarget "KOFFII CGN 2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3F3F3DC25188A1300D91190 /* Debug */,
+				B3F3F3DD25188A1300D91190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3F3F3DE25188A1300D91190 /* Build configuration list for PBXNativeTarget "KOFFII CGN 2.0Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3F3F3DF25188A1300D91190 /* Debug */,
+				B3F3F3E025188A1300D91190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3F3F3E125188A1300D91190 /* Build configuration list for PBXNativeTarget "KOFFII CGN 2.0UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3F3F3E225188A1300D91190 /* Debug */,
+				B3F3F3E325188A1300D91190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3F3F3AE25188A1000D91190 /* Project object */;
+}
