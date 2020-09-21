@@ -13,6 +13,11 @@
 		B3F3F3C125188A1300D91190 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3F3F3C025188A1300D91190 /* Preview Assets.xcassets */; };
 		B3F3F3CC25188A1300D91190 /* KOFFII_CGN_2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3CB25188A1300D91190 /* KOFFII_CGN_2_0Tests.swift */; };
 		B3F3F3D725188A1300D91190 /* KOFFII_CGN_2_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3D625188A1300D91190 /* KOFFII_CGN_2_0UITests.swift */; };
+		B3F3F3E825188A2600D91190 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3E725188A2600D91190 /* Sidebar.swift */; };
+		B3F3F3ED25188DD300D91190 /* CoffeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3EC25188DD300D91190 /* CoffeeView.swift */; };
+		B3F3F3F825188DE900D91190 /* CoffeeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3F725188DE900D91190 /* CoffeeRow.swift */; };
+		B3F3F439251900CA00D91190 /* CoffeeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F438251900CA00D91190 /* CoffeeItem.swift */; };
+		B3F3F446251902D000D91190 /* CoffeeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F445251902D000D91190 /* CoffeeList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		B3F3F3D225188A1300D91190 /* KOFFII CGN 2.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KOFFII CGN 2.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F3F3D625188A1300D91190 /* KOFFII_CGN_2_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KOFFII_CGN_2_0UITests.swift; sourceTree = "<group>"; };
 		B3F3F3D825188A1300D91190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3F3F3E725188A2600D91190 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		B3F3F3EC25188DD300D91190 /* CoffeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeView.swift; sourceTree = "<group>"; };
+		B3F3F3F725188DE900D91190 /* CoffeeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeRow.swift; sourceTree = "<group>"; };
+		B3F3F438251900CA00D91190 /* CoffeeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeItem.swift; sourceTree = "<group>"; };
+		B3F3F445251902D000D91190 /* CoffeeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				B3F3F3B925188A1100D91190 /* KOFFII_CGN_2_0App.swift */,
-				B3F3F3BB25188A1100D91190 /* ContentView.swift */,
+				B3F3F43D2519022C00D91190 /* Navigation */,
+				B3F3F4412519024600D91190 /* Items */,
+				B3F3F3EC25188DD300D91190 /* CoffeeView.swift */,
+				B3F3F445251902D000D91190 /* CoffeeList.swift */,
 				B3F3F3BD25188A1300D91190 /* Assets.xcassets */,
 				B3F3F3C225188A1300D91190 /* Info.plist */,
 				B3F3F3BF25188A1300D91190 /* Preview Content */,
@@ -128,6 +141,24 @@
 				B3F3F3D825188A1300D91190 /* Info.plist */,
 			);
 			path = "KOFFII CGN 2.0UITests";
+			sourceTree = "<group>";
+		};
+		B3F3F43D2519022C00D91190 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B3F3F3BB25188A1100D91190 /* ContentView.swift */,
+				B3F3F3E725188A2600D91190 /* Sidebar.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		B3F3F4412519024600D91190 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				B3F3F438251900CA00D91190 /* CoffeeItem.swift */,
+				B3F3F3F725188DE900D91190 /* CoffeeRow.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +291,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3F3F3BC25188A1100D91190 /* ContentView.swift in Sources */,
+				B3F3F3E825188A2600D91190 /* Sidebar.swift in Sources */,
+				B3F3F3F825188DE900D91190 /* CoffeeRow.swift in Sources */,
+				B3F3F3ED25188DD300D91190 /* CoffeeView.swift in Sources */,
+				B3F3F446251902D000D91190 /* CoffeeList.swift in Sources */,
+				B3F3F439251900CA00D91190 /* CoffeeItem.swift in Sources */,
 				B3F3F3BA25188A1100D91190 /* KOFFII_CGN_2_0App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

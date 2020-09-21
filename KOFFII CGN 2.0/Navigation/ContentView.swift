@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ViewBuilder
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        #if os(iOS)
+        Sidebar()
+        #else
+        Sidebar()
+            .frame(minWidth: 1000, minHeight: 600)
+        #endif
     }
 }
 
