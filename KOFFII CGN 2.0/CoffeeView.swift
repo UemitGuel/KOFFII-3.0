@@ -25,7 +25,10 @@ struct CoffeeView: View {
                     VStack {
                         ForEach(0 ..< 20) { item in
                             CoffeeRow()
+                            
+                            
                         }
+                        
                     }
                     .padding()
                 }
