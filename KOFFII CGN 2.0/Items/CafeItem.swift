@@ -49,7 +49,7 @@ struct CafeItem: View {
                 }
                 Spacer()
                 if cafe.hasFood {
-                    Image(systemName: "mouth")
+                    Image("FOOD")
                 }
                 Spacer()
                 if cafe.hasVegan {
