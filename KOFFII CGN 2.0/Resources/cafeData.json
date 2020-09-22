@@ -1,0 +1,183 @@
+[
+    {
+        "name": "Al Baretto",
+        "photo": true,
+        "hood": "Lindenthal/Sülz",
+        "locationURL": "https://www.google.com/maps/place/Al+Barretto/@50.9233122,6.9247472,17z/data=!4m16!1m10!2m9!1zY2Fmw6lz!3m6!1zY2Fmw6lz!2zV2V5ZXJ0YWwsIEvDtmxu!3s0x47bf24e4bfd8014b:0x6e754f8019c9f0d6!4m2!1d6.9257635!2d50.9258329!6e5!3m4!1s0x0:0x7dad856db2e91d3e!8m2!3d50.9233086!4d6.9269409",
+        "hasWifi": false,
+        "hasFood": true,
+        "hasVegan": false,
+        "hasPlug": false,
+        
+        "coordinates": {
+            "longitude": 6.9269891,
+            "latitude": 50.9232982
+        }
+    },
+    {
+        "name": "Angelo Di Fini Cafe Espressino",
+        "photo": true,
+        "hood": "Nippes",
+        "locationURL": "https://www.google.de/maps/place/Angelo+Di+Fini+Cafe+Espressino/@50.9512343,6.9552106,17z/data=!3m1!4b1!4m5!3m4!1s0x47bf25a28778424f:0x89a34b53cd85b6d7!8m2!3d50.9512309!4d6.9574046",
+        "hasWifi": true,
+        "hasFood": true,
+        "hasVegan": false,
+        "hasPlug": false,
+        
+        "coordinates": {
+            "longitude": 6.9552106,
+            "latitude": 50.9512343
+        },
+    },
+    {
+        "name": "Bambule.Kaffeebar",
+        "photo": true,
+        "hood": "Deutz/Kalk",
+        "locationURL": "https://www.google.de/maps/place/Bambule.Kaffeebar/@50.9369514,7.006572,17z/data=!4m12!1m6!3m5!1s0x47bf2670189ef6e5:0x25d077e0f785182!2sKundenzentrum+Kalk+-+Stadt+Köln!8m2!3d50.939315!4d7.0090109!3m4!1s0x47bf267ab6e8fd81:0x2fa936a61a5aa55c!8m2!3d50.9369497!4d7.0087637",
+        "hasWifi": false,
+        "hasFood": true,
+        "hasVegan": true,
+        "hasPlug": false,
+        
+        "coordinates": {
+            "longitude": 7.008744,
+            "latitude": 50.9369855
+        },
+    },
+    {
+        "name": "Cafe Duddel",
+        "photo": true,
+        "hood": "Latin Quarter",
+        "locationURL": "https://www.google.com/maps/place/Cafe+Duddel/@50.9291919,6.9370512,16z/data=!4m12!1m6!3m5!1s0x47bf24461163cb97:0xb4ebd8bcbfabe8e4!2zZWluYnJhbmQg4oCTIENhZsOpIGRlciBSw7ZzdGVyZWkgU8O8ZHN0YWR0!8m2!3d50.9190599!4d6.9601537!3m4!1s0x0:0x751b09ed261d1c!8m2!3d50.9280349!4d6.9345188",
+        "hasWifi": true,
+        "hasFood": true,
+        "hasVegan": true,
+        "hasPlug": true,
+        
+        "coordinates": {
+            "longitude": 6.9370512,
+            "latitude": 50.9291919
+        },
+    },
+    {
+        "name": "Cafe Eichhörnchen",
+        "photo": true,
+        "hood": "Nippes",
+        "locationURL": "https://www.google.com/maps/place/Cafe+Eichhörnchen/@50.9643978,6.9525293,17z/data=!4m12!1m6!3m5!1s0x47bf24f2a732859d:0x1c1c0991762cb03c!2zQ2Fmw6kgQm8!8m2!3d50.912542!4d6.924678!3m4!1s0x47bf2582f3e012e7:0xfa85aad958f103f1!8m2!3d50.9644274!4d6.952649",
+        "hasWifi": true,
+        "hasFood": true,
+        "hasVegan": true,
+        "hasPlug": false,
+        
+        "coordinates": {
+            "longitude": 6.9525293,
+            "latitude": 50.9643978
+        },
+    },
+    {
+        "name": "Cafe Krümel",
+        "photo": false,
+        "hood": "Lindenthal/Sülz",
+        "locationURL": "https://www.google.com/maps/place/Cafe+Krümel/@50.9239608,6.9250663,17z/data=!4m16!1m10!2m9!1zY2Fmw6lz!3m6!1zY2Fmw6lz!2zV2V5ZXJ0YWwsIEvDtmxu!3s0x47bf24e4bfd8014b:0x6e754f8019c9f0d6!4m2!1d6.9257635!2d50.9258329!6e5!3m4!1s0x0:0x47265c4d0b83764!8m2!3d50.9239574!4d6.9272601",
+        "hasWifi": false,
+        "hasFood": true,
+        "hasVegan": false,
+        "hasPlug": false,
+        
+        "coordinates": {
+            "longitude": 6.9250663,
+            "latitude": 50.9239608
+        },
+    },
+    {
+        "name": "Cafe Mischmasch",
+        "photo": false,
+        "hood": "Lindenthal/Sülz",
+        "locationURL": "https://www.google.com/maps/place/Kafe+Local/@50.9232909,6.9256275,17z/data=!4m18!1m10!2m9!1zY2Fmw6lz!3m6!1zY2Fmw6lz!2zV2V5ZXJ0YWwsIEvDtmxu!3s0x47bf24e4bfd8014b:0x6e754f8019c9f0d6!4m2!1d6.9257635!2d50.9258329!6e5!3m6!1s0x0:0xb86b7ab2ac792d79!8m2!3d50.9232874!4d6.9278213!9m1!1b1",
+        "hasWifi": false,
+        "hasFood": true,
+        "hasVegan": false,
+        "hasPlug": false,
+        
+        "coordinates": {
+            "longitude": 6.9256275,
+            "latitude": 50.9232909
+        },
+    },
+    {
+        "name": "Cafe Vreiheit",
+        "photo": false,
+        "hood": "Deutz/Kalk",
+        "locationURL": "https://www.google.com/maps/place/Cafe+Vreiheit/@50.964122,6.9987766,17z/data=!3m1!4b1!4m12!1m6!3m5!1s0x47bf24e577a0f2dd:0xec3d580c8834abec!2sFunkhaus+Cafe-Bar-Restaurant!8m2!3d50.9403944!4d6.9559832!3m4!1s0x47bf25fddb9b06a1:0x6207cfb411bca08e!8m2!3d50.9641186!4d7.0009706",
+        "hasWifi": false,
+        "hasFood": true,
+        "hasVegan": true,
+        "hasPlug": false,
+        
+        "coordinates": {
+            "longitude": 6.9987766,
+            "latitude": 50.964122
+        },
+    },
+    {
+        "name": "Cafe Wo ist Tom?",
+        "photo": false,
+        "hood": "Lindenthal/Sülz",
+        "locationURL": "https://www.google.com/maps/place/Cafe+Wo+ist+Tom%3F/@50.9215883,6.9183098,17z/data=!3m1!4b1!4m5!3m4!1s0x47bf24ef4e3d99ab:0xfc596c534fb34db1!8m2!3d50.9215849!4d6.9205038",
+        "hasWifi": true,
+        "hasFood": true,
+        "hasVegan": true,
+        "hasPlug": true,
+        
+        "coordinates": {
+            "longitude": 6.9183098,
+            "latitude": 50.9215883
+        },
+    },
+    {
+        "name": "Cafe e bom",
+        "photo": false,
+        "hood": "Lindenthal/Sülz",
+        "locationURL": "https://www.google.com/maps/place/Cafe+e+bom/@50.9181678,6.9229928,17z/data=!3m1!4b1!4m5!3m4!1s0x47bf24ee189d98eb:0xbc0aa1eefae20f60!8m2!3d50.9181644!4d6.9251868",
+        "hasWifi": false,
+        "hasFood": true,
+        "hasVegan": true,
+        "hasPlug": false,
+        
+        "coordinates": {
+            "longitude": 6.9229928,
+            "latitude": 50.9181678
+        },
+    },
+    {
+        "name": "Cafebar Rubi",
+        "photo": true,
+        "hood": "Lindenthal/Sülz",
+        "locationURL": "https://www.google.de/maps/place/Cafebar+Rubi/@50.9200922,6.9249321,17z/data=!3m1!4b1!4m5!3m4!1s0x47bf24f03b73dde7:0xc0f7b4065fdb901e!8m2!3d50.9200888!4d6.9271261",
+        "hasWifi": true,
+        "hasFood": false,
+        "hasVegan": false,
+        "hasPlug": true,
+        
+        "coordinates": {
+            "longitude": 6.9249321,
+            "latitude": 50.9200922
+        },
+    },
+    {
+        "name": "Café Bo",
+        "photo": false,
+        "hood": "Lindenthal/Sülz",
+        "locationURL": "https://www.google.com/maps/place/Café+Bo/@50.9125454,6.922484,17z/data=!3m1!4b1!4m5!3m4!1s0x47bf24f2a732859d:0x1c1c0991762cb03c!8m2!3d50.912542!4d6.924678",
+        "hasWifi": true,
+        "hasFood": true,
+        "hasVegan": true,
+        "hasPlug": true,
+        
+        "coordinates": {
+            "longitude": 6.922484,
+            "latitude": 50.9125454
+        },
+    }
+
+]
