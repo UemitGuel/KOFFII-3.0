@@ -12,7 +12,7 @@
 		B3B5208E2519D93100368F47 /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5208D2519D93100368F47 /* Cafe.swift */; };
 		B3B520932519E1C400368F47 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B520922519E1C400368F47 /* TabBar.swift */; };
 		B3B520B6251A07FB00368F47 /* FilterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B520B5251A07FB00368F47 /* FilterStore.swift */; };
-		B3B520C4251A3B8A00368F47 /* FilterButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B520C3251A3B8900368F47 /* FilterButtons.swift */; };
+		B3B520C4251A3B8A00368F47 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B520C3251A3B8900368F47 /* FilterView.swift */; };
 		B3F3F3BA25188A1100D91190 /* KOFFII_CGN_2_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3B925188A1100D91190 /* KOFFII_CGN_2_0App.swift */; };
 		B3F3F3BC25188A1100D91190 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3BB25188A1100D91190 /* ContentView.swift */; };
 		B3F3F3BE25188A1300D91190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3F3F3BD25188A1300D91190 /* Assets.xcassets */; };
@@ -49,7 +49,7 @@
 		B3B5208D2519D93100368F47 /* Cafe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
 		B3B520922519E1C400368F47 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		B3B520B5251A07FB00368F47 /* FilterStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterStore.swift; sourceTree = "<group>"; };
-		B3B520C3251A3B8900368F47 /* FilterButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtons.swift; sourceTree = "<group>"; };
+		B3B520C3251A3B8900368F47 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		B3F3F3B625188A1000D91190 /* KOFFII CGN 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KOFFII CGN 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F3F3B925188A1100D91190 /* KOFFII_CGN_2_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KOFFII_CGN_2_0App.swift; sourceTree = "<group>"; };
 		B3F3F3BB25188A1100D91190 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 				B3F3F4412519024600D91190 /* Items */,
 				B3F3F3EC25188DD300D91190 /* CafeView.swift */,
 				B3B520B5251A07FB00368F47 /* FilterStore.swift */,
-				B3B520C3251A3B8900368F47 /* FilterButtons.swift */,
+				B3B520C3251A3B8900368F47 /* FilterView.swift */,
 				B3F3F445251902D000D91190 /* CafeList.swift */,
 				B3F3F3BD25188A1300D91190 /* Assets.xcassets */,
 				B3F3F3C225188A1300D91190 /* Info.plist */,
@@ -332,7 +332,7 @@
 				B3B520892519D92800368F47 /* Data.swift in Sources */,
 				B3B5208E2519D93100368F47 /* Cafe.swift in Sources */,
 				B3B520932519E1C400368F47 /* TabBar.swift in Sources */,
-				B3B520C4251A3B8A00368F47 /* FilterButtons.swift in Sources */,
+				B3B520C4251A3B8A00368F47 /* FilterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
