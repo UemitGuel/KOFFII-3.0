@@ -14,14 +14,48 @@ struct CafeView: View {
     @State var needVegan = false
     @State var needPlug = false
     
+    var isFiltering: Bool {
+        if needWifi || needFood || needVegan || needPlug {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    var cafeListFiltered: [Cafe] {
+        let cafeListFiltered = getfilteredCafeList()
+        return cafeListFiltered
+    }
+    
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             FilterView(needWifi: $needWifi, needFood: $needFood, needVegan: $needVegan, needPlug: $needPlug)
-            CafeList()
+                .padding(.vertical, 8)
+            CafeList(cafeListFiltered: cafeListFiltered)
         }
         .navigationTitle("KOFFII CGN")
     }
     
+}
+
+extension CafeView {
+    
+    private func getfilteredCafeList() -> [Cafe] {
+        var cafeList = cafeData
+        if needWifi {
+            cafeList = cafeList.filter { $0.hasWifi }
+        }
+        if needFood {
+            cafeList = cafeList.filter { $0.hasFood }
+        }
+        if needVegan {
+            cafeList = cafeList.filter { $0.hasVegan }
+        }
+        if needPlug {
+            cafeList = cafeList.filter { $0.hasPlug }
+        }
+        return cafeList
+    }
 }
 
 struct CoffeeView_Previews: PreviewProvider {

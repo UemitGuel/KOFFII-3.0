@@ -9,8 +9,6 @@ import SwiftUI
 
 struct CafeItem: View {
     
-    @EnvironmentObject var store: FilterStore
-    
     var cafe: Cafe
     
     var body: some View {
@@ -20,27 +18,28 @@ struct CafeItem: View {
                     Image(cafe.name)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .cornerRadius(16)
-                        .shadow(radius: 10)
+
                 } else {
                     Text("in Arbeit :)")
                         .frame(maxWidth: .infinity)
                         .frame(height: 200)
                         .background(Color.gray)
-                        .cornerRadius(16)
-                        .shadow(radius: 10)
                 }
             }
-            VStack(alignment: .leading, spacing: 4) {
-                Text(cafe.name)
-                    .lineLimit(1)
-                    .font(.system(.headline, design: .rounded))
-                    .foregroundColor(.primary)
-                Text("\(cafe.hood.rawValue) - 300m")
-                    .font(.system(.subheadline, design: .rounded))
-                    .foregroundColor(.primary).opacity(0.8)
+            HStack {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(cafe.name)
+                        .lineLimit(1)
+                        .font(.system(.headline, design: .rounded))
+                        .foregroundColor(.primary)
+                    Text("\(cafe.hood.rawValue)\n300m")
+                        .font(.system(.subheadline, design: .rounded))
+                        .foregroundColor(.primary).opacity(0.8)
+                }
+                Spacer()
             }
-            .padding(.bottom, 4)
+            .padding(.horizontal, 8)
+            .padding(.top, 8)
             
             HStack {
                 Spacer()
@@ -61,7 +60,11 @@ struct CafeItem: View {
                 }
                 Spacer()
             }
+            .padding(.vertical)
         }
+        .background(Color(.secondarySystemBackground))
+        .cornerRadius(16)
+        .shadow(radius: 10)
     }
 }
 

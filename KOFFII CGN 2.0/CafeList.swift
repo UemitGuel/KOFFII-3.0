@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct CafeList: View {
-    @ViewBuilder
+    var cafeListFiltered: [Cafe]
     
+    @ViewBuilder
     var body: some View {
         #if os(iOS)
         content
@@ -25,19 +26,20 @@ struct CafeList: View {
     
     var content: some View {
             LazyVGrid(columns: columns, spacing: 32) {
-                ForEach(cafeData, id: \.self) { item in
+                ForEach(cafeListFiltered, id: \.self) { item in
                     CafeItem(cafe: item)
                 }
             }
             .padding(.horizontal)
+            .animation(.spring())
     }
 }
 
 struct CoffeeList_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            CafeList()
-            CafeList()
+            CafeList(cafeListFiltered: cafeData)
+            CafeList(cafeListFiltered: cafeData)
                 .preferredColorScheme(.dark)
         }
     }
