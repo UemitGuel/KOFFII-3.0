@@ -18,7 +18,7 @@ struct CafeItem: View {
                     Image(cafe.name)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-
+                    
                 } else {
                     Text("in Arbeit :)")
                         .frame(maxWidth: .infinity)
@@ -41,26 +41,7 @@ struct CafeItem: View {
             .padding(.horizontal, 8)
             .padding(.top, 8)
             
-            HStack {
-                Spacer()
-                if cafe.hasWifi {
-                    Image(systemName: "wifi")
-                }
-                Spacer()
-                if cafe.hasFood {
-                    Image("FOOD")
-                }
-                Spacer()
-                if cafe.hasVegan {
-                    Image(systemName: "leaf")
-                }
-                Spacer()
-                if cafe.hasPlug {
-                    Image(systemName: "bolt")
-                }
-                Spacer()
-            }
-            .padding(.vertical)
+            FeatureDisplayView(cafe: cafe)
         }
         .background(Color(.secondarySystemBackground))
         .cornerRadius(16)
@@ -75,5 +56,31 @@ struct CoffeeItem_Previews: PreviewProvider {
             CafeItem(cafe: cafeData[5])
                 .preferredColorScheme(.dark)
         }
+    }
+}
+
+struct FeatureDisplayView: View {
+    
+    var cafe: Cafe
+    
+    var body: some View {
+        HStack {
+            Spacer()
+            Image(systemName: "wifi")
+                .foregroundColor(cafe.hasWifi ? .primary : Color(.tertiaryLabel).opacity(0.8))
+            Spacer()
+            Image("FOOD")
+                .foregroundColor(cafe.hasFood ? .primary : Color(.tertiaryLabel).opacity(0.8))
+            
+            Spacer()
+            Image(systemName: "leaf")
+                .foregroundColor(cafe.hasVegan ? .primary : Color(.tertiaryLabel).opacity(0.8))
+            
+            Spacer()
+            Image(systemName: "bolt")
+                .foregroundColor(cafe.hasPlug ? .primary : Color(.tertiaryLabel).opacity(0.8))
+            Spacer()
+        }
+        .padding(.vertical)
     }
 }

@@ -16,7 +16,7 @@ struct Cafe: Hashable, Identifiable, Codable {
     
     var locationURL: String
     fileprivate var coordinates: Coordinates
-    var locationCoordinate: CLLocationCoordinate2D {
+    var location: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
             latitude: coordinates.latitude,
             longitude: coordinates.longitude)

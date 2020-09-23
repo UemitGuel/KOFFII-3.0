@@ -18,7 +18,7 @@ struct TabBar: View {
             }
             
             NavigationView {
-                CoffeeRow()
+                Text("Map")
             }
             .tabItem {
                 Label("Map", systemImage: "rectangle")
@@ -26,7 +26,7 @@ struct TabBar: View {
             }
             
             NavigationView {
-                CoffeeRow()
+                Text("Info")
             }
             .tabItem {
                 Label("Info", systemImage: "circle")
