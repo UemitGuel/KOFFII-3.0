@@ -3,6 +3,7 @@
 
 
 import Foundation
+import MapKit
 
 class CoordinatesHelper {
     
@@ -37,4 +38,48 @@ class CoordinatesHelper {
         return longitude
     }
     
+    func getDistance(cafeLocation: CLLocation, userLocation: CLLocation?) -> String {
+        guard let userLocation = userLocation else { return "" }
+        let distance = cafeLocation.distance(from: userLocation)
+        print(userLocation)
+        print(cafeLocation)
+        print(distance)
+        return mapDistanceForDisplay(distance)
+    }
+    
+    func mapDistanceForDisplay(_ distance: CLLocationDistance) -> String {
+        if distance < 100 {
+            return "100 m"
+        } else if distance < 200 {
+            return "200 m"
+        } else if distance < 300 {
+            return "300 m"
+        } else if distance < 400 {
+            return "400 m"
+        } else if distance < 500 {
+            return "500 m"
+        } else if distance < 600 {
+            return "600 m"
+        } else if distance < 700 {
+            return "700 m"
+        } else if distance < 800 {
+            return "800 m"
+        } else if distance < 900 {
+            return "900 m"
+        } else if distance < 1000 {
+            return "1 km"
+        } else if distance < 1200 {
+            return "1.2 km"
+        } else if distance < 1500 {
+            return "1.5 km"
+        } else if distance < 2000 {
+            return "2 km"
+        } else if distance < 5000 {
+            return "5km"
+        } else if distance < 10000 {
+            return "10km"
+        } else {
+            return "+10km"
+        }
+    }
 }

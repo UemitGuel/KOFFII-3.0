@@ -8,11 +8,6 @@
         "hasFood": true,
         "hasVegan": false,
         "hasPlug": false,
-        
-        "coordinates": {
-            "longitude": 6.9269891,
-            "latitude": 50.9232982
-        }
     },
     {
         "name": "Angelo Di Fini Cafe Espressino",
@@ -23,11 +18,7 @@
         "hasFood": true,
         "hasVegan": false,
         "hasPlug": false,
-        
-        "coordinates": {
-            "longitude": 6.9552106,
-            "latitude": 50.9512343
-        },
+
     },
     {
         "name": "Bambule.Kaffeebar",
@@ -38,11 +29,6 @@
         "hasFood": true,
         "hasVegan": true,
         "hasPlug": false,
-        
-        "coordinates": {
-            "longitude": 7.008744,
-            "latitude": 50.9369855
-        },
     },
     {
         "name": "Cafe Duddel",
@@ -53,11 +39,6 @@
         "hasFood": true,
         "hasVegan": true,
         "hasPlug": true,
-        
-        "coordinates": {
-            "longitude": 6.9370512,
-            "latitude": 50.9291919
-        },
     },
     {
         "name": "Cafe Eichhörnchen",
@@ -68,11 +49,6 @@
         "hasFood": true,
         "hasVegan": true,
         "hasPlug": false,
-        
-        "coordinates": {
-            "longitude": 6.9525293,
-            "latitude": 50.9643978
-        },
     },
     {
         "name": "Cafe Krümel",
@@ -83,11 +59,6 @@
         "hasFood": true,
         "hasVegan": false,
         "hasPlug": false,
-        
-        "coordinates": {
-            "longitude": 6.9250663,
-            "latitude": 50.9239608
-        },
     },
     {
         "name": "Cafe Mischmasch",
@@ -98,11 +69,6 @@
         "hasFood": true,
         "hasVegan": false,
         "hasPlug": false,
-        
-        "coordinates": {
-            "longitude": 6.9256275,
-            "latitude": 50.9232909
-        },
     },
     {
         "name": "Cafe Vreiheit",
@@ -113,11 +79,6 @@
         "hasFood": true,
         "hasVegan": true,
         "hasPlug": false,
-        
-        "coordinates": {
-            "longitude": 6.9987766,
-            "latitude": 50.964122
-        },
     },
     {
         "name": "Cafe Wo ist Tom?",
@@ -128,11 +89,6 @@
         "hasFood": true,
         "hasVegan": true,
         "hasPlug": true,
-        
-        "coordinates": {
-            "longitude": 6.9183098,
-            "latitude": 50.9215883
-        },
     },
     {
         "name": "Cafe e bom",
@@ -143,11 +99,6 @@
         "hasFood": true,
         "hasVegan": true,
         "hasPlug": false,
-        
-        "coordinates": {
-            "longitude": 6.9229928,
-            "latitude": 50.9181678
-        },
     },
     {
         "name": "Cafebar Rubi",
@@ -158,11 +109,6 @@
         "hasFood": false,
         "hasVegan": false,
         "hasPlug": true,
-        
-        "coordinates": {
-            "longitude": 6.9249321,
-            "latitude": 50.9200922
-        },
     },
     {
         "name": "Café Bo",
@@ -173,11 +119,6 @@
         "hasFood": true,
         "hasVegan": true,
         "hasPlug": true,
-        
-        "coordinates": {
-            "longitude": 6.922484,
-            "latitude": 50.9125454
-        },
     }
 
 ]
