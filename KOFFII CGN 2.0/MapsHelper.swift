@@ -13,7 +13,4 @@ class MapsHelper {
             print("Can't use comgooglemaps://")
         }
     }
-    
-    
-    
 }
