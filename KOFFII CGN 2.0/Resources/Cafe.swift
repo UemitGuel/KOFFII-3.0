@@ -15,11 +15,11 @@ struct Cafe: Hashable, Identifiable, Codable {
     var photo: Bool
     
     var locationURL: String
-    fileprivate var coordinates: Coordinates
-    var location: CLLocationCoordinate2D {
+    
+    var coordinates: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
-            latitude: coordinates.latitude,
-            longitude: coordinates.longitude)
+            latitude: CoordinatesHelper.shared.sliceURLIntoCoordinates(url: locationURL).latitude,
+            longitude: CoordinatesHelper.shared.sliceURLIntoCoordinates(url: locationURL).longitude)
     }
     
     var hasWifi: Bool
@@ -39,9 +39,4 @@ struct Cafe: Hashable, Identifiable, Codable {
         case belgisches = "Belgisches Viertel"
         case latin = "Latin Quarter"
     }    
-}
-
-struct Coordinates: Hashable, Codable {
-    var latitude: Double
-    var longitude: Double
 }

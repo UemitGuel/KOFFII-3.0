@@ -12,6 +12,11 @@ struct CafeDetailView: View {
     
     var cafe: Cafe
     
+    var googleMapsUrl: URL {
+        let urlEncoded = cafe.locationURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        return URL(string: urlEncoded)!
+    }
+    
     @ObservedObject var locationVM = LocationViewModel()
     @ObservedObject var regionVM = RegionViewModel()
     
@@ -20,7 +25,7 @@ struct CafeDetailView: View {
     @State var showModal = false
     
     var location: [Location] {
-        Location.getLocation(name: cafe.name, coordinate: cafe.location)
+        Location.getLocation(name: cafe.name, coordinate: cafe.coordinates)
     }
     
     var body: some View {
@@ -38,19 +43,17 @@ struct CafeDetailView: View {
                         .font(.system(.body, design: .rounded))
                         .foregroundColor(.primary).opacity(0.8)
                     FeatureDisplayView(cafe: cafe)
-                        Button(action: {
-                            MapsHelper.shared.openInGoogleMaps(url: URL(string: cafe.locationURL)!)
-                        }, label: {
-                            HStack {
-                                Spacer()
-                                Label("In Google Maps öffnen", systemImage: "map")
-                                Spacer()
-                            }
-                            .foregroundColor(Color(.systemBackground))
-                            .padding()
-                            .background(Color.accentColor)
-                            .cornerRadius(16)
-                    })
+                    
+                    
+                    HStack {
+                        Spacer()
+                        Link("In Google Maps öffnen", destination: googleMapsUrl)
+                        Spacer()
+                    }
+                    .foregroundColor(Color(.systemBackground))
+                    .padding()
+                    .background(Color.accentColor)
+                    .cornerRadius(16)
                     
                     .padding(.horizontal)
                     .padding(.bottom)
