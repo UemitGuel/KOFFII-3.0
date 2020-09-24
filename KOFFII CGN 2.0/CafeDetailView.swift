@@ -12,12 +12,15 @@ struct CafeDetailView: View {
     
     var cafe: Cafe
     
+    @EnvironmentObject var store: LocationStore
+
+    
     var googleMapsUrl: URL {
         let urlEncoded = cafe.locationURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         return URL(string: urlEncoded)!
     }
     
-    @ObservedObject var locationVM = LocationViewModel()
+    @ObservedObject var locationVM = LocationStore()
     @ObservedObject var regionVM = RegionViewModel()
     
     @State private var trackingMode = MapUserTrackingMode.follow
@@ -39,7 +42,10 @@ struct CafeDetailView: View {
                 VStack(alignment: .leading) {
                     Text(cafe.name)
                         .font(.system(.headline, design: .rounded))
-                    Text("\(cafe.hood.rawValue) - 300m")
+                    Text("\(cafe.hood.rawValue)")
+                        .font(.system(.body, design: .rounded))
+                        .foregroundColor(.primary).opacity(0.8)
+                    Text(store.getDistanceAsString(cafeLocation: cafe.location))
                         .font(.system(.body, design: .rounded))
                         .foregroundColor(.primary).opacity(0.8)
                     FeatureDisplayView(cafe: cafe)

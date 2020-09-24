@@ -22,6 +22,10 @@ struct Cafe: Hashable, Identifiable, Codable {
             longitude: CoordinatesHelper.shared.sliceURLIntoCoordinates(url: locationURL).longitude)
     }
     
+    var location: CLLocation {
+        CLLocation(latitude: coordinates.latitude, longitude: coordinates.longitude)
+    }
+    
     var hasWifi: Bool
     var hasFood: Bool
     var hasVegan: Bool

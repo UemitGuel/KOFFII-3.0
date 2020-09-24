@@ -38,13 +38,13 @@ class CoordinatesHelper {
         return longitude
     }
     
-    func getDistance(cafeLocation: CLLocation, userLocation: CLLocation?) -> String {
-        guard let userLocation = userLocation else { return "" }
+    func getDistance(cafeLocation: CLLocation, userLocation: CLLocation?) -> Double {
+        guard let userLocation = userLocation else { return 0 }
         let distance = cafeLocation.distance(from: userLocation)
         print(userLocation)
         print(cafeLocation)
         print(distance)
-        return mapDistanceForDisplay(distance)
+        return distance
     }
     
     func mapDistanceForDisplay(_ distance: CLLocationDistance) -> String {
@@ -75,11 +75,11 @@ class CoordinatesHelper {
         } else if distance < 2000 {
             return "2 km"
         } else if distance < 5000 {
-            return "5km"
+            return "5 km"
         } else if distance < 10000 {
-            return "10km"
+            return "10 km"
         } else {
-            return "+10km"
+            return "+10 km"
         }
     }
 }

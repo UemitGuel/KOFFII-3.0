@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B330CEC0251C934900FB34E4 /* CoordinatesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B330CEBF251C934900FB34E4 /* CoordinatesHelper.swift */; };
-		B38960BD251B4C68001659FD /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38960BC251B4C67001659FD /* LocationViewModel.swift */; };
+		B38960BD251B4C68001659FD /* LocationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38960BC251B4C67001659FD /* LocationStore.swift */; };
 		B38960C2251B50A2001659FD /* RegionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38960C1251B50A2001659FD /* RegionViewModel.swift */; };
 		B3B520842519D90200368F47 /* cafeData.json in Resources */ = {isa = PBXBuildFile; fileRef = B3B520832519D90200368F47 /* cafeData.json */; };
 		B3B520892519D92800368F47 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B520882519D92800368F47 /* Data.swift */; };
@@ -48,7 +48,7 @@
 
 /* Begin PBXFileReference section */
 		B330CEBF251C934900FB34E4 /* CoordinatesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesHelper.swift; sourceTree = "<group>"; };
-		B38960BC251B4C67001659FD /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		B38960BC251B4C67001659FD /* LocationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationStore.swift; sourceTree = "<group>"; };
 		B38960C1251B50A2001659FD /* RegionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionViewModel.swift; sourceTree = "<group>"; };
 		B3B520832519D90200368F47 /* cafeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cafeData.json; sourceTree = "<group>"; };
 		B3B520882519D92800368F47 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 				B3F3F4412519024600D91190 /* Items */,
 				B3F3F3EC25188DD300D91190 /* CafeView.swift */,
 				B330CEBF251C934900FB34E4 /* CoordinatesHelper.swift */,
-				B38960BC251B4C67001659FD /* LocationViewModel.swift */,
+				B38960BC251B4C67001659FD /* LocationStore.swift */,
 				B3B87395251B460B006CA136 /* Location.swift */,
 				B38960C1251B50A2001659FD /* RegionViewModel.swift */,
 				B3B8738A251B3EBD006CA136 /* CafeDetailView.swift */,
@@ -340,7 +340,7 @@
 				B3F3F3BA25188A1100D91190 /* KOFFII_CGN_2_0App.swift in Sources */,
 				B3B520892519D92800368F47 /* Data.swift in Sources */,
 				B3B5208E2519D93100368F47 /* Cafe.swift in Sources */,
-				B38960BD251B4C68001659FD /* LocationViewModel.swift in Sources */,
+				B38960BD251B4C68001659FD /* LocationStore.swift in Sources */,
 				B3B520932519E1C400368F47 /* TabBar.swift in Sources */,
 				B3B87396251B460B006CA136 /* Location.swift in Sources */,
 				B330CEC0251C934900FB34E4 /* CoordinatesHelper.swift in Sources */,

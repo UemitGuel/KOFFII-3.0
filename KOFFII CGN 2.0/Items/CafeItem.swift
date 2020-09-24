@@ -11,6 +11,8 @@ struct CafeItem: View {
     
     var cafe: Cafe
     
+    @EnvironmentObject var store: LocationStore
+    
     var body: some View {
         VStack {
             VStack(alignment: .leading, spacing: 8.0) {
@@ -32,7 +34,7 @@ struct CafeItem: View {
                         .lineLimit(1)
                         .font(.system(.headline, design: .rounded))
                         .foregroundColor(.primary)
-                    Text("\(cafe.hood.rawValue)\n300m")
+                    Text(store.getDistanceAsString(cafeLocation: cafe.location))
                         .font(.system(.subheadline, design: .rounded))
                         .foregroundColor(.primary).opacity(0.8)
                 }
