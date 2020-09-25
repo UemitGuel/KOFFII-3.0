@@ -12,7 +12,6 @@ import CoreLocation
 struct Cafe: Hashable, Identifiable, Codable {
     let id = UUID()
     var name: String
-    var photo: Bool
     
     var locationURL: String
     

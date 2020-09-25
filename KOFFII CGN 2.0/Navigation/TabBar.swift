@@ -22,15 +22,14 @@ struct TabBar: View {
             }
             .tabItem {
                 Label("Map", systemImage: "rectangle")
-
             }
             
-            NavigationView {
-                Text("Info")
-            }
-            .tabItem {
-                Label("Info", systemImage: "circle")
-            }
+//            NavigationView {
+//                Text("Info")
+//            }
+//            .tabItem {
+//                Label("Info", systemImage: "circle")
+//            }
         }
     }
 }

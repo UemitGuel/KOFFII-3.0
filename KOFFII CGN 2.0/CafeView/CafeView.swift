@@ -31,9 +31,9 @@ struct CafeView: View {
     
     var body: some View {
         ScrollView(showsIndicators: false) {
+            SpotlightView()
             FilterView(needWifi: $needWifi, needFood: $needFood, needVegan: $needVegan, needPlug: $needPlug)
                 .padding(.vertical, 8)
-            SpotlightView()
             CafeList(cafeListFiltered: cafeListFiltered)
         }
         .navigationTitle("KOFFII CGN")

@@ -64,7 +64,6 @@ struct MapView: UIViewRepresentable {
         }
         
         func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-            print(view.annotation?.title)
             var choosenCafeName = view.annotation?.title
             
             if let cafe = cafeData.first(where: {$0.name == choosenCafeName}) {

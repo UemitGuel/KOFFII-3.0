@@ -40,60 +40,54 @@ struct CafeDetailView: View {
                     GoogleMapsButton(cafe: cafe)
                     Divider()
                     HStack {
-                        if cafe.photo {
-                            Image(cafe.name)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(height: geo.size.height*0.25)
-                                .cornerRadius(16)
-                        } else {
-                            Text("in Arbeit :)")
-                                .frame(maxWidth: .infinity)
-                                .frame(height: 200)
-                                .background(Color.gray)
-                        }
-                        Spacer()
-                        VStack(alignment: .trailing,spacing: 2) {
-                            Text("Öffnungszeiten")
-                                .font(.system(.headline, design: .rounded))
-                                .padding(.bottom, 2)
-                            Text("Montag: 8:00 - 20:00")
-                                .font(.system(.callout, design: .rounded))
-                            Text("Montag: 8:00 - 20:00")
-                                .font(.system(.callout, design: .rounded))
-                            Text("Montag: 8:00 - 20:00")
-                                .font(.system(.callout, design: .rounded))
-                            Text("Montag: 8:00 - 20:00")
-                                .font(.system(.callout, design: .rounded))
-                            Text("Montag: 8:00 - 20:00")
-                                .font(.system(.callout, design: .rounded))
-                            Text("Montag: 8:00 - 20:00")
-                                .font(.system(.callout, design: .rounded))
-                            Text("Montag: 8:00 - 20:00")
-                                .font(.system(.callout, design: .rounded))
-                        }
+                        Image(cafe.name)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: geo.size.height*0.25)
+                            .cornerRadius(16)
                     }
-                    .padding(.vertical)
-                    Divider()
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text("Ümit´s Notizen")
+                    Spacer()
+                    VStack(alignment: .trailing,spacing: 2) {
+                        Text("Öffnungszeiten")
                             .font(.system(.headline, design: .rounded))
-                            .padding(.bottom, 4)
-                        ForEach(0..<6) { item in
-                            Label("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et", systemImage: "bubble.left")
-                                .padding(.bottom)
-                        }
+                            .padding(.bottom, 2)
+                        Text("Montag: 8:00 - 20:00")
+                            .font(.system(.callout, design: .rounded))
+                        Text("Montag: 8:00 - 20:00")
+                            .font(.system(.callout, design: .rounded))
+                        Text("Montag: 8:00 - 20:00")
+                            .font(.system(.callout, design: .rounded))
+                        Text("Montag: 8:00 - 20:00")
+                            .font(.system(.callout, design: .rounded))
+                        Text("Montag: 8:00 - 20:00")
+                            .font(.system(.callout, design: .rounded))
+                        Text("Montag: 8:00 - 20:00")
+                            .font(.system(.callout, design: .rounded))
+                        Text("Montag: 8:00 - 20:00")
+                            .font(.system(.callout, design: .rounded))
                     }
-                    .padding(.vertical)
                 }
-                .padding()
-                
-                .navigationBarTitle("", displayMode: .inline)
+                .padding(.vertical)
+                Divider()
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("Ümit´s Notizen")
+                        .font(.system(.headline, design: .rounded))
+                        .padding(.bottom, 4)
+                    ForEach(0..<6) { item in
+                        Label("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et", systemImage: "bubble.left")
+                            .padding(.bottom)
+                    }
+                }
+                .padding(.vertical)
             }
+            .padding()
+            
+            .navigationBarTitle("", displayMode: .inline)
         }
-        
     }
+    
 }
+
 
 struct CafeDetailView_Previews: PreviewProvider {
     static var previews: some View {

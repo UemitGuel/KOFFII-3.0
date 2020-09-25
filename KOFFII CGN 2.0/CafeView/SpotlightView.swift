@@ -19,7 +19,7 @@ struct SpotlightView: View {
             }
             .tabViewStyle(PageTabViewStyle())
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-            .frame(height: 250)
+            .frame(height: 150)
             Divider()
         }
         .padding()
@@ -34,22 +34,16 @@ struct SpotlightView_Previews: PreviewProvider {
 }
 
 struct SpotlightItem: View {
-        
+    
     var cafe: Cafe
     
     var body: some View {
         HStack {
-            if cafe.photo {
-                Image(cafe.name)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                
-            } else {
-                Text("in Arbeit :)")
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 200)
-                    .background(Color.gray)
-            }
+            Image(cafe.name)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            
+            
             HStack {
                 Spacer()
                 VStack(alignment: .trailing, spacing: 4) {
@@ -73,13 +67,13 @@ struct SpotlightItem: View {
                     Text("Und mehr ...")
                         .font(.system(.subheadline, design: .rounded))
                         .foregroundColor(.primary).opacity(0.8)
-
+                    
                 }.padding(.vertical)
             }
             .padding(.horizontal, 8)
             .padding(.top, 8)
         }
-        .frame(height: 250)
+        .frame(height: 150)
         .background(Color(.secondarySystemBackground))
         .cornerRadius(20)
         .overlay(

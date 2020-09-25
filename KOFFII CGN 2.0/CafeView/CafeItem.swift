@@ -16,17 +16,11 @@ struct CafeItem: View {
     var body: some View {
         VStack {
             VStack(alignment: .leading, spacing: 8.0) {
-                if cafe.photo {
-                    Image(cafe.name)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                    
-                } else {
-                    Text("in Arbeit :)")
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 200)
-                        .background(Color.gray)
-                }
+                Image(cafe.name)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                
+                
             }
             HStack {
                 VStack(alignment: .leading, spacing: 4) {
