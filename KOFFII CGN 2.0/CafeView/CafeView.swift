@@ -33,6 +33,7 @@ struct CafeView: View {
         ScrollView(showsIndicators: false) {
             FilterView(needWifi: $needWifi, needFood: $needFood, needVegan: $needVegan, needPlug: $needPlug)
                 .padding(.vertical, 8)
+            SpotlightView()
             CafeList(cafeListFiltered: cafeListFiltered)
         }
         .navigationTitle("KOFFII CGN")
