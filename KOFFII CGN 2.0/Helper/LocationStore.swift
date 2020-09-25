@@ -42,6 +42,5 @@ extension LocationStore: CLLocationManagerDelegate {
         guard let location = locations.last else { return }
         userLatitude = location.coordinate.latitude
         userLongitude = location.coordinate.longitude
-        print(location)
     }
 }

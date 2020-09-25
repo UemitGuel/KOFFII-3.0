@@ -41,9 +41,6 @@ class CoordinatesHelper {
     func getDistance(cafeLocation: CLLocation, userLocation: CLLocation?) -> Double {
         guard let userLocation = userLocation else { return 0 }
         let distance = cafeLocation.distance(from: userLocation)
-        print(userLocation)
-        print(cafeLocation)
-        print(distance)
         return distance
     }
     
@@ -81,5 +78,9 @@ class CoordinatesHelper {
         } else {
             return "+10 km"
         }
+    }
+    
+    func setRegionMidCologne() -> MKCoordinateRegion {
+        MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50.938766, longitude: 6.959674), span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
     }
 }

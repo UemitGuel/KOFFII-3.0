@@ -18,7 +18,7 @@ struct TabBar: View {
             }
             
             NavigationView {
-                Text("Map")
+                AllCafesMapView()
             }
             .tabItem {
                 Label("Map", systemImage: "rectangle")

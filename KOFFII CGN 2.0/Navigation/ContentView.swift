@@ -17,7 +17,7 @@ struct ContentView: View {
     var body: some View {
         #if os(iOS)
         if horizontalSizeClass == .compact {
-            TabBar().environmentObject(LocationStore())
+            TabBar().environmentObject(LocationStore()).environmentObject(RegionStore()).environmentObject(MapViewStore())
         } else {
             Sidebar()
         }

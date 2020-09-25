@@ -8,7 +8,7 @@
 import Foundation
 import MapKit
 
-class RegionViewModel: ObservableObject {
+class RegionStore: ObservableObject {
     
     @Published var region: MKCoordinateRegion
     
