@@ -58,6 +58,7 @@ extension CafeView {
             cafeList = cafeList.filter { $0.hasPlug }
         }
         cafeList.sort { store.getDistance(cafeLocation: $0.location) < store.getDistance(cafeLocation: $1.location) }
+        print(cafeList)
         return cafeList
     }
 }

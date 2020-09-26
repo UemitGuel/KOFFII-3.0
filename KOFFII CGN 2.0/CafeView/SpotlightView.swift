@@ -14,7 +14,7 @@ struct SpotlightView: View {
             Text("Ümit´s Empfehlungen")
                 .font(.headline)
             TabView {
-                SpotlightItem(cafe: cafeData[1])
+                SpotlightItem(cafe: cafeData[0])
                 SpotlightItem(cafe: cafeData[1])
             }
             .tabViewStyle(PageTabViewStyle())

@@ -9,9 +9,11 @@
 import SwiftUI
 import CoreLocation
 
-struct Cafe: Hashable, Identifiable, Codable {
+struct Cafe: Identifiable, Codable {
+    
     let id = UUID()
     var name: String
+    var hours: [Hours]?
     
     var locationURL: String
     
@@ -41,5 +43,9 @@ struct Cafe: Hashable, Identifiable, Codable {
         case innenstadt = "Innenstadt"
         case belgisches = "Belgisches Viertel"
         case latin = "Latin Quarter"
-    }    
+    }
+    
+    struct Hours: Codable {
+        let day, start, end: String
+    }
 }

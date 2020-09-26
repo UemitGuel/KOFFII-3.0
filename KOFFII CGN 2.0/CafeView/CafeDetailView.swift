@@ -35,8 +35,6 @@ struct CafeDetailView: View {
                         .font(.system(.body, design: .rounded))
                         .foregroundColor(.primary).opacity(0.8)
                     FeatureDisplayView(cafe: cafe)
-                    
-                    
                     GoogleMapsButton(cafe: cafe)
                     Divider()
                     HStack {
@@ -45,26 +43,22 @@ struct CafeDetailView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(height: geo.size.height*0.25)
                             .cornerRadius(16)
-                    }
-                    Spacer()
-                    VStack(alignment: .trailing,spacing: 2) {
-                        Text("Öffnungszeiten")
-                            .font(.system(.headline, design: .rounded))
-                            .padding(.bottom, 2)
-                        Text("Montag: 8:00 - 20:00")
-                            .font(.system(.callout, design: .rounded))
-                        Text("Montag: 8:00 - 20:00")
-                            .font(.system(.callout, design: .rounded))
-                        Text("Montag: 8:00 - 20:00")
-                            .font(.system(.callout, design: .rounded))
-                        Text("Montag: 8:00 - 20:00")
-                            .font(.system(.callout, design: .rounded))
-                        Text("Montag: 8:00 - 20:00")
-                            .font(.system(.callout, design: .rounded))
-                        Text("Montag: 8:00 - 20:00")
-                            .font(.system(.callout, design: .rounded))
-                        Text("Montag: 8:00 - 20:00")
-                            .font(.system(.callout, design: .rounded))
+                        Spacer()
+                        VStack(alignment: .trailing,spacing: 2) {
+                            Text("Öffnungszeiten")
+                                .font(.system(.headline, design: .rounded))
+                                .padding(.bottom, 2)
+                            VStack(alignment: .leading) {
+                                WeekdayHours(cafe: cafe, hoursIndex: 0, workday: "Mo")
+                                WeekdayHours(cafe: cafe, hoursIndex: 1, workday: "Di")
+                                WeekdayHours(cafe: cafe, hoursIndex: 2, workday: "Mi")
+                                WeekdayHours(cafe: cafe, hoursIndex: 3, workday: "Do")
+                                WeekdayHours(cafe: cafe, hoursIndex: 4, workday: "Fr")
+                                WeekdayHours(cafe: cafe, hoursIndex: 5, workday: "Sa")
+                                WeekdayHours(cafe: cafe, hoursIndex: 6, workday: "So")
+                            }
+                        }
+                        .frame(width: geo.size.width*0.5)
                     }
                 }
                 .padding(.vertical)
@@ -92,8 +86,24 @@ struct CafeDetailView: View {
 struct CafeDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            CafeDetailView(cafe: cafeData[1])
+            CafeDetailView(cafe: cafeData[0])
         }
         .preferredColorScheme(.dark)
+    }
+}
+
+struct WeekdayHours: View {
+    
+    var cafe: Cafe
+    var hoursIndex: Int
+    var workday: String
+    
+    var body: some View {
+        HStack {
+            Text("\(workday):")
+                .frame(width:36,alignment: .leading)
+            Text("\(cafe.hours?[hoursIndex].start ?? "") - \(cafe.hours?[hoursIndex].end ?? "")")
+        }
+        .font(.system(.callout, design: .rounded))
     }
 }

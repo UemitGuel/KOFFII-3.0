@@ -26,7 +26,7 @@ struct CafeList: View {
     
     var content: some View {
             LazyVGrid(columns: columns, spacing: 32) {
-                ForEach(cafeListFiltered, id: \.self) { item in
+                ForEach(cafeListFiltered) { item in
                     NavigationLink(
                         destination: CafeDetailView(cafe: item),
                         label: {
