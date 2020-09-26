@@ -1007,5 +1007,43 @@
         "hasVegan": false,
         "hasPlug": false,
     },
+    {
+        "name": "Café Vier Achtel",
+        "hours": [
+            { "day" : "mon","start": "geschlossen", "end": "" },
+            { "day" : "tue","start": "10:00", "end": "18:00" },
+            { "day" : "wed","start": "10:00", "end": "18:00" },
+            { "day" : "thu","start": "10:00", "end": "18:00" },
+            { "day" : "fri","start": "10:00", "end": "18:00" },
+            { "day" : "sat","start": "10:00", "end": "18:00" },
+            { "day" : "sun","start": "geschlossen", "end": "" },
+        ],
+        
+        "hood": "Innenstadt",
+        "locationURL": "https://www.google.com/maps/place/Café+Vier+Achtel/@50.934252,6.9562767,17z/data=!4m12!1m6!3m5!1s0x47bf25db187ee09b:0x8e11b57b481404e8!2sCafé+Vier+Achtel!8m2!3d50.9342597!4d6.956419!3m4!1s0x47bf25db187ee09b:0x8e11b57b481404e8!8m2!3d50.9342597!4d6.956419",
+        "hasWifi": false,
+        "hasFood": false,
+        "hasVegan": false,
+        "hasPlug": false,
+    },
+    {
+        "name": "easylivin' culture",
+        "hours": [
+            { "day" : "mon","start": "10:00", "end": "18:00" },
+            { "day" : "tue","start": "10:00", "end": "18:00" },
+            { "day" : "wed","start": "10:00", "end": "18:00" },
+            { "day" : "thu","start": "10:00", "end": "18:00" },
+            { "day" : "fri","start": "10:00", "end": "18:00" },
+            { "day" : "sat","start": "10:00", "end": "18:00" },
+            { "day" : "sun","start": "10:00", "end": "18:00" },
+        ],
+        
+        "hood": "Innenstadt",
+        "locationURL": "https://www.google.com/maps/place/easylivin'+culture/@50.9344777,6.9474707,17z/data=!3m1!4b1!4m5!3m4!1s0x47bf25989f9e77f3:0xc82f57fe7672dbda!8m2!3d50.9344777!4d6.9474707",
+        "hasWifi": true,
+        "hasFood": true,
+        "hasVegan": false,
+        "hasPlug": false,
+    },
 
 ]
