@@ -15,13 +15,10 @@ struct CafeItem: View {
     
     var body: some View {
         VStack {
-            VStack(alignment: .leading, spacing: 8.0) {
-                Image(cafe.name)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                
-                
-            }
+            Image(cafe.name)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            Spacer()
             HStack {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(cafe.name)
@@ -42,9 +39,9 @@ struct CafeItem: View {
             
             FeatureDisplayView(cafe: cafe)
         }
+        .frame(height: 400)
         .background(Color(.secondarySystemBackground))
         .cornerRadius(16)
-        .shadow(radius: 10)
     }
 }
 

@@ -34,7 +34,6 @@ struct CafeList: View {
                         })
                 }
             }
-            .padding(.horizontal)
             .animation(.spring())
     }
 }

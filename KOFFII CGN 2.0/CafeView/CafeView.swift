@@ -31,11 +31,13 @@ struct CafeView: View {
     
     var body: some View {
         ScrollView(showsIndicators: false) {
-            SpotlightView()
+//            SpotlightView()
             FilterView(needWifi: $needWifi, needFood: $needFood, needVegan: $needVegan, needPlug: $needPlug)
-                .padding(.vertical, 8)
+            Divider()
             CafeList(cafeListFiltered: cafeListFiltered)
+                .padding(.top)
         }
+        .padding(.horizontal)
         .navigationTitle("KOFFII CGN")
     }
     
@@ -58,7 +60,6 @@ extension CafeView {
             cafeList = cafeList.filter { $0.hasPlug }
         }
         cafeList.sort { store.getDistance(cafeLocation: $0.location) < store.getDistance(cafeLocation: $1.location) }
-        print(cafeList)
         return cafeList
     }
 }

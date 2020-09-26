@@ -20,7 +20,7 @@ struct CafeDetailView: View {
     
     var body: some View {
         GeometryReader { geo in
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 Map(coordinateRegion: $regionVM.region , interactionModes: .all, showsUserLocation: true, userTrackingMode: $trackingMode, annotationItems: [cafe]) { item in
                     MapMarker(coordinate: item.coordinates)
                 }
@@ -61,7 +61,7 @@ struct CafeDetailView: View {
                         .frame(width: geo.size.width*0.5)
                     }
                 }
-                .padding(.vertical)
+                .padding()
                 Divider()
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Ümit´s Notizen")
@@ -72,10 +72,8 @@ struct CafeDetailView: View {
                             .padding(.bottom)
                     }
                 }
-                .padding(.vertical)
+                .padding()
             }
-            .padding()
-            
             .navigationBarTitle("", displayMode: .inline)
         }
     }

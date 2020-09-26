@@ -11,6 +11,12 @@ struct TabBar: View {
     var body: some View {
         TabView {
             NavigationView {
+                Top3View()
+            }
+            .tabItem {
+                Label("Top 3", systemImage: "seal")
+            }
+            NavigationView {
                 CafeView()
             }
             .tabItem {
@@ -23,13 +29,6 @@ struct TabBar: View {
             .tabItem {
                 Label("Map", systemImage: "rectangle")
             }
-            
-//            NavigationView {
-//                Text("Info")
-//            }
-//            .tabItem {
-//                Label("Info", systemImage: "circle")
-//            }
         }
     }
 }

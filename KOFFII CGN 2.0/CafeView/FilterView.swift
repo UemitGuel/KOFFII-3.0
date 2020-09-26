@@ -22,8 +22,6 @@ struct FilterView: View {
             FilterItem(iconImage: Image(systemName: "bolt"), filterItem: "Strom", feature: $needPlug)
             Spacer()
         }
-        .padding(.horizontal)
-
     }
 }
 
