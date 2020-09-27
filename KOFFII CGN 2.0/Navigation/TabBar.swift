@@ -11,7 +11,7 @@ struct TabBar: View {
     var body: some View {
         TabView {
             NavigationView {
-                Top3View()
+                Top3View(cafe1: cafeData[38], cafe2: cafeData[3], cafe3: cafeData[48])
             }
             .tabItem {
                 Label("Top 3", systemImage: "seal")

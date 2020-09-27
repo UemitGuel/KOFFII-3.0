@@ -69,6 +69,10 @@
             { "day" : "sun","start": "14:00", "end": "20:00" },
         ],
         
+        "notes": [
+            "Der Omi-hafte", "Ein sehr gemütlicher Ort zum Arbeiten. Das Cafe ist sehr liebevoll eingerichtet und gibt dem ganzen eine richtig entspannte atmosphäre zum arbeiten. Den Kaffee finde ich nicht so lecker wie in anderen Cafes, aber ein frischer Minztee mit Ingwer geht immer. Wlan& Steckdosen sind auch am Start"
+        ],
+        
         "hood": "Latin Quarter",
         "locationURL": "https://www.google.com/maps/place/Cafe+Duddel/@50.9291919,6.9370512,16z/data=!4m12!1m6!3m5!1s0x47bf24461163cb97:0xb4ebd8bcbfabe8e4!2zZWluYnJhbmQg4oCTIENhZsOpIGRlciBSw7ZzdGVyZWkgU8O8ZHN0YWR0!8m2!3d50.9190599!4d6.9601537!3m4!1s0x0:0x751b09ed261d1c!8m2!3d50.9280349!4d6.9345188",
         "hasWifi": true,
@@ -734,6 +738,10 @@
             { "day" : "sun","start": "10:00", "end": "18:00" },
         ],
         
+        "notes": [
+            "Der Allrounder", "Der Perfekte Ort zum Arbeiten. Wlan, Steckdosen und eine Menge leckerer Gericht zum fairen Preis. Ich mag ganz besonders die kleine Jogurt-Früchte Bowl für nur 3€. Der Kaffee ist sehr lecker und die Mitarbeiter sind sehr entspannt. Man wird auch nicht alle 10 Minuten gefragt ob man noch etwas bestellen möchte :D Absolute Top Empfehlung zum arbeiten"
+        ],
+        
         "hood": "Südstadt",
         "locationURL": "https://www.google.com/maps/place/Südgold/@50.921006,6.9659297,17z/data=!4m8!1m2!2m1!1scafe!3m4!1s0x0:0xb74e01dd478e22a7!8m2!3d50.9210061!4d6.9659295",
         "hasWifi": true,
@@ -922,6 +930,10 @@
             { "day" : "fri","start": "09:00", "end": "18:00" },
             { "day" : "sat","start": "10:00", "end": "18:00" },
             { "day" : "sun","start": "10:00", "end": "18:00" },
+        ],
+        
+        "notes": [
+            "Der Spanische" , "Man könnte meinen ich hab einen kleinen Bias für Cafes aus der Südstadt... und den hab ich auch :D Aber dieses Cafe ist richtig gut zum arbeiten. Mit einer kleinen Terrasse in einer sehr ruhigen Straße und dazu einem Innenhof. Die Gerichte sind super lecker, ich mag vor allem die Backed Eggs und Empanadas. An windigen Tagen sitzt man etwas im Durchzug, das find ich manchmal etwas nervig aber kommt ehrlich gesagt nur selten vor"
         ],
         
         "hood": "Südstadt",

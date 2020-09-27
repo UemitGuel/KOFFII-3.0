@@ -14,6 +14,7 @@ struct Cafe: Identifiable, Codable {
     let id = UUID()
     var name: String
     var hours: [Hours]?
+    var notes: [String]?
     
     var locationURL: String
     
