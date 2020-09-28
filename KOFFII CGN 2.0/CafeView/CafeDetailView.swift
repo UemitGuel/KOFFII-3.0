@@ -36,6 +36,7 @@ struct CafeDetailView: View {
                         .foregroundColor(.primary).opacity(0.8)
                     FeatureDisplayView(cafe: cafe)
                     GoogleMapsButton(cafe: cafe)
+                        .padding(.top)
                     Divider()
                     HStack {
                         Image(cafe.name)
@@ -62,17 +63,18 @@ struct CafeDetailView: View {
                     }
                 }
                 .padding()
-                Divider()
-                VStack(alignment: .leading, spacing: 4) {
-                    Text("Ümit´s Notizen")
-                        .font(.system(.headline, design: .rounded))
-                        .padding(.bottom, 4)
-                    ForEach(0..<6) { item in
-                        Label("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et", systemImage: "bubble.left")
-                            .padding(.bottom)
+                if (cafe.notes != nil) {
+                    Divider()
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Ümit´s Notizen")
+                            .font(.system(.headline, design: .rounded))
+                            .padding(.bottom, 4)
+                        Text(cafe.notes![1])
+                        .padding(.bottom)
+                        
                     }
+                    .padding()
                 }
-                .padding()
             }
             .navigationBarTitle("", displayMode: .inline)
         }

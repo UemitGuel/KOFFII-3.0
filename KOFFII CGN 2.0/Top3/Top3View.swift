@@ -15,32 +15,52 @@ struct Top3View: View {
     var cafe2: Cafe
     var cafe3: Cafe
     
+    var cafeItemHeight: CGFloat = 360
+    
     var body: some View {
         GeometryReader { geo in
             ScrollView(showsIndicators: false) {
-                HStack {
-                    CafeItem(cafe: cafe1)
-                        .padding(.bottom)
-                        .padding(.trailing)
-                    NotesView(cafe: cafe1)
-                        .frame(width: geo.size.width*0.5, alignment: .leading)
-                }
-                HStack {
-                    NotesView(cafe: cafe2)
-                        .frame(width: geo.size.width*0.5, alignment: .leading)
-                    CafeItem(cafe: cafe2)
-                        .padding(.vertical)
-                        .padding(.leading)
-                }
-                HStack {
-                    CafeItem(cafe: cafe3)
-                        .padding(.vertical)
-                        .padding(.trailing)
-                    NotesView(cafe: cafe3)
-                        .frame(width: geo.size.width*0.5, alignment: .leading)
-                }
+                NavigationLink(
+                    destination: CafeDetailView(cafe: cafe1),
+                    label: {
+                        HStack(alignment: .center) {
+                            CafeItem(cafe: cafe1, height: cafeItemHeight)
+                                .padding(.bottom)
+                                .padding(.trailing)
+                            NotesView(cafe: cafe1)
+                                .frame(width: geo.size.width*0.45, alignment: .leading)
+                            Image(systemName: "arrowtriangle.right")
+                                .padding(.leading)
+                        }
+                    })
+                NavigationLink(
+                    destination: CafeDetailView(cafe: cafe2),
+                    label: {
+                        HStack {
+                            NotesView(cafe: cafe2)
+                                .frame(width: geo.size.width*0.45, alignment: .leading)
+                            CafeItem(cafe: cafe2, height: cafeItemHeight)
+                                .padding(.vertical)
+                                .padding(.leading)
+                            Image(systemName: "arrowtriangle.right")
+                                .padding(.leading)
+                        }
+                    })
+                NavigationLink(
+                    destination: CafeDetailView(cafe: cafe3),
+                    label: {
+                        HStack {
+                            CafeItem(cafe: cafe3, height: cafeItemHeight)
+                                .padding(.bottom)
+                                .padding(.trailing)
+                            NotesView(cafe: cafe3)
+                                .frame(width: geo.size.width*0.45, alignment: .leading)
+                            Image(systemName: "arrowtriangle.right")
+                                .padding(.leading)
+                        }
+                    })
             }
-            .padding()
+            .padding(.horizontal)
             .navigationTitle("Ümit´s Top 3")
         }
         

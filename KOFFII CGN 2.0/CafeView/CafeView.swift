@@ -31,7 +31,6 @@ struct CafeView: View {
     
     var body: some View {
         ScrollView(showsIndicators: false) {
-//            SpotlightView()
             FilterView(needWifi: $needWifi, needFood: $needFood, needVegan: $needVegan, needPlug: $needPlug)
             Divider()
             CafeList(cafeListFiltered: cafeListFiltered)

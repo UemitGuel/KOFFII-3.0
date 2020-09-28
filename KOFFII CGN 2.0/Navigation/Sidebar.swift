@@ -13,11 +13,6 @@ struct Sidebar: View {
             #if os(iOS)
             content
                 .navigationTitle("KOFFII CGN")
-                .toolbar {
-                    ToolbarItem(placement: .automatic) {
-                        Image(systemName: "person.crop.circle")
-                }
-            }
             #else
             content
                 .frame(minWidth: 200, idealWidth: 250, maxWidth: 300)
@@ -27,9 +22,20 @@ struct Sidebar: View {
     
     var content: some View {
         List {
-            Label("Entdecken", systemImage: "heart.text.square")
-            Label("Cafes", systemImage: "list.dash")
-            Label("Karte", systemImage: "map")
+            NavigationLink(destination:                 Top3View(cafe1: cafeData[38], cafe2: cafeData[3], cafe3: cafeData[48])
+            ) {
+                Label("Top 3", systemImage: "seal")
+            }
+            NavigationLink(destination:                 CafeView()
+            ) {
+                Label("Cafes", systemImage: "square.grid.2x2")
+            }
+            NavigationLink(destination:                 AllCafesMapView()
+            ) {
+                Label("Map", systemImage: "rectangle")
+            }
+            
+            
         }
         .listStyle(SidebarListStyle())
     }

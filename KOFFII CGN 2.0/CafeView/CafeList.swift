@@ -30,7 +30,7 @@ struct CafeList: View {
                     NavigationLink(
                         destination: CafeDetailView(cafe: item),
                         label: {
-                            CafeItem(cafe: item)
+                            CafeItem(cafe: item, height: 400)
                         })
                 }
             }

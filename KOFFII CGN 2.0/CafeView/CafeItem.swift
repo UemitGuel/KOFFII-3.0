@@ -10,6 +10,7 @@ import SwiftUI
 struct CafeItem: View {
     
     var cafe: Cafe
+    var height: CGFloat
     
     @EnvironmentObject var store: LocationStore
     
@@ -18,9 +19,9 @@ struct CafeItem: View {
             Image(cafe.name)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-            Spacer()
+                .cornerRadius(16)
             HStack {
-                VStack(alignment: .leading, spacing: 4) {
+                VStack(alignment: .leading) {
                     Text(cafe.name)
                         .lineLimit(1)
                         .font(.system(.headline, design: .rounded))
@@ -34,14 +35,9 @@ struct CafeItem: View {
                 }
                 Spacer()
             }
-            .padding(.horizontal, 8)
-            .padding(.top, 8)
-            
             FeatureDisplayView(cafe: cafe)
         }
-        .frame(height: 400)
-        .background(Color(.secondarySystemBackground))
-        .cornerRadius(16)
+        .frame(height: height)
     }
 }
 
@@ -49,7 +45,7 @@ struct CafeItem: View {
 struct CoffeeItem_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            CafeItem(cafe: cafeData[5])
+            CafeItem(cafe: cafeData[5],height: 400)
                 .preferredColorScheme(.dark)
         }
     }
@@ -61,22 +57,18 @@ struct FeatureDisplayView: View {
     
     var body: some View {
         HStack {
-            Spacer()
             Image(systemName: "wifi")
                 .foregroundColor(cafe.hasWifi ? .primary : Color(.tertiaryLabel).opacity(0.8))
             Spacer()
             Image("FOOD")
                 .foregroundColor(cafe.hasFood ? .primary : Color(.tertiaryLabel).opacity(0.8))
-            
             Spacer()
             Image(systemName: "leaf")
                 .foregroundColor(cafe.hasVegan ? .primary : Color(.tertiaryLabel).opacity(0.8))
-            
             Spacer()
             Image(systemName: "bolt")
                 .foregroundColor(cafe.hasPlug ? .primary : Color(.tertiaryLabel).opacity(0.8))
-            Spacer()
         }
-        .padding(.vertical)
+        .padding(.horizontal)
     }
 }

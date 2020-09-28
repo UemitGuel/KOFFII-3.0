@@ -19,10 +19,10 @@ struct ContentView: View {
         if horizontalSizeClass == .compact {
             TabBar().environmentObject(LocationStore()).environmentObject(RegionStore()).environmentObject(MapViewStore())
         } else {
-            Sidebar()
+            Sidebar().environmentObject(LocationStore()).environmentObject(RegionStore()).environmentObject(MapViewStore())
         }
         #else
-        Sidebar()
+        Sidebar().environmentObject(LocationStore()).environmentObject(RegionStore()).environmentObject(MapViewStore())
             .frame(minWidth: 1000, minHeight: 600)
         #endif
     }
