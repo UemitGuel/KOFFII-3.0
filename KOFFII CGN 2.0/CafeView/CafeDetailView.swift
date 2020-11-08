@@ -63,13 +63,13 @@ struct CafeDetailView: View {
                     }
                 }
                 .padding()
-                if (cafe.notes != nil) {
+                if (!cafe.notes.isEmpty) {
                     Divider()
                     VStack(alignment: .leading, spacing: 4) {
                         Text("Ümit´s Notizen")
                             .font(.system(.headline, design: .rounded))
                             .padding(.bottom, 4)
-                        Text(cafe.notes![1])
+                        Text(cafe.notes[1])
                         .padding(.bottom)
                         
                     }

@@ -34,6 +34,7 @@
 		B3F3F3ED25188DD300D91190 /* CafeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3EC25188DD300D91190 /* CafeView.swift */; };
 		B3F3F439251900CA00D91190 /* CafeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F438251900CA00D91190 /* CafeItem.swift */; };
 		B3F3F446251902D000D91190 /* CafeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F445251902D000D91190 /* CafeList.swift */; };
+		E406A5522557F1BE002D199B /* DecodableDefaultSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		B3F3F3EC25188DD300D91190 /* CafeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeView.swift; sourceTree = "<group>"; };
 		B3F3F438251900CA00D91190 /* CafeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeItem.swift; sourceTree = "<group>"; };
 		B3F3F445251902D000D91190 /* CafeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeList.swift; sourceTree = "<group>"; };
+		E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableDefaultSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				B3B520832519D90200368F47 /* cafeData.json */,
 				B3B520882519D92800368F47 /* Data.swift */,
 				B3B5208D2519D93100368F47 /* Cafe.swift */,
+				E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				B3F3F3ED25188DD300D91190 /* CafeView.swift in Sources */,
 				B31CEBE9251E1FF900B7501E /* MapView.swift in Sources */,
 				B3C3368C251DE78200755B1E /* AllCafesMapView.swift in Sources */,
+				E406A5522557F1BE002D199B /* DecodableDefaultSource.swift in Sources */,
 				B31CEBF1251E279900B7501E /* MapViewStore.swift in Sources */,
 				B3B8738B251B3EBD006CA136 /* CafeDetailView.swift in Sources */,
 				B3F3F446251902D000D91190 /* CafeList.swift in Sources */,

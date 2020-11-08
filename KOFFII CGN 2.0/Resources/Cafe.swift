@@ -14,7 +14,7 @@ struct Cafe: Identifiable, Codable {
     let id = UUID()
     var name: String
     var hours: [Hours]?
-    var notes: [String]?
+    @DecodableDefault.EmptyList var notes: [String]
     
     var locationURL: String
     
@@ -28,10 +28,10 @@ struct Cafe: Identifiable, Codable {
         CLLocation(latitude: coordinates.latitude, longitude: coordinates.longitude)
     }
     
-    var hasWifi: Bool
-    var hasFood: Bool
-    var hasVegan: Bool
-    var hasPlug: Bool
+    @DecodableDefault.False var hasWifi: Bool
+    @DecodableDefault.False var hasFood: Bool
+    @DecodableDefault.False var hasVegan: Bool
+    @DecodableDefault.False var hasPlug: Bool
     
     var hood: Hood
     enum Hood: String, CaseIterable, Codable, Hashable {

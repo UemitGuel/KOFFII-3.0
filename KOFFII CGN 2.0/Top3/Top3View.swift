@@ -80,10 +80,10 @@ struct NotesView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(cafe.notes?[0] ?? "coming soon")
+            Text(cafe.notes[0])
                 .font(.system(.headline, design: .rounded))
                 .foregroundColor(.primary)
-            Text(cafe.notes?[1] ?? "")
+            Text(cafe.notes[1])
                     .font(.system(.subheadline, design: .rounded))
                     .foregroundColor(.primary).opacity(0.8)
             
