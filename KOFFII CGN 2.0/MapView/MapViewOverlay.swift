@@ -42,7 +42,7 @@ struct MapViewOverlay: View {
             }
             .padding()
             .background(Color(.systemBackground))
-            .cornerRadius(20)
+            .cornerRadius(16)
             .shadow(radius: 10)
         }
         .padding()

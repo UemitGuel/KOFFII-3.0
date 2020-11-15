@@ -19,6 +19,7 @@ struct CafeItem: View {
             Image(cafe.name)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+                .frame(height: 200)
                 .cornerRadius(16)
             HStack {
                 VStack(alignment: .leading) {
