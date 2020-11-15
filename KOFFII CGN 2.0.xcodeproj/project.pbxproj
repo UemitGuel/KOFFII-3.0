@@ -35,6 +35,26 @@
 		B3F3F439251900CA00D91190 /* CafeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F438251900CA00D91190 /* CafeItem.swift */; };
 		B3F3F446251902D000D91190 /* CafeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F445251902D000D91190 /* CafeList.swift */; };
 		E406A5522557F1BE002D199B /* DecodableDefaultSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */; };
+		E447731E2561389100B772C2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E447731D2561389100B772C2 /* WidgetKit.framework */; };
+		E44773202561389100B772C2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E447731F2561389100B772C2 /* SwiftUI.framework */; };
+		E44773232561389100B772C2 /* KOFFII_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44773222561389100B772C2 /* KOFFII_Widget.swift */; };
+		E44773262561389200B772C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44773252561389200B772C2 /* Assets.xcassets */; };
+		E44773282561389200B772C2 /* KOFFII_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E44773242561389100B772C2 /* KOFFII_Widget.intentdefinition */; };
+		E44773292561389200B772C2 /* KOFFII_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E44773242561389100B772C2 /* KOFFII_Widget.intentdefinition */; };
+		E447732C2561389200B772C2 /* KOFFII WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E447731B2561389100B772C2 /* KOFFII WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E447734C25614CC600B772C2 /* cafeData.json in Resources */ = {isa = PBXBuildFile; fileRef = B3B520832519D90200368F47 /* cafeData.json */; };
+		E447734D25614CC600B772C2 /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5208D2519D93100368F47 /* Cafe.swift */; };
+		E447734E25614CC600B772C2 /* DecodableDefaultSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */; };
+		E447734F25614CC600B772C2 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B520882519D92800368F47 /* Data.swift */; };
+		E447735425614CDD00B772C2 /* LocationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38960BC251B4C67001659FD /* LocationStore.swift */; };
+		E447735525614CDD00B772C2 /* CoordinatesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B330CEBF251C934900FB34E4 /* CoordinatesHelper.swift */; };
+		E447735625614CDD00B772C2 /* RegionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38960C1251B50A2001659FD /* RegionStore.swift */; };
+		E447735725614CDD00B772C2 /* AnnotationsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33571DD251E0C4D00D06BC4 /* AnnotationsHelper.swift */; };
+		E447735C25614CF300B772C2 /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31CEC0D251E386A00B7501E /* DismissButton.swift */; };
+		E447735D25614CF300B772C2 /* GoogleMapsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31CEC08251E379400B7501E /* GoogleMapsButton.swift */; };
+		E447736225615D9E00B772C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3F3F3BD25188A1300D91190 /* Assets.xcassets */; };
+		E44773672561661B00B772C2 /* CafeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B8738A251B3EBD006CA136 /* CafeDetailView.swift */; };
+		E447736C256166C600B772C2 /* CafeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F438251900CA00D91190 /* CafeItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +72,28 @@
 			remoteGlobalIDString = B3F3F3B525188A1000D91190;
 			remoteInfo = "KOFFII CGN 2.0";
 		};
+		E447732A2561389200B772C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3F3F3AE25188A1000D91190 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E447731A2561389100B772C2;
+			remoteInfo = "KOFFII WidgetExtension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E447732D2561389200B772C2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E447732C2561389200B772C2 /* KOFFII WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B31CEBE8251E1FF900B7501E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -89,6 +130,13 @@
 		B3F3F438251900CA00D91190 /* CafeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeItem.swift; sourceTree = "<group>"; };
 		B3F3F445251902D000D91190 /* CafeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeList.swift; sourceTree = "<group>"; };
 		E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableDefaultSource.swift; sourceTree = "<group>"; };
+		E447731B2561389100B772C2 /* KOFFII WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "KOFFII WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E447731D2561389100B772C2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E447731F2561389100B772C2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E44773222561389100B772C2 /* KOFFII_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KOFFII_Widget.swift; sourceTree = "<group>"; };
+		E44773242561389100B772C2 /* KOFFII_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = KOFFII_Widget.intentdefinition; sourceTree = "<group>"; };
+		E44773252561389200B772C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E44773272561389200B772C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +158,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E44773182561389100B772C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E44773202561389100B772C2 /* SwiftUI.framework in Frameworks */,
+				E447731E2561389100B772C2 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +232,8 @@
 				B3F3F3B825188A1100D91190 /* KOFFII CGN 2.0 */,
 				B3F3F3CA25188A1300D91190 /* KOFFII CGN 2.0Tests */,
 				B3F3F3D525188A1300D91190 /* KOFFII CGN 2.0UITests */,
+				E44773212561389100B772C2 /* KOFFII Widget */,
+				E447731C2561389100B772C2 /* Frameworks */,
 				B3F3F3B725188A1000D91190 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -185,6 +244,7 @@
 				B3F3F3B625188A1000D91190 /* KOFFII CGN 2.0.app */,
 				B3F3F3C725188A1300D91190 /* KOFFII CGN 2.0Tests.xctest */,
 				B3F3F3D225188A1300D91190 /* KOFFII CGN 2.0UITests.xctest */,
+				E447731B2561389100B772C2 /* KOFFII WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -252,6 +312,26 @@
 			path = Items;
 			sourceTree = "<group>";
 		};
+		E447731C2561389100B772C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E447731D2561389100B772C2 /* WidgetKit.framework */,
+				E447731F2561389100B772C2 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E44773212561389100B772C2 /* KOFFII Widget */ = {
+			isa = PBXGroup;
+			children = (
+				E44773222561389100B772C2 /* KOFFII_Widget.swift */,
+				E44773242561389100B772C2 /* KOFFII_Widget.intentdefinition */,
+				E44773252561389200B772C2 /* Assets.xcassets */,
+				E44773272561389200B772C2 /* Info.plist */,
+			);
+			path = "KOFFII Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,10 +342,12 @@
 				B3F3F3B225188A1000D91190 /* Sources */,
 				B3F3F3B325188A1000D91190 /* Frameworks */,
 				B3F3F3B425188A1000D91190 /* Resources */,
+				E447732D2561389200B772C2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E447732B2561389200B772C2 /* PBXTargetDependency */,
 			);
 			name = "KOFFII CGN 2.0";
 			packageProductDependencies = (
@@ -310,13 +392,30 @@
 			productReference = B3F3F3D225188A1300D91190 /* KOFFII CGN 2.0UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E447731A2561389100B772C2 /* KOFFII WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E44773302561389200B772C2 /* Build configuration list for PBXNativeTarget "KOFFII WidgetExtension" */;
+			buildPhases = (
+				E44773172561389100B772C2 /* Sources */,
+				E44773182561389100B772C2 /* Frameworks */,
+				E44773192561389100B772C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KOFFII WidgetExtension";
+			productName = "KOFFII WidgetExtension";
+			productReference = E447731B2561389100B772C2 /* KOFFII WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B3F3F3AE25188A1000D91190 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					B3F3F3B525188A1000D91190 = {
@@ -329,6 +428,9 @@
 					B3F3F3D125188A1300D91190 = {
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = B3F3F3B525188A1000D91190;
+					};
+					E447731A2561389100B772C2 = {
+						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
@@ -350,6 +452,7 @@
 				B3F3F3B525188A1000D91190 /* KOFFII CGN 2.0 */,
 				B3F3F3C625188A1300D91190 /* KOFFII CGN 2.0Tests */,
 				B3F3F3D125188A1300D91190 /* KOFFII CGN 2.0UITests */,
+				E447731A2561389100B772C2 /* KOFFII WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -379,6 +482,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E44773192561389100B772C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E447734C25614CC600B772C2 /* cafeData.json in Resources */,
+				E447736225615D9E00B772C2 /* Assets.xcassets in Resources */,
+				E44773262561389200B772C2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -396,6 +509,7 @@
 				B3C3368C251DE78200755B1E /* AllCafesMapView.swift in Sources */,
 				E406A5522557F1BE002D199B /* DecodableDefaultSource.swift in Sources */,
 				B31CEBF1251E279900B7501E /* MapViewStore.swift in Sources */,
+				E44773292561389200B772C2 /* KOFFII_Widget.intentdefinition in Sources */,
 				B3B8738B251B3EBD006CA136 /* CafeDetailView.swift in Sources */,
 				B3F3F446251902D000D91190 /* CafeList.swift in Sources */,
 				B3F3F439251900CA00D91190 /* CafeItem.swift in Sources */,
@@ -428,6 +542,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E44773172561389100B772C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E447735525614CDD00B772C2 /* CoordinatesHelper.swift in Sources */,
+				E447734E25614CC600B772C2 /* DecodableDefaultSource.swift in Sources */,
+				E447734F25614CC600B772C2 /* Data.swift in Sources */,
+				E447735425614CDD00B772C2 /* LocationStore.swift in Sources */,
+				E447735D25614CF300B772C2 /* GoogleMapsButton.swift in Sources */,
+				E447736C256166C600B772C2 /* CafeItem.swift in Sources */,
+				E447735725614CDD00B772C2 /* AnnotationsHelper.swift in Sources */,
+				E44773282561389200B772C2 /* KOFFII_Widget.intentdefinition in Sources */,
+				E447735625614CDD00B772C2 /* RegionStore.swift in Sources */,
+				E44773672561661B00B772C2 /* CafeDetailView.swift in Sources */,
+				E44773232561389100B772C2 /* KOFFII_Widget.swift in Sources */,
+				E447735C25614CF300B772C2 /* DismissButton.swift in Sources */,
+				E447734D25614CC600B772C2 /* Cafe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -440,6 +574,11 @@
 			isa = PBXTargetDependency;
 			target = B3F3F3B525188A1000D91190 /* KOFFII CGN 2.0 */;
 			targetProxy = B3F3F3D325188A1300D91190 /* PBXContainerItemProxy */;
+		};
+		E447732B2561389200B772C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E447731A2561389100B772C2 /* KOFFII WidgetExtension */;
+			targetProxy = E447732A2561389200B772C2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -563,6 +702,7 @@
 		B3F3F3DC25188A1300D91190 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -587,6 +727,7 @@
 		B3F3F3DD25188A1300D91190 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -692,6 +833,50 @@
 			};
 			name = Release;
 		};
+		E447732E2561389200B772C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YLGTKU7SLK;
+				INFOPLIST_FILE = "KOFFII Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sketchup.PU-.a-simple-coffee-guide-endversion.KOFFII-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E447732F2561389200B772C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YLGTKU7SLK;
+				INFOPLIST_FILE = "KOFFII Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sketchup.PU-.a-simple-coffee-guide-endversion.KOFFII-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -727,6 +912,15 @@
 			buildConfigurations = (
 				B3F3F3E225188A1300D91190 /* Debug */,
 				B3F3F3E325188A1300D91190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E44773302561389200B772C2 /* Build configuration list for PBXNativeTarget "KOFFII WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E447732E2561389200B772C2 /* Debug */,
+				E447732F2561389200B772C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

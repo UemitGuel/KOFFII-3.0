@@ -17,7 +17,7 @@ struct GoogleMapsButton: View {
     }
     
     var body: some View {
-        HStack {
+        HStack(alignment: .top) {
             Spacer()
             Link("In Google Maps öffnen", destination: googleMapsUrl)
             Spacer()

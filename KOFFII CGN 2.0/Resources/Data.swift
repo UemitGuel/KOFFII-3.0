@@ -9,13 +9,14 @@
 import Foundation
 
 let cafeData: [Cafe] = load("cafeData.json")
+let topThreeOfTheMonth: [Cafe] = [cafeData[38], cafeData[3], cafeData[48]]
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
     
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
-        else {
-            fatalError("Couldn´t find \(filename) in main bundle.")
+    else {
+        fatalError("Couldn´t find \(filename) in main bundle.")
     }
     
     do {
