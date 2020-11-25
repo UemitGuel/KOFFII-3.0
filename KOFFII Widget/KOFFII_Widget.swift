@@ -36,6 +36,7 @@ extension KOFFII_Widget {
             completion(entry)
         }
         
+        ///https://developer.apple.com/documentation/widgetkit/keeping-a-widget-up-to-date
         func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> Void) {
             var entries: [Entry] = []
             
@@ -157,14 +158,6 @@ struct KOFFII_WidgetEntryView : View {
 
 struct KOFFII_Widget_Previews: PreviewProvider {
     static var previews: some View {
-//        Group {
-//            KOFFII_WidgetEntryView(entry: KOFFII_Widget.Entry(date: Date(), cafe: topThreeOfTheMonth[0], image: Image(topThreeOfTheMonth[0].name)))
-//                .previewContext(WidgetPreviewContext(family: .systemSmall))
-//            KOFFII_WidgetEntryView(entry: KOFFII_Widget.Entry(date: Date(), cafe: topThreeOfTheMonth[0], image: Image(topThreeOfTheMonth[0].name)))
-//                .previewContext(WidgetPreviewContext(family: .systemMedium))
-//            KOFFII_WidgetEntryView(entry: KOFFII_Widget.Entry(date: Date(), cafe: topThreeOfTheMonth[0], image: Image(topThreeOfTheMonth[0].name)))
-//                .previewContext(WidgetPreviewContext(family: .systemLarge))
-//        }
         Group {
             KOFFII_WidgetEntryView(entry: KOFFII_Widget.Entry(date: Date(), cafe: topThreeOfTheMonth[0], image: Image(topThreeOfTheMonth[0].name)))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
