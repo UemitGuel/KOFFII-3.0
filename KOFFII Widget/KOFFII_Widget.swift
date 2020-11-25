@@ -1,9 +1,4 @@
-//
-//  KOFFII_Widget.swift
-//  KOFFII Widget
-//
-//  Created by Gül, Ümit on 15.11.20.
-//
+//https://developer.apple.com/documentation/widgetkit/creating-a-widget-extension
 
 import WidgetKit
 import SwiftUI
@@ -14,6 +9,7 @@ struct KOFFII_Widget: Widget {
     let kind: String = "KOFFII_Widget"
     
     var body: some WidgetConfiguration {
+        ///StaticConfiguration(non-userconfigurable) vs IntentConfiguration(userconfigurable)
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             KOFFII_WidgetEntryView(entry: entry)
         }
@@ -22,14 +18,19 @@ struct KOFFII_Widget: Widget {
     }
 }
 
+///  Provider: An object conforming to TimelineProvider that produces a timeline telling WidgetKit when to render the widget. A timeline contains a custom TimelineEntry type that you define.
 extension KOFFII_Widget {
+    
     struct Provider: TimelineProvider {
+        
         typealias Entry = KOFFII_Widget.Entry
         
+        ///When WidgetKit displays your widget for the first time, it renders the widget’s view as a placeholder.
         func placeholder(in context: Context) -> Entry {
             Entry(date: Date(), cafe: topThreeOfTheMonth[0], image: Image(topThreeOfTheMonth[0].name))
         }
         
+        ///To show your widget in the widget gallery, WidgetKit asks the provider for a preview snapshot.
         func getSnapshot(in context: Context, completion: @escaping (Entry) -> Void) {
             let entry = Entry(date: Date(), cafe: topThreeOfTheMonth[1], image: Image(topThreeOfTheMonth[0].name))
             completion(entry)
@@ -40,7 +41,7 @@ extension KOFFII_Widget {
             
             let currentDate = Date()
             for index in 0..<topThreeOfTheMonth.count {
-                let entryDate = Calendar.current.date(byAdding: .minute, value: index, to: currentDate)!
+                let entryDate = Calendar.current.date(byAdding: .hour, value: index, to: currentDate)!
                 let entry = Entry(date: entryDate, cafe: topThreeOfTheMonth[index], image: Image(topThreeOfTheMonth[index].name))
                 entries.append(entry)
             }
@@ -53,6 +54,7 @@ extension KOFFII_Widget {
 
 
 extension KOFFII_Widget {
+
     struct Entry: TimelineEntry {
         var date: Date
         var cafe: Cafe
@@ -61,6 +63,7 @@ extension KOFFII_Widget {
 }
 
 struct KOFFII_WidgetEntryView : View {
+    
     var entry: KOFFII_Widget.Provider.Entry
     
     @Environment(\.widgetFamily) private var widgetFamily
@@ -154,13 +157,25 @@ struct KOFFII_WidgetEntryView : View {
 
 struct KOFFII_Widget_Previews: PreviewProvider {
     static var previews: some View {
+//        Group {
+//            KOFFII_WidgetEntryView(entry: KOFFII_Widget.Entry(date: Date(), cafe: topThreeOfTheMonth[0], image: Image(topThreeOfTheMonth[0].name)))
+//                .previewContext(WidgetPreviewContext(family: .systemSmall))
+//            KOFFII_WidgetEntryView(entry: KOFFII_Widget.Entry(date: Date(), cafe: topThreeOfTheMonth[0], image: Image(topThreeOfTheMonth[0].name)))
+//                .previewContext(WidgetPreviewContext(family: .systemMedium))
+//            KOFFII_WidgetEntryView(entry: KOFFII_Widget.Entry(date: Date(), cafe: topThreeOfTheMonth[0], image: Image(topThreeOfTheMonth[0].name)))
+//                .previewContext(WidgetPreviewContext(family: .systemLarge))
+//        }
         Group {
             KOFFII_WidgetEntryView(entry: KOFFII_Widget.Entry(date: Date(), cafe: topThreeOfTheMonth[0], image: Image(topThreeOfTheMonth[0].name)))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
+                .environment(\.colorScheme, .dark)
             KOFFII_WidgetEntryView(entry: KOFFII_Widget.Entry(date: Date(), cafe: topThreeOfTheMonth[0], image: Image(topThreeOfTheMonth[0].name)))
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
+                .environment(\.colorScheme, .dark)
             KOFFII_WidgetEntryView(entry: KOFFII_Widget.Entry(date: Date(), cafe: topThreeOfTheMonth[0], image: Image(topThreeOfTheMonth[0].name)))
                 .previewContext(WidgetPreviewContext(family: .systemLarge))
+                .environment(\.colorScheme, .dark)
         }
+        
     }
 }
