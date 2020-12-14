@@ -11,7 +11,7 @@ import CoreLocation
 
 struct Cafe: Identifiable, Codable {
     
-    let id = UUID()
+    var id = UUID()
     var name: String
     var hours: [Hours]?
     @DecodableDefault.EmptyList var notes: [String]
