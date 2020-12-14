@@ -839,6 +839,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = YLGTKU7SLK;
 				INFOPLIST_FILE = "KOFFII Widget/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
@@ -847,6 +848,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 6.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sketchup.PU-.a-simple-coffee-guide-endversion.KOFFII-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -861,6 +863,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = YLGTKU7SLK;
 				INFOPLIST_FILE = "KOFFII Widget/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
@@ -869,6 +872,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 6.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sketchup.PU-.a-simple-coffee-guide-endversion.KOFFII-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
