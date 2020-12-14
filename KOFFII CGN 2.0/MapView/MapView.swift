@@ -64,7 +64,7 @@ struct MapView: UIViewRepresentable {
         }
         
         func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-            let choosenCafeName = view.annotation?.title
+            var choosenCafeName = view.annotation?.title
             
             if let cafe = cafeData.first(where: {$0.name == choosenCafeName}) {
                 self.mapViewStore.changeChoosenCafe(cafe: cafe)
