@@ -14,24 +14,25 @@ struct CafeItem: View {
     @EnvironmentObject var store: LocationStore
     
     var body: some View {
-        VStack {
-            HStack {
-                VStack(alignment: .leading) {
-                    Text(cafe.name)
-                        .lineLimit(1)
-                        .font(.system(.headline, design: .rounded))
-                        .foregroundColor(.primary)
-                    Text(cafe.hood.rawValue)
-                        .font(.system(.subheadline, design: .rounded))
-                        .foregroundColor(.primary).opacity(0.8)
-                    Text(store.getDistanceAsString(cafeLocation: cafe.location))
-                        .font(.system(.subheadline, design: .rounded))
-                        .foregroundColor(.primary).opacity(0.8)
-                }
-                Spacer()
+        HStack(alignment: .center) {
+            Text(store.getDistanceAsString(cafeLocation: cafe.location))
+                .font(.title3)
+                .foregroundColor(Color.primary)
+            VStack(alignment: .leading) {
+                Text(cafe.name)
+                    .foregroundColor(Color.primary)
+                    .lineLimit(1)
+                    .font(.system(.headline, design: .rounded))
+                Text(cafe.hood.rawValue)
+                    .foregroundColor(Color.secondary)
+                    .lineLimit(1)
+                FeatureDisplayView(cafe: cafe)
             }
-            FeatureDisplayView(cafe: cafe)
+            Image(systemName: "chevron.right")
+                .foregroundColor(Color.secondary)
         }
+        .font(.subheadline)
+        .padding(.vertical)
     }
 }
 

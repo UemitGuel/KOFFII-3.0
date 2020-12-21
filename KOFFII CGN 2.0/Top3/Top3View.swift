@@ -31,6 +31,7 @@ struct Top3View: View {
             }
             .navigationTitle("Ümit´t Top 3")
         }
+        .padding(.horizontal)
     }
 }
 

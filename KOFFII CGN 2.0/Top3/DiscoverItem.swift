@@ -16,7 +16,7 @@ struct DiscoverItem: View {
                 Image(cafe.name)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(height: 500)
+                    .frame(height: 450)
                     bar.background(VisualEffectBlur())
             }
             .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
@@ -30,6 +30,7 @@ struct DiscoverItem: View {
             VStack(alignment: .leading) {
                 Text("\(cafe.name) - \(cafe.notes[0])")
                     .font(.headline)
+                    .foregroundColor(Color(.label))
                     .bold()
                 Text(cafe.notes[1])
                     .foregroundColor(.secondary)
