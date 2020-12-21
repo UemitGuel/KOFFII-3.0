@@ -27,7 +27,7 @@ struct TabBar: View {
                 AllCafesMapView()
             }
             .tabItem {
-                Label("Map", systemImage: "map")
+                Label("Karte", systemImage: "map")
             }
         }
     }
