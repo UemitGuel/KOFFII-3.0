@@ -55,6 +55,7 @@
 		E447736225615D9E00B772C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3F3F3BD25188A1300D91190 /* Assets.xcassets */; };
 		E44773672561661B00B772C2 /* CafeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B8738A251B3EBD006CA136 /* CafeDetailView.swift */; };
 		E447736C256166C600B772C2 /* CafeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F438251900CA00D91190 /* CafeItem.swift */; };
+		E492FEFB2590EAEC00881C1F /* DiscoverItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E492FEFA2590EAEC00881C1F /* DiscoverItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		E44773242561389100B772C2 /* KOFFII_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = KOFFII_Widget.intentdefinition; sourceTree = "<group>"; };
 		E44773252561389200B772C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E44773272561389200B772C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E492FEFA2590EAEC00881C1F /* DiscoverItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				B32897AD251FA1BA0098A6E7 /* Top3View.swift */,
+				E492FEFA2590EAEC00881C1F /* DiscoverItem.swift */,
 			);
 			path = Top3;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 				B33571DE251E0C4D00D06BC4 /* AnnotationsHelper.swift in Sources */,
 				B3B5208E2519D93100368F47 /* Cafe.swift in Sources */,
 				B38960BD251B4C68001659FD /* LocationStore.swift in Sources */,
+				E492FEFB2590EAEC00881C1F /* DiscoverItem.swift in Sources */,
 				B3B520932519E1C400368F47 /* TabBar.swift in Sources */,
 				B330CEC0251C934900FB34E4 /* CoordinatesHelper.swift in Sources */,
 				B31CEC04251E326400B7501E /* MapViewOverlay.swift in Sources */,
