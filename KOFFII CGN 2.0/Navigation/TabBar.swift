@@ -20,7 +20,7 @@ struct TabBar: View {
                 CafeView()
             }
             .tabItem {
-                Label("Suchen", systemImage: "magnifyingglass")
+                Label("Liste", systemImage: "list.dash")
             }
             
             NavigationView {
