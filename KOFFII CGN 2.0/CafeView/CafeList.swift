@@ -20,21 +20,35 @@ struct CafeList: View {
         #endif
     }
     
-    let columns = [
-        GridItem(.adaptive(minimum: 160), spacing: 16)
-    ]
-    
     var content: some View {
-            LazyVGrid(columns: columns, spacing: 32) {
-                ForEach(cafeListFiltered) { item in
-                    NavigationLink(
-                        destination: CafeDetailView(cafe: item),
-                        label: {
-                            CafeItem(cafe: item, height: 400)
-                        })
-                }
-            }
-            .animation(.spring())
+        ForEach(cafeListFiltered) { item in
+            NavigationLink(
+                destination: CafeDetailView(cafe: item),
+                label: {
+                    HStack(spacing:0) {
+                        RoundedRectangle(cornerRadius: 8)
+                            .frame(width:1)
+                            .background(Color.accentColor)
+                        VStack {
+                            RoundedRectangle(cornerRadius: 8)
+                                .frame(height:1)
+                                .background(Color.accentColor)
+                                .padding(.bottom, 8)
+                            CafeItem(cafe: item)
+                                .padding(.bottom, 8)
+                                .padding(.horizontal)
+                            RoundedRectangle(cornerRadius: 8)
+                                .frame(height:1)
+                                .background(Color.accentColor)
+                        }
+                        RoundedRectangle(cornerRadius: 8)
+                            .frame(width:1)
+                            .background(Color.accentColor)
+                    }
+                    .padding()
+
+                })
+        }
     }
 }
 

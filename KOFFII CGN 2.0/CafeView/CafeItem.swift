@@ -10,17 +10,11 @@ import SwiftUI
 struct CafeItem: View {
     
     var cafe: Cafe
-    var height: CGFloat
     
     @EnvironmentObject var store: LocationStore
     
     var body: some View {
         VStack {
-            Image(cafe.name)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(height: 200)
-                .cornerRadius(16)
             HStack {
                 VStack(alignment: .leading) {
                     Text(cafe.name)
@@ -38,7 +32,6 @@ struct CafeItem: View {
             }
             FeatureDisplayView(cafe: cafe)
         }
-        .frame(height: height)
     }
 }
 
@@ -46,7 +39,7 @@ struct CafeItem: View {
 struct CoffeeItem_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            CafeItem(cafe: cafeData[5],height: 400)
+            CafeItem(cafe: cafeData[5])
                 .preferredColorScheme(.dark)
         }
     }

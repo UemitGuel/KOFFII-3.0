@@ -24,7 +24,7 @@ struct Top3View: View {
                     destination: CafeDetailView(cafe: cafe1),
                     label: {
                         HStack(alignment: .center) {
-                            CafeItem(cafe: cafe1, height: cafeItemHeight)
+                            CafeItem(cafe: cafe1)
                                 .padding(.bottom)
                                 .padding(.trailing)
                             NotesView(cafe: cafe1)
@@ -39,7 +39,7 @@ struct Top3View: View {
                         HStack {
                             NotesView(cafe: cafe2)
                                 .frame(width: geo.size.width*0.45, alignment: .leading)
-                            CafeItem(cafe: cafe2, height: cafeItemHeight)
+                            CafeItem(cafe: cafe2)
                                 .padding(.vertical)
                                 .padding(.leading)
                             Image(systemName: "arrowtriangle.right")
@@ -50,7 +50,7 @@ struct Top3View: View {
                     destination: CafeDetailView(cafe: cafe3),
                     label: {
                         HStack {
-                            CafeItem(cafe: cafe3, height: cafeItemHeight)
+                            CafeItem(cafe: cafe3)
                                 .padding(.bottom)
                                 .padding(.trailing)
                             NotesView(cafe: cafe3)
