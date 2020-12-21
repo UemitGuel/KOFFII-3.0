@@ -14,20 +14,20 @@ struct TabBar: View {
                 Top3View(cafe1: topThreeOfTheMonth[0], cafe2: topThreeOfTheMonth[1], cafe3: topThreeOfTheMonth[2])
             }
             .tabItem {
-                Label("Top 3", systemImage: "seal")
+                Label("Entdecken", systemImage: "heart.text.square")
             }
             NavigationView {
                 CafeView()
             }
             .tabItem {
-                Label("Cafes", systemImage: "square.grid.2x2")
+                Label("Suchen", systemImage: "magnifyingglass")
             }
             
             NavigationView {
                 AllCafesMapView()
             }
             .tabItem {
-                Label("Map", systemImage: "rectangle")
+                Label("Map", systemImage: "map")
             }
         }
     }
