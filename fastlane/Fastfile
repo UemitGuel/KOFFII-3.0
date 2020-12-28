@@ -1,0 +1,10 @@
+lane :screenshots do
+  capture_screenshots
+  upload_to_app_store
+end
+
+lane :beta do
+  sync_code_signing(type: "appstore")    # see code signing guide for more information
+  build_app(scheme: "KOFFII CGN 2.0")
+  upload_to_testflight
+end

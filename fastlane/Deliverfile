@@ -1,0 +1,16 @@
+# The Deliverfile allows you to store various App Store Connect metadata
+# For more information, check out the docs
+# https://docs.fastlane.tools/actions/deliver/
+languages(['de-DE'])
+
+release_notes({
+  'de-DE' => "Verbesserungen"
+})
+
+username('uemitgul@gmail.com')
+
+team_id('119648804')
+
+app_identifier('com.sketchup.PU-.a-simple-coffee-guide-endversion')
+
+force true

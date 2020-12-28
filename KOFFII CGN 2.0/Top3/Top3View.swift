@@ -29,7 +29,7 @@ struct Top3View: View {
                 destination: CafeDetailView(cafe: cafe3)) {
                 DiscoverItem(cafe: cafe3)
             }
-            .navigationTitle("Ümit´t Top 3")
+            .navigationTitle("Ümit´s Top 3")
         }
         .padding(.horizontal)
     }
