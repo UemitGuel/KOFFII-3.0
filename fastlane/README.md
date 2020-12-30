@@ -20,6 +20,16 @@ or alternatively using `brew install fastlane`
 fastlane screenshots
 ```
 
+### certificates
+```
+fastlane certificates
+```
+
+### upload
+```
+fastlane upload
+```
+
 
 ----
 

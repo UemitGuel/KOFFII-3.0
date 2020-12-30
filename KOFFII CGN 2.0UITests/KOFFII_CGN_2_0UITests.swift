@@ -24,12 +24,31 @@ class KOFFII_CGN_2_0UITests: XCTestCase {
 
     func testExample() throws {
         
-        let tabBar = XCUIApplication().tabBars
-        tabBar.buttons["Entdecken"].tap()
-        snapshot("0Entdecken")
-        tabBar.buttons["Liste"].tap()
-        snapshot("1Liste")
-        tabBar.buttons["Karte"].tap()
-        snapshot("2Karte")
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            let tabBar = XCUIApplication().tabBars
+            tabBar.buttons["Entdecken"].tap()
+            snapshot("0Entdecken")
+            tabBar.buttons["Liste"].tap()
+            snapshot("1Liste")
+            tabBar.buttons["Karte"].tap()
+            snapshot("2Karte")
+        } else {
+            XCUIApplication().navigationBars.buttons["KOFFII CGN"].tap()
+            
+            let tablesQuery = XCUIApplication().tables
+            tablesQuery.buttons["Top 3"].tap()
+            snapshot("0Entdecken")
+            XCUIApplication().navigationBars["Ümit´s Top 3"].buttons["BackButton"].tap()
+            tablesQuery.buttons["Cafes"].tap()
+            snapshot("1Liste")
+            XCUIApplication().navigationBars["KOFFII CGN"].buttons["BackButton"].tap()
+            tablesQuery.buttons["Map"].tap()
+            snapshot("2Karte")
+        }
+    }
+    
+    func testIPad() throws {
+
+        
     }
 }

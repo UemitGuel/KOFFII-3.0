@@ -39,8 +39,6 @@
 		E44773202561389100B772C2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E447731F2561389100B772C2 /* SwiftUI.framework */; };
 		E44773232561389100B772C2 /* KOFFII_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44773222561389100B772C2 /* KOFFII_Widget.swift */; };
 		E44773262561389200B772C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44773252561389200B772C2 /* Assets.xcassets */; };
-		E44773282561389200B772C2 /* KOFFII_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E44773242561389100B772C2 /* KOFFII_Widget.intentdefinition */; };
-		E44773292561389200B772C2 /* KOFFII_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E44773242561389100B772C2 /* KOFFII_Widget.intentdefinition */; };
 		E447732C2561389200B772C2 /* KOFFII WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E447731B2561389100B772C2 /* KOFFII WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E447734C25614CC600B772C2 /* cafeData.json in Resources */ = {isa = PBXBuildFile; fileRef = B3B520832519D90200368F47 /* cafeData.json */; };
 		E447734D25614CC600B772C2 /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5208D2519D93100368F47 /* Cafe.swift */; };
@@ -136,7 +134,6 @@
 		E447731D2561389100B772C2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		E447731F2561389100B772C2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		E44773222561389100B772C2 /* KOFFII_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KOFFII_Widget.swift; sourceTree = "<group>"; };
-		E44773242561389100B772C2 /* KOFFII_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = KOFFII_Widget.intentdefinition; sourceTree = "<group>"; };
 		E44773252561389200B772C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E44773272561389200B772C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E492FEFA2590EAEC00881C1F /* DiscoverItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverItem.swift; sourceTree = "<group>"; };
@@ -331,7 +328,6 @@
 			isa = PBXGroup;
 			children = (
 				E44773222561389100B772C2 /* KOFFII_Widget.swift */,
-				E44773242561389100B772C2 /* KOFFII_Widget.intentdefinition */,
 				E44773252561389200B772C2 /* Assets.xcassets */,
 				E44773272561389200B772C2 /* Info.plist */,
 			);
@@ -515,7 +511,6 @@
 				B3C3368C251DE78200755B1E /* AllCafesMapView.swift in Sources */,
 				E406A5522557F1BE002D199B /* DecodableDefaultSource.swift in Sources */,
 				B31CEBF1251E279900B7501E /* MapViewStore.swift in Sources */,
-				E44773292561389200B772C2 /* KOFFII_Widget.intentdefinition in Sources */,
 				B3B8738B251B3EBD006CA136 /* CafeDetailView.swift in Sources */,
 				B3F3F446251902D000D91190 /* CafeList.swift in Sources */,
 				B3F3F439251900CA00D91190 /* CafeItem.swift in Sources */,
@@ -561,7 +556,6 @@
 				E447735D25614CF300B772C2 /* GoogleMapsButton.swift in Sources */,
 				E447736C256166C600B772C2 /* CafeItem.swift in Sources */,
 				E447735725614CDD00B772C2 /* AnnotationsHelper.swift in Sources */,
-				E44773282561389200B772C2 /* KOFFII_Widget.intentdefinition in Sources */,
 				E447735625614CDD00B772C2 /* RegionStore.swift in Sources */,
 				E44773672561661B00B772C2 /* CafeDetailView.swift in Sources */,
 				E44773232561389100B772C2 /* KOFFII_Widget.swift in Sources */,
@@ -713,8 +707,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"KOFFII CGN 2.0/Preview Content\"";
 				DEVELOPMENT_TEAM = YLGTKU7SLK;
 				ENABLE_PREVIEWS = YES;
@@ -724,11 +719,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.2;
+				MARKETING_VERSION = 6.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sketchup.PU-.a-simple-coffee-guide-endversion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -738,8 +734,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"KOFFII CGN 2.0/Preview Content\"";
 				DEVELOPMENT_TEAM = YLGTKU7SLK;
 				ENABLE_PREVIEWS = YES;
@@ -749,11 +746,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.2;
+				MARKETING_VERSION = 6.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sketchup.PU-.a-simple-coffee-guide-endversion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -846,8 +844,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = YLGTKU7SLK;
 				INFOPLIST_FILE = "KOFFII Widget/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
@@ -856,9 +855,10 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 6.2;
+				MARKETING_VERSION = 6.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sketchup.PU-.a-simple-coffee-guide-endversion.KOFFII-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -870,8 +870,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = YLGTKU7SLK;
 				INFOPLIST_FILE = "KOFFII Widget/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
@@ -880,9 +881,10 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 6.2;
+				MARKETING_VERSION = 6.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sketchup.PU-.a-simple-coffee-guide-endversion.KOFFII-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
