@@ -423,6 +423,25 @@
         "hasPlug": true,
     },
     {
+        "name": "Ernst Kaffeeröster",
+        "hours": [
+            { "day" : "mon","start": "08:30", "end": "18:00" },
+            { "day" : "tue","start": "08:30", "end": "18:00" },
+            { "day" : "wed","start": "08:30", "end": "18:00" },
+            { "day" : "thu","start": "08:30", "end": "18:00" },
+            { "day" : "fri","start": "08:30", "end": "18:00" },
+            { "day" : "sat","start": "10:00", "end": "18:00" },
+            { "day" : "sun","start": "10:00", "end": "18:00" },
+        ],
+        
+        "hood": "Südstadt",
+        "locationURL": "https://www.google.com/maps/place/Ernst+Kaffeeröster/@50.9179346,6.9603857,15z/data=!4m5!3m4!1s0x0:0xf10ca03d5821bb94!8m2!3d50.9179346!4d6.9603857",
+        "hasWifi": true,
+        "hasFood": true,
+        "hasVegan": false,
+        "hasPlug": true,
+    },
+    {
         "name": "Funkhaus Cafe-Bar-Restaurant",
         "hours": [
             { "day" : "mon","start": "09:00", "end": "22:00" },
@@ -575,6 +594,25 @@
         "hasPlug": false,
     },
     {
+        "name": "Kaffeebud Ehrenfeld",
+        "hours": [
+            { "day" : "mon","start": "09:00", "end": "18:30" },
+            { "day" : "tue","start": "09:00", "end": "18:30" },
+            { "day" : "wed","start": "09:00", "end": "18:30" },
+            { "day" : "thu","start": "09:00", "end": "18:30" },
+            { "day" : "fri","start": "09:00", "end": "18:30" },
+            { "day" : "sat","start": "10:00", "end": "18:30" },
+            { "day" : "sun","start": "10:00", "end": "18:30" },
+        ],
+        
+        "hood": "Ehrenfeld",
+        "locationURL": "https://www.google.com/maps/place/Kaffeebud+Ehrenfeld/@50.9516456,6.9226069,17z/data=!4m8!1m2!2m1!1scafe!3m4!1s0x0:0xa79cb1cd6bd060e0!8m2!3d50.951583!4d6.9226279",
+        "hasWifi": true,
+        "hasFood": true,
+        "hasVegan": false,
+        "hasPlug": true,
+    },
+    {
         "name": "Kaffeesaurus",
         "hours": [
             { "day" : "mon","start": "08:00", "end": "20:00" },
@@ -629,6 +667,25 @@
         "hasWifi": true,
         "hasFood": true,
         "hasVegan": true,
+        "hasPlug": false,
+    },
+    {
+        "name": "Miss Päpki",
+        "hours": [
+            { "day" : "mon","start": "12:30", "end": "19:00" },
+            { "day" : "tue","start": "geschlossen", "end": "" },
+            { "day" : "wed","start": "12:30", "end": "19:00" },
+            { "day" : "thu","start": "12:30", "end": "19:00" },
+            { "day" : "fri","start": "12:30", "end": "19:00" },
+            { "day" : "sat","start": "12:30", "end": "19:00" },
+            { "day" : "sun","start": "12:30", "end": "19:00" },
+        ],
+        
+        "hood": "Belgisches Viertel",
+        "locationURL": "https://www.google.com/maps/place/Miss+Päpki/@50.9388519,6.9312764,17z/data=!4m12!1m6!3m5!1s0x47bf24ef4e3d99ab:0xfc596c534fb34db1!2sCafe+Wo+ist+Tom%3F!8m2!3d50.9215849!4d6.9205038!3m4!1s0x47bf2504f18dd099:0x1c323ec8b210d8f!8m2!3d50.9388485!4d6.9334704",
+        "hasWifi": false,
+        "hasFood": true,
+        "hasVegan": false,
         "hasPlug": false,
     },
     {

@@ -13,7 +13,7 @@ struct FilterView: View {
     @Binding var needFood: Bool
     @Binding var needVegan: Bool
     @Binding var needPlug: Bool
-        
+    
     var body: some View {
         HStack(spacing: 8) {
             FilterItem(iconImage: Image(systemName: "wifi"), filterItem: "Wifi", feature: $needWifi)
@@ -37,12 +37,16 @@ struct FilterButtons_Previews: PreviewProvider {
 }
 
 struct FilterItem: View {
+    let impactMed = UIImpactFeedbackGenerator(style: .soft)
     var iconImage: Image
     var filterItem: String
     @Binding var feature: Bool
     
     var body: some View {
-        Button(action: { self.feature.toggle() }) {
+        Button(action: {
+            self.feature.toggle()
+            impactMed.impactOccurred()
+        }) {
             VStack(spacing: 8) {
                 iconImage
                 Text(filterItem)
@@ -55,9 +59,9 @@ struct FilterItem: View {
         }
         .background(feature ? Color.accentColor : Color.init(.secondarySystemBackground))
         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-//        .overlay(
-//            RoundedRectangle(cornerRadius: 16)
-//                .stroke(Color.accentColor, lineWidth: 1)
-//        )
+        //        .overlay(
+        //            RoundedRectangle(cornerRadius: 16)
+        //                .stroke(Color.accentColor, lineWidth: 1)
+        //        )
     }
 }
