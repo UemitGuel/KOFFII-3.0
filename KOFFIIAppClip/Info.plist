@@ -2,12 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Application q</key>
-	<string></string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Mit dieser Information wird nur die Entfernung zum nächsten Cafe berechnet</string>
+	<key>NSLocationTemporaryUsageDescriptionDictionary</key>
+	<dict>
+		<key>wantAccurateLocation</key>
+		<string>Die genaue Position würde helfen, deine Entfernung zum Cafe auszurechnen</string>
+	</dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>always</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>always</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>KOFFII Cologne</string>
+	<string>KOFFII CGN 2.0</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -22,25 +31,15 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>10</string>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>googlechromes</string>
-		<string>comgooglemaps</string>
-		<string>comgooglemaps-x-callback</string>
-	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>always</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>always</string>
-	<key>NSLocationTemporaryUsageDescriptionDictionary</key>
+	<key>NSAppClip</key>
 	<dict>
-		<key>wantAccurateLocation</key>
-		<string>Die genaue Position würde helfen, deine Entfernung zum Cafe auszurechnen</string>
+		<key>NSAppClipRequestEphemeralUserNotification</key>
+		<false/>
+		<key>NSAppClipRequestLocationConfirmation</key>
+		<false/>
 	</dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Mit dieser Information wird nur die Entfernung zum nächsten Cafe berechnet</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -57,11 +56,13 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>

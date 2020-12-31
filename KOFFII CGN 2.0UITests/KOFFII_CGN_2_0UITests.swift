@@ -46,9 +46,4 @@ class KOFFII_CGN_2_0UITests: XCTestCase {
             snapshot("2Karte")
         }
     }
-    
-    func testIPad() throws {
-
-        
-    }
 }

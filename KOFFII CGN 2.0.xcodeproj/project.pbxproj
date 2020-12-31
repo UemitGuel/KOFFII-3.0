@@ -53,6 +53,35 @@
 		E447736225615D9E00B772C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3F3F3BD25188A1300D91190 /* Assets.xcassets */; };
 		E44773672561661B00B772C2 /* CafeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B8738A251B3EBD006CA136 /* CafeDetailView.swift */; };
 		E447736C256166C600B772C2 /* CafeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F438251900CA00D91190 /* CafeItem.swift */; };
+		E491F01A259D347300EAAE2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E491F019259D347300EAAE2F /* Assets.xcassets */; };
+		E491F01D259D347300EAAE2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E491F01C259D347300EAAE2F /* Preview Assets.xcassets */; };
+		E491F022259D347300EAAE2F /* KOFFIIAppClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = E491F013259D347200EAAE2F /* KOFFIIAppClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E491F02C259D368B00EAAE2F /* AnnotationsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33571DD251E0C4D00D06BC4 /* AnnotationsHelper.swift */; };
+		E491F02D259D368B00EAAE2F /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5208D2519D93100368F47 /* Cafe.swift */; };
+		E491F02E259D368B00EAAE2F /* CoordinatesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B330CEBF251C934900FB34E4 /* CoordinatesHelper.swift */; };
+		E491F02F259D368B00EAAE2F /* Top3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32897AD251FA1BA0098A6E7 /* Top3View.swift */; };
+		E491F030259D368B00EAAE2F /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B520C3251A3B8900368F47 /* FilterView.swift */; };
+		E491F031259D368B00EAAE2F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31CEBE8251E1FF900B7501E /* MapView.swift */; };
+		E491F032259D368B00EAAE2F /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3E725188A2600D91190 /* Sidebar.swift */; };
+		E491F033259D368B00EAAE2F /* LocationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38960BC251B4C67001659FD /* LocationStore.swift */; };
+		E491F034259D368B00EAAE2F /* DiscoverItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E492FEFA2590EAEC00881C1F /* DiscoverItem.swift */; };
+		E491F035259D368B00EAAE2F /* CafeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3EC25188DD300D91190 /* CafeView.swift */; };
+		E491F036259D368B00EAAE2F /* GoogleMapsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31CEC08251E379400B7501E /* GoogleMapsButton.swift */; };
+		E491F037259D368B00EAAE2F /* MapViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31CEBF0251E279900B7501E /* MapViewStore.swift */; };
+		E491F038259D368B00EAAE2F /* MapViewOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31CEC03251E326400B7501E /* MapViewOverlay.swift */; };
+		E491F039259D368B00EAAE2F /* cafeData.json in Resources */ = {isa = PBXBuildFile; fileRef = B3B520832519D90200368F47 /* cafeData.json */; };
+		E491F03A259D368B00EAAE2F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B520882519D92800368F47 /* Data.swift */; };
+		E491F03B259D368B00EAAE2F /* AllCafesMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C3368B251DE78200755B1E /* AllCafesMapView.swift */; };
+		E491F03C259D368B00EAAE2F /* CafeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B8738A251B3EBD006CA136 /* CafeDetailView.swift */; };
+		E491F03D259D368B00EAAE2F /* DecodableDefaultSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */; };
+		E491F03E259D368B00EAAE2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3BB25188A1100D91190 /* ContentView.swift */; };
+		E491F03F259D368B00EAAE2F /* RegionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38960C1251B50A2001659FD /* RegionStore.swift */; };
+		E491F040259D368B00EAAE2F /* CafeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F445251902D000D91190 /* CafeList.swift */; };
+		E491F041259D368B00EAAE2F /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31CEC0D251E386A00B7501E /* DismissButton.swift */; };
+		E491F042259D368B00EAAE2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3F3F3BD25188A1300D91190 /* Assets.xcassets */; };
+		E491F043259D368B00EAAE2F /* CafeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F438251900CA00D91190 /* CafeItem.swift */; };
+		E491F044259D368B00EAAE2F /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B520922519E1C400368F47 /* TabBar.swift */; };
+		E491F07D259E04C300EAAE2F /* KOFFIIAppClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E491F015259D347200EAAE2F /* KOFFIIAppClipApp.swift */; };
 		E492FEFB2590EAEC00881C1F /* DiscoverItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E492FEFA2590EAEC00881C1F /* DiscoverItem.swift */; };
 		E4DE65E32598D370006FC81F /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DE65E22598D370006FC81F /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
@@ -79,6 +108,13 @@
 			remoteGlobalIDString = E447731A2561389100B772C2;
 			remoteInfo = "KOFFII WidgetExtension";
 		};
+		E491F020259D347300EAAE2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3F3F3AE25188A1000D91190 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E491F012259D347200EAAE2F;
+			remoteInfo = KOFFIIAppClip;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -91,6 +127,17 @@
 				E447732C2561389200B772C2 /* KOFFII WidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E491F023259D347300EAAE2F /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				E491F022259D347300EAAE2F /* KOFFIIAppClip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -136,6 +183,12 @@
 		E44773222561389100B772C2 /* KOFFII_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KOFFII_Widget.swift; sourceTree = "<group>"; };
 		E44773252561389200B772C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E44773272561389200B772C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E491F013259D347200EAAE2F /* KOFFIIAppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KOFFIIAppClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E491F015259D347200EAAE2F /* KOFFIIAppClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KOFFIIAppClipApp.swift; sourceTree = "<group>"; };
+		E491F019259D347300EAAE2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E491F01C259D347300EAAE2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E491F01E259D347300EAAE2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E491F01F259D347300EAAE2F /* KOFFIIAppClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KOFFIIAppClip.entitlements; sourceTree = "<group>"; };
 		E492FEFA2590EAEC00881C1F /* DiscoverItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverItem.swift; sourceTree = "<group>"; };
 		E4DE65E22598D370006FC81F /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -168,6 +221,13 @@
 			files = (
 				E44773202561389100B772C2 /* SwiftUI.framework in Frameworks */,
 				E447731E2561389100B772C2 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E491F010259D347200EAAE2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +295,7 @@
 				B3F3F3CA25188A1300D91190 /* KOFFII CGN 2.0Tests */,
 				B3F3F3D525188A1300D91190 /* KOFFII CGN 2.0UITests */,
 				E44773212561389100B772C2 /* KOFFII Widget */,
+				E491F014259D347200EAAE2F /* KOFFIIAppClip */,
 				E447731C2561389100B772C2 /* Frameworks */,
 				B3F3F3B725188A1000D91190 /* Products */,
 			);
@@ -247,6 +308,7 @@
 				B3F3F3C725188A1300D91190 /* KOFFII CGN 2.0Tests.xctest */,
 				B3F3F3D225188A1300D91190 /* KOFFII CGN 2.0UITests.xctest */,
 				E447731B2561389100B772C2 /* KOFFII WidgetExtension.appex */,
+				E491F013259D347200EAAE2F /* KOFFIIAppClip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -334,6 +396,26 @@
 			path = "KOFFII Widget";
 			sourceTree = "<group>";
 		};
+		E491F014259D347200EAAE2F /* KOFFIIAppClip */ = {
+			isa = PBXGroup;
+			children = (
+				E491F015259D347200EAAE2F /* KOFFIIAppClipApp.swift */,
+				E491F019259D347300EAAE2F /* Assets.xcassets */,
+				E491F01E259D347300EAAE2F /* Info.plist */,
+				E491F01F259D347300EAAE2F /* KOFFIIAppClip.entitlements */,
+				E491F01B259D347300EAAE2F /* Preview Content */,
+			);
+			path = KOFFIIAppClip;
+			sourceTree = "<group>";
+		};
+		E491F01B259D347300EAAE2F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E491F01C259D347300EAAE2F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -345,11 +427,13 @@
 				B3F3F3B325188A1000D91190 /* Frameworks */,
 				B3F3F3B425188A1000D91190 /* Resources */,
 				E447732D2561389200B772C2 /* Embed App Extensions */,
+				E491F023259D347300EAAE2F /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				E447732B2561389200B772C2 /* PBXTargetDependency */,
+				E491F021259D347300EAAE2F /* PBXTargetDependency */,
 			);
 			name = "KOFFII CGN 2.0";
 			packageProductDependencies = (
@@ -411,13 +495,30 @@
 			productReference = E447731B2561389100B772C2 /* KOFFII WidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		E491F012259D347200EAAE2F /* KOFFIIAppClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E491F026259D347300EAAE2F /* Build configuration list for PBXNativeTarget "KOFFIIAppClip" */;
+			buildPhases = (
+				E491F00F259D347200EAAE2F /* Sources */,
+				E491F010259D347200EAAE2F /* Frameworks */,
+				E491F011259D347200EAAE2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KOFFIIAppClip;
+			productName = KOFFIIAppClip;
+			productReference = E491F013259D347200EAAE2F /* KOFFIIAppClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B3F3F3AE25188A1000D91190 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1220;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					B3F3F3B525188A1000D91190 = {
@@ -433,6 +534,9 @@
 					};
 					E447731A2561389100B772C2 = {
 						CreatedOnToolsVersion = 12.2;
+					};
+					E491F012259D347200EAAE2F = {
+						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
@@ -455,6 +559,7 @@
 				B3F3F3C625188A1300D91190 /* KOFFII CGN 2.0Tests */,
 				B3F3F3D125188A1300D91190 /* KOFFII CGN 2.0UITests */,
 				E447731A2561389100B772C2 /* KOFFII WidgetExtension */,
+				E491F012259D347200EAAE2F /* KOFFIIAppClip */,
 			);
 		};
 /* End PBXProject section */
@@ -491,6 +596,17 @@
 				E447734C25614CC600B772C2 /* cafeData.json in Resources */,
 				E447736225615D9E00B772C2 /* Assets.xcassets in Resources */,
 				E44773262561389200B772C2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E491F011259D347200EAAE2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E491F039259D368B00EAAE2F /* cafeData.json in Resources */,
+				E491F01D259D347300EAAE2F /* Preview Assets.xcassets in Resources */,
+				E491F042259D368B00EAAE2F /* Assets.xcassets in Resources */,
+				E491F01A259D347300EAAE2F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +680,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E491F00F259D347200EAAE2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E491F033259D368B00EAAE2F /* LocationStore.swift in Sources */,
+				E491F03F259D368B00EAAE2F /* RegionStore.swift in Sources */,
+				E491F034259D368B00EAAE2F /* DiscoverItem.swift in Sources */,
+				E491F030259D368B00EAAE2F /* FilterView.swift in Sources */,
+				E491F040259D368B00EAAE2F /* CafeList.swift in Sources */,
+				E491F031259D368B00EAAE2F /* MapView.swift in Sources */,
+				E491F02F259D368B00EAAE2F /* Top3View.swift in Sources */,
+				E491F036259D368B00EAAE2F /* GoogleMapsButton.swift in Sources */,
+				E491F03E259D368B00EAAE2F /* ContentView.swift in Sources */,
+				E491F02E259D368B00EAAE2F /* CoordinatesHelper.swift in Sources */,
+				E491F037259D368B00EAAE2F /* MapViewStore.swift in Sources */,
+				E491F07D259E04C300EAAE2F /* KOFFIIAppClipApp.swift in Sources */,
+				E491F03C259D368B00EAAE2F /* CafeDetailView.swift in Sources */,
+				E491F038259D368B00EAAE2F /* MapViewOverlay.swift in Sources */,
+				E491F041259D368B00EAAE2F /* DismissButton.swift in Sources */,
+				E491F02D259D368B00EAAE2F /* Cafe.swift in Sources */,
+				E491F043259D368B00EAAE2F /* CafeItem.swift in Sources */,
+				E491F02C259D368B00EAAE2F /* AnnotationsHelper.swift in Sources */,
+				E491F032259D368B00EAAE2F /* Sidebar.swift in Sources */,
+				E491F044259D368B00EAAE2F /* TabBar.swift in Sources */,
+				E491F03D259D368B00EAAE2F /* DecodableDefaultSource.swift in Sources */,
+				E491F035259D368B00EAAE2F /* CafeView.swift in Sources */,
+				E491F03A259D368B00EAAE2F /* Data.swift in Sources */,
+				E491F03B259D368B00EAAE2F /* AllCafesMapView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -581,6 +728,11 @@
 			isa = PBXTargetDependency;
 			target = E447731A2561389100B772C2 /* KOFFII WidgetExtension */;
 			targetProxy = E447732A2561389200B772C2 /* PBXContainerItemProxy */;
+		};
+		E491F021259D347300EAAE2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E491F012259D347200EAAE2F /* KOFFIIAppClip */;
+			targetProxy = E491F020259D347300EAAE2F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -709,7 +861,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"KOFFII CGN 2.0/Preview Content\"";
 				DEVELOPMENT_TEAM = YLGTKU7SLK;
 				ENABLE_PREVIEWS = YES;
@@ -736,7 +888,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"KOFFII CGN 2.0/Preview Content\"";
 				DEVELOPMENT_TEAM = YLGTKU7SLK;
 				ENABLE_PREVIEWS = YES;
@@ -846,7 +998,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = YLGTKU7SLK;
 				INFOPLIST_FILE = "KOFFII Widget/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
@@ -872,7 +1024,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = YLGTKU7SLK;
 				INFOPLIST_FILE = "KOFFII Widget/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
@@ -886,6 +1038,56 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E491F024259D347300EAAE2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KOFFIIAppClip/KOFFIIAppClip.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"KOFFIIAppClip/Preview Content\"";
+				DEVELOPMENT_TEAM = YLGTKU7SLK;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = KOFFIIAppClip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 6.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sketchup.PU-.a-simple-coffee-guide-endversion.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E491F025259D347300EAAE2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KOFFIIAppClip/KOFFIIAppClip.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"KOFFIIAppClip/Preview Content\"";
+				DEVELOPMENT_TEAM = YLGTKU7SLK;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = KOFFIIAppClip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 6.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sketchup.PU-.a-simple-coffee-guide-endversion.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -935,6 +1137,15 @@
 			buildConfigurations = (
 				E447732E2561389200B772C2 /* Debug */,
 				E447732F2561389200B772C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E491F026259D347300EAAE2F /* Build configuration list for PBXNativeTarget "KOFFIIAppClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E491F024259D347300EAAE2F /* Debug */,
+				E491F025259D347300EAAE2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
