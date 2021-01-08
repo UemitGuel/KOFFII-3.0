@@ -16,14 +16,6 @@ struct CafeView: View {
     @State var needVegan = false
     @State var needPlug = false
     
-    var isFiltering: Bool {
-        if needWifi || needFood || needVegan || needPlug {
-            return true
-        } else {
-            return false
-        }
-    }
-    
     var cafeListFiltered: [Cafe] {
         let cafeListFiltered = getfilteredCafeList()
         return cafeListFiltered
