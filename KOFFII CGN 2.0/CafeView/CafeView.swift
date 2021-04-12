@@ -6,61 +6,23 @@
 //
 
 import SwiftUI
+import Combine
 
 struct CafeView: View {
     
-    @EnvironmentObject var store: LocationStore
-    
-    @State var needWifi = false
-    @State var needFood = false
-    @State var needVegan = false
-    @State var needPlug = false
-    
-    var isFiltering: Bool {
-        if needWifi || needFood || needVegan || needPlug {
-            return true
-        } else {
-            return false
-        }
-    }
-    
-    var cafeListFiltered: [Cafe] {
-        let cafeListFiltered = getfilteredCafeList()
-        return cafeListFiltered
-    }
+    @ObservedObject var cafeStore = CafeStore()
     
     var body: some View {
         ScrollView(showsIndicators: false) {
-            FilterView(needWifi: $needWifi, needFood: $needFood, needVegan: $needVegan, needPlug: $needPlug)
+            FilterView(needWifi: $cafeStore.needWifi, needFood: $cafeStore.needFood, needVegan: $cafeStore.needVegan, needPlug: $cafeStore.needPlug)
             Divider()
-            CafeList(cafeListFiltered: cafeListFiltered)
+            CafeList(cafeListFiltered: cafeStore.getfilteredCafeList() )
                 .padding(.top)
         }
         .padding(.horizontal)
         .navigationTitle("KOFFII CGN")
     }
     
-}
-
-extension CafeView {
-    
-    private func getfilteredCafeList() -> [Cafe] {
-        var cafeList = cafeData
-        if needWifi {
-            cafeList = cafeList.filter { $0.hasWifi }
-        }
-        if needFood {
-            cafeList = cafeList.filter { $0.hasFood }
-        }
-        if needVegan {
-            cafeList = cafeList.filter { $0.hasVegan }
-        }
-        if needPlug {
-            cafeList = cafeList.filter { $0.hasPlug }
-        }
-        cafeList.sort { store.getDistance(cafeLocation: $0.location) < store.getDistance(cafeLocation: $1.location) }
-        return cafeList
-    }
 }
 
 struct CoffeeView_Previews: PreviewProvider {

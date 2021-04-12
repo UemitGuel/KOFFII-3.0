@@ -8,7 +8,15 @@
 import SwiftUI
 
 struct CafeList: View {
-    var cafeListFiltered: [Cafe]
+    
+    @EnvironmentObject var store: LocationStore
+
+    @Binding var cafeListFiltered: [Cafe]
+    
+    var cafeListFilteredrrr: [Cafe] {
+        cafeListFiltered.sort { store.getDistance(cafeLocation: $0.location) < store.getDistance(cafeLocation: $1.location) }
+        return cafeListFiltered
+    }
     
     var body: some View {
             ForEach(cafeListFiltered, id: \.name) { item in
@@ -25,15 +33,5 @@ struct CafeList: View {
                     })
             }
         
-    }
-}
-
-struct CoffeeList_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            CafeList(cafeListFiltered: cafeData)
-            CafeList(cafeListFiltered: cafeData)
-                .preferredColorScheme(.dark)
-        }
     }
 }

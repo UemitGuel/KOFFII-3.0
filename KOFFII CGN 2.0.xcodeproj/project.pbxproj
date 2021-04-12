@@ -35,6 +35,8 @@
 		B3F3F439251900CA00D91190 /* CafeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F438251900CA00D91190 /* CafeItem.swift */; };
 		B3F3F446251902D000D91190 /* CafeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F445251902D000D91190 /* CafeList.swift */; };
 		E406A5522557F1BE002D199B /* DecodableDefaultSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */; };
+		E40D594325A8BB990078281E /* CafeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40D594225A8BB990078281E /* CafeStore.swift */; };
+		E40D595525A8BF940078281E /* CafeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40D594225A8BB990078281E /* CafeStore.swift */; };
 		E447731E2561389100B772C2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E447731D2561389100B772C2 /* WidgetKit.framework */; };
 		E44773202561389100B772C2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E447731F2561389100B772C2 /* SwiftUI.framework */; };
 		E44773232561389100B772C2 /* KOFFII_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44773222561389100B772C2 /* KOFFII_Widget.swift */; };
@@ -177,6 +179,7 @@
 		B3F3F438251900CA00D91190 /* CafeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeItem.swift; sourceTree = "<group>"; };
 		B3F3F445251902D000D91190 /* CafeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeList.swift; sourceTree = "<group>"; };
 		E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableDefaultSource.swift; sourceTree = "<group>"; };
+		E40D594225A8BB990078281E /* CafeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeStore.swift; sourceTree = "<group>"; };
 		E447731B2561389100B772C2 /* KOFFII WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "KOFFII WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E447731D2561389100B772C2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		E447731F2561389100B772C2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -271,6 +274,7 @@
 			children = (
 				B3B520832519D90200368F47 /* cafeData.json */,
 				B3B520882519D92800368F47 /* Data.swift */,
+				E40D594225A8BB990078281E /* CafeStore.swift */,
 				B3B5208D2519D93100368F47 /* Cafe.swift */,
 				E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */,
 			);
@@ -639,6 +643,7 @@
 				E492FEFB2590EAEC00881C1F /* DiscoverItem.swift in Sources */,
 				B3B520932519E1C400368F47 /* TabBar.swift in Sources */,
 				B330CEC0251C934900FB34E4 /* CoordinatesHelper.swift in Sources */,
+				E40D594325A8BB990078281E /* CafeStore.swift in Sources */,
 				B31CEC04251E326400B7501E /* MapViewOverlay.swift in Sources */,
 				B3B520C4251A3B8A00368F47 /* FilterView.swift in Sources */,
 			);
@@ -706,6 +711,7 @@
 				E491F044259D368B00EAAE2F /* TabBar.swift in Sources */,
 				E491F03D259D368B00EAAE2F /* DecodableDefaultSource.swift in Sources */,
 				E491F035259D368B00EAAE2F /* CafeView.swift in Sources */,
+				E40D595525A8BF940078281E /* CafeStore.swift in Sources */,
 				E491F03A259D368B00EAAE2F /* Data.swift in Sources */,
 				E491F03B259D368B00EAAE2F /* AllCafesMapView.swift in Sources */,
 			);
