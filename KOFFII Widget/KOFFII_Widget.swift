@@ -58,7 +58,7 @@ extension KOFFII_Widget {
 
     struct Entry: TimelineEntry {
         var date: Date
-        var cafe: Cafe
+        var cafe: CafeViewModel
         var image: Image
     }
 }
@@ -81,11 +81,11 @@ struct KOFFII_WidgetEntryView : View {
             .foregroundColor(.primary)
     }
     
-    var notes: some View {
-        Text(entry.cafe.notes[1])
-            .font(.system(.subheadline, design: .rounded))
-            .foregroundColor(.primary).opacity(0.8)
-    }
+//    var notes: some View {
+//        Text(entry.cafe.notes[1])
+//            .font(.system(.subheadline, design: .rounded))
+//            .foregroundColor(.primary).opacity(0.8)
+//    }
     
     var image: some View {
         Rectangle()
@@ -114,7 +114,7 @@ struct KOFFII_WidgetEntryView : View {
                     VStack(alignment: .leading) {
                         titleLong
                             .padding(.bottom, 2)
-                        notes
+//                        notes
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .accessibilityElement(children: .combine)
@@ -126,22 +126,22 @@ struct KOFFII_WidgetEntryView : View {
                         image
                             .frame(maxWidth: .infinity, alignment: .topLeading)
                         VStack(alignment: .leading) {
-                            VStack(alignment: .leading) {
-                                WeekdayHours(cafe: entry.cafe, hoursIndex: 0, workday: "Mo")
-                                WeekdayHours(cafe: entry.cafe, hoursIndex: 1, workday: "Di")
-                                WeekdayHours(cafe: entry.cafe, hoursIndex: 2, workday: "Mi")
-                                WeekdayHours(cafe: entry.cafe, hoursIndex: 3, workday: "Do")
-                                WeekdayHours(cafe: entry.cafe, hoursIndex: 4, workday: "Fr")
-                                WeekdayHours(cafe: entry.cafe, hoursIndex: 5, workday: "Sa")
-                                WeekdayHours(cafe: entry.cafe, hoursIndex: 6, workday: "So")
-                            }
+//                            VStack(alignment: .leading) {
+//                                WeekdayHours(cafe: entry.cafe, hoursIndex: 0, workday: "Mo")
+//                                WeekdayHours(cafe: entry.cafe, hoursIndex: 1, workday: "Di")
+//                                WeekdayHours(cafe: entry.cafe, hoursIndex: 2, workday: "Mi")
+//                                WeekdayHours(cafe: entry.cafe, hoursIndex: 3, workday: "Do")
+//                                WeekdayHours(cafe: entry.cafe, hoursIndex: 4, workday: "Fr")
+//                                WeekdayHours(cafe: entry.cafe, hoursIndex: 5, workday: "Sa")
+//                                WeekdayHours(cafe: entry.cafe, hoursIndex: 6, workday: "So")
+//                            }
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                     }
                     VStack(alignment: .leading) {
                         titleLong
                             .padding(.bottom, 2)
-                        notes
+//                        notes
                     }
                 }
                 .padding()

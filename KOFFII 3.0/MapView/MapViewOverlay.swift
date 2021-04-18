@@ -11,7 +11,7 @@ struct MapViewOverlay: View {
         
     @EnvironmentObject var mapViewStore: MapViewStore
     
-    var cafe: Cafe
+    var cafe: CafeViewModel
     
     var body: some View {
         VStack {
@@ -21,7 +21,7 @@ struct MapViewOverlay: View {
                     VStack(alignment: .leading) {
                         Text(cafe.name)
                             .font(.system(.headline, design: .rounded))
-                        Text("\(cafe.hood.rawValue)")
+                        Text("\(cafe.hood)")
                             .font(.system(.body, design: .rounded))
                             .foregroundColor(.primary).opacity(0.8)
                         Text(LocationStore.shared.getDistanceAsString(cafeLocation: cafe.location))
@@ -45,11 +45,5 @@ struct MapViewOverlay: View {
         }
         .padding()
         .padding(.bottom)
-    }
-}
-
-struct MapViewOverlay_Previews: PreviewProvider {
-    static var previews: some View {
-        MapViewOverlay(cafe: cafeData[0])
     }
 }

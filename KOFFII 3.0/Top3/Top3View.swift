@@ -9,9 +9,9 @@ import SwiftUI
 
 struct Top3View: View {
         
-    var cafe1: Cafe
-    var cafe2: Cafe
-    var cafe3: Cafe
+    var cafe1: CafeViewModel
+    var cafe2: CafeViewModel
+    var cafe3: CafeViewModel
     
     var body: some View {
         ScrollView {
@@ -30,12 +30,6 @@ struct Top3View: View {
             .navigationTitle("Ümit´s Top 3")
         }
         .padding(.horizontal)
-    }
-}
-
-struct Top3View_Previews: PreviewProvider {
-    static var previews: some View {
-        Top3View(cafe1: cafeData[38], cafe2: cafeData[26], cafe3: cafeData[3])
     }
 }
 

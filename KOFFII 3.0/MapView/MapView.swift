@@ -67,7 +67,7 @@ struct MapView: UIViewRepresentable {
             let choosenCafeName = view.annotation?.title
             
             if let cafe = cafeData.first(where: {$0.name == choosenCafeName}) {
-                self.mapViewStore.changeChoosenCafe(cafe: cafe)
+                self.mapViewStore.changeChoosenCafe(cafe: CafeViewModel(cafe: cafe))
                 print(mapViewStore.showDetails)
                 self.mapViewStore.showDetails = true
                 print(mapViewStore.showDetails)

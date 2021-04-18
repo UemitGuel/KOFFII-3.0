@@ -10,7 +10,7 @@ import MapKit
 
 struct CafeDetailView: View {
     
-    var cafe: Cafe
+    var cafe: CafeViewModel
         
     @State var regionVM = RegionStore.shared.region
     
@@ -26,7 +26,7 @@ struct CafeDetailView: View {
                 VStack(alignment: .leading) {
                     Text(cafe.name)
                         .font(.system(.headline, design: .rounded))
-                    Text("\(cafe.hood.rawValue)")
+                    Text("\(cafe.hood)")
                         .font(.system(.body, design: .rounded))
                         .foregroundColor(.primary).opacity(0.8)
                     Text(LocationStore.shared.getDistanceAsString(cafeLocation: cafe.location))
@@ -61,18 +61,18 @@ struct CafeDetailView: View {
                     }
                 }
                 .padding()
-                if (!cafe.notes.isEmpty) {
-                    Divider()
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text("Ümit´s Notizen")
-                            .font(.system(.headline, design: .rounded))
-                            .padding(.bottom, 4)
-                        Text(cafe.notes[1])
-                        .padding(.bottom)
-                        
-                    }
-                    .padding()
-                }
+//                if (!cafe.notes.isEmpty) {
+//                    Divider()
+//                    VStack(alignment: .leading, spacing: 4) {
+//                        Text("Ümit´s Notizen")
+//                            .font(.system(.headline, design: .rounded))
+//                            .padding(.bottom, 4)
+//                        Text(cafe.notes[1])
+//                        .padding(.bottom)
+//
+//                    }
+//                    .padding()
+//                }
             }
             .navigationBarTitle("", displayMode: .inline)
         }
@@ -80,19 +80,9 @@ struct CafeDetailView: View {
     
 }
 
-
-struct CafeDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            CafeDetailView(cafe: cafeData[0])
-        }
-        .preferredColorScheme(.dark)
-    }
-}
-
 struct WeekdayHours: View {
     
-    var cafe: Cafe
+    var cafe: CafeViewModel
     var hoursIndex: Int
     var workday: String
     
@@ -100,7 +90,7 @@ struct WeekdayHours: View {
         HStack {
             Text("\(workday):")
                 .frame(width:36,alignment: .leading)
-            Text("\(cafe.hours?[hoursIndex].start ?? "") - \(cafe.hours?[hoursIndex].end ?? "")")
+            Text("\(cafe.hours)")
         }
         .font(.system(.callout, design: .rounded))
     }

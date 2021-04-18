@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GoogleMapsButton: View {
     
-    var cafe: Cafe
+    var cafe: CafeViewModel
     
     var googleMapsUrl: URL {
         let urlEncoded = cafe.locationURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
@@ -29,11 +29,5 @@ struct GoogleMapsButton: View {
         
         .padding(.horizontal)
         .padding(.bottom)
-    }
-}
-
-struct GoogleMapsButton_Previews: PreviewProvider {
-    static var previews: some View {
-        GoogleMapsButton(cafe: cafeData[0])
     }
 }
