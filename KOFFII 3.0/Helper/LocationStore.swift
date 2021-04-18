@@ -6,13 +6,14 @@
 //
 
 import Foundation
-import Combine
 import CoreLocation
 
-class LocationStore: NSObject, ObservableObject{
+class LocationStore: NSObject {
     
-    @Published var userLatitude: Double = 0
-    @Published var userLongitude: Double = 0
+    static let shared = LocationStore()
+    
+    var userLatitude: Double = 0
+    var userLongitude: Double = 0
     
     private let locationManager = CLLocationManager()
     

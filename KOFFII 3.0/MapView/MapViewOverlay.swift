@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct MapViewOverlay: View {
-    
-    @EnvironmentObject var store: LocationStore
-    
+        
     @EnvironmentObject var mapViewStore: MapViewStore
     
     var cafe: Cafe
@@ -26,7 +24,7 @@ struct MapViewOverlay: View {
                         Text("\(cafe.hood.rawValue)")
                             .font(.system(.body, design: .rounded))
                             .foregroundColor(.primary).opacity(0.8)
-                        Text(store.getDistanceAsString(cafeLocation: cafe.location))
+                        Text(LocationStore.shared.getDistanceAsString(cafeLocation: cafe.location))
                             .font(.system(.body, design: .rounded))
                             .foregroundColor(.primary).opacity(0.8)
                     }

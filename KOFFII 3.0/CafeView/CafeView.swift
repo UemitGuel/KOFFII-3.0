@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct CafeView: View {
-    
-    @EnvironmentObject var store: LocationStore
-    
+        
     @State var needWifi = false
     @State var needFood = false
     @State var needVegan = false
@@ -49,7 +47,7 @@ extension CafeView {
         if needPlug {
             cafeList = cafeList.filter { $0.hasPlug }
         }
-        cafeList.sort { store.getDistance(cafeLocation: $0.location) < store.getDistance(cafeLocation: $1.location) }
+        cafeList.sort { LocationStore.shared.getDistance(cafeLocation: $0.location) < LocationStore.shared.getDistance(cafeLocation: $1.location) }
         return cafeList
     }
 }

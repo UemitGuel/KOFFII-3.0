@@ -10,15 +10,13 @@ import SwiftUI
 struct CafeItem: View {
     
     var cafe: Cafe
-    
-    @EnvironmentObject var store: LocationStore
-    
+        
     var body: some View {
         VStack(alignment: .leading) {
             HStack{
                 FeatureDisplayView(cafe: cafe)
                 Spacer()
-                Text(store.getDistanceAsString(cafeLocation: cafe.location))
+                Text(LocationStore.shared.getDistanceAsString(cafeLocation: cafe.location))
                 Image(systemName: "chevron.forward")
             }
             .font(.system(.body, design: .rounded))
@@ -48,7 +46,6 @@ struct CoffeeItem_Previews: PreviewProvider {
         Group {
             CafeItem(cafe: cafeData[5])
                 .preferredColorScheme(.dark)
-                .environmentObject(LocationStore())
         }
     }
 }

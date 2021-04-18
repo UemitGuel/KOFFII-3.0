@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        TabBar().environmentObject(LocationStore()).environmentObject(RegionStore()).environmentObject(MapViewStore())
+        TabBar().environmentObject(RegionStore()).environmentObject(MapViewStore())
     }
 }
 

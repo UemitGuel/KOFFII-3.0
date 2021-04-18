@@ -11,9 +11,7 @@ import MapKit
 struct CafeDetailView: View {
     
     var cafe: Cafe
-    
-    @EnvironmentObject var store: LocationStore
-    
+        
     @EnvironmentObject var regionVM: RegionStore
     
     @State private var trackingMode = MapUserTrackingMode.follow
@@ -31,7 +29,7 @@ struct CafeDetailView: View {
                     Text("\(cafe.hood.rawValue)")
                         .font(.system(.body, design: .rounded))
                         .foregroundColor(.primary).opacity(0.8)
-                    Text(store.getDistanceAsString(cafeLocation: cafe.location))
+                    Text(LocationStore.shared.getDistanceAsString(cafeLocation: cafe.location))
                         .font(.system(.body, design: .rounded))
                         .foregroundColor(.primary).opacity(0.8)
                     FeatureDisplayView(cafe: cafe)
