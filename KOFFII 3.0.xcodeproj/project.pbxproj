@@ -158,16 +158,16 @@
 		B3B520C3251A3B8900368F47 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		B3B8738A251B3EBD006CA136 /* CafeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeDetailView.swift; sourceTree = "<group>"; };
 		B3C3368B251DE78200755B1E /* AllCafesMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCafesMapView.swift; sourceTree = "<group>"; };
-		B3F3F3B625188A1000D91190 /* KOFFII CGN 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KOFFII CGN 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F3F3B625188A1000D91190 /* KOFFII 3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KOFFII 3.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F3F3B925188A1100D91190 /* KOFFII_CGN_2_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KOFFII_CGN_2_0App.swift; sourceTree = "<group>"; };
 		B3F3F3BB25188A1100D91190 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B3F3F3BD25188A1300D91190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3F3F3C025188A1300D91190 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3F3F3C225188A1300D91190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3F3F3C725188A1300D91190 /* KOFFII CGN 2.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KOFFII CGN 2.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F3F3C725188A1300D91190 /* KOFFII 3.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KOFFII 3.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F3F3CB25188A1300D91190 /* KOFFII_CGN_2_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KOFFII_CGN_2_0Tests.swift; sourceTree = "<group>"; };
 		B3F3F3CD25188A1300D91190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3F3F3D225188A1300D91190 /* KOFFII CGN 2.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KOFFII CGN 2.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F3F3D225188A1300D91190 /* KOFFII 3.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KOFFII 3.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F3F3D625188A1300D91190 /* KOFFII_CGN_2_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KOFFII_CGN_2_0UITests.swift; sourceTree = "<group>"; };
 		B3F3F3D825188A1300D91190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3F3F3EC25188DD300D91190 /* CafeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeView.swift; sourceTree = "<group>"; };
@@ -288,7 +288,7 @@
 		B3F3F3AD25188A1000D91190 = {
 			isa = PBXGroup;
 			children = (
-				B3F3F3B825188A1100D91190 /* KOFFII CGN 2.0 */,
+				B3F3F3B825188A1100D91190 /* KOFFII 3.0 */,
 				B3F3F3CA25188A1300D91190 /* KOFFII CGN 2.0Tests */,
 				B3F3F3D525188A1300D91190 /* KOFFII CGN 2.0UITests */,
 				E44773212561389100B772C2 /* KOFFII Widget */,
@@ -301,16 +301,16 @@
 		B3F3F3B725188A1000D91190 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B3F3F3B625188A1000D91190 /* KOFFII CGN 2.0.app */,
-				B3F3F3C725188A1300D91190 /* KOFFII CGN 2.0Tests.xctest */,
-				B3F3F3D225188A1300D91190 /* KOFFII CGN 2.0UITests.xctest */,
+				B3F3F3B625188A1000D91190 /* KOFFII 3.0.app */,
+				B3F3F3C725188A1300D91190 /* KOFFII 3.0Tests.xctest */,
+				B3F3F3D225188A1300D91190 /* KOFFII 3.0UITests.xctest */,
 				E447731B2561389100B772C2 /* KOFFII WidgetExtension.appex */,
 				E491F013259D347200EAAE2F /* KOFFIIAppClip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B3F3F3B825188A1100D91190 /* KOFFII CGN 2.0 */ = {
+		B3F3F3B825188A1100D91190 /* KOFFII 3.0 */ = {
 			isa = PBXGroup;
 			children = (
 				B3F3F3B925188A1100D91190 /* KOFFII_CGN_2_0App.swift */,
@@ -325,7 +325,7 @@
 				B3F3F3C225188A1300D91190 /* Info.plist */,
 				B3F3F3BF25188A1300D91190 /* Preview Content */,
 			);
-			path = "KOFFII CGN 2.0";
+			path = "KOFFII 3.0";
 			sourceTree = "<group>";
 		};
 		B3F3F3BF25188A1300D91190 /* Preview Content */ = {
@@ -415,9 +415,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B3F3F3B525188A1000D91190 /* KOFFII CGN 2.0 */ = {
+		B3F3F3B525188A1000D91190 /* KOFFII 3.0 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3F3F3DB25188A1300D91190 /* Build configuration list for PBXNativeTarget "KOFFII CGN 2.0" */;
+			buildConfigurationList = B3F3F3DB25188A1300D91190 /* Build configuration list for PBXNativeTarget "KOFFII 3.0" */;
 			buildPhases = (
 				B3F3F3B225188A1000D91190 /* Sources */,
 				B3F3F3B325188A1000D91190 /* Frameworks */,
@@ -431,16 +431,16 @@
 				E447732B2561389200B772C2 /* PBXTargetDependency */,
 				E491F021259D347300EAAE2F /* PBXTargetDependency */,
 			);
-			name = "KOFFII CGN 2.0";
+			name = "KOFFII 3.0";
 			packageProductDependencies = (
 			);
 			productName = "KOFFII CGN 2.0";
-			productReference = B3F3F3B625188A1000D91190 /* KOFFII CGN 2.0.app */;
+			productReference = B3F3F3B625188A1000D91190 /* KOFFII 3.0.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B3F3F3C625188A1300D91190 /* KOFFII CGN 2.0Tests */ = {
+		B3F3F3C625188A1300D91190 /* KOFFII 3.0Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3F3F3DE25188A1300D91190 /* Build configuration list for PBXNativeTarget "KOFFII CGN 2.0Tests" */;
+			buildConfigurationList = B3F3F3DE25188A1300D91190 /* Build configuration list for PBXNativeTarget "KOFFII 3.0Tests" */;
 			buildPhases = (
 				B3F3F3C325188A1300D91190 /* Sources */,
 				B3F3F3C425188A1300D91190 /* Frameworks */,
@@ -451,14 +451,14 @@
 			dependencies = (
 				B3F3F3C925188A1300D91190 /* PBXTargetDependency */,
 			);
-			name = "KOFFII CGN 2.0Tests";
+			name = "KOFFII 3.0Tests";
 			productName = "KOFFII CGN 2.0Tests";
-			productReference = B3F3F3C725188A1300D91190 /* KOFFII CGN 2.0Tests.xctest */;
+			productReference = B3F3F3C725188A1300D91190 /* KOFFII 3.0Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B3F3F3D125188A1300D91190 /* KOFFII CGN 2.0UITests */ = {
+		B3F3F3D125188A1300D91190 /* KOFFII 3.0UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3F3F3E125188A1300D91190 /* Build configuration list for PBXNativeTarget "KOFFII CGN 2.0UITests" */;
+			buildConfigurationList = B3F3F3E125188A1300D91190 /* Build configuration list for PBXNativeTarget "KOFFII 3.0UITests" */;
 			buildPhases = (
 				B3F3F3CE25188A1300D91190 /* Sources */,
 				B3F3F3CF25188A1300D91190 /* Frameworks */,
@@ -469,9 +469,9 @@
 			dependencies = (
 				B3F3F3D425188A1300D91190 /* PBXTargetDependency */,
 			);
-			name = "KOFFII CGN 2.0UITests";
+			name = "KOFFII 3.0UITests";
 			productName = "KOFFII CGN 2.0UITests";
-			productReference = B3F3F3D225188A1300D91190 /* KOFFII CGN 2.0UITests.xctest */;
+			productReference = B3F3F3D225188A1300D91190 /* KOFFII 3.0UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		E447731A2561389100B772C2 /* KOFFII WidgetExtension */ = {
@@ -536,7 +536,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B3F3F3B125188A1000D91190 /* Build configuration list for PBXProject "KOFFII CGN 2.0" */;
+			buildConfigurationList = B3F3F3B125188A1000D91190 /* Build configuration list for PBXProject "KOFFII 3.0" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -551,9 +551,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B3F3F3B525188A1000D91190 /* KOFFII CGN 2.0 */,
-				B3F3F3C625188A1300D91190 /* KOFFII CGN 2.0Tests */,
-				B3F3F3D125188A1300D91190 /* KOFFII CGN 2.0UITests */,
+				B3F3F3B525188A1000D91190 /* KOFFII 3.0 */,
+				B3F3F3C625188A1300D91190 /* KOFFII 3.0Tests */,
+				B3F3F3D125188A1300D91190 /* KOFFII 3.0UITests */,
 				E447731A2561389100B772C2 /* KOFFII WidgetExtension */,
 				E491F012259D347200EAAE2F /* KOFFIIAppClip */,
 			);
@@ -710,12 +710,12 @@
 /* Begin PBXTargetDependency section */
 		B3F3F3C925188A1300D91190 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B3F3F3B525188A1000D91190 /* KOFFII CGN 2.0 */;
+			target = B3F3F3B525188A1000D91190 /* KOFFII 3.0 */;
 			targetProxy = B3F3F3C825188A1300D91190 /* PBXContainerItemProxy */;
 		};
 		B3F3F3D425188A1300D91190 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B3F3F3B525188A1000D91190 /* KOFFII CGN 2.0 */;
+			target = B3F3F3B525188A1000D91190 /* KOFFII 3.0 */;
 			targetProxy = B3F3F3D325188A1300D91190 /* PBXContainerItemProxy */;
 		};
 		E447732B2561389200B772C2 /* PBXTargetDependency */ = {
@@ -856,10 +856,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_ASSET_PATHS = "\"KOFFII CGN 2.0/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"KOFFII 3.0/Preview Content\"";
 				DEVELOPMENT_TEAM = YLGTKU7SLK;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "KOFFII CGN 2.0/Info.plist";
+				INFOPLIST_FILE = "KOFFII 3.0/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -883,10 +883,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_ASSET_PATHS = "\"KOFFII CGN 2.0/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"KOFFII 3.0/Preview Content\"";
 				DEVELOPMENT_TEAM = YLGTKU7SLK;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "KOFFII CGN 2.0/Info.plist";
+				INFOPLIST_FILE = "KOFFII 3.0/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -919,7 +919,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KOFFII CGN 2.0.app/KOFFII CGN 2.0";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KOFFII 3.0.app/KOFFII 3.0";
 			};
 			name = Debug;
 		};
@@ -941,7 +941,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KOFFII CGN 2.0.app/KOFFII CGN 2.0";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KOFFII 3.0.app/KOFFII 3.0";
 			};
 			name = Release;
 		};
@@ -1090,7 +1090,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B3F3F3B125188A1000D91190 /* Build configuration list for PBXProject "KOFFII CGN 2.0" */ = {
+		B3F3F3B125188A1000D91190 /* Build configuration list for PBXProject "KOFFII 3.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B3F3F3D925188A1300D91190 /* Debug */,
@@ -1099,7 +1099,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3F3F3DB25188A1300D91190 /* Build configuration list for PBXNativeTarget "KOFFII CGN 2.0" */ = {
+		B3F3F3DB25188A1300D91190 /* Build configuration list for PBXNativeTarget "KOFFII 3.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B3F3F3DC25188A1300D91190 /* Debug */,
@@ -1108,7 +1108,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3F3F3DE25188A1300D91190 /* Build configuration list for PBXNativeTarget "KOFFII CGN 2.0Tests" */ = {
+		B3F3F3DE25188A1300D91190 /* Build configuration list for PBXNativeTarget "KOFFII 3.0Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B3F3F3DF25188A1300D91190 /* Debug */,
@@ -1117,7 +1117,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3F3F3E125188A1300D91190 /* Build configuration list for PBXNativeTarget "KOFFII CGN 2.0UITests" */ = {
+		B3F3F3E125188A1300D91190 /* Build configuration list for PBXNativeTarget "KOFFII 3.0UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B3F3F3E225188A1300D91190 /* Debug */,

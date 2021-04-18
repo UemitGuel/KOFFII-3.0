@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B3F3F3B525188A1000D91190"
-               BuildableName = "KOFFII CGN 2.0.app"
-               BlueprintName = "KOFFII CGN 2.0"
-               ReferencedContainer = "container:KOFFII CGN 2.0.xcodeproj">
+               BuildableName = "KOFFII 3.0.app"
+               BlueprintName = "KOFFII 3.0"
+               ReferencedContainer = "container:KOFFII 3.0.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B3F3F3B525188A1000D91190"
-            BuildableName = "KOFFII CGN 2.0.app"
-            BlueprintName = "KOFFII CGN 2.0"
-            ReferencedContainer = "container:KOFFII CGN 2.0.xcodeproj">
+            BuildableName = "KOFFII 3.0.app"
+            BlueprintName = "KOFFII 3.0"
+            ReferencedContainer = "container:KOFFII 3.0.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B3F3F3B525188A1000D91190"
-            BuildableName = "KOFFII CGN 2.0.app"
-            BlueprintName = "KOFFII CGN 2.0"
-            ReferencedContainer = "container:KOFFII CGN 2.0.xcodeproj">
+            BuildableName = "KOFFII 3.0.app"
+            BlueprintName = "KOFFII 3.0"
+            ReferencedContainer = "container:KOFFII 3.0.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

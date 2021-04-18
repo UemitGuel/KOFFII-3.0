@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B3F3F3D125188A1300D91190"
-               BuildableName = "KOFFII CGN 2.0UITests.xctest"
-               BlueprintName = "KOFFII CGN 2.0UITests"
-               ReferencedContainer = "container:KOFFII CGN 2.0.xcodeproj">
+               BuildableName = "KOFFII 3.0UITests.xctest"
+               BlueprintName = "KOFFII 3.0UITests"
+               ReferencedContainer = "container:KOFFII 3.0.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B3F3F3D125188A1300D91190"
-               BuildableName = "KOFFII CGN 2.0UITests.xctest"
-               BlueprintName = "KOFFII CGN 2.0UITests"
-               ReferencedContainer = "container:KOFFII CGN 2.0.xcodeproj">
+               BuildableName = "KOFFII 3.0UITests.xctest"
+               BlueprintName = "KOFFII 3.0UITests"
+               ReferencedContainer = "container:KOFFII 3.0.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B3F3F3D125188A1300D91190"
-            BuildableName = "KOFFII CGN 2.0UITests.xctest"
-            BlueprintName = "KOFFII CGN 2.0UITests"
-            ReferencedContainer = "container:KOFFII CGN 2.0.xcodeproj">
+            BuildableName = "KOFFII 3.0UITests.xctest"
+            BlueprintName = "KOFFII 3.0UITests"
+            ReferencedContainer = "container:KOFFII 3.0.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
