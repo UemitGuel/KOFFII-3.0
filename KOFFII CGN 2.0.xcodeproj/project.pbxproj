@@ -30,7 +30,6 @@
 		B3F3F3C125188A1300D91190 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3F3F3C025188A1300D91190 /* Preview Assets.xcassets */; };
 		B3F3F3CC25188A1300D91190 /* KOFFII_CGN_2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3CB25188A1300D91190 /* KOFFII_CGN_2_0Tests.swift */; };
 		B3F3F3D725188A1300D91190 /* KOFFII_CGN_2_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3D625188A1300D91190 /* KOFFII_CGN_2_0UITests.swift */; };
-		B3F3F3E825188A2600D91190 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3E725188A2600D91190 /* Sidebar.swift */; };
 		B3F3F3ED25188DD300D91190 /* CafeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3EC25188DD300D91190 /* CafeView.swift */; };
 		B3F3F439251900CA00D91190 /* CafeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F438251900CA00D91190 /* CafeItem.swift */; };
 		B3F3F446251902D000D91190 /* CafeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F445251902D000D91190 /* CafeList.swift */; };
@@ -62,7 +61,6 @@
 		E491F02F259D368B00EAAE2F /* Top3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32897AD251FA1BA0098A6E7 /* Top3View.swift */; };
 		E491F030259D368B00EAAE2F /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B520C3251A3B8900368F47 /* FilterView.swift */; };
 		E491F031259D368B00EAAE2F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31CEBE8251E1FF900B7501E /* MapView.swift */; };
-		E491F032259D368B00EAAE2F /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3E725188A2600D91190 /* Sidebar.swift */; };
 		E491F033259D368B00EAAE2F /* LocationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38960BC251B4C67001659FD /* LocationStore.swift */; };
 		E491F034259D368B00EAAE2F /* DiscoverItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E492FEFA2590EAEC00881C1F /* DiscoverItem.swift */; };
 		E491F035259D368B00EAAE2F /* CafeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3EC25188DD300D91190 /* CafeView.swift */; };
@@ -172,7 +170,6 @@
 		B3F3F3D225188A1300D91190 /* KOFFII CGN 2.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KOFFII CGN 2.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F3F3D625188A1300D91190 /* KOFFII_CGN_2_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KOFFII_CGN_2_0UITests.swift; sourceTree = "<group>"; };
 		B3F3F3D825188A1300D91190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3F3F3E725188A2600D91190 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 		B3F3F3EC25188DD300D91190 /* CafeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeView.swift; sourceTree = "<group>"; };
 		B3F3F438251900CA00D91190 /* CafeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeItem.swift; sourceTree = "<group>"; };
 		B3F3F445251902D000D91190 /* CafeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeList.swift; sourceTree = "<group>"; };
@@ -363,7 +360,6 @@
 			children = (
 				B3F3F3BB25188A1100D91190 /* ContentView.swift */,
 				B3B520922519E1C400368F47 /* TabBar.swift */,
-				B3F3F3E725188A2600D91190 /* Sidebar.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -621,7 +617,6 @@
 				B38960C2251B50A2001659FD /* RegionStore.swift in Sources */,
 				B32897AE251FA1BA0098A6E7 /* Top3View.swift in Sources */,
 				B3F3F3BC25188A1100D91190 /* ContentView.swift in Sources */,
-				B3F3F3E825188A2600D91190 /* Sidebar.swift in Sources */,
 				B3F3F3ED25188DD300D91190 /* CafeView.swift in Sources */,
 				B31CEBE9251E1FF900B7501E /* MapView.swift in Sources */,
 				B3C3368C251DE78200755B1E /* AllCafesMapView.swift in Sources */,
@@ -702,7 +697,6 @@
 				E491F02D259D368B00EAAE2F /* Cafe.swift in Sources */,
 				E491F043259D368B00EAAE2F /* CafeItem.swift in Sources */,
 				E491F02C259D368B00EAAE2F /* AnnotationsHelper.swift in Sources */,
-				E491F032259D368B00EAAE2F /* Sidebar.swift in Sources */,
 				E491F044259D368B00EAAE2F /* TabBar.swift in Sources */,
 				E491F03D259D368B00EAAE2F /* DecodableDefaultSource.swift in Sources */,
 				E491F035259D368B00EAAE2F /* CafeView.swift in Sources */,

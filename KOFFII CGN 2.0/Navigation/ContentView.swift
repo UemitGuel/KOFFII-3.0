@@ -8,23 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    #if os(iOS)
-    @Environment(\.horizontalSizeClass) var horizontalSizeClass
-    #endif
-    
-    @ViewBuilder
     
     var body: some View {
-        #if os(iOS)
-        if horizontalSizeClass == .compact {
-            TabBar().environmentObject(LocationStore()).environmentObject(RegionStore()).environmentObject(MapViewStore())
-        } else {
-            Sidebar().environmentObject(LocationStore()).environmentObject(RegionStore()).environmentObject(MapViewStore())
-        }
-        #else
-        Sidebar().environmentObject(LocationStore()).environmentObject(RegionStore()).environmentObject(MapViewStore())
-            .frame(minWidth: 1000, minHeight: 600)
-        #endif
+        TabBar().environmentObject(LocationStore()).environmentObject(RegionStore()).environmentObject(MapViewStore())
     }
 }
 
