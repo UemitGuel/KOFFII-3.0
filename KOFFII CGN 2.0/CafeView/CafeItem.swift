@@ -14,25 +14,31 @@ struct CafeItem: View {
     @EnvironmentObject var store: LocationStore
     
     var body: some View {
-        HStack(alignment: .center) {
-            Text(store.getDistanceAsString(cafeLocation: cafe.location))
-                .font(.title3)
-                .foregroundColor(Color.primary)
+        VStack(alignment: .leading) {
+            HStack{
+                FeatureDisplayView(cafe: cafe)
+                Spacer()
+                Text(store.getDistanceAsString(cafeLocation: cafe.location))
+                Image(systemName: "chevron.forward")
+            }
+            .font(.system(.body, design: .rounded))
+            .foregroundColor(.secondary)
+            .padding([.horizontal, .top])
+            Spacer()
             VStack(alignment: .leading) {
                 Text(cafe.name)
-                    .foregroundColor(Color.primary)
-                    .lineLimit(1)
-                    .font(.system(.headline, design: .rounded))
+                    .bold()
+                    .font(.system(.title, design: .rounded))
                 Text(cafe.hood.rawValue)
-                    .foregroundColor(Color.secondary)
-                    .lineLimit(1)
-                FeatureDisplayView(cafe: cafe)
+                    .foregroundColor(Color(.secondaryLabel))
+                    .font(.system(.body, design: .rounded))
             }
-            Image(systemName: "chevron.right")
-                .foregroundColor(Color.secondary)
+            .padding([.horizontal, .bottom])
         }
-        .font(.subheadline)
-        .padding(.vertical)
+        .background(Color(.secondarySystemBackground))
+        .frame(height: 125)
+        .cornerRadius(16)
+        .padding(.horizontal)
     }
 }
 
@@ -42,6 +48,7 @@ struct CoffeeItem_Previews: PreviewProvider {
         Group {
             CafeItem(cafe: cafeData[5])
                 .preferredColorScheme(.dark)
+                .environmentObject(LocationStore())
         }
     }
 }
@@ -51,19 +58,19 @@ struct FeatureDisplayView: View {
     var cafe: Cafe
     
     var body: some View {
-        HStack {
+        HStack(spacing: 32) {
             Image(systemName: "wifi")
-                .foregroundColor(cafe.hasWifi ? .primary : Color(.tertiaryLabel).opacity(0.8))
-            Spacer()
+                .foregroundColor(cafe.hasWifi ? Color(.systemOrange) : Color(.secondaryLabel).opacity(0.8))
+                .imageScale(cafe.hasWifi ? .large : .small)
             Image("FOOD")
-                .foregroundColor(cafe.hasFood ? .primary : Color(.tertiaryLabel).opacity(0.8))
-            Spacer()
+                .foregroundColor(cafe.hasFood ? Color(.systemTeal) : Color(.secondaryLabel).opacity(0.8))
+                .imageScale(cafe.hasFood ? .large : .small)
             Image(systemName: "leaf")
-                .foregroundColor(cafe.hasVegan ? .primary : Color(.tertiaryLabel).opacity(0.8))
-            Spacer()
+                .foregroundColor(cafe.hasVegan ? Color(.green) : Color(.secondaryLabel).opacity(0.8))
+                .imageScale(cafe.hasVegan ? .large : .small)
             Image(systemName: "bolt")
-                .foregroundColor(cafe.hasPlug ? .primary : Color(.tertiaryLabel).opacity(0.8))
+                .foregroundColor(cafe.hasPlug ? Color(.systemYellow) : Color(.secondaryLabel).opacity(0.8))
+                .imageScale(cafe.hasPlug ? .large : .small)
         }
-        .padding(.horizontal)
     }
 }

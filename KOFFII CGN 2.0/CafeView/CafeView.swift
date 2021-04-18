@@ -24,11 +24,10 @@ struct CafeView: View {
     var body: some View {
         ScrollView(showsIndicators: false) {
             FilterView(needWifi: $needWifi, needFood: $needFood, needVegan: $needVegan, needPlug: $needPlug)
+                .padding(.leading)
             Divider()
             CafeList(cafeListFiltered: cafeListFiltered)
-                .padding(.top)
         }
-        .padding(.horizontal)
         .navigationTitle("KOFFII CGN")
     }
     

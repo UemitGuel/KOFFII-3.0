@@ -15,13 +15,7 @@ struct CafeList: View {
                 NavigationLink(
                     destination: CafeDetailView(cafe: item),
                     label: {
-                        VStack {
-                            CafeItem(cafe: item)
-                            Divider()
-                                .padding(.bottom, 8)
-                            
-                        }
-                        .padding(.horizontal)
+                        CafeItem(cafe: item)
                     })
             }
         
