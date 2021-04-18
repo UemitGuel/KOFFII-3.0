@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct Top3View: View {
-    
-    @EnvironmentObject var store: LocationStore
-    
+        
     var cafe1: Cafe
     var cafe2: Cafe
     var cafe3: Cafe
