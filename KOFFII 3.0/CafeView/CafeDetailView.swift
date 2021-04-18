@@ -12,14 +12,14 @@ struct CafeDetailView: View {
     
     var cafe: Cafe
         
-    @EnvironmentObject var regionVM: RegionStore
+    @State var regionVM = RegionStore.shared.region
     
     @State private var trackingMode = MapUserTrackingMode.follow
     
     var body: some View {
         GeometryReader { geo in
             ScrollView(showsIndicators: false) {
-                Map(coordinateRegion: $regionVM.region , interactionModes: .all, showsUserLocation: true, userTrackingMode: $trackingMode, annotationItems: [cafe]) { item in
+                Map(coordinateRegion: $regionVM, interactionModes: .all, showsUserLocation: true, userTrackingMode: $trackingMode, annotationItems: [cafe]) { item in
                     MapMarker(coordinate: item.coordinates)
                 }
                 .frame(height: geo.size.height*0.22, alignment: .center)
