@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct KOFFII_CGN_2_0App: App {
+struct KOFFII_3_0App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabBar().environmentObject(MapViewStore())
         }
     }
 }

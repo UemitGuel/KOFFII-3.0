@@ -24,8 +24,7 @@
 		B3B520C4251A3B8A00368F47 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B520C3251A3B8900368F47 /* FilterView.swift */; };
 		B3B8738B251B3EBD006CA136 /* CafeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B8738A251B3EBD006CA136 /* CafeDetailView.swift */; };
 		B3C3368C251DE78200755B1E /* AllCafesMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C3368B251DE78200755B1E /* AllCafesMapView.swift */; };
-		B3F3F3BA25188A1100D91190 /* KOFFII_CGN_2_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3B925188A1100D91190 /* KOFFII_CGN_2_0App.swift */; };
-		B3F3F3BC25188A1100D91190 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3BB25188A1100D91190 /* ContentView.swift */; };
+		B3F3F3BA25188A1100D91190 /* KOFFII_3_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3B925188A1100D91190 /* KOFFII_3_0App.swift */; };
 		B3F3F3BE25188A1300D91190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3F3F3BD25188A1300D91190 /* Assets.xcassets */; };
 		B3F3F3C125188A1300D91190 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3F3F3C025188A1300D91190 /* Preview Assets.xcassets */; };
 		B3F3F3CC25188A1300D91190 /* KOFFII_CGN_2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3CB25188A1300D91190 /* KOFFII_CGN_2_0Tests.swift */; };
@@ -78,7 +77,6 @@
 		E491F03B259D368B00EAAE2F /* AllCafesMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C3368B251DE78200755B1E /* AllCafesMapView.swift */; };
 		E491F03C259D368B00EAAE2F /* CafeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B8738A251B3EBD006CA136 /* CafeDetailView.swift */; };
 		E491F03D259D368B00EAAE2F /* DecodableDefaultSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */; };
-		E491F03E259D368B00EAAE2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3BB25188A1100D91190 /* ContentView.swift */; };
 		E491F03F259D368B00EAAE2F /* RegionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38960C1251B50A2001659FD /* RegionStore.swift */; };
 		E491F040259D368B00EAAE2F /* CafeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F445251902D000D91190 /* CafeList.swift */; };
 		E491F041259D368B00EAAE2F /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31CEC0D251E386A00B7501E /* DismissButton.swift */; };
@@ -165,8 +163,7 @@
 		B3B8738A251B3EBD006CA136 /* CafeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeDetailView.swift; sourceTree = "<group>"; };
 		B3C3368B251DE78200755B1E /* AllCafesMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCafesMapView.swift; sourceTree = "<group>"; };
 		B3F3F3B625188A1000D91190 /* KOFFII 3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KOFFII 3.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3F3F3B925188A1100D91190 /* KOFFII_CGN_2_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KOFFII_CGN_2_0App.swift; sourceTree = "<group>"; };
-		B3F3F3BB25188A1100D91190 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B3F3F3B925188A1100D91190 /* KOFFII_3_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KOFFII_3_0App.swift; sourceTree = "<group>"; };
 		B3F3F3BD25188A1300D91190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3F3F3C025188A1300D91190 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3F3F3C225188A1300D91190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -322,7 +319,7 @@
 		B3F3F3B825188A1100D91190 /* KOFFII 3.0 */ = {
 			isa = PBXGroup;
 			children = (
-				B3F3F3B925188A1100D91190 /* KOFFII_CGN_2_0App.swift */,
+				B3F3F3B925188A1100D91190 /* KOFFII_3_0App.swift */,
 				B3F3F43D2519022C00D91190 /* Navigation */,
 				B3B520822519D90200368F47 /* Resources */,
 				B3F3F4412519024600D91190 /* Items */,
@@ -367,7 +364,6 @@
 		B3F3F43D2519022C00D91190 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				B3F3F3BB25188A1100D91190 /* ContentView.swift */,
 				B3B520922519E1C400368F47 /* TabBar.swift */,
 			);
 			path = Navigation;
@@ -634,7 +630,6 @@
 				B31CEC09251E379400B7501E /* GoogleMapsButton.swift in Sources */,
 				B38960C2251B50A2001659FD /* RegionStore.swift in Sources */,
 				B32897AE251FA1BA0098A6E7 /* Top3View.swift in Sources */,
-				B3F3F3BC25188A1100D91190 /* ContentView.swift in Sources */,
 				B3F3F3ED25188DD300D91190 /* CafeView.swift in Sources */,
 				B31CEBE9251E1FF900B7501E /* MapView.swift in Sources */,
 				B3C3368C251DE78200755B1E /* AllCafesMapView.swift in Sources */,
@@ -643,7 +638,7 @@
 				B3B8738B251B3EBD006CA136 /* CafeDetailView.swift in Sources */,
 				B3F3F446251902D000D91190 /* CafeList.swift in Sources */,
 				B3F3F439251900CA00D91190 /* CafeItem.swift in Sources */,
-				B3F3F3BA25188A1100D91190 /* KOFFII_CGN_2_0App.swift in Sources */,
+				B3F3F3BA25188A1100D91190 /* KOFFII_3_0App.swift in Sources */,
 				B31CEC0E251E386A00B7501E /* DismissButton.swift in Sources */,
 				B3B520892519D92800368F47 /* Data.swift in Sources */,
 				B33571DE251E0C4D00D06BC4 /* AnnotationsHelper.swift in Sources */,
@@ -710,7 +705,6 @@
 				E491F031259D368B00EAAE2F /* MapView.swift in Sources */,
 				E491F02F259D368B00EAAE2F /* Top3View.swift in Sources */,
 				E491F036259D368B00EAAE2F /* GoogleMapsButton.swift in Sources */,
-				E491F03E259D368B00EAAE2F /* ContentView.swift in Sources */,
 				E491F02E259D368B00EAAE2F /* CoordinatesHelper.swift in Sources */,
 				E491F037259D368B00EAAE2F /* MapViewStore.swift in Sources */,
 				E491F07D259E04C300EAAE2F /* KOFFIIAppClipApp.swift in Sources */,
