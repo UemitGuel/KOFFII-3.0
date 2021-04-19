@@ -243,8 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				B3F3F3EC25188DD300D91190 /* CafeView.swift */,
-				E4779676262CD571001CBE43 /* CafeListViewModel.swift */,
-				E4779682262CD5B6001CBE43 /* CafeViewModel.swift */,
+				E4E270FE262D75C000EA2BBC /* ViewModels */,
 				B3F3F445251902D000D91190 /* CafeList.swift */,
 				B3B520C3251A3B8900368F47 /* FilterView.swift */,
 				B3F3F438251900CA00D91190 /* CafeItem.swift */,
@@ -420,6 +419,15 @@
 				E491F01C259D347300EAAE2F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E4E270FE262D75C000EA2BBC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E4779676262CD571001CBE43 /* CafeListViewModel.swift */,
+				E4779682262CD5B6001CBE43 /* CafeViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

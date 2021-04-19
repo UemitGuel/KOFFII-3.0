@@ -20,7 +20,7 @@ class CafeListViewModel: ObservableObject {
         self.cafeList = cafeData.map(CafeViewModel.init)
     }
     
-    func getfilteredCafeList() {
+    func filterCafeList() {
         var cafeList = cafeData
         if needWifi {
             cafeList = cafeList.filter { $0.hasWifi }

@@ -13,10 +13,10 @@ struct FilterView: View {
     
     var body: some View {
         HStack(spacing: 8) {
-            FilterItem(iconImage: Image(systemName: "wifi"), filterItem: "Wifi", feature: $model.needWifi)
-            FilterItem(iconImage: Image("FOOD"), filterItem: "Lunch", feature: $model.needFood)
-            FilterItem(iconImage: Image(systemName: "leaf"), filterItem: "Vegan", feature: $model.needVegan)
-            FilterItem(iconImage: Image(systemName: "bolt"), filterItem: "Strom", feature: $model.needPlug)
+            FilterItem(iconImage: Image(systemName: "wifi"), filterItem: "Wifi", feature: $model.needWifi, model: model)
+            FilterItem(iconImage: Image("FOOD"), filterItem: "Lunch", feature: $model.needFood, model: model)
+            FilterItem(iconImage: Image(systemName: "leaf"), filterItem: "Vegan", feature: $model.needVegan, model: model)
+            FilterItem(iconImage: Image(systemName: "bolt"), filterItem: "Strom", feature: $model.needPlug, model: model)
             Spacer()
         }
     }
@@ -27,11 +27,13 @@ struct FilterItem: View {
     var iconImage: Image
     var filterItem: String
     @Binding var feature: Bool
+    @ObservedObject var model: CafeListViewModel
     
     var body: some View {
         Button(action: {
             self.feature.toggle()
             impactMed.impactOccurred()
+            model.filterCafeList()
         }) {
             VStack(spacing: 8) {
                 iconImage
