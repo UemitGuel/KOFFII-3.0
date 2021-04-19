@@ -9,14 +9,14 @@ import SwiftUI
 
 struct CafeItem: View {
     
-    var cafe: Cafe
+    var cafe: CafeViewModel
         
     var body: some View {
         VStack(alignment: .leading) {
             HStack{
-                FeatureDisplayView(cafe: cafe)
+                FeatureDisplayView(cafe: cafe.cafe)
                 Spacer()
-                Text(LocationStore.shared.getDistanceAsString(cafeLocation: cafe.location))
+                Text(cafe.distance)
                 Image(systemName: "chevron.forward")
             }
             .font(.system(.body, design: .rounded))
@@ -27,7 +27,7 @@ struct CafeItem: View {
                 Text(cafe.name)
                     .bold()
                     .font(.system(.title, design: .rounded))
-                Text(cafe.hood.rawValue)
+                Text(cafe.hood)
                     .foregroundColor(Color(.secondaryLabel))
                     .font(.system(.body, design: .rounded))
             }
@@ -40,19 +40,13 @@ struct CafeItem: View {
     }
 }
 
-
-struct CoffeeItem_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            CafeItem(cafe: cafeData[5])
-                .preferredColorScheme(.dark)
-        }
-    }
-}
-
 struct FeatureDisplayView: View {
     
-    var cafe: Cafe
+    var cafe: CafeDetailViewModel
+    
+    init(cafe: Cafe) {
+        self.cafe = CafeDetailViewModel(cafe: cafe)
+    }
     
     var body: some View {
         HStack(spacing: 32) {

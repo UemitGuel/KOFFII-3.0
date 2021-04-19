@@ -9,9 +9,8 @@
 import SwiftUI
 import CoreLocation
 
-struct Cafe: Identifiable, Codable {
+struct Cafe: Codable {
     
-    let id = UUID()
     var name: String
     var hours: [Hours]?
     @DecodableDefault.EmptyList var notes: [String]

@@ -11,7 +11,7 @@ import SwiftUI
 struct KOFFIIAppClipApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabBar().environmentObject(MapViewStore())
         }
     }
 }

@@ -8,26 +8,17 @@
 import SwiftUI
 
 struct CafeList: View {
-    var cafeListFiltered: [Cafe]
+    
+    var cafeListFiltered: [CafeViewModel]
     
     var body: some View {
             ForEach(cafeListFiltered, id: \.name) { item in
                 NavigationLink(
-                    destination: CafeDetailView(cafe: item),
+                    destination: CafeDetailView(cafe: item.cafe),
                     label: {
                         CafeItem(cafe: item)
                     })
             }
         
-    }
-}
-
-struct CoffeeList_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            CafeList(cafeListFiltered: cafeData)
-            CafeList(cafeListFiltered: cafeData)
-                .preferredColorScheme(.dark)
-        }
     }
 }

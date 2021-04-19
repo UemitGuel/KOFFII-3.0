@@ -18,7 +18,7 @@ struct AllCafesMapView: View {
         MapView(centerCoordinate: $centerCoordinate)
             .edgesIgnoringSafeArea(.top)
             .overlay(mapViewStore.showDetails ?
-                    MapViewOverlay(cafe: mapViewStore.choosenCafe) : nil)
+                    MapViewOverlay(cafe: mapViewStore.chosenCafe) : nil)
     }
 }
 
