@@ -1,14 +1,14 @@
 //
-//  CafeViewModel.swift
+//  CafeDetailViewModel.swift
 //  KOFFII 3.0
 //
-//  Created by Gül, Ümit on 18.04.21.
+//  Created by Gül, Ümit on 19.04.21.
 //
 
 import Foundation
 import CoreLocation
 
-struct CafeViewModel: Identifiable {
+struct CafeDetailViewModel: Identifiable {
     
     let id = UUID()
     let locationStore = LocationStore.shared
@@ -65,23 +65,15 @@ struct CafeViewModel: Identifiable {
     }
     
     var hasNotes: Bool {
-        return self.cafe.notes.isEmpty
+        return !self.cafe.notes.isEmpty
     }
     
-    var notesTitle: String? {
-        if hasNotes {
-            return self.cafe.notes[0]
-        } else {
-            return nil
-        }
+    var notesTitle: String {
+        return self.cafe.notes[0]
     }
     
-    var notesBody: String? {
-        if hasNotes {
-            return self.cafe.notes[1]
-        } else {
-            return nil
-        }
+    var notesBody: String {
+        return self.cafe.notes[1]
     }
 
 

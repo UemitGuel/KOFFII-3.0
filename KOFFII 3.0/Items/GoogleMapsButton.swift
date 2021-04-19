@@ -9,7 +9,11 @@ import SwiftUI
 
 struct GoogleMapsButton: View {
     
-    var cafe: CafeViewModel
+    var cafe: CafeDetailViewModel
+    
+    init(cafe: Cafe) {
+        self.cafe = CafeDetailViewModel(cafe: cafe)
+    }
     
     var googleMapsUrl: URL {
         let urlEncoded = cafe.locationURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!

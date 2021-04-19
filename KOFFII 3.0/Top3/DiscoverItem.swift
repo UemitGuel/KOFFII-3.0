@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DiscoverItem: View {
-    var cafe: CafeViewModel
+    var cafe: DiscoveryCafeViewModel
     
     var body: some View {
         ZStack {
@@ -28,14 +28,13 @@ struct DiscoverItem: View {
     var bar: some View {
         HStack {
             VStack(alignment: .leading) {
-                Text("\(cafe.name)")
-//                Text("\(cafe.name) - \(cafe.notes[0])")
+                Text("\(cafe.name) - \(cafe.notesTitle)")
                     .font(.headline)
                     .foregroundColor(Color(.label))
                     .bold()
-//                Text(cafe.notes[1])
-//                    .foregroundColor(.secondary)
-//                    .font(.subheadline)
+                Text(cafe.notesBody)
+                    .foregroundColor(.secondary)
+                    .font(.subheadline)
             }
             
             Spacer()

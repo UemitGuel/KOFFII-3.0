@@ -14,7 +14,7 @@ struct CafeItem: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack{
-                FeatureDisplayView(cafe: cafe)
+                FeatureDisplayView(cafe: cafe.cafe)
                 Spacer()
                 Text(cafe.distance)
                 Image(systemName: "chevron.forward")
@@ -42,7 +42,11 @@ struct CafeItem: View {
 
 struct FeatureDisplayView: View {
     
-    var cafe: CafeViewModel
+    var cafe: CafeDetailViewModel
+    
+    init(cafe: Cafe) {
+        self.cafe = CafeDetailViewModel(cafe: cafe)
+    }
     
     var body: some View {
         HStack(spacing: 32) {

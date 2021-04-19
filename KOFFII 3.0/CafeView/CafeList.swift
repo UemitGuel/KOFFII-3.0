@@ -14,7 +14,7 @@ struct CafeList: View {
     var body: some View {
             ForEach(cafeListFiltered, id: \.name) { item in
                 NavigationLink(
-                    destination: CafeDetailView(cafe: item),
+                    destination: CafeDetailView(cafe: item.cafe),
                     label: {
                         CafeItem(cafe: item)
                     })

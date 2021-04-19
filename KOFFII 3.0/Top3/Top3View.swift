@@ -9,22 +9,22 @@ import SwiftUI
 
 struct Top3View: View {
         
-    var cafe1: CafeViewModel
-    var cafe2: CafeViewModel
-    var cafe3: CafeViewModel
+    var cafe1: DiscoveryCafeViewModel
+    var cafe2: DiscoveryCafeViewModel
+    var cafe3: DiscoveryCafeViewModel
     
     var body: some View {
         ScrollView {
             NavigationLink(
-                destination: CafeDetailView(cafe: cafe1)) {
+                destination: CafeDetailView(cafe: cafe1.cafe)) {
                 DiscoverItem(cafe: cafe1)
             }
             NavigationLink(
-                destination: CafeDetailView(cafe: cafe2)) {
+                destination: CafeDetailView(cafe: cafe2.cafe)) {
                 DiscoverItem(cafe: cafe2)
             }
             NavigationLink(
-                destination: CafeDetailView(cafe: cafe3)) {
+                destination: CafeDetailView(cafe: cafe3.cafe)) {
                 DiscoverItem(cafe: cafe3)
             }
             .navigationTitle("Ümit´s Top 3")
@@ -35,17 +35,16 @@ struct Top3View: View {
 
 struct NotesView: View {
     
-    var cafe: Cafe
+    var cafe: DiscoveryCafeViewModel
     
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(cafe.notes[0])
+            Text(cafe.notesTitle)
                 .font(.system(.headline, design: .rounded))
                 .foregroundColor(.primary)
-            Text(cafe.notes[1])
+            Text(cafe.notesBody)
                 .font(.system(.subheadline, design: .rounded))
                 .foregroundColor(.primary).opacity(0.8)
-            
             Spacer()
         }
         .padding(.top, 32)

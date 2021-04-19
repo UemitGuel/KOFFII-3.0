@@ -33,6 +33,12 @@
 		B3F3F439251900CA00D91190 /* CafeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F438251900CA00D91190 /* CafeItem.swift */; };
 		B3F3F446251902D000D91190 /* CafeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F445251902D000D91190 /* CafeList.swift */; };
 		E406A5522557F1BE002D199B /* DecodableDefaultSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */; };
+		E43188FC262DD47900530DEA /* DiscoveryCafeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43188FB262DD47900530DEA /* DiscoveryCafeViewModel.swift */; };
+		E4318903262DD5F500530DEA /* CafeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4318902262DD5F500530DEA /* CafeDetailViewModel.swift */; };
+		E4318909262DD63300530DEA /* DiscoveryCafeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43188FB262DD47900530DEA /* DiscoveryCafeViewModel.swift */; };
+		E431890F262DD63400530DEA /* DiscoveryCafeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43188FB262DD47900530DEA /* DiscoveryCafeViewModel.swift */; };
+		E4318915262DD65300530DEA /* CafeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4318902262DD5F500530DEA /* CafeDetailViewModel.swift */; };
+		E431891B262DD65300530DEA /* CafeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4318902262DD5F500530DEA /* CafeDetailViewModel.swift */; };
 		E447731E2561389100B772C2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E447731D2561389100B772C2 /* WidgetKit.framework */; };
 		E44773202561389100B772C2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E447731F2561389100B772C2 /* SwiftUI.framework */; };
 		E44773232561389100B772C2 /* KOFFII_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44773222561389100B772C2 /* KOFFII_Widget.swift */; };
@@ -177,6 +183,8 @@
 		B3F3F438251900CA00D91190 /* CafeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeItem.swift; sourceTree = "<group>"; };
 		B3F3F445251902D000D91190 /* CafeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeList.swift; sourceTree = "<group>"; };
 		E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableDefaultSource.swift; sourceTree = "<group>"; };
+		E43188FB262DD47900530DEA /* DiscoveryCafeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryCafeViewModel.swift; sourceTree = "<group>"; };
+		E4318902262DD5F500530DEA /* CafeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeDetailViewModel.swift; sourceTree = "<group>"; };
 		E447731B2561389100B772C2 /* KOFFII WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "KOFFII WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E447731D2561389100B772C2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		E447731F2561389100B772C2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -240,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				B3F3F3EC25188DD300D91190 /* CafeView.swift */,
+				E4318902262DD5F500530DEA /* CafeDetailViewModel.swift */,
 				E4E270FE262D75C000EA2BBC /* ViewModels */,
 				B3F3F445251902D000D91190 /* CafeList.swift */,
 				B3B520C3251A3B8900368F47 /* FilterView.swift */,
@@ -264,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				B32897AD251FA1BA0098A6E7 /* Top3View.swift */,
+				E43188FB262DD47900530DEA /* DiscoveryCafeViewModel.swift */,
 				E492FEFA2590EAEC00881C1F /* DiscoverItem.swift */,
 			);
 			path = Top3;
@@ -633,12 +643,14 @@
 				B3F3F3ED25188DD300D91190 /* CafeView.swift in Sources */,
 				B31CEBE9251E1FF900B7501E /* MapView.swift in Sources */,
 				B3C3368C251DE78200755B1E /* AllCafesMapView.swift in Sources */,
+				E4318903262DD5F500530DEA /* CafeDetailViewModel.swift in Sources */,
 				E406A5522557F1BE002D199B /* DecodableDefaultSource.swift in Sources */,
 				B31CEBF1251E279900B7501E /* MapViewStore.swift in Sources */,
 				B3B8738B251B3EBD006CA136 /* CafeDetailView.swift in Sources */,
 				B3F3F446251902D000D91190 /* CafeList.swift in Sources */,
 				B3F3F439251900CA00D91190 /* CafeItem.swift in Sources */,
 				B3F3F3BA25188A1100D91190 /* KOFFII_3_0App.swift in Sources */,
+				E43188FC262DD47900530DEA /* DiscoveryCafeViewModel.swift in Sources */,
 				B31CEC0E251E386A00B7501E /* DismissButton.swift in Sources */,
 				B3B520892519D92800368F47 /* Data.swift in Sources */,
 				B33571DE251E0C4D00D06BC4 /* AnnotationsHelper.swift in Sources */,
@@ -677,6 +689,8 @@
 			files = (
 				E447735525614CDD00B772C2 /* CoordinatesHelper.swift in Sources */,
 				E447734E25614CC600B772C2 /* DecodableDefaultSource.swift in Sources */,
+				E431891B262DD65300530DEA /* CafeDetailViewModel.swift in Sources */,
+				E431890F262DD63400530DEA /* DiscoveryCafeViewModel.swift in Sources */,
 				E447734F25614CC600B772C2 /* Data.swift in Sources */,
 				E47796A4262CDFBB001CBE43 /* CafeViewModel.swift in Sources */,
 				E447735425614CDD00B772C2 /* LocationStore.swift in Sources */,
@@ -702,12 +716,14 @@
 				E491F034259D368B00EAAE2F /* DiscoverItem.swift in Sources */,
 				E491F030259D368B00EAAE2F /* FilterView.swift in Sources */,
 				E491F040259D368B00EAAE2F /* CafeList.swift in Sources */,
+				E4318915262DD65300530DEA /* CafeDetailViewModel.swift in Sources */,
 				E491F031259D368B00EAAE2F /* MapView.swift in Sources */,
 				E491F02F259D368B00EAAE2F /* Top3View.swift in Sources */,
 				E491F036259D368B00EAAE2F /* GoogleMapsButton.swift in Sources */,
 				E491F02E259D368B00EAAE2F /* CoordinatesHelper.swift in Sources */,
 				E491F037259D368B00EAAE2F /* MapViewStore.swift in Sources */,
 				E491F07D259E04C300EAAE2F /* KOFFIIAppClipApp.swift in Sources */,
+				E4318909262DD63300530DEA /* DiscoveryCafeViewModel.swift in Sources */,
 				E491F03C259D368B00EAAE2F /* CafeDetailView.swift in Sources */,
 				E491F038259D368B00EAAE2F /* MapViewOverlay.swift in Sources */,
 				E491F041259D368B00EAAE2F /* DismissButton.swift in Sources */,

@@ -11,7 +11,11 @@ struct MapViewOverlay: View {
         
     @EnvironmentObject var mapViewStore: MapViewStore
     
-    var cafe: CafeViewModel
+    var model: CafeViewModel
+    
+    init(cafe: Cafe) {
+        self.model = CafeViewModel(cafe: cafe)
+    }
     
     var body: some View {
         VStack {
@@ -19,12 +23,12 @@ struct MapViewOverlay: View {
             VStack {
                 HStack(alignment: .top) {
                     VStack(alignment: .leading) {
-                        Text(cafe.name)
+                        Text(model.name)
                             .font(.system(.headline, design: .rounded))
-                        Text("\(cafe.hood)")
+                        Text("\(model.hood)")
                             .font(.system(.body, design: .rounded))
                             .foregroundColor(.primary).opacity(0.8)
-                        Text(cafe.distance)
+                        Text(model.distance)
                             .font(.system(.body, design: .rounded))
                             .foregroundColor(.primary).opacity(0.8)
                     }
@@ -33,10 +37,8 @@ struct MapViewOverlay: View {
                     
                 }
                 
-                FeatureDisplayView(cafe: cafe)
-                
-                
-                GoogleMapsButton(cafe: cafe)
+                FeatureDisplayView(cafe: model.cafe)
+                GoogleMapsButton(cafe: model.cafe)
             }
             .padding()
             .background(Color(.systemBackground))
