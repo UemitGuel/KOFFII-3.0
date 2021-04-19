@@ -13,10 +13,10 @@ struct CafeView: View {
     
     var body: some View {
         ScrollView(showsIndicators: false) {
-//            FilterView(needWifi: model.needWifi, needFood: model.needFood, needVegan: model.needVegan, needPlug: model.needPlug)
-//                .padding(.leading)
+            FilterView(model: model)
+                .padding(.leading)
             Divider()
-//            CafeList(cafeListFiltered: model.cafeList)
+            CafeList(cafeListFiltered: model.cafeList)
         }
         .navigationTitle("KOFFII CGN")
     }

@@ -9,29 +9,15 @@ import SwiftUI
 
 struct FilterView: View {
     
-    @Binding var needWifi: Bool
-    @Binding var needFood: Bool
-    @Binding var needVegan: Bool
-    @Binding var needPlug: Bool
+    @ObservedObject var model: CafeListViewModel
     
     var body: some View {
         HStack(spacing: 8) {
-            FilterItem(iconImage: Image(systemName: "wifi"), filterItem: "Wifi", feature: $needWifi)
-            FilterItem(iconImage: Image("FOOD"), filterItem: "Lunch", feature: $needFood)
-            FilterItem(iconImage: Image(systemName: "leaf"), filterItem: "Vegan", feature: $needVegan)
-            FilterItem(iconImage: Image(systemName: "bolt"), filterItem: "Strom", feature: $needPlug)
+            FilterItem(iconImage: Image(systemName: "wifi"), filterItem: "Wifi", feature: $model.needWifi)
+            FilterItem(iconImage: Image("FOOD"), filterItem: "Lunch", feature: $model.needFood)
+            FilterItem(iconImage: Image(systemName: "leaf"), filterItem: "Vegan", feature: $model.needVegan)
+            FilterItem(iconImage: Image(systemName: "bolt"), filterItem: "Strom", feature: $model.needPlug)
             Spacer()
-        }
-    }
-}
-
-struct FilterButtons_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            FilterView(needWifi: .constant(false), needFood: .constant(false), needVegan: .constant(false), needPlug: .constant(false))
-                .preferredColorScheme(.dark)
-            FilterView(needWifi: .constant(false), needFood: .constant(false), needVegan: .constant(false), needPlug: .constant(false))
-                .previewDevice("iPhone SE (2nd generation)")
         }
     }
 }
