@@ -29,7 +29,7 @@ struct CafeDetailView: View {
                     Text("\(cafe.hood)")
                         .font(.system(.body, design: .rounded))
                         .foregroundColor(.primary).opacity(0.8)
-                    Text(LocationStore.shared.getDistanceAsString(cafeLocation: cafe.location))
+                    Text(cafe.distance)
                         .font(.system(.body, design: .rounded))
                         .foregroundColor(.primary).opacity(0.8)
                     FeatureDisplayView(cafe: cafe)

@@ -16,7 +16,7 @@ struct CafeItem: View {
             HStack{
                 FeatureDisplayView(cafe: cafe)
                 Spacer()
-                Text(LocationStore.shared.getDistanceAsString(cafeLocation: cafe.location))
+                Text(cafe.distance)
                 Image(systemName: "chevron.forward")
             }
             .font(.system(.body, design: .rounded))

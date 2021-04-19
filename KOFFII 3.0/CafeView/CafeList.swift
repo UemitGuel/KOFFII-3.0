@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CafeList: View {
+    
     var cafeListFiltered: [CafeViewModel]
     
     var body: some View {

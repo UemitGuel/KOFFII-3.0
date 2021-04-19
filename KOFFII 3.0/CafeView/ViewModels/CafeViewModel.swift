@@ -11,7 +11,7 @@ import CoreLocation
 struct CafeViewModel: Identifiable {
     
     let id = UUID()
-    
+    let locationStore = LocationStore.shared
     var cafe: Cafe
     
     init(cafe: Cafe) {
@@ -27,6 +27,10 @@ struct CafeViewModel: Identifiable {
     
     var coordinates: CLLocationCoordinate2D {
         return self.cafe.coordinates
+    }
+    
+    var distance: String {
+        return self.locationStore.getDistanceAsString(cafeLocation: location)
     }
     
     var location: CLLocation {
