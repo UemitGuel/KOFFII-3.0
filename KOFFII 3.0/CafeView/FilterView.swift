@@ -17,8 +17,13 @@ struct FilterView: View {
             FilterItem(iconImage: Image("FOOD"), filterItem: "Lunch", feature: $model.needFood, model: model)
             FilterItem(iconImage: Image(systemName: "leaf"), filterItem: "Vegan", feature: $model.needVegan, model: model)
             FilterItem(iconImage: Image(systemName: "bolt"), filterItem: "Strom", feature: $model.needPlug, model: model)
-            Spacer()
         }
+    }
+}
+
+struct FilterView_Previews: PreviewProvider {
+    static var previews: some View {
+        FilterView(model: CafeListViewModel())
     }
 }
 
@@ -45,7 +50,7 @@ struct FilterItem: View {
             .frame(width: 66,height: 44)
             .padding(8)
         }
-        .background(feature ? Color.accentColor : Color.init(.secondarySystemBackground))
+        .background(feature ? Color(.systemYellow) : Color.init(.secondarySystemBackground))
         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         //        .overlay(
         //            RoundedRectangle(cornerRadius: 16)
