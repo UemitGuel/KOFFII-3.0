@@ -51,11 +51,11 @@ struct CafeDetailViewModel: Identifiable {
     var hasFood: Bool {
         return self.cafe.hasFood
     }
-
+    
     var hasVegan: Bool {
         return self.cafe.hasVegan
     }
-
+    
     var hasPlug: Bool {
         return self.cafe.hasPlug
     }
@@ -69,12 +69,18 @@ struct CafeDetailViewModel: Identifiable {
     }
     
     var notesTitle: String {
-        return self.cafe.notes[0]
+        if hasNotes {
+            return self.cafe.notes[0]
+        } else {
+            return ""
+        }
     }
     
     var notesBody: String {
-        return self.cafe.notes[1]
+        if hasNotes {
+            return self.cafe.notes[1]
+        } else {
+            return ""
+        }
     }
-
-
 }

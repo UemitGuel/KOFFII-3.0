@@ -11,14 +11,31 @@ struct CafeView: View {
     
     @ObservedObject var model = CafeListViewModel()
     
+    @State private var isPresented = false
+
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            FilterView(model: model)
-                .padding(.leading)
-            Divider()
-            CafeList(cafeListFiltered: model.cafeList)
+        ScrollView {
+            ForEach(model.cafeList, id: \.name) { cafe in
+                NavigationLink(
+                    destination: CafeDetailView(cafe: cafe),
+                    label: {
+                        CafeItem(cafe: cafe)
+                    })
+                
+            }
         }
         .navigationTitle("KOFFII CGN")
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: { isPresented.toggle() } ) {
+                    Image(systemName: "line.horizontal.3.decrease.circle")
+                        .imageScale(.large)
+                }
+            }
+        }
+        .sheet(isPresented: $isPresented) {
+            FilterFormView(model: model)
+        }
     }
     
 }
@@ -30,4 +47,4 @@ struct CoffeeView_Previews: PreviewProvider {
         }
     }
 }
- 
+
