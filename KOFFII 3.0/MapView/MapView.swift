@@ -6,13 +6,16 @@ struct MapView: UIViewRepresentable {
     
     @EnvironmentObject var mapViewStore: MapViewStore
     
-    var annotations = AnnotationsHelper.shared.getallAnnotation()
+    var helper = AnnotationsHelper.shared
     
+    @Binding var cafeList: [Cafe]
+
     @Binding var centerCoordinate: CLLocationCoordinate2D
         
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
         mapView.delegate = context.coordinator
+        let annotations = helper.getallAnnotation(cafeList: cafeList)
         mapView.addAnnotations(annotations)
         mapView.showsUserLocation = true
         mapView.region = CoordinatesHelper.shared.setRegionMidCologne()
@@ -60,7 +63,9 @@ struct MapView: UIViewRepresentable {
         }
                 
         // Needed to show a view when User clicked on red Dot in the Map
-//        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        
+        //        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
 //            guard annotation is MKPointAnnotation else { return nil }
 //
 //            let identifier = "Annotation"
@@ -81,17 +86,17 @@ struct MapView: UIViewRepresentable {
 //            return annotationView
 //        }
         
-        func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-            let choosenCafeName = view.annotation?.title
-            
-            if let cafe = cafeData.first(where: {$0.name == choosenCafeName}) {
-                self.mapViewStore.changeChosenCafe(cafe: cafe)
-                print(mapViewStore.showDetails)
-                self.mapViewStore.showDetails = true
-                print(mapViewStore.showDetails)
-            } else {
-               fatalError()
-            }
-        }
+//        func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+//            let choosenCafeName = view.annotation?.title
+//
+//            if let cafe = cafeData.first(where: {$0.name == choosenCafeName}) {
+//                self.mapViewStore.changeChosenCafe(cafe: cafe)
+//                print(mapViewStore.showDetails)
+//                self.mapViewStore.showDetails = true
+//                print(mapViewStore.showDetails)
+//            } else {
+//               fatalError()
+//            }
+//        }
     }
 }

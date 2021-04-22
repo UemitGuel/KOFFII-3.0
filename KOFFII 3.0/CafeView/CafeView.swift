@@ -34,7 +34,7 @@ struct CafeView: View {
             }
         }
         .sheet(isPresented: $isPresented) {
-            FilterFormView(model: model)
+            FilterFormView()
         }
     }
     

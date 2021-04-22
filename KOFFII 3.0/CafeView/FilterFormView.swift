@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FilterFormView: View {
     
-    @ObservedObject var model: CafeListViewModel
+    @EnvironmentObject var model: CafeListViewModel
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
@@ -57,6 +57,7 @@ struct FilterFormView: View {
 
 struct FilterFormView_Previews: PreviewProvider {
     static var previews: some View {
-        FilterFormView(model: CafeListViewModel())
+        FilterFormView()
+            .environmentObject(CafeListViewModel())
     }
 }

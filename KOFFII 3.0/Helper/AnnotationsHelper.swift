@@ -12,9 +12,9 @@ class AnnotationsHelper {
     
     static let shared = AnnotationsHelper()
     
-    func getallAnnotation() -> [MKAnnotation] {
+    func getallAnnotation(cafeList: [Cafe]) -> [MKAnnotation] {
         var annotations: [MKAnnotation] = []
-        for cafe in cafeData {
+        for cafe in cafeList {
             let annotation = CafeAnnotation(cafe: cafe)
             annotation.coordinate = cafe.coordinates
             annotations.append(annotation)

@@ -11,17 +11,32 @@ import MapKit
 struct AllCafesMapView: View {
     
     @State private var centerCoordinate = CLLocationCoordinate2D()
-        
-    @EnvironmentObject var model: CafeListViewModel
+    
     @EnvironmentObject var mapViewStore: MapViewStore
+    @EnvironmentObject var model: CafeListViewModel
     
     @State private var isPresented = false
     
     var body: some View {
-        MapView(centerCoordinate: $centerCoordinate)
+        MapView(cafeList: $model.cafeList, centerCoordinate: $centerCoordinate)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        isPresented.toggle()
+                    } ) {
+                        Image(systemName: "line.horizontal.3.decrease.circle")
+                            .imageScale(.large)
+                    }
+                }
+            }
             .sheet(isPresented: $mapViewStore.showDetails) {
                 CafeDetailView(cafe: mapViewStore.chosenCafe)
             }
+            // TODO: After WWDC 2021, maybe better MapView for SwiftUI
+            
+            //            .sheet(isPresented: $isPresented) {
+            //                FilterFormView()
+            //            }
             .navigationTitle("Karte")
     }
 }
