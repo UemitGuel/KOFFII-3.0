@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreLocation
+import SwiftUI
 
 struct CafeDetailViewModel: Identifiable {
     
@@ -62,6 +63,11 @@ struct CafeDetailViewModel: Identifiable {
     
     var hood: String {
         return self.cafe.hood.rawValue
+    }
+    
+    var hasImage: Bool {
+        let image = UIImage(named: name)
+        return image != nil
     }
     
     var hasNotes: Bool {

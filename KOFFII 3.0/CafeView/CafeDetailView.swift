@@ -35,7 +35,7 @@ struct CafeDetailView: View {
                     }
                     .font(.system(.body, design: .rounded))
                     .foregroundColor(.secondary)
-                    .padding([.horizontal, .top])
+                    .padding([.top])
                     Spacer()
                     VStack(alignment: .leading) {
                         Text(model.name)
@@ -45,18 +45,20 @@ struct CafeDetailView: View {
                             .foregroundColor(Color(.secondaryLabel))
                             .font(.system(.body, design: .rounded))
                     }
-                    .padding([.horizontal, .bottom])
+                    .padding([.bottom])
                     GoogleMapsButton(cafe: model.cafe)
                         .padding(.top)
                     Divider()
                     HStack {
-                        Image(model.name)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(height: geo.size.height*0.25)
-                            .cornerRadius(16)
-                        Spacer()
-                        VStack(alignment: .trailing,spacing: 2) {
+                        if model.hasImage {
+                            Image(model.name)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(height: geo.size.height*0.25)
+                                .cornerRadius(16)
+                            Spacer()
+                        }
+                        VStack(alignment: model.hasImage ? .trailing : .leading, spacing: 2) {
                             Text("Öffnungszeiten")
                                 .font(.system(.headline, design: .rounded))
                                 .padding(.bottom, 2)
@@ -70,11 +72,10 @@ struct CafeDetailView: View {
                                 WeekdayHours(cafe: model.cafe, hoursIndex: 6, workday: "So")
                             }
                         }
-                        .frame(width: geo.size.width*0.5)
                     }
                 }
                 .padding()
-                if (!model.hasNotes) {
+                if (model.hasNotes) {
                     Divider()
                     VStack(alignment: .leading, spacing: 4) {
                         Text("Ümit´s Notizen")
