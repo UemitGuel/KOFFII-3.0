@@ -26,7 +26,7 @@ struct CafeDetailView: View {
                 Map(coordinateRegion: $regionVM, interactionModes: .all, showsUserLocation: true, userTrackingMode: $trackingMode, annotationItems: [model]) { item in
                     MapMarker(coordinate: item.coordinates)
                 }
-                .frame(height: geo.size.height*0.22, alignment: .center)
+                .frame(height: geo.size.height*0.45, alignment: .center)
                 VStack(alignment: .leading) {
                     HStack{
                         FeatureDisplayView(cafe: model.cafe)
@@ -45,7 +45,6 @@ struct CafeDetailView: View {
                             .foregroundColor(Color(.secondaryLabel))
                             .font(.system(.body, design: .rounded))
                     }
-                    .padding([.bottom])
                     GoogleMapsButton(cafe: model.cafe)
                         .padding(.top)
                     Divider()
@@ -74,7 +73,7 @@ struct CafeDetailView: View {
                         }
                     }
                 }
-                .padding()
+                .padding(.horizontal)
                 if (model.hasNotes) {
                     Divider()
                     VStack(alignment: .leading, spacing: 4) {

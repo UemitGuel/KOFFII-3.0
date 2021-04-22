@@ -29,7 +29,6 @@ struct Top3View: View {
             }
             .navigationTitle("Ümit´s Top 3")
         }
-        .padding(.horizontal)
     }
 }
 
