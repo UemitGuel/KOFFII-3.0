@@ -12,13 +12,17 @@ struct AllCafesMapView: View {
     
     @State private var centerCoordinate = CLLocationCoordinate2D()
         
+    @EnvironmentObject var model: CafeListViewModel
     @EnvironmentObject var mapViewStore: MapViewStore
+    
+    @State private var isPresented = false
     
     var body: some View {
         MapView(centerCoordinate: $centerCoordinate)
-            .edgesIgnoringSafeArea(.top)
-            .overlay(mapViewStore.showDetails ?
-                    MapViewOverlay(cafe: mapViewStore.chosenCafe) : nil)
+            .sheet(isPresented: $mapViewStore.showDetails) {
+                CafeDetailView(cafe: mapViewStore.chosenCafe)
+            }
+            .navigationTitle("Karte")
     }
 }
 

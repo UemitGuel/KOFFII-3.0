@@ -15,8 +15,7 @@ class AnnotationsHelper {
     func getallAnnotation() -> [MKAnnotation] {
         var annotations: [MKAnnotation] = []
         for cafe in cafeData {
-            let annotation = MKPointAnnotation()
-            annotation.title = cafe.name
+            let annotation = CafeAnnotation(cafe: cafe)
             annotation.coordinate = cafe.coordinates
             annotations.append(annotation)
         }

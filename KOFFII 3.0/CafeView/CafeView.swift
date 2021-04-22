@@ -9,8 +9,8 @@ import SwiftUI
 
 struct CafeView: View {
     
-    @ObservedObject var model = CafeListViewModel()
-    
+    @EnvironmentObject var model: CafeListViewModel
+
     @State private var isPresented = false
 
     var body: some View {

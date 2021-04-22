@@ -55,6 +55,9 @@
 		E447736225615D9E00B772C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3F3F3BD25188A1300D91190 /* Assets.xcassets */; };
 		E44773672561661B00B772C2 /* CafeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B8738A251B3EBD006CA136 /* CafeDetailView.swift */; };
 		E447736C256166C600B772C2 /* CafeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F438251900CA00D91190 /* CafeItem.swift */; };
+		E46CB8A42631D9890026F73B /* CafeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46CB8A32631D9890026F73B /* CafeAnnotation.swift */; };
+		E46CB8AA2631DACE0026F73B /* CafeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46CB8A32631D9890026F73B /* CafeAnnotation.swift */; };
+		E46CB8B02631DACE0026F73B /* CafeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46CB8A32631D9890026F73B /* CafeAnnotation.swift */; };
 		E4779677262CD571001CBE43 /* CafeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4779676262CD571001CBE43 /* CafeListViewModel.swift */; };
 		E4779683262CD5B6001CBE43 /* CafeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4779682262CD5B6001CBE43 /* CafeViewModel.swift */; };
 		E4779698262CDD25001CBE43 /* CafeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4779676262CD571001CBE43 /* CafeListViewModel.swift */; };
@@ -187,6 +190,7 @@
 		E44773222561389100B772C2 /* KOFFII_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KOFFII_Widget.swift; sourceTree = "<group>"; };
 		E44773252561389200B772C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E44773272561389200B772C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E46CB8A32631D9890026F73B /* CafeAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeAnnotation.swift; sourceTree = "<group>"; };
 		E4779676262CD571001CBE43 /* CafeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeListViewModel.swift; sourceTree = "<group>"; };
 		E4779682262CD5B6001CBE43 /* CafeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeViewModel.swift; sourceTree = "<group>"; };
 		E48DC25D2631B2E5009ED2FE /* FilterFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterFormView.swift; sourceTree = "<group>"; };
@@ -260,6 +264,7 @@
 				B3C3368B251DE78200755B1E /* AllCafesMapView.swift */,
 				B31CEBF0251E279900B7501E /* MapViewStore.swift */,
 				B31CEBE8251E1FF900B7501E /* MapView.swift */,
+				E46CB8A32631D9890026F73B /* CafeAnnotation.swift */,
 				B31CEC03251E326400B7501E /* MapViewOverlay.swift */,
 			);
 			path = MapView;
@@ -640,6 +645,7 @@
 				B31CEBE9251E1FF900B7501E /* MapView.swift in Sources */,
 				B3C3368C251DE78200755B1E /* AllCafesMapView.swift in Sources */,
 				E4318903262DD5F500530DEA /* CafeDetailViewModel.swift in Sources */,
+				E46CB8A42631D9890026F73B /* CafeAnnotation.swift in Sources */,
 				E406A5522557F1BE002D199B /* DecodableDefaultSource.swift in Sources */,
 				B31CEBF1251E279900B7501E /* MapViewStore.swift in Sources */,
 				B3B8738B251B3EBD006CA136 /* CafeDetailView.swift in Sources */,
@@ -696,6 +702,7 @@
 				E447735625614CDD00B772C2 /* RegionStore.swift in Sources */,
 				E44773672561661B00B772C2 /* CafeDetailView.swift in Sources */,
 				E44773232561389100B772C2 /* KOFFII_Widget.swift in Sources */,
+				E46CB8B02631DACE0026F73B /* CafeAnnotation.swift in Sources */,
 				E447735C25614CF300B772C2 /* DismissButton.swift in Sources */,
 				E447734D25614CC600B772C2 /* Cafe.swift in Sources */,
 			);
@@ -712,6 +719,7 @@
 				E4318915262DD65300530DEA /* CafeDetailViewModel.swift in Sources */,
 				E491F031259D368B00EAAE2F /* MapView.swift in Sources */,
 				E491F02F259D368B00EAAE2F /* Top3View.swift in Sources */,
+				E46CB8AA2631DACE0026F73B /* CafeAnnotation.swift in Sources */,
 				E491F036259D368B00EAAE2F /* GoogleMapsButton.swift in Sources */,
 				E491F02E259D368B00EAAE2F /* CoordinatesHelper.swift in Sources */,
 				E491F037259D368B00EAAE2F /* MapViewStore.swift in Sources */,
