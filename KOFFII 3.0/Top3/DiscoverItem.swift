@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DiscoverItem: View {
+    
     var cafe: DiscoveryCafeViewModel
     
     var body: some View {
@@ -17,7 +18,7 @@ struct DiscoverItem: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(height: 450)
-                    bar.background(VisualEffectBlur())
+                bar.background(Color(.secondarySystemBackground))
             }
             .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
             .shadow(color: Color.black.opacity(0.25), radius: 10, x: 0, y: 5)
@@ -29,14 +30,12 @@ struct DiscoverItem: View {
         HStack {
             VStack(alignment: .leading) {
                 Text("\(cafe.name) - \(cafe.notesTitle)")
-                    .font(.headline)
-                    .foregroundColor(Color(.label))
+                    .font(.system(.headline, design: .rounded))
                     .bold()
                 Text(cafe.notesBody)
-                    .foregroundColor(.secondary)
-                    .font(.subheadline)
+                    .font(.system(.subheadline, design: .rounded))
             }
-            
+            .foregroundColor(Color(.label))
             Spacer()
             
         }
