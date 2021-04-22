@@ -10,6 +10,10 @@ import SwiftUI
 struct CafeItem: View {
     
     var cafe: CafeViewModel
+    
+    init(cafe: Cafe) {
+        self.cafe = CafeViewModel(cafe: cafe)
+    }
         
     var body: some View {
         VStack(alignment: .leading) {
