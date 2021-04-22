@@ -28,15 +28,24 @@ struct CafeDetailView: View {
                 }
                 .frame(height: geo.size.height*0.22, alignment: .center)
                 VStack(alignment: .leading) {
-                    Text(model.name)
-                        .font(.system(.headline, design: .rounded))
-                    Text("\(model.hood)")
-                        .font(.system(.body, design: .rounded))
-                        .foregroundColor(.primary).opacity(0.8)
-                    Text(model.distance)
-                        .font(.system(.body, design: .rounded))
-                        .foregroundColor(.primary).opacity(0.8)
-                    FeatureDisplayView(cafe: model.cafe)
+                    HStack{
+                        FeatureDisplayView(cafe: model.cafe)
+                        Spacer()
+                        Text(model.distance)
+                    }
+                    .font(.system(.body, design: .rounded))
+                    .foregroundColor(.secondary)
+                    .padding([.horizontal, .top])
+                    Spacer()
+                    VStack(alignment: .leading) {
+                        Text(model.name)
+                            .bold()
+                            .font(.system(.title, design: .rounded))
+                        Text(model.hood)
+                            .foregroundColor(Color(.secondaryLabel))
+                            .font(.system(.body, design: .rounded))
+                    }
+                    .padding([.horizontal, .bottom])
                     GoogleMapsButton(cafe: model.cafe)
                         .padding(.top)
                     Divider()
