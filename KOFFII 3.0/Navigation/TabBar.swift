@@ -25,10 +25,12 @@ struct TabBar: View {
             }
             
             NavigationView {
-                CafeView()
+                RoasteryView()
             }
             .tabItem {
-                Label("Rösterei", systemImage: "list.dash")
+                Label(
+                    title: { Text("Rösterei") },
+                    icon: { Image("beans") })
             }
             
             NavigationView {

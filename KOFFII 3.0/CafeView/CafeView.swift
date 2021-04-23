@@ -24,7 +24,7 @@ struct CafeView: View {
                 
             }
         }
-        .navigationTitle("KOFFII CGN")
+        .navigationTitle("Cafes")
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: { isPresented.toggle() } ) {
@@ -36,6 +36,7 @@ struct CafeView: View {
         .sheet(isPresented: $isPresented) {
             FilterFormView()
         }
+        .padding(.bottom)
     }
     
 }
