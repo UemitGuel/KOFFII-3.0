@@ -9,7 +9,16 @@
 import SwiftUI
 import CoreLocation
 
-struct Cafe: Codable {
+struct Cafe: Codable, Comparable {
+    
+    static func < (lhs: Cafe, rhs: Cafe) -> Bool {
+        lhs.name < rhs.name
+    }
+    
+    static func == (lhs: Cafe, rhs: Cafe) -> Bool {
+        lhs.name == rhs.name
+    }
+    
     
     var name: String
     var hours: [Hours]?
@@ -37,6 +46,8 @@ struct Cafe: Codable {
     struct Hours: Codable {
         let day, start, end: String
     }
+    
+    @DecodableDefault.False var isRoastery: Bool
 }
 
 enum Hood: String, CaseIterable, Codable, Hashable {

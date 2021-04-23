@@ -91,21 +91,6 @@
 		E491F07D259E04C300EAAE2F /* KOFFIIAppClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E491F015259D347200EAAE2F /* KOFFIIAppClipApp.swift */; };
 		E492FEFB2590EAEC00881C1F /* DiscoverItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E492FEFA2590EAEC00881C1F /* DiscoverItem.swift */; };
 		E4A375E42632FC1A005695C5 /* RoasteryData.json in Resources */ = {isa = PBXBuildFile; fileRef = E4A375E32632FC1A005695C5 /* RoasteryData.json */; };
-		E4A375F02632FD21005695C5 /* Roastery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A375EF2632FD21005695C5 /* Roastery.swift */; };
-		E4A375F62632FDA9005695C5 /* Roastery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A375EF2632FD21005695C5 /* Roastery.swift */; };
-		E4A375FC2632FDA9005695C5 /* Roastery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A375EF2632FD21005695C5 /* Roastery.swift */; };
-		E4A3760326330361005695C5 /* RoasteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A3760226330361005695C5 /* RoasteryView.swift */; };
-		E4A37615263303A7005695C5 /* RoasteryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A37614263303A7005695C5 /* RoasteryListViewModel.swift */; };
-		E4BCEC4C2633053800549869 /* RoasteryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BCEC4B2633053800549869 /* RoasteryItem.swift */; };
-		E4BCEC532633059400549869 /* RoasteryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BCEC522633059400549869 /* RoasteryViewModel.swift */; };
-		E4BCEC592633069E00549869 /* RoasteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A3760226330361005695C5 /* RoasteryView.swift */; };
-		E4BCEC5F2633069E00549869 /* RoasteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A3760226330361005695C5 /* RoasteryView.swift */; };
-		E4BCEC65263306A600549869 /* RoasteryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A37614263303A7005695C5 /* RoasteryListViewModel.swift */; };
-		E4BCEC6B263306A700549869 /* RoasteryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A37614263303A7005695C5 /* RoasteryListViewModel.swift */; };
-		E4BCEC71263306A900549869 /* RoasteryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BCEC4B2633053800549869 /* RoasteryItem.swift */; };
-		E4BCEC77263306A900549869 /* RoasteryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BCEC4B2633053800549869 /* RoasteryItem.swift */; };
-		E4BCEC7D263306AC00549869 /* RoasteryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BCEC522633059400549869 /* RoasteryViewModel.swift */; };
-		E4BCEC83263306AC00549869 /* RoasteryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BCEC522633059400549869 /* RoasteryViewModel.swift */; };
 		E4DE65E32598D370006FC81F /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DE65E22598D370006FC81F /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -215,11 +200,6 @@
 		E491F01F259D347300EAAE2F /* KOFFIIAppClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KOFFIIAppClip.entitlements; sourceTree = "<group>"; };
 		E492FEFA2590EAEC00881C1F /* DiscoverItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverItem.swift; sourceTree = "<group>"; };
 		E4A375E32632FC1A005695C5 /* RoasteryData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RoasteryData.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
-		E4A375EF2632FD21005695C5 /* Roastery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roastery.swift; sourceTree = "<group>"; };
-		E4A3760226330361005695C5 /* RoasteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoasteryView.swift; sourceTree = "<group>"; };
-		E4A37614263303A7005695C5 /* RoasteryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoasteryListViewModel.swift; sourceTree = "<group>"; };
-		E4BCEC4B2633053800549869 /* RoasteryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoasteryItem.swift; sourceTree = "<group>"; };
-		E4BCEC522633059400549869 /* RoasteryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoasteryViewModel.swift; sourceTree = "<group>"; };
 		E4DE65E22598D370006FC81F /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -304,7 +284,6 @@
 				B3B520832519D90200368F47 /* cafeData.json */,
 				E4A375E32632FC1A005695C5 /* RoasteryData.json */,
 				B3B520882519D92800368F47 /* Data.swift */,
-				E4A375EF2632FD21005695C5 /* Roastery.swift */,
 				B3B5208D2519D93100368F47 /* Cafe.swift */,
 				E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */,
 			);
@@ -351,7 +330,6 @@
 			isa = PBXGroup;
 			children = (
 				B3F3F3B925188A1100D91190 /* KOFFII_3_0App.swift */,
-				E4A3760926330368005695C5 /* Roastery */,
 				B3F3F43D2519022C00D91190 /* Navigation */,
 				B3B520822519D90200368F47 /* Resources */,
 				B3F3F4412519024600D91190 /* Items */,
@@ -447,17 +425,6 @@
 				E491F01C259D347300EAAE2F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		E4A3760926330368005695C5 /* Roastery */ = {
-			isa = PBXGroup;
-			children = (
-				E4A3760226330361005695C5 /* RoasteryView.swift */,
-				E4A37614263303A7005695C5 /* RoasteryListViewModel.swift */,
-				E4BCEC4B2633053800549869 /* RoasteryItem.swift */,
-				E4BCEC522633059400549869 /* RoasteryViewModel.swift */,
-			);
-			path = Roastery;
 			sourceTree = "<group>";
 		};
 		E4E270FE262D75C000EA2BBC /* ViewModels */ = {
@@ -679,23 +646,18 @@
 				B3C3368C251DE78200755B1E /* AllCafesMapView.swift in Sources */,
 				E4318903262DD5F500530DEA /* CafeDetailViewModel.swift in Sources */,
 				E46CB8A42631D9890026F73B /* CafeAnnotation.swift in Sources */,
-				E4A37615263303A7005695C5 /* RoasteryListViewModel.swift in Sources */,
-				E4BCEC4C2633053800549869 /* RoasteryItem.swift in Sources */,
-				E4A375F02632FD21005695C5 /* Roastery.swift in Sources */,
 				E406A5522557F1BE002D199B /* DecodableDefaultSource.swift in Sources */,
 				B31CEBF1251E279900B7501E /* MapViewStore.swift in Sources */,
 				B3B8738B251B3EBD006CA136 /* CafeDetailView.swift in Sources */,
 				B3F3F439251900CA00D91190 /* CafeItem.swift in Sources */,
 				B3F3F3BA25188A1100D91190 /* KOFFII_3_0App.swift in Sources */,
 				E43188FC262DD47900530DEA /* DiscoveryCafeViewModel.swift in Sources */,
-				E4BCEC532633059400549869 /* RoasteryViewModel.swift in Sources */,
 				B31CEC0E251E386A00B7501E /* DismissButton.swift in Sources */,
 				B3B520892519D92800368F47 /* Data.swift in Sources */,
 				B33571DE251E0C4D00D06BC4 /* AnnotationsHelper.swift in Sources */,
 				E4779683262CD5B6001CBE43 /* CafeViewModel.swift in Sources */,
 				B3B5208E2519D93100368F47 /* Cafe.swift in Sources */,
 				E48DC25E2631B2E5009ED2FE /* FilterFormView.swift in Sources */,
-				E4A3760326330361005695C5 /* RoasteryView.swift in Sources */,
 				E4779677262CD571001CBE43 /* CafeListViewModel.swift in Sources */,
 				B38960BD251B4C68001659FD /* LocationStore.swift in Sources */,
 				E492FEFB2590EAEC00881C1F /* DiscoverItem.swift in Sources */,
@@ -726,18 +688,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E447735525614CDD00B772C2 /* CoordinatesHelper.swift in Sources */,
-				E4BCEC83263306AC00549869 /* RoasteryViewModel.swift in Sources */,
 				E447734E25614CC600B772C2 /* DecodableDefaultSource.swift in Sources */,
-				E4BCEC5F2633069E00549869 /* RoasteryView.swift in Sources */,
-				E4BCEC6B263306A700549869 /* RoasteryListViewModel.swift in Sources */,
 				E431891B262DD65300530DEA /* CafeDetailViewModel.swift in Sources */,
 				E431890F262DD63400530DEA /* DiscoveryCafeViewModel.swift in Sources */,
 				E447734F25614CC600B772C2 /* Data.swift in Sources */,
 				E47796A4262CDFBB001CBE43 /* CafeViewModel.swift in Sources */,
 				E447735425614CDD00B772C2 /* LocationStore.swift in Sources */,
-				E4BCEC77263306A900549869 /* RoasteryItem.swift in Sources */,
 				E447735D25614CF300B772C2 /* GoogleMapsButton.swift in Sources */,
-				E4A375FC2632FDA9005695C5 /* Roastery.swift in Sources */,
 				E447736C256166C600B772C2 /* CafeItem.swift in Sources */,
 				E47796AA262CDFBE001CBE43 /* CafeListViewModel.swift in Sources */,
 				E447735725614CDD00B772C2 /* AnnotationsHelper.swift in Sources */,
@@ -762,22 +719,17 @@
 				E491F031259D368B00EAAE2F /* MapView.swift in Sources */,
 				E491F02F259D368B00EAAE2F /* Top3View.swift in Sources */,
 				E46CB8AA2631DACE0026F73B /* CafeAnnotation.swift in Sources */,
-				E4BCEC65263306A600549869 /* RoasteryListViewModel.swift in Sources */,
-				E4BCEC71263306A900549869 /* RoasteryItem.swift in Sources */,
-				E4A375F62632FDA9005695C5 /* Roastery.swift in Sources */,
 				E491F036259D368B00EAAE2F /* GoogleMapsButton.swift in Sources */,
 				E491F02E259D368B00EAAE2F /* CoordinatesHelper.swift in Sources */,
 				E491F037259D368B00EAAE2F /* MapViewStore.swift in Sources */,
 				E491F07D259E04C300EAAE2F /* KOFFIIAppClipApp.swift in Sources */,
 				E4318909262DD63300530DEA /* DiscoveryCafeViewModel.swift in Sources */,
 				E491F03C259D368B00EAAE2F /* CafeDetailView.swift in Sources */,
-				E4BCEC7D263306AC00549869 /* RoasteryViewModel.swift in Sources */,
 				E491F041259D368B00EAAE2F /* DismissButton.swift in Sources */,
 				E477969E262CDD29001CBE43 /* CafeViewModel.swift in Sources */,
 				E491F02D259D368B00EAAE2F /* Cafe.swift in Sources */,
 				E48DC2762631B99B009ED2FE /* FilterFormView.swift in Sources */,
 				E491F043259D368B00EAAE2F /* CafeItem.swift in Sources */,
-				E4BCEC592633069E00549869 /* RoasteryView.swift in Sources */,
 				E491F02C259D368B00EAAE2F /* AnnotationsHelper.swift in Sources */,
 				E491F044259D368B00EAAE2F /* TabBar.swift in Sources */,
 				E491F03D259D368B00EAAE2F /* DecodableDefaultSource.swift in Sources */,

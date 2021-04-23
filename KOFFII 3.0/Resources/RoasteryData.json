@@ -1,71 +1,85 @@
 [
     {
         "name": "Schamong Kaffee",
+        "isRoastery": true,
         "hood": "Ehrenfeld",
         "locationURL": "https://www.google.de/maps/place/Schamong+Kaffee/@50.9558655,6.9030683,17z/data=!3m1!4b1!4m5!3m4!1s0x47bf254835549993:0x15c8bf6c684d76af!8m2!3d50.9558621!4d6.9052623"
     },
     {
-        "name": "Ernst Kaffeeröster",
+        "name": "Ernst Rösterei",
+        "isRoastery": true,
         "hood": "Südstadt",
         "locationURL": "https://www.google.de/maps/place/Ernst+Kaffeeröster/@50.917938,6.9581917,17z/data=!3m1!4b1!4m12!1m6!3m5!1s0x47bf254835549993:0x15c8bf6c684d76af!2sSchamong+Kaffee!8m2!3d50.9558621!4d6.9052623!3m4!1s0x47bf244642c7bc5f:0xf10ca03d5821bb94!8m2!3d50.9179346!4d6.9603857"
     },
     {
         "name": "Van Dyck",
+        "isRoastery": true,
         "hood": "Ehrenfeld",
         "locationURL": "https://www.google.de/maps/place/Espressobar+I+Van+Dyck/@50.9492366,6.9204627,17z/data=!3m1!4b1!4m12!1m6!3m5!1s0x47bf254835549993:0x15c8bf6c684d76af!2sSchamong+Kaffee!8m2!3d50.9558621!4d6.9052623!3m4!1s0x47bf2515c43642bf:0xf3d22a730c1e0269!8m2!3d50.9492332!4d6.9226567"
     },
     {
         "name": "HEILANDT Kaffeemanufaktur",
+        "isRoastery": true,
         "hood": "Belgisches Viertel",
         "locationURL": "https://www.google.de/maps/place/HEILANDT+Kaffeemanufaktur/@50.9408134,6.9323094,17z/data=!3m1!4b1!4m5!3m4!1s0x47bf2505096e2211:0xed43acf1b195360e!8m2!3d50.94081!4d6.9345034"
     },
     {
         "name": "Hans Hogrebe",
+        "isRoastery": true,
         "hood": "Deutz/Kalk",
         "locationURL": "https://www.google.de/maps/place/Hans+Hogrebe/@50.9380498,7.0026814,17z/data=!3m1!4b1!4m5!3m4!1s0x4171867dce9ff089:0xa78f93f9ecee5924!8m2!3d50.9380464!4d7.0048754"
     },
     {
         "name": "JACKSON Kaffee Werkstatt Rösterei",
+        "isRoastery": true,
         "hood": "Lindenthal/Sülz",
         "locationURL": "https://www.google.de/maps/place/JACKSON+Kaffee+Werkstatt+Rösterei/@50.9216132,6.9230984,17z/data=!3m1!4b1!4m5!3m4!1s0x47bf24eff7bcf72b:0x8838883c00def220!8m2!3d50.9216098!4d6.9252924"
     },
     {
         "name": "Kaffeeprinzen Rösterei & Koffeinbar",
+        "isRoastery": true,
         "hood": "Innenstadt",
         "locationURL": "https://www.google.de/maps/place/Kaffeeprinzen+Rösterei+%26+Koffeinbar/@50.9287211,6.9479077,17z/data=!3m1!4b1!4m12!1m6!3m5!1s0x47bf254835549993:0x15c8bf6c684d76af!2sSchamong+Kaffee!8m2!3d50.9558621!4d6.9052623!3m4!1s0x47bf24530bf67d99:0xf8ff6730235cfa81!8m2!3d50.9287177!4d6.9501017"
     },
     {
-        "name": "Kaffeesaurus",
+        "name": "Kaffeesaurus Rösterei",
+        "isRoastery": true,
         "hood": "Innenstadt",
         "locationURL": "https://www.google.de/maps/place/Kaffeesaurus/@50.9403634,6.936386,17z/data=!3m1!4b1!4m5!3m4!1s0x47bf2510697bb22f:0xeb89da280a86feef!8m2!3d50.94036!4d6.93858"
     },
     {
         "name": "Käffchen.de",
+        "isRoastery": true,
         "hood": "Innenstadt",
         "locationURL": "https://www.google.de/maps/place/Käffchen.de/@50.9360637,6.9433078,17z/data=!3m1!4b1!4m12!1m6!3m5!1s0x47bf254835549993:0x15c8bf6c684d76af!2sSchamong+Kaffee!8m2!3d50.9558691!4d6.905256!3m4!1s0x47bf25aa24ef1365:0xb37ceee0fd883433!8m2!3d50.9360603!4d6.9454965"
     },
     {
         "name": "Kölner Kaffeemanufaktur",
+        "isRoastery": true,
         "hood": "Lindenthal/Sülz",
         "locationURL": "https://www.google.de/maps/place/Kölner+Kaffeemanufaktur/@50.9318118,6.9169033,17z/data=!3m1!4b1!4m12!1m6!3m5!1s0x47bf254835549993:0x15c8bf6c684d76af!2sSchamong+Kaffee!8m2!3d50.9558691!4d6.905256!3m4!1s0x47bf24e0335c3279:0x4b851449e4a4788d!8m2!3d50.9318084!4d6.919092"
     },
     {
-        "name": "THE COFFEE GANG",
+        "name": "COFFEE GANG",
+        "isRoastery": true,
         "hood": "Innenstadt",
         "locationURL": "https://www.google.de/maps/place/THE+COFFEE+GANG/@50.9302562,6.9233016,14z/data=!4m12!1m6!3m5!1s0x47bf254835549993:0x15c8bf6c684d76af!2sSchamong+Kaffee!8m2!3d50.9558691!4d6.905256!3m4!1s0x47bf24ffecae8d2d:0x42d9ec4076a21740!8m2!3d50.9302532!4d6.9408136"
     },
     {
-        "name": "THE COFFEE GANG Nippes",
+        "name": "COFFEE GANG Nippes",
+        "isRoastery": true,
         "hood": "Nippes",
         "locationURL": "https://www.google.de/maps/place/THE+COFFEE+GANG/@50.9303076,6.9233016,14z/data=!3m1!5s0x47bf2598f1118787:0x348edf81e046671d!4m9!1m2!2m1!1sTHE+COFFEE+GANG!3m5!1s0x47bf2598f6daf03b:0xd9c59e78f009860f!8m2!3d50.9532636!4d6.9570806!15sCg9USEUgQ09GRkVFIEdBTkdaIgoPdGhlIGNvZmZlZSBnYW5nIg90aGUgY29mZmVlIGdhbmeSAQRjYWZl"
     },
     {
         "name": "Urwaldkaffee GmbH",
+        "isRoastery": true,
         "hood": "Ehrenfeld",
         "locationURL": "https://www.google.com/maps/place/Urwaldkaffee+GmbH/@50.9488032,6.9232154,15z/data=!4m5!3m4!1s0x0:0xea8784208afab2eb!8m2!3d50.94875!4d6.9232807"
     },
     {
         "name": "einbrand Kaffeerösterei",
+        "isRoastery": true,
         "hood": "Südstadt",
         "locationURL": "https://www.google.de/maps/place/einbrand+Kaffeerösterei/@50.9156873,6.9567142,15z/data=!4m5!3m4!1s0x47bf255ae66e53f3:0xd37fdce8e28880e5!8m2!3d50.9156724!4d6.9654733"
     },

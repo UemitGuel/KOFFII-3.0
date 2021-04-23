@@ -9,18 +9,22 @@ import SwiftUI
 
 struct CafeItem: View {
     
-    var cafe: CafeViewModel
+    var model: CafeViewModel
     
     init(cafe: Cafe) {
-        self.cafe = CafeViewModel(cafe: cafe)
+        self.model = CafeViewModel(cafe: cafe)
     }
         
     var body: some View {
         VStack(alignment: .leading) {
             HStack{
-                FeatureDisplayView(cafe: cafe.cafe)
+                if model.isRoastery {
+                    Label("Rösterei", image: "beans")
+                } else {
+                    FeatureDisplayView(cafe: model.cafe)
+                }
                 Spacer()
-                Text(cafe.distance)
+                Text(model.distance)
                 Image(systemName: "chevron.forward")
             }
             .font(.system(.body, design: .rounded))
@@ -28,10 +32,10 @@ struct CafeItem: View {
             .padding([.horizontal, .top])
             Spacer()
             VStack(alignment: .leading) {
-                Text(cafe.name)
+                Text(model.name)
                     .bold()
                     .font(.system(.title, design: .rounded))
-                Text(cafe.hood)
+                Text(model.hood)
                     .foregroundColor(Color(.secondaryLabel))
                     .font(.system(.body, design: .rounded))
             }
