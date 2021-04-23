@@ -9,7 +9,8 @@
 import Foundation
 
 let cafeData: [Cafe] = load("cafeData.json")
-let roasteryData: [Roastery] = load("RoasteryData.json")
+let roasteryData: [Cafe] = load("RoasteryData.json")
+let coffeeData = cafeData + roasteryData
 
 let topThreeOfTheMonth: [DiscoveryCafeViewModel] = [DiscoveryCafeViewModel(cafe: cafeData[38]),DiscoveryCafeViewModel(cafe: cafeData[3]),DiscoveryCafeViewModel(cafe: cafeData[48])]
 

@@ -9,7 +9,7 @@ import Foundation
 
 class CafeListViewModel: ObservableObject {
         
-    @Published var cafeList: [Cafe]
+    @Published var cafeList: [Cafe] = []
     
     @Published var needWifi = false
     @Published var needFood = false
@@ -17,11 +17,12 @@ class CafeListViewModel: ObservableObject {
     @Published var needPlug = false
     
     init() {
-        self.cafeList = cafeData
+        self.cafeList = coffeeData
+        filterCafeList()
     }
     
     func filterCafeList() {
-        var cafeList = cafeData
+        var cafeList = coffeeData
         if needWifi {
             cafeList = cafeList.filter { $0.hasWifi }
         }
@@ -35,7 +36,7 @@ class CafeListViewModel: ObservableObject {
             cafeList = cafeList.filter { $0.hasPlug }
         }
         cafeList.sort { LocationStore.shared.getDistance(cafeLocation: $0.location) < LocationStore.shared.getDistance(cafeLocation: $1.location) }
-        self.cafeList = cafeList
+        self.cafeList = cafeList.sorted()
     }
     
 }

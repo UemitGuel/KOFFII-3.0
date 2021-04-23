@@ -18,6 +18,10 @@ struct CafeViewModel: Identifiable {
         self.cafe = cafe
     }
     
+    var isRoastery: Bool {
+        return self.cafe.isRoastery
+    }
+    
     var hours: String {
         guard let start = self.cafe.hours?[0].start, let end = self.cafe.hours?[0].end else {
             return ""

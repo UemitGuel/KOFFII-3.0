@@ -25,15 +25,6 @@ struct TabBar: View {
             }
             
             NavigationView {
-                RoasteryView()
-            }
-            .tabItem {
-                Label(
-                    title: { Text("Rösterei") },
-                    icon: { Image("beans") })
-            }
-            
-            NavigationView {
                 AllCafesMapView()
             }
             .tabItem {
