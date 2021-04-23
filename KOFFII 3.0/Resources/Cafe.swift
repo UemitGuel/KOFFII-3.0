@@ -33,19 +33,20 @@ struct Cafe: Codable {
     @DecodableDefault.False var hasPlug: Bool
     
     var hood: Hood
-    enum Hood: String, CaseIterable, Codable, Hashable {
-        case all = "Alle Viertel"
-        case deutz = "Deutz/Kalk"
-        case lindenthal = "Lindenthal/Sülz"
-        case nippes = "Nippes"
-        case ehrenfeld = "Ehrenfeld"
-        case südstadt = "Südstadt"
-        case innenstadt = "Innenstadt"
-        case belgisches = "Belgisches Viertel"
-        case latin = "Latin Quarter"
-    }
     
     struct Hours: Codable {
         let day, start, end: String
     }
+}
+
+enum Hood: String, CaseIterable, Codable, Hashable {
+    case all = "Alle Viertel"
+    case deutz = "Deutz/Kalk"
+    case lindenthal = "Lindenthal/Sülz"
+    case nippes = "Nippes"
+    case ehrenfeld = "Ehrenfeld"
+    case südstadt = "Südstadt"
+    case innenstadt = "Innenstadt"
+    case belgisches = "Belgisches Viertel"
+    case latin = "Latin Quarter"
 }

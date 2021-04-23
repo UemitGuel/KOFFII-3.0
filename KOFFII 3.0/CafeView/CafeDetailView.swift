@@ -45,7 +45,7 @@ struct CafeDetailView: View {
                             .foregroundColor(Color(.secondaryLabel))
                             .font(.system(.body, design: .rounded))
                     }
-                    GoogleMapsButton(cafe: model.cafe)
+                    GoogleMapsButton(locationURL: model.locationURL)
                         .padding(.top)
                     Divider()
                     HStack {

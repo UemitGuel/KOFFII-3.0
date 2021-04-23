@@ -9,14 +9,10 @@ import SwiftUI
 
 struct GoogleMapsButton: View {
     
-    var cafe: CafeDetailViewModel
-    
-    init(cafe: Cafe) {
-        self.cafe = CafeDetailViewModel(cafe: cafe)
-    }
+    var locationURL: String
     
     var googleMapsUrl: URL {
-        let urlEncoded = cafe.locationURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        let urlEncoded = locationURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         return URL(string: urlEncoded)!
     }
     
