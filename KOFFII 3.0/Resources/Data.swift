@@ -9,6 +9,8 @@
 import Foundation
 
 let cafeData: [Cafe] = load("cafeData.json")
+let roasteryData: [Roastery] = load("RoasteryData.json")
+
 let topThreeOfTheMonth: [DiscoveryCafeViewModel] = [DiscoveryCafeViewModel(cafe: cafeData[38]),DiscoveryCafeViewModel(cafe: cafeData[3]),DiscoveryCafeViewModel(cafe: cafeData[48])]
 
 func load<T: Decodable>(_ filename: String) -> T {

@@ -25,6 +25,13 @@ struct TabBar: View {
             }
             
             NavigationView {
+                CafeView()
+            }
+            .tabItem {
+                Label("Rösterei", systemImage: "list.dash")
+            }
+            
+            NavigationView {
                 AllCafesMapView()
             }
             .tabItem {
