@@ -8,12 +8,12 @@
 import SwiftUI
 import MapKit
 
-struct CafeDetailView: View {
+struct CoffeeDetailView: View {
     
-    var model: CafeDetailViewModel
+    var model: CoffeeDetailViewModel
     
-    init(cafe: Cafe) {
-        self.model = CafeDetailViewModel(cafe: cafe)
+    init(coffee: Coffee) {
+        self.model = CoffeeDetailViewModel(coffee: coffee)
     }
         
     @State var regionVM = RegionStore.shared.region
@@ -29,7 +29,11 @@ struct CafeDetailView: View {
                 .frame(height: geo.size.height*0.45, alignment: .center)
                 VStack(alignment: .leading) {
                     HStack{
-                        FeatureDisplayView(cafe: model.cafe)
+                        if model.isRoastery {
+                            Label("Rösterei", image: "beans")
+                        } else {
+                            FeatureDisplayView(cafe: model.coffee)
+                        }
                         Spacer()
                         Text(model.distance)
                     }
@@ -48,27 +52,29 @@ struct CafeDetailView: View {
                     GoogleMapsButton(locationURL: model.locationURL)
                         .padding(.top)
                     Divider()
-                    HStack {
-                        if model.hasImage {
-                            Image(model.name)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(height: geo.size.height*0.25)
-                                .cornerRadius(16)
-                            Spacer()
-                        }
-                        VStack(alignment: model.hasImage ? .trailing : .leading, spacing: 2) {
-                            Text("Öffnungszeiten")
-                                .font(.system(.headline, design: .rounded))
-                                .padding(.bottom, 2)
-                            VStack(alignment: .leading) {
-                                WeekdayHours(cafe: model.cafe, hoursIndex: 0, workday: "Mo")
-                                WeekdayHours(cafe: model.cafe, hoursIndex: 1, workday: "Di")
-                                WeekdayHours(cafe: model.cafe, hoursIndex: 2, workday: "Mi")
-                                WeekdayHours(cafe: model.cafe, hoursIndex: 3, workday: "Do")
-                                WeekdayHours(cafe: model.cafe, hoursIndex: 4, workday: "Fr")
-                                WeekdayHours(cafe: model.cafe, hoursIndex: 5, workday: "Sa")
-                                WeekdayHours(cafe: model.cafe, hoursIndex: 6, workday: "So")
+                    if !model.isRoastery {
+                        HStack {
+                            if model.hasImage {
+                                Image(model.name)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(height: geo.size.height*0.25)
+                                    .cornerRadius(16)
+                                Spacer()
+                            }
+                            VStack(alignment: model.hasImage ? .trailing : .leading, spacing: 2) {
+                                Text("Öffnungszeiten")
+                                    .font(.system(.headline, design: .rounded))
+                                    .padding(.bottom, 2)
+                                VStack(alignment: .leading) {
+                                    WeekdayHours(cafe: model.coffee, hoursIndex: 0, workday: "Mo")
+                                    WeekdayHours(cafe: model.coffee, hoursIndex: 1, workday: "Di")
+                                    WeekdayHours(cafe: model.coffee, hoursIndex: 2, workday: "Mi")
+                                    WeekdayHours(cafe: model.coffee, hoursIndex: 3, workday: "Do")
+                                    WeekdayHours(cafe: model.coffee, hoursIndex: 4, workday: "Fr")
+                                    WeekdayHours(cafe: model.coffee, hoursIndex: 5, workday: "Sa")
+                                    WeekdayHours(cafe: model.coffee, hoursIndex: 6, workday: "So")
+                                }
                             }
                         }
                     }
@@ -95,13 +101,13 @@ struct CafeDetailView: View {
 
 struct WeekdayHours: View {
     
-    var model: CafeDetailViewModel
+    var model: CoffeeDetailViewModel
     var hoursIndex: Int
     var workday: String
     
     //TODO: hoursIndex and workday raus
-    init(cafe: Cafe, hoursIndex: Int, workday: String) {
-        self.model = CafeDetailViewModel(cafe: cafe)
+    init(cafe: Coffee, hoursIndex: Int, workday: String) {
+        self.model = CoffeeDetailViewModel(coffee: cafe)
         self.hoursIndex = hoursIndex
         self.workday = workday
     }

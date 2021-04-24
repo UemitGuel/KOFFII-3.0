@@ -8,14 +8,14 @@ struct MapView: UIViewRepresentable {
     
     var helper = AnnotationsHelper.shared
     
-    @Binding var cafeList: [Cafe]
+    @Binding var coffeeList: [Coffee]
 
     @Binding var centerCoordinate: CLLocationCoordinate2D
         
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
         mapView.delegate = context.coordinator
-        let annotations = helper.getallAnnotation(cafeList: cafeList)
+        let annotations = helper.getallAnnotation(cafeList: coffeeList)
         mapView.addAnnotations(annotations)
         mapView.showsUserLocation = true
         mapView.region = CoordinatesHelper.shared.setRegionMidCologne()

@@ -18,7 +18,7 @@ struct TabBar: View {
                 Label("Entdecken", systemImage: "heart.text.square")
             }
             NavigationView {
-                CafeView()
+                CoffeeView()
             }
             .tabItem {
                 Label("Liste", systemImage: "list.dash")

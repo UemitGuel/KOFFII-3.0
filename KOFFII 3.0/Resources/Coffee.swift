@@ -9,16 +9,16 @@
 import SwiftUI
 import CoreLocation
 
-struct Cafe: Codable, Comparable {
+// CoffeeItems can be Cafes but also Roasteries
+struct Coffee: Codable, Comparable {
     
-    static func < (lhs: Cafe, rhs: Cafe) -> Bool {
+    static func < (lhs: Coffee, rhs: Coffee) -> Bool {
         lhs.name < rhs.name
     }
     
-    static func == (lhs: Cafe, rhs: Cafe) -> Bool {
+    static func == (lhs: Coffee, rhs: Coffee) -> Bool {
         lhs.name == rhs.name
     }
-    
     
     var name: String
     var hours: [Hours]?

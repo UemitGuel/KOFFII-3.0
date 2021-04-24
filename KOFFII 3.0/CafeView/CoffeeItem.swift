@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct CafeItem: View {
+struct CoffeeItem: View {
     
-    var model: CafeViewModel
+    var model: CoffeeViewModel
     
-    init(cafe: Cafe) {
-        self.model = CafeViewModel(cafe: cafe)
+    init(coffee: Coffee) {
+        self.model = CoffeeViewModel(coffee: coffee)
     }
         
     var body: some View {
@@ -21,7 +21,7 @@ struct CafeItem: View {
                 if model.isRoastery {
                     Label("Rösterei", image: "beans")
                 } else {
-                    FeatureDisplayView(cafe: model.cafe)
+                    FeatureDisplayView(cafe: model.coffee)
                 }
                 Spacer()
                 Text(model.distance)
@@ -50,10 +50,10 @@ struct CafeItem: View {
 
 struct FeatureDisplayView: View {
     
-    var cafe: CafeDetailViewModel
+    var cafe: CoffeeDetailViewModel
     
-    init(cafe: Cafe) {
-        self.cafe = CafeDetailViewModel(cafe: cafe)
+    init(cafe: Coffee) {
+        self.cafe = CoffeeDetailViewModel(coffee: cafe)
     }
     
     var body: some View {

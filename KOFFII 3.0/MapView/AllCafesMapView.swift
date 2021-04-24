@@ -13,12 +13,12 @@ struct AllCafesMapView: View {
     @State private var centerCoordinate = CLLocationCoordinate2D()
     
     @EnvironmentObject var mapViewStore: MapViewStore
-    @EnvironmentObject var model: CafeListViewModel
+    @EnvironmentObject var model: CoffeeListViewModel
     
     @State private var isPresented = false
     
     var body: some View {
-        MapView(cafeList: $model.cafeList, centerCoordinate: $centerCoordinate)
+        MapView(coffeeList: $model.coffeeList, centerCoordinate: $centerCoordinate)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
@@ -30,7 +30,7 @@ struct AllCafesMapView: View {
                 }
             }
             .sheet(isPresented: $mapViewStore.showDetails) {
-                CafeDetailView(cafe: mapViewStore.chosenCafe)
+                CoffeeDetailView(coffee: mapViewStore.chosenCafe)
             }
             // TODO: After WWDC 2021, maybe better MapView for SwiftUI
             

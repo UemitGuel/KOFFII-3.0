@@ -16,15 +16,15 @@ struct Top3View: View {
     var body: some View {
         ScrollView {
             NavigationLink(
-                destination: CafeDetailView(cafe: cafe1.cafe)) {
+                destination: CoffeeDetailView(coffee: cafe1.cafe)) {
                 DiscoverItem(cafe: cafe1)
             }
             NavigationLink(
-                destination: CafeDetailView(cafe: cafe2.cafe)) {
+                destination: CoffeeDetailView(coffee: cafe2.cafe)) {
                 DiscoverItem(cafe: cafe2)
             }
             NavigationLink(
-                destination: CafeDetailView(cafe: cafe3.cafe)) {
+                destination: CoffeeDetailView(coffee: cafe3.cafe)) {
                 DiscoverItem(cafe: cafe3)
             }
             .navigationTitle("Ümit´s Top 3")

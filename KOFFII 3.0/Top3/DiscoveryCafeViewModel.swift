@@ -10,9 +10,9 @@ import Foundation
 struct DiscoveryCafeViewModel: Identifiable {
     
     let id = UUID()
-    var cafe: Cafe
+    var cafe: Coffee
     
-    init(cafe: Cafe) {
+    init(cafe: Coffee) {
         self.cafe = cafe
     }
     

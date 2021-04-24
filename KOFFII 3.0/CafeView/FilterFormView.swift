@@ -9,12 +9,12 @@ import SwiftUI
 
 struct FilterFormView: View {
     
-    @EnvironmentObject var model: CafeListViewModel
+    @EnvironmentObject var model: CoffeeListViewModel
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         Form {
-            Section(header: Text("Was soll das Cafe haben?")) {
+            Section(header: Text("Cafe - Features")) {
                 Toggle(isOn: $model.needWifi, label: {
                     Label(
                         title: { Text("Wifi") },
@@ -40,6 +40,14 @@ struct FilterFormView: View {
                     )
                 })
             }
+            Section(header: Text("Röstereien")) {
+                Toggle(isOn: $model.includeRosteries, label: {
+                    Label(
+                        title: { Text("Röstereien") },
+                        icon: { Image("beans") }
+                    )
+                })
+            }
             Button(action: { updateCafeListAndDismiss() }) {
                 Text("Filter anwenden")
                     .foregroundColor(Color(.systemBlue))
@@ -50,7 +58,7 @@ struct FilterFormView: View {
     
     
     func updateCafeListAndDismiss() {
-        model.filterCafeList()
+        model.filterCoffeeList()
         presentationMode.wrappedValue.dismiss()
     }
 }
@@ -58,6 +66,6 @@ struct FilterFormView: View {
 struct FilterFormView_Previews: PreviewProvider {
     static var previews: some View {
         FilterFormView()
-            .environmentObject(CafeListViewModel())
+            .environmentObject(CoffeeListViewModel())
     }
 }

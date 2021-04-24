@@ -9,11 +9,11 @@ import SwiftUI
 
 class MapViewStore: ObservableObject{
     
-    @Published var chosenCafe: Cafe = cafeData[0]
+    @Published var chosenCafe: Coffee = cafeData[0]
     @Published var annotationSelected: CafeAnnotation?
     @Published var showDetails: Bool = false
     
-    func changeChosenCafe(cafe: Cafe) {
+    func changeChosenCafe(cafe: Coffee) {
         chosenCafe = cafe
     }
 }

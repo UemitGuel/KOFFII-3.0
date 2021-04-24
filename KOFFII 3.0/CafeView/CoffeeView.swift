@@ -7,24 +7,24 @@
 
 import SwiftUI
 
-struct CafeView: View {
+struct CoffeeView: View {
     
-    @EnvironmentObject var model: CafeListViewModel
+    @EnvironmentObject var model: CoffeeListViewModel
 
     @State private var isPresented = false
 
     var body: some View {
         ScrollView {
-            ForEach(model.cafeList, id: \.name) { cafe in
+            ForEach(model.coffeeList, id: \.name) { coffee in
                 NavigationLink(
-                    destination: CafeDetailView(cafe: cafe),
+                    destination: CoffeeDetailView(coffee: coffee),
                     label: {
-                        CafeItem(cafe: cafe)
+                        CoffeeItem(coffee: coffee)
                     })
                 
             }
         }
-        .navigationTitle("Cafes")
+        .navigationTitle("Cafes& Rösterein")
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: { isPresented.toggle() } ) {
@@ -44,7 +44,7 @@ struct CafeView: View {
 struct CoffeeView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            CafeView()
+            CoffeeView()
         }
     }
 }
