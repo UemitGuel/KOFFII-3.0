@@ -30,6 +30,13 @@ struct TabBar: View {
             .tabItem {
                 Label("Karte", systemImage: "map")
             }
+            
+            NavigationView {
+                InformationView()
+            }
+            .tabItem {
+                Label("Info", systemImage: "info.circle")
+            }
         }
     }
 }

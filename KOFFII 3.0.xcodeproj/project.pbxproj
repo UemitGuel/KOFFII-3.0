@@ -91,6 +91,12 @@
 		E491F07D259E04C300EAAE2F /* KOFFIIAppClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E491F015259D347200EAAE2F /* KOFFIIAppClipApp.swift */; };
 		E492FEFB2590EAEC00881C1F /* DiscoverItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E492FEFA2590EAEC00881C1F /* DiscoverItem.swift */; };
 		E4A375E42632FC1A005695C5 /* RoasteryData.json in Resources */ = {isa = PBXBuildFile; fileRef = E4A375E32632FC1A005695C5 /* RoasteryData.json */; };
+		E4A71137263427860032432D /* InformationData.json in Resources */ = {isa = PBXBuildFile; fileRef = E4A71136263427860032432D /* InformationData.json */; };
+		E4A7113E263429940032432D /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A7113D263429940032432D /* Information.swift */; };
+		E4A7114426342B2D0032432D /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A7113D263429940032432D /* Information.swift */; };
+		E4A7114A26342B2D0032432D /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A7113D263429940032432D /* Information.swift */; };
+		E4A7115126342B3C0032432D /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A7115026342B3C0032432D /* InformationView.swift */; };
+		E4A7115C26342BC70032432D /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A7115026342B3C0032432D /* InformationView.swift */; };
 		E4DE65E32598D370006FC81F /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DE65E22598D370006FC81F /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -200,6 +206,9 @@
 		E491F01F259D347300EAAE2F /* KOFFIIAppClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KOFFIIAppClip.entitlements; sourceTree = "<group>"; };
 		E492FEFA2590EAEC00881C1F /* DiscoverItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverItem.swift; sourceTree = "<group>"; };
 		E4A375E32632FC1A005695C5 /* RoasteryData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RoasteryData.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		E4A71136263427860032432D /* InformationData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = InformationData.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		E4A7113D263429940032432D /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
+		E4A7115026342B3C0032432D /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		E4DE65E22598D370006FC81F /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -282,8 +291,10 @@
 			children = (
 				B3B520832519D90200368F47 /* cafeData.json */,
 				E4A375E32632FC1A005695C5 /* RoasteryData.json */,
+				E4A71136263427860032432D /* InformationData.json */,
 				B3B520882519D92800368F47 /* Data.swift */,
 				B3B5208D2519D93100368F47 /* Coffee.swift */,
+				E4A7113D263429940032432D /* Information.swift */,
 				E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */,
 			);
 			path = Resources;
@@ -335,6 +346,7 @@
 				B3C33687251DE74B00755B1E /* Helper */,
 				B32897B2251FA3340098A6E7 /* Top3 */,
 				B31CEC19251E43E500B7501E /* MapView */,
+				E4A71168263435330032432D /* Information */,
 				B31CEC18251E43BA00B7501E /* CafeView */,
 				B3F3F3BD25188A1300D91190 /* Assets.xcassets */,
 				B3F3F3C225188A1300D91190 /* Info.plist */,
@@ -424,6 +436,14 @@
 				E491F01C259D347300EAAE2F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E4A71168263435330032432D /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				E4A7115026342B3C0032432D /* InformationView.swift */,
+			);
+			path = Information;
 			sourceTree = "<group>";
 		};
 		E4E270FE262D75C000EA2BBC /* ViewModels */ = {
@@ -593,6 +613,7 @@
 				B3F3F3C125188A1300D91190 /* Preview Assets.xcassets in Resources */,
 				B3F3F3BE25188A1300D91190 /* Assets.xcassets in Resources */,
 				E4A375E42632FC1A005695C5 /* RoasteryData.json in Resources */,
+				E4A71137263427860032432D /* InformationData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,11 +677,13 @@
 				B3B520892519D92800368F47 /* Data.swift in Sources */,
 				B33571DE251E0C4D00D06BC4 /* AnnotationsHelper.swift in Sources */,
 				E4779683262CD5B6001CBE43 /* CoffeeViewModel.swift in Sources */,
+				E4A7113E263429940032432D /* Information.swift in Sources */,
 				B3B5208E2519D93100368F47 /* Coffee.swift in Sources */,
 				E48DC25E2631B2E5009ED2FE /* FilterFormView.swift in Sources */,
 				E4779677262CD571001CBE43 /* CoffeeListViewModel.swift in Sources */,
 				B38960BD251B4C68001659FD /* LocationStore.swift in Sources */,
 				E492FEFB2590EAEC00881C1F /* DiscoverItem.swift in Sources */,
+				E4A7115126342B3C0032432D /* InformationView.swift in Sources */,
 				B3B520932519E1C400368F47 /* TabBar.swift in Sources */,
 				B330CEC0251C934900FB34E4 /* CoordinatesHelper.swift in Sources */,
 			);
@@ -687,6 +710,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4A7114A26342B2D0032432D /* Information.swift in Sources */,
 				E447735525614CDD00B772C2 /* CoordinatesHelper.swift in Sources */,
 				E447734E25614CC600B772C2 /* DecodableDefaultSource.swift in Sources */,
 				E431891B262DD65300530DEA /* CoffeeDetailViewModel.swift in Sources */,
@@ -729,11 +753,13 @@
 				E477969E262CDD29001CBE43 /* CoffeeViewModel.swift in Sources */,
 				E491F02D259D368B00EAAE2F /* Coffee.swift in Sources */,
 				E48DC2762631B99B009ED2FE /* FilterFormView.swift in Sources */,
+				E4A7114426342B2D0032432D /* Information.swift in Sources */,
 				E491F043259D368B00EAAE2F /* CoffeeItem.swift in Sources */,
 				E491F02C259D368B00EAAE2F /* AnnotationsHelper.swift in Sources */,
 				E491F044259D368B00EAAE2F /* TabBar.swift in Sources */,
 				E491F03D259D368B00EAAE2F /* DecodableDefaultSource.swift in Sources */,
 				E491F035259D368B00EAAE2F /* CoffeeView.swift in Sources */,
+				E4A7115C26342BC70032432D /* InformationView.swift in Sources */,
 				E491F03A259D368B00EAAE2F /* Data.swift in Sources */,
 				E491F03B259D368B00EAAE2F /* AllCafesMapView.swift in Sources */,
 			);
