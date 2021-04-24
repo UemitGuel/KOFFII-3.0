@@ -23,6 +23,7 @@ struct CoffeeView: View {
                     })
                 
             }
+            .padding(.bottom)
         }
         .navigationTitle("Cafes& Rösterein")
         .toolbar {
@@ -36,7 +37,6 @@ struct CoffeeView: View {
         .sheet(isPresented: $isPresented) {
             FilterFormView()
         }
-        .padding(.bottom)
     }
     
 }
