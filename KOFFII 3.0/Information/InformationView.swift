@@ -15,9 +15,9 @@ struct InformationView: View {
         ScrollView {
             ForEach(informationData, id: \.title) { info in
                 NavigationLink(
-                    destination: Text("hi"),
+                    destination: InformationListItem(info: info),
                     label: {
-                        Text(info.title)
+                        InformationListItem(info: info)
                     })
                 
             }

@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct CoffeeItem: View {
+struct CoffeeListItem: View {
     
-    var model: CoffeeViewModel
+    var model: CoffeeListItemViewModel
     
     init(coffee: Coffee) {
-        self.model = CoffeeViewModel(coffee: coffee)
+        self.model = CoffeeListItemViewModel(coffee: coffee)
     }
         
     var body: some View {

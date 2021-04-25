@@ -8,7 +8,7 @@
 import Foundation
 import CoreLocation
 
-struct CoffeeViewModel: Identifiable {
+struct CoffeeListItemViewModel: Identifiable {
     
     let id = UUID()
     let locationStore = LocationStore.shared

@@ -19,7 +19,7 @@ struct CoffeeView: View {
                 NavigationLink(
                     destination: CoffeeDetailView(coffee: coffee),
                     label: {
-                        CoffeeItem(coffee: coffee)
+                        CoffeeListItem(coffee: coffee)
                     })
                 
             }

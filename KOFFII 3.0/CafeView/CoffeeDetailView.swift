@@ -26,7 +26,7 @@ struct CoffeeDetailView: View {
                 Map(coordinateRegion: $regionVM, interactionModes: .all, showsUserLocation: true, userTrackingMode: $trackingMode, annotationItems: [model]) { item in
                     MapMarker(coordinate: item.coordinates)
                 }
-                .frame(height: geo.size.height*0.45, alignment: .center)
+                .frame(height: geo.size.height*0.35, alignment: .center)
                 VStack(alignment: .leading) {
                     HStack{
                         if model.isRoastery {
