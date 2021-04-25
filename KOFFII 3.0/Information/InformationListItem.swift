@@ -12,28 +12,25 @@ struct InformationListItem: View {
     var info: Information
     
     var body: some View {
-        ZStack(alignment: .bottom) {
+        VStack(spacing: 0) {
             info.image
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(height: 250)
-            bar.background(Color(.secondarySystemBackground))
+                .clipped()
+            HStack {
+                Text(info.title)
+                    .bold()
+                    .font(.system(.title, design: .rounded))
+                Spacer()
+                Image(systemName: "chevron.forward")
+                    .font(.system(.body, design: .rounded))
+                    .foregroundColor(.secondary)
+            }
+            .padding()
+            .background(Color(.secondarySystemBackground))
         }
-        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-        .shadow(color: Color.black.opacity(0.25), radius: 10, x: 0, y: 5)
-        .padding()
-        
-    }
-    
-    var bar: some View {
-        HStack {
-            Text("\(info.title)")
-                .font(.system(.headline, design: .rounded))
-                .bold()
-                .foregroundColor(Color(.label))
-            Spacer()
-        }
-        .padding()
+        .cornerRadius(16)
+
     }
 }
 

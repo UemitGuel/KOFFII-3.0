@@ -12,7 +12,7 @@ struct TabBar: View {
     var body: some View {
         TabView {
             NavigationView {
-                Top3View(cafe1: topThreeOfTheMonth[0], cafe2: topThreeOfTheMonth[1], cafe3: topThreeOfTheMonth[2])
+                DiscoveryView(cafe1: topThreeOfTheMonth[0], cafe2: topThreeOfTheMonth[1], cafe3: topThreeOfTheMonth[2])
             }
             .tabItem {
                 Label("Entdecken", systemImage: "heart.text.square")

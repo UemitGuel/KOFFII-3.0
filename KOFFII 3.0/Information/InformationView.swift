@@ -18,11 +18,11 @@ struct InformationView: View {
                     destination: InformationListItem(info: info),
                     label: {
                         InformationListItem(info: info)
+                            .padding(.bottom)
                     })
-                
             }
-            .padding(.bottom)
         }
+        .padding(.horizontal)
         .navigationTitle("Cafes& Rösterein")
     }
 }
