@@ -67,13 +67,14 @@ struct CoffeeDetailView: View {
                                     .font(.system(.headline, design: .rounded))
                                     .padding(.bottom, 2)
                                 VStack(alignment: .leading) {
-                                    WeekdayHours(cafe: model.coffee, hoursIndex: 0, workday: "Mo")
-                                    WeekdayHours(cafe: model.coffee, hoursIndex: 1, workday: "Di")
-                                    WeekdayHours(cafe: model.coffee, hoursIndex: 2, workday: "Mi")
-                                    WeekdayHours(cafe: model.coffee, hoursIndex: 3, workday: "Do")
-                                    WeekdayHours(cafe: model.coffee, hoursIndex: 4, workday: "Fr")
-                                    WeekdayHours(cafe: model.coffee, hoursIndex: 5, workday: "Sa")
-                                    WeekdayHours(cafe: model.coffee, hoursIndex: 6, workday: "So")
+                                    WeekdayHours(day: "Mo", hours: model.hoursMo)
+                                    WeekdayHours(day: "Di", hours: model.hoursDi)
+                                    WeekdayHours(day: "Mi", hours: model.hoursMi)
+                                    WeekdayHours(day: "Do", hours: model.hoursDo)
+                                    WeekdayHours(day: "Fr", hours: model.hoursFr)
+                                    WeekdayHours(day: "Sa", hours: model.hoursSa)
+                                    WeekdayHours(day: "So", hours: model.hoursSo)
+
                                 }
                             }
                         }
@@ -101,22 +102,14 @@ struct CoffeeDetailView: View {
 
 struct WeekdayHours: View {
     
-    var model: CoffeeDetailViewModel
-    var hoursIndex: Int
-    var workday: String
-    
-    //TODO: hoursIndex and workday raus
-    init(cafe: Coffee, hoursIndex: Int, workday: String) {
-        self.model = CoffeeDetailViewModel(coffee: cafe)
-        self.hoursIndex = hoursIndex
-        self.workday = workday
-    }
+    var day: String
+    var hours: String
     
     var body: some View {
         HStack {
-            Text("\(workday):")
+            Text("\(day):")
                 .frame(width:36,alignment: .leading)
-            Text("\(model.hours)")
+            Text("\(hours)")
         }
         .font(.system(.callout, design: .rounded))
     }

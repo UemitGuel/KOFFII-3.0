@@ -27,12 +27,12 @@ extension KOFFII_Widget {
         
         ///When WidgetKit displays your widget for the first time, it renders the widget’s view as a placeholder.
         func placeholder(in context: Context) -> Entry {
-            Entry(date: Date(), model: topThreeOfTheMonth[0], image: Image(topThreeOfTheMonth[0].name))
+            Entry(date: Date(), model: DiscoveryWidgetViewModel(cafe: topThreeOfTheMonth[0]), image: Image(topThreeOfTheMonth[0].name))
         }
         
         ///To show your widget in the widget gallery, WidgetKit asks the provider for a preview snapshot.
         func getSnapshot(in context: Context, completion: @escaping (Entry) -> Void) {
-            let entry = Entry(date: Date(), model: topThreeOfTheMonth[1], image: Image(topThreeOfTheMonth[0].name))
+            let entry = Entry(date: Date(), model: DiscoveryWidgetViewModel(cafe: topThreeOfTheMonth[1]), image: Image(topThreeOfTheMonth[0].name))
             completion(entry)
         }
         
@@ -43,7 +43,7 @@ extension KOFFII_Widget {
             let currentDate = Date()
             for index in 0..<topThreeOfTheMonth.count {
                 let entryDate = Calendar.current.date(byAdding: .hour, value: index, to: currentDate)!
-                let entry = Entry(date: entryDate, model: topThreeOfTheMonth[index], image: Image(topThreeOfTheMonth[index].name))
+                let entry = Entry(date: entryDate, model: DiscoveryWidgetViewModel(cafe: topThreeOfTheMonth[index]), image: Image(topThreeOfTheMonth[index].name))
                 entries.append(entry)
             }
             
@@ -58,7 +58,7 @@ extension KOFFII_Widget {
 
     struct Entry: TimelineEntry {
         var date: Date
-        var model: DiscoveryCafeViewModel
+        var model: DiscoveryWidgetViewModel
         var image: Image
     }
 }
@@ -127,13 +127,14 @@ struct KOFFII_WidgetEntryView : View {
                             .frame(maxWidth: .infinity, alignment: .topLeading)
                         VStack(alignment: .leading) {
                             VStack(alignment: .leading) {
-                                WeekdayHours(cafe: entry.model.cafe, hoursIndex: 0, workday: "Mo")
-                                WeekdayHours(cafe: entry.model.cafe, hoursIndex: 1, workday: "Di")
-                                WeekdayHours(cafe: entry.model.cafe, hoursIndex: 2, workday: "Mi")
-                                WeekdayHours(cafe: entry.model.cafe, hoursIndex: 3, workday: "Do")
-                                WeekdayHours(cafe: entry.model.cafe, hoursIndex: 4, workday: "Fr")
-                                WeekdayHours(cafe: entry.model.cafe, hoursIndex: 5, workday: "Sa")
-                                WeekdayHours(cafe: entry.model.cafe, hoursIndex: 6, workday: "So")
+                                WeekdayHours(day: "Mo", hours: entry.model.hoursMo)
+                                WeekdayHours(day: "Mo", hours: entry.model.hoursDi)
+                                WeekdayHours(day: "Mo", hours: entry.model.hoursMi)
+                                WeekdayHours(day: "Mo", hours: entry.model.hoursDo)
+                                WeekdayHours(day: "Mo", hours: entry.model.hoursFr)
+                                WeekdayHours(day: "Mo", hours: entry.model.hoursSa)
+                                WeekdayHours(day: "Mo", hours: entry.model.hoursSo)
+
                             }
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -159,13 +160,13 @@ struct KOFFII_WidgetEntryView : View {
 struct KOFFII_Widget_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            KOFFII_WidgetEntryView(entry: KOFFII_Widget.Entry(date: Date(), model: topThreeOfTheMonth[0], image: Image(topThreeOfTheMonth[0].name)))
+            KOFFII_WidgetEntryView(entry: KOFFII_Widget.Entry(date: Date(), model: DiscoveryWidgetViewModel(cafe: topThreeOfTheMonth[0]) , image: Image(topThreeOfTheMonth[0].name)))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
                 .environment(\.colorScheme, .dark)
-            KOFFII_WidgetEntryView(entry: KOFFII_Widget.Entry(date: Date(), model: topThreeOfTheMonth[0], image: Image(topThreeOfTheMonth[0].name)))
+            KOFFII_WidgetEntryView(entry: KOFFII_Widget.Entry(date: Date(), model: DiscoveryWidgetViewModel(cafe: topThreeOfTheMonth[0]), image: Image(topThreeOfTheMonth[0].name)))
                 .previewContext(WidgetPreviewContext(family: .systemMedium))
                 .environment(\.colorScheme, .dark)
-            KOFFII_WidgetEntryView(entry: KOFFII_Widget.Entry(date: Date(), model: topThreeOfTheMonth[0], image: Image(topThreeOfTheMonth[0].name)))
+            KOFFII_WidgetEntryView(entry: KOFFII_Widget.Entry(date: Date(), model: DiscoveryWidgetViewModel(cafe: topThreeOfTheMonth[0]), image: Image(topThreeOfTheMonth[0].name)))
                 .previewContext(WidgetPreviewContext(family: .systemLarge))
                 .environment(\.colorScheme, .dark)
         }

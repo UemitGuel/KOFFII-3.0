@@ -23,13 +23,6 @@ struct CoffeeDetailViewModel: Identifiable {
         return self.coffee.isRoastery
     }
     
-    var hours: String {
-        guard let start = self.coffee.hours?[0].start, let end = self.coffee.hours?[0].end else {
-            return ""
-        }
-        return "\(start) - \(end)"
-    }
-    
     var coordinates: CLLocationCoordinate2D {
         return self.coffee.coordinates
     }
@@ -89,4 +82,57 @@ struct CoffeeDetailViewModel: Identifiable {
             return ""
         }
     }
+}
+
+extension CoffeeDetailViewModel {
+
+    var hoursMo: String {
+        guard let start = self.coffee.hours?[0].start, let end = self.coffee.hours?[0].end else {
+            return ""
+        }
+        return "\(start) - \(end)"
+    }
+    
+    var hoursDi: String {
+        guard let start = self.coffee.hours?[1].start, let end = self.coffee.hours?[1].end else {
+            return ""
+        }
+        return "\(start) - \(end)"
+    }
+    
+    var hoursMi: String {
+        guard let start = self.coffee.hours?[2].start, let end = self.coffee.hours?[2].end else {
+            return ""
+        }
+        return "\(start) - \(end)"
+    }
+    
+    var hoursDo: String {
+        guard let start = self.coffee.hours?[3].start, let end = self.coffee.hours?[3].end else {
+            return ""
+        }
+        return "\(start) - \(end)"
+    }
+    
+    var hoursFr: String {
+        guard let start = self.coffee.hours?[4].start, let end = self.coffee.hours?[4].end else {
+            return ""
+        }
+        return "\(start) - \(end)"
+    }
+    
+    var hoursSa: String {
+        guard let start = self.coffee.hours?[5].start, let end = self.coffee.hours?[5].end else {
+            return ""
+        }
+        return "\(start) - \(end)"
+    }
+    
+    var hoursSo: String {
+        guard let start = self.coffee.hours?[6].start, let end = self.coffee.hours?[6].end else {
+            return ""
+        }
+        return "\(start) - \(end)"
+    }
+    
 }

@@ -36,6 +36,8 @@
 		E431890F262DD63400530DEA /* DiscoveryCafeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43188FB262DD47900530DEA /* DiscoveryCafeViewModel.swift */; };
 		E4318915262DD65300530DEA /* CoffeeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4318902262DD5F500530DEA /* CoffeeDetailViewModel.swift */; };
 		E431891B262DD65300530DEA /* CoffeeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4318902262DD5F500530DEA /* CoffeeDetailViewModel.swift */; };
+		E436F66E26374AEE004EA829 /* DiscoveryWidgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436F66D26374AEE004EA829 /* DiscoveryWidgetViewModel.swift */; };
+		E436F67426374B83004EA829 /* DiscoveryWidgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436F66D26374AEE004EA829 /* DiscoveryWidgetViewModel.swift */; };
 		E447731E2561389100B772C2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E447731D2561389100B772C2 /* WidgetKit.framework */; };
 		E44773202561389100B772C2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E447731F2561389100B772C2 /* SwiftUI.framework */; };
 		E44773232561389100B772C2 /* KOFFII_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44773222561389100B772C2 /* KOFFII_Widget.swift */; };
@@ -192,6 +194,7 @@
 		E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableDefaultSource.swift; sourceTree = "<group>"; };
 		E43188FB262DD47900530DEA /* DiscoveryCafeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryCafeViewModel.swift; sourceTree = "<group>"; };
 		E4318902262DD5F500530DEA /* CoffeeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailViewModel.swift; sourceTree = "<group>"; };
+		E436F66D26374AEE004EA829 /* DiscoveryWidgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryWidgetViewModel.swift; sourceTree = "<group>"; };
 		E447731B2561389100B772C2 /* KOFFII WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "KOFFII WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E447731D2561389100B772C2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		E447731F2561389100B772C2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -419,6 +422,7 @@
 			isa = PBXGroup;
 			children = (
 				E44773222561389100B772C2 /* KOFFII_Widget.swift */,
+				E436F66D26374AEE004EA829 /* DiscoveryWidgetViewModel.swift */,
 				E44773252561389200B772C2 /* Assets.xcassets */,
 				E44773272561389200B772C2 /* Info.plist */,
 			);
@@ -684,6 +688,7 @@
 				B3F3F439251900CA00D91190 /* CoffeeListItem.swift in Sources */,
 				B3F3F3BA25188A1100D91190 /* KOFFII_3_0App.swift in Sources */,
 				E43188FC262DD47900530DEA /* DiscoveryCafeViewModel.swift in Sources */,
+				E436F66E26374AEE004EA829 /* DiscoveryWidgetViewModel.swift in Sources */,
 				E4D6033526359F6700FAD1B4 /* InformationListItem.swift in Sources */,
 				B31CEC0E251E386A00B7501E /* DismissButton.swift in Sources */,
 				E4D6032E26359F0100FAD1B4 /* InformationDetailViewModel.swift in Sources */,
@@ -738,6 +743,7 @@
 				E447735625614CDD00B772C2 /* RegionStore.swift in Sources */,
 				E44773672561661B00B772C2 /* CoffeeDetailView.swift in Sources */,
 				E44773232561389100B772C2 /* KOFFII_Widget.swift in Sources */,
+				E436F67426374B83004EA829 /* DiscoveryWidgetViewModel.swift in Sources */,
 				E46CB8B02631DACE0026F73B /* CafeAnnotation.swift in Sources */,
 				E447735C25614CF300B772C2 /* DismissButton.swift in Sources */,
 				E447734D25614CC600B772C2 /* Coffee.swift in Sources */,

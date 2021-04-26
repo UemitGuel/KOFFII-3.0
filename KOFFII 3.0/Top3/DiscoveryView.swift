@@ -26,7 +26,7 @@ struct DiscoveryView: View {
             }
             .padding(.bottom)
             NavigationLink(
-                destination: CoffeeDetailView(coffee: cafe3.cafe)) {
+                destination: CoffeeDetailView(coffee: roasteryData[0])) {
                 CoffeeListItem(coffee: roasteryData[0])
             }
             .padding(.bottom)
