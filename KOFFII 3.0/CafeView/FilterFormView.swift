@@ -50,7 +50,7 @@ struct FilterFormView: View {
             }
             Button(action: { updateCafeListAndDismiss() }) {
                 Text("Filter anwenden")
-                    .foregroundColor(Color(.systemBlue))
+                    .foregroundColor(Color.accentColor)
             }
         }
         .padding(.top, 64)

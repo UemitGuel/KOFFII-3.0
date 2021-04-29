@@ -23,6 +23,7 @@ struct MethodDetailView: View {
                     .frame(height: geo.size.height*0.35, alignment: .center)
                 VStack(alignment: .leading) {
                     InformationDetailHeader(info: info)
+                        .padding(.bottom)
                     Divider()
                     Text(info.title)
                         .bold()
@@ -38,6 +39,7 @@ struct MethodDetailView: View {
                             Spacer()
                         }
                     }
+                    .padding(.top, 8)
                     .padding([.vertical, .bottom], 4)
                 }
                 .padding([.horizontal,.top])

@@ -35,6 +35,7 @@ struct CoffeeListItem: View {
                 Text(model.name)
                     .bold()
                     .font(.system(.title, design: .rounded))
+                    .foregroundColor(.white)
                 Text(model.hood)
                     .foregroundColor(Color(.secondaryLabel))
                     .font(.system(.body, design: .rounded))

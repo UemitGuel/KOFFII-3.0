@@ -32,6 +32,7 @@ struct KnowledgeDetailView: View {
                             Spacer()
                         }
                     }
+                    .padding(.top, 8)
                     .padding([.vertical, .bottom], 4)
                 }
                 .padding([.horizontal,.top])

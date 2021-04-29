@@ -21,13 +21,12 @@ struct InformationListItem: View {
                     Text(info.title)
                         .bold()
                         .font(.system(.title, design: .rounded))
-                    Text("Zubereitung")
+                    Text(info.isMethod ? "Zubereitung" : "Wissen")
                         .foregroundColor(Color(.secondaryLabel))
                         .font(.system(.body, design: .rounded))
                 }
                 Spacer()
                 HStack {
-                    Spacer()
                     Image(systemName: "chevron.forward")
                 }
                 .font(.system(.body, design: .rounded))

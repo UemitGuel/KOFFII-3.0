@@ -22,11 +22,10 @@ struct GoogleMapsButton: View {
             Link("In Google Maps öffnen", destination: googleMapsUrl)
             Spacer()
         }
-        .foregroundColor(Color(.label))
+        .foregroundColor(.black)
         .padding()
-        .background(Color(.systemOrange))
+        .background(Color.accentColor)
         .cornerRadius(16)
-        
         .padding(.bottom)
     }
 }

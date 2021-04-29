@@ -21,22 +21,21 @@ struct AllCafesMapView: View {
         MapView(coffeeList: $model.coffeeList, centerCoordinate: $centerCoordinate)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        isPresented.toggle()
-                    } ) {
-                        Image(systemName: "line.horizontal.3.decrease.circle")
-                            .imageScale(.large)
+                    Button(action: { isPresented.toggle() } ) {
+                        HStack(spacing: 4) {
+                            Text("FILTER")
+                            Image(systemName: "line.horizontal.3.decrease.circle")
+                        }
+                        .font(.system(.headline, design: .rounded))
                     }
                 }
             }
             .sheet(isPresented: $mapViewStore.showDetails) {
                 CoffeeDetailView(coffee: mapViewStore.chosenCafe)
             }
-            // TODO: After WWDC 2021, maybe better MapView for SwiftUI
-            
-            //            .sheet(isPresented: $isPresented) {
-            //                FilterFormView()
-            //            }
+            .sheet(isPresented: $isPresented) {
+                FilterFormView()
+            }
             .navigationTitle("Karte")
     }
 }

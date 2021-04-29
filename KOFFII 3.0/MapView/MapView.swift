@@ -23,7 +23,10 @@ struct MapView: UIViewRepresentable {
     }
     
     func updateUIView(_ view: MKMapView, context: Context) {
-        
+        let allAnnotations = view.annotations
+        view.removeAnnotations(allAnnotations)
+        let annotations = helper.getallAnnotation(cafeList: coffeeList)
+        view.addAnnotations(annotations)
     }
     
     func makeCoordinator() -> Coordinator {

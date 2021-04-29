@@ -10,9 +10,9 @@ import SwiftUI
 struct CoffeeView: View {
     
     @EnvironmentObject var model: CoffeeListViewModel
-
+    
     @State private var isPresented = false
-
+    
     var body: some View {
         ScrollView {
             ForEach(model.coffeeList, id: \.name) { coffee in
@@ -29,8 +29,11 @@ struct CoffeeView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: { isPresented.toggle() } ) {
-                    Image(systemName: "line.horizontal.3.decrease.circle")
-                        .imageScale(.large)
+                    HStack(spacing: 4) {
+                        Text("FILTER")
+                        Image(systemName: "line.horizontal.3.decrease.circle")
+                    }
+                    .font(.system(.headline, design: .rounded))
                 }
             }
         }

@@ -35,7 +35,7 @@ struct TabBar: View {
                 InformationView()
             }
             .tabItem {
-                Label("Info", systemImage: "info.circle")
+                Label("Zubereitung", systemImage: "book")
             }
         }
     }
