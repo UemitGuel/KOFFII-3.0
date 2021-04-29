@@ -16,7 +16,6 @@ struct InformationListItem: View {
             info.image
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .clipped()
             HStack(alignment: .bottom) {
                 VStack(alignment: .leading) {
                     Text(info.title)
@@ -38,7 +37,7 @@ struct InformationListItem: View {
             .background(Color(.secondarySystemBackground))
         }
         .cornerRadius(16)
-
+        .padding(.horizontal)
     }
 }
 

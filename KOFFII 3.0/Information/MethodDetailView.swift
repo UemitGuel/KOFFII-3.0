@@ -10,7 +10,10 @@ import SwiftUI
 struct MethodDetailView: View {
     
     var info: Information
-    var data = complainData
+    var complain = complainData
+    
+    @State private var isBitterPressed = false
+    @State private var isSourPressed = false
     
     var body: some View {
         GeometryReader { geo in
@@ -42,26 +45,20 @@ struct MethodDetailView: View {
             .navigationBarTitle("", displayMode: .inline)
             .toolbar {
                 ToolbarItemGroup(placement: .bottomBar) {
-                    Button(action: {}) {
-                        HStack {
-                            Text("Hey")
-                            Image(systemName: "forward.fill").font(.title3).foregroundColor(.blue)
-                        }
-                        .frame(height: 125)
-                        .cornerRadius(16)
-                        .padding(.horizontal)
+                    Button(action: { isBitterPressed.toggle() }) {
+                        Text(info.isEspresso ? complain[2].title : complain[0].title)
                     }
                     Spacer()
-                    Button(action: {}) {
-                        HStack {
-                            Text("Hey")
-                            Image(systemName: "forward.fill").font(.title3).foregroundColor(.blue)
-                        }
-                        .frame(height: 125)
-                        .cornerRadius(16)
-                        .padding(.horizontal)
+                    Button(action: { isSourPressed.toggle() }) {
+                        Text(info.isEspresso ? complain[3].title : complain[1].title)
                     }
                 }
+            }
+            .sheet(isPresented: $isBitterPressed) {
+                ComplainView(complain: info.isEspresso ? complain[2] : complain[0])
+            }
+            .sheet(isPresented: $isSourPressed) {
+                ComplainView(complain: info.isEspresso ? complain[3] : complain[1])
             }
         }
     }

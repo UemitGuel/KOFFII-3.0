@@ -12,7 +12,7 @@ struct InformationView: View {
     var model = informationData.sorted()
     
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             ForEach(informationData, id: \.title) { info in
                 NavigationLink(
                     destination: InformationDetailCoordinator(info: info),
@@ -22,8 +22,7 @@ struct InformationView: View {
                     })
             }
         }
-        .padding(.horizontal)
-        .navigationTitle("Cafes& Rösterein")
+        .navigationTitle("Zubereitung & mehr")
     }
 }
 

@@ -17,7 +17,6 @@ struct DiscoverItem: View {
                 Image(cafe.name)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(height: 500)
                 bar.background(Color(.secondarySystemBackground))
             }
             .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
