@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DiscoveryView: View {
-        
+    
     var cafe1: DiscoveryCafeViewModel
     var cafe2: DiscoveryCafeViewModel
     var cafe3: DiscoveryCafeViewModel
@@ -21,13 +21,20 @@ struct DiscoveryView: View {
             }
             .padding(.vertical)
             NavigationLink(
-                destination: CoffeeDetailView(coffee: cafe2.cafe)) {
-                DiscoverItem(cafe: cafe2)
-            }
-            .padding(.bottom)
+                destination: InformationDetailCoordinator(info: informationData[2]),
+                label: {
+                    InformationListItem(info: informationData[2])
+                        .padding(.bottom)
+                })
+                .padding(.bottom)
             NavigationLink(
                 destination: CoffeeDetailView(coffee: roasteryData[0])) {
                 CoffeeListItem(coffee: roasteryData[0])
+            }
+            .padding(.bottom)
+            NavigationLink(
+                destination: CoffeeDetailView(coffee: cafe2.cafe)) {
+                DiscoverItem(cafe: cafe2)
             }
             .padding(.bottom)
             NavigationLink(
