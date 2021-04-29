@@ -1,0 +1,39 @@
+[
+    {
+        "title": "Kaffee zu bitter?",
+        "isEspresso": false,
+        "improvements": ["Wenn der Mahlgrad zu fein ist, dauert die Kaffeeextraktionszeit zu lange und dein Kaffee kann daher zu bitter schmecken. Versuche ein gröberen Mahlgrad",
+        "Achte darauf, dass du für die Zubereitung kein kochendes Wasser verwendst, da das zu einem bitteren Geschmack führen kann",
+        "Robusta-Kaffee schmeckt in der Regel dunkler und bitterer als Arabica-Bohnen",
+        "Aus finanziellen Gründen rösten Teile der Kaffeeindustrie die Bohnen nur kurz bei sehr hohen Temperaturen. Dies führt zu Bohnen, die außen verbrannt werden, aber von innen noch roh sind. Überprüfe die Qualität deiner Bohnen, wenn du der Meinung bist, dass dein Kaffee zu bitter ist"]
+    },
+    {
+        "title": "Kaffee zu sauer?",
+        "isEspresso": false,
+        "improvements": ["Wenn der Mahlgrad zu grob ist, kann der Kaffee zu sauer schmecken. Versuche einen feineren Mahlgrad",
+        "Wenn das Wasser zu lange abkühlt, kann der Kaffee sauer schmecken. Versuche das frisch gekochte Wasser 60 Sekunden stehen zu lassen",
+        "Einige Arabica-Bohnen schmecken fruchtiger. Werden diese dann leicht geröstet, werden die natürlichen Fruchtsäuren nicht vollständig abgebaut",
+        "Der Kaffeegeschmack kann sauer werden, wenn der Kaffee zu lange steht",
+        "Wenn das Wasser einen pH-Wert unter 7,0 hat, kann der Kaffee sauer schmecken"]
+    },
+    {
+        "title": "Espresso zu bitter?",
+        "isEspresso": true,
+        "improvements": ["Wenn der Mahlgrad zu fein ist, kann der Espresso zu bitter schmecken. Versuche einen gröberen Mahlgrad",
+        "Die Röstung der Bohnen kann zu dunkel sein. Beachte auch, dass Robusta-Bohnen bitterer schmecken als Arabica-Bohnen",
+        "Der Brühdruck kann zu hoch sein (über 10 bar)",
+        "Ein guter Espresso sollte in 25 - 35 Sekunden laufen. Wenn es länger dauert, wird der Expresso übermäßig extrahiert",
+        "Achte darauf, dass du für die Zubereitung deines Espressos kein kochendes Wasser verwendst, da dies zu einem bitteren Geschmack führen kann",
+        "Vielleicht hast du zu viel Espressopulver in Bezug auf Wasser verwendet"]
+    },
+    {
+        "title": "Espresso zu sauer?",
+        "isEspresso": true,
+        "improvements": ["Wenn der Mahlgrad zu grob ist, kann der Espresso zu sauer schmecken. Versuche einen feineren Mahlgrad",
+        "Vielleicht hast du dich für leicht geröstete Kaffeebohnen entschieden. Probieren einfach eine dunklere Röstung",
+        "Der Brühdruck könnte zu niedrig sein (unter 6 bar)",
+        "Ein guter Espresso sollte in 25 - 35 Sekunden laufen. Wenn es kürzer dauert, könnte der Expresso sauer schmecken",
+        "Wenn das Wasser zu lange abkühlt, kann der Kaffee sauer schmecken",
+        "Vielleicht hast du zu wenig Espressopulver in Bezug auf Wasser verwendet"]
+    }
+]

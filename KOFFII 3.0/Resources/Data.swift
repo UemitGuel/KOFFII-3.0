@@ -12,6 +12,7 @@ let cafeData: [Coffee] = load("cafeData.json")
 let roasteryData: [Coffee] = load("RoasteryData.json")
 let coffeeData = cafeData + roasteryData
 let informationData: [Information] = load("InformationData.json")
+let complainData: [Complain] = load("ComplainData.json")
 
 let topThreeOfTheMonth: [Coffee] = [cafeData[38], cafeData[3],cafeData[48]]
 

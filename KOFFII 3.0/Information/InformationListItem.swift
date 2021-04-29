@@ -17,14 +17,22 @@ struct InformationListItem: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .clipped()
-            HStack {
-                Text(info.title)
-                    .bold()
-                    .font(.system(.title, design: .rounded))
+            HStack(alignment: .bottom) {
+                VStack(alignment: .leading) {
+                    Text(info.title)
+                        .bold()
+                        .font(.system(.title, design: .rounded))
+                    Text("Zubereitung")
+                        .foregroundColor(Color(.secondaryLabel))
+                        .font(.system(.body, design: .rounded))
+                }
                 Spacer()
-                Image(systemName: "chevron.forward")
-                    .font(.system(.body, design: .rounded))
-                    .foregroundColor(.secondary)
+                HStack {
+                    Spacer()
+                    Image(systemName: "chevron.forward")
+                }
+                .font(.system(.body, design: .rounded))
+                .foregroundColor(.secondary)
             }
             .padding()
             .background(Color(.secondarySystemBackground))

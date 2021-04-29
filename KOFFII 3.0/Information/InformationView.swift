@@ -15,7 +15,7 @@ struct InformationView: View {
         ScrollView {
             ForEach(informationData, id: \.title) { info in
                 NavigationLink(
-                    destination: InformationListItem(info: info),
+                    destination: InformationDetailCoordinator(info: info),
                     label: {
                         InformationListItem(info: info)
                             .padding(.bottom)

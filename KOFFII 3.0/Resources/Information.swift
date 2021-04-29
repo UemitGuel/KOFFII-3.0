@@ -28,4 +28,6 @@ struct Information: Codable, Comparable {
     let steps: [String]
     @DecodableDefault.False var isEspresso: Bool
     
+    var isMethod: Bool { quan != nil && temp != nil && time != nil }
+    
 }
