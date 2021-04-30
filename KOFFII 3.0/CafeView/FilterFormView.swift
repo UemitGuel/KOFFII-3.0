@@ -20,25 +20,25 @@ struct FilterFormView: View {
                         title: { Text("Wifi") },
                         icon: { Image(systemName: "wifi") }
                     )
-                })
+                }).toggleStyle(SwitchToggleStyle(tint: Color.accentColor))
                 Toggle(isOn: $model.needFood, label: {
                     Label(
                         title: { Text("Lunch") },
                         icon: { Image("FOOD") }
                     )
-                })
+                }).toggleStyle(SwitchToggleStyle(tint: Color.accentColor))
                 Toggle(isOn: $model.needVegan, label: {
                     Label(
                         title: { Text("Vegan") },
                         icon: { Image(systemName: "leaf") }
                     )
-                })
+                }).toggleStyle(SwitchToggleStyle(tint: Color.accentColor))
                 Toggle(isOn: $model.needPlug, label: {
                     Label(
                         title: { Text("Strom") },
                         icon: { Image(systemName: "bolt") }
                     )
-                })
+                }).toggleStyle(SwitchToggleStyle(tint: Color.accentColor))
             }
             Section(header: Text("Röstereien")) {
                 Toggle(isOn: $model.includeRosteries, label: {
@@ -46,7 +46,7 @@ struct FilterFormView: View {
                         title: { Text("Röstereien") },
                         icon: { Image("beans") }
                     )
-                })
+                }).toggleStyle(SwitchToggleStyle(tint: Color.accentColor))
             }
             Button(action: { updateCafeListAndDismiss() }) {
                 Text("Filter anwenden")
