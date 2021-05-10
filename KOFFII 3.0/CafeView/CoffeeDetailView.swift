@@ -15,10 +15,13 @@ struct CoffeeDetailView: View {
     init(coffee: Coffee) {
         self.model = CoffeeDetailViewModel(coffee: coffee)
     }
-        
+    
     @State var regionVM = RegionStore.shared.region
     
     @State private var trackingMode = MapUserTrackingMode.follow
+    
+    let infoRandom = informationData.randomElement()!
+    @State private var isPresented = false
     
     var body: some View {
         GeometryReader { geo in
@@ -51,21 +54,21 @@ struct CoffeeDetailView: View {
                     }
                     GoogleMapsButton(locationURL: model.locationURL)
                         .padding(.top)
-                    Divider()
                     if !model.isRoastery {
-                        HStack {
-                            if model.hasImage {
-                                Image(model.name)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(height: geo.size.height*0.25)
-                                    .cornerRadius(16)
-                                Spacer()
-                            }
-                            VStack(alignment: model.hasImage ? .trailing : .leading, spacing: 2) {
-                                Text("Öffnungszeiten")
-                                    .font(.system(.headline, design: .rounded))
-                                    .padding(.bottom, 2)
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("Öffnungszeiten")
+                                .font(.system(.title2, design: .rounded))
+                                .bold()
+                                .padding(.bottom, 4)
+                            HStack {
+                                if model.hasImage {
+                                    Image(model.name)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(height: geo.size.height*0.25)
+                                        .cornerRadius(16)
+                                    Spacer()
+                                }
                                 VStack(alignment: .leading) {
                                     WeekdayHours(day: "Mo", hours: model.hoursMo)
                                     WeekdayHours(day: "Di", hours: model.hoursDi)
@@ -74,24 +77,42 @@ struct CoffeeDetailView: View {
                                     WeekdayHours(day: "Fr", hours: model.hoursFr)
                                     WeekdayHours(day: "Sa", hours: model.hoursSa)
                                     WeekdayHours(day: "So", hours: model.hoursSo)
-
                                 }
+                                .padding()
+                                .background(Color(.secondarySystemBackground))
+                                .cornerRadius(16)
                             }
                         }
                     }
                 }
                 .padding(.horizontal)
                 if (model.hasNotes) {
-                    Divider()
                     VStack(alignment: .leading, spacing: 4) {
                         Text("Ümit´s Notizen")
-                            .font(.system(.headline, design: .rounded))
+                            .font(.system(.title2, design: .rounded))
+                            .bold()
                             .padding(.bottom, 4)
                         Text(model.notesBody)
-                        .padding(.bottom)
-
+                            .padding()
+                            .background(Color(.secondarySystemBackground))
+                            .cornerRadius(16)
+                        
                     }
                     .padding()
+                }
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Wusstest du schon..?")
+                        .font(.system(.title2, design: .rounded))
+                        .bold()
+                        .padding(.bottom, 4)
+                        .padding([.leading])
+                    Button(action: { isPresented.toggle() }, label: {
+                        InformationListItem(info: infoRandom)
+                    })
+                }
+                .padding(.bottom)
+                .sheet(isPresented: $isPresented) {
+                    InformationDetailCoordinator(info: infoRandom)
                 }
             }
             .navigationBarTitle("", displayMode: .inline)
@@ -99,6 +120,13 @@ struct CoffeeDetailView: View {
     }
     
 }
+
+struct CoffeeDetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        CoffeeDetailView(coffee: coffeeData[38])
+    }
+}
+
 
 struct WeekdayHours: View {
     
@@ -108,7 +136,6 @@ struct WeekdayHours: View {
     var body: some View {
         HStack {
             Text("\(day):")
-                .frame(width:36,alignment: .leading)
             Text("\(hours)")
         }
         .font(.system(.callout, design: .rounded))

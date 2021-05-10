@@ -60,6 +60,7 @@
 		E447736225615D9E00B772C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3F3F3BD25188A1300D91190 /* Assets.xcassets */; };
 		E44773672561661B00B772C2 /* CoffeeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B8738A251B3EBD006CA136 /* CoffeeDetailView.swift */; };
 		E447736C256166C600B772C2 /* CoffeeListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F438251900CA00D91190 /* CoffeeListItem.swift */; };
+		E45C6B4826496EA900D6F179 /* InformationListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D6033426359F6700FAD1B4 /* InformationListItem.swift */; };
 		E46CB8A42631D9890026F73B /* CafeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46CB8A32631D9890026F73B /* CafeAnnotation.swift */; };
 		E46CB8AA2631DACE0026F73B /* CafeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46CB8A32631D9890026F73B /* CafeAnnotation.swift */; };
 		E46CB8B02631DACE0026F73B /* CafeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46CB8A32631D9890026F73B /* CafeAnnotation.swift */; };
@@ -754,6 +755,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45C6B4826496EA900D6F179 /* InformationListItem.swift in Sources */,
 				E4A7114A26342B2D0032432D /* Information.swift in Sources */,
 				E447735525614CDD00B772C2 /* CoordinatesHelper.swift in Sources */,
 				E4F2ED56263AB5C7001375BE /* MethodDetailView.swift in Sources */,
