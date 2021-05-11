@@ -70,6 +70,18 @@
 		E477969E262CDD29001CBE43 /* CoffeeListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4779682262CD5B6001CBE43 /* CoffeeListItemViewModel.swift */; };
 		E47796A4262CDFBB001CBE43 /* CoffeeListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4779682262CD5B6001CBE43 /* CoffeeListItemViewModel.swift */; };
 		E47796AA262CDFBE001CBE43 /* CoffeeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4779676262CD571001CBE43 /* CoffeeListViewModel.swift */; };
+		E48AB82D264ACE6C0022267B /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AB82C264ACE6C0022267B /* WeatherManager.swift */; };
+		E48AB82E264ADAF60022267B /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AB82C264ACE6C0022267B /* WeatherManager.swift */; };
+		E48AB82F264ADAF60022267B /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AB82C264ACE6C0022267B /* WeatherManager.swift */; };
+		E48AB831264AE1BE0022267B /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AB830264AE1BE0022267B /* WeatherData.swift */; };
+		E48AB832264AE1BE0022267B /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AB830264AE1BE0022267B /* WeatherData.swift */; };
+		E48AB833264AE1BE0022267B /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AB830264AE1BE0022267B /* WeatherData.swift */; };
+		E48AB835264AE1C40022267B /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AB834264AE1C40022267B /* WeatherModel.swift */; };
+		E48AB836264AE1C40022267B /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AB834264AE1C40022267B /* WeatherModel.swift */; };
+		E48AB837264AE1C40022267B /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AB834264AE1C40022267B /* WeatherModel.swift */; };
+		E48AB839264AE4430022267B /* WeatherManagerNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AB838264AE4430022267B /* WeatherManagerNew.swift */; };
+		E48AB83A264AE4430022267B /* WeatherManagerNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AB838264AE4430022267B /* WeatherManagerNew.swift */; };
+		E48AB83B264AE4430022267B /* WeatherManagerNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AB838264AE4430022267B /* WeatherManagerNew.swift */; };
 		E48DC25E2631B2E5009ED2FE /* FilterFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48DC25D2631B2E5009ED2FE /* FilterFormView.swift */; };
 		E48DC2762631B99B009ED2FE /* FilterFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48DC25D2631B2E5009ED2FE /* FilterFormView.swift */; };
 		E4909E242639D1CA0060A0A5 /* MethodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D6032626359EF500FAD1B4 /* MethodDetailView.swift */; };
@@ -221,6 +233,10 @@
 		E46CB8A32631D9890026F73B /* CafeAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeAnnotation.swift; sourceTree = "<group>"; };
 		E4779676262CD571001CBE43 /* CoffeeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeListViewModel.swift; sourceTree = "<group>"; };
 		E4779682262CD5B6001CBE43 /* CoffeeListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeListItemViewModel.swift; sourceTree = "<group>"; };
+		E48AB82C264ACE6C0022267B /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		E48AB830264AE1BE0022267B /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		E48AB834264AE1C40022267B /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		E48AB838264AE4430022267B /* WeatherManagerNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManagerNew.swift; sourceTree = "<group>"; };
 		E48DC25D2631B2E5009ED2FE /* FilterFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterFormView.swift; sourceTree = "<group>"; };
 		E491F013259D347200EAAE2F /* KOFFIIAppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KOFFIIAppClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E491F015259D347200EAAE2F /* KOFFIIAppClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KOFFIIAppClipApp.swift; sourceTree = "<group>"; };
@@ -335,6 +351,10 @@
 			isa = PBXGroup;
 			children = (
 				B330CEBF251C934900FB34E4 /* CoordinatesHelper.swift */,
+				E48AB838264AE4430022267B /* WeatherManagerNew.swift */,
+				E48AB82C264ACE6C0022267B /* WeatherManager.swift */,
+				E48AB830264AE1BE0022267B /* WeatherData.swift */,
+				E48AB834264AE1C40022267B /* WeatherModel.swift */,
 				B33571DD251E0C4D00D06BC4 /* AnnotationsHelper.swift */,
 				B38960BC251B4C67001659FD /* LocationStore.swift */,
 				B38960C1251B50A2001659FD /* RegionStore.swift */,
@@ -701,8 +721,10 @@
 				B38960C2251B50A2001659FD /* RegionStore.swift in Sources */,
 				E4D6032726359EF500FAD1B4 /* MethodDetailView.swift in Sources */,
 				B32897AE251FA1BA0098A6E7 /* DiscoveryView.swift in Sources */,
+				E48AB835264AE1C40022267B /* WeatherModel.swift in Sources */,
 				B3F3F3ED25188DD300D91190 /* CoffeeView.swift in Sources */,
 				B31CEBE9251E1FF900B7501E /* MapView.swift in Sources */,
+				E48AB839264AE4430022267B /* WeatherManagerNew.swift in Sources */,
 				B3C3368C251DE78200755B1E /* AllCafesMapView.swift in Sources */,
 				E4318903262DD5F500530DEA /* CoffeeDetailViewModel.swift in Sources */,
 				E4F2ED4F263AB40C001375BE /* InformationDetailCoordinator.swift in Sources */,
@@ -714,6 +736,7 @@
 				B3F3F3BA25188A1100D91190 /* KOFFII_3_0App.swift in Sources */,
 				E43188FC262DD47900530DEA /* DiscoveryCafeViewModel.swift in Sources */,
 				E4F2ED51263AB480001375BE /* KnowledgeDetailView.swift in Sources */,
+				E48AB82D264ACE6C0022267B /* WeatherManager.swift in Sources */,
 				E436F66E26374AEE004EA829 /* DiscoveryWidgetViewModel.swift in Sources */,
 				E43D22C5263AA5AD00F586B6 /* Complain.swift in Sources */,
 				E4D6033526359F6700FAD1B4 /* InformationListItem.swift in Sources */,
@@ -730,6 +753,7 @@
 				E492FEFB2590EAEC00881C1F /* DiscoverItem.swift in Sources */,
 				E4A7115126342B3C0032432D /* InformationView.swift in Sources */,
 				B3B520932519E1C400368F47 /* TabBar.swift in Sources */,
+				E48AB831264AE1BE0022267B /* WeatherData.swift in Sources */,
 				B330CEC0251C934900FB34E4 /* CoordinatesHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -759,17 +783,20 @@
 				E4A7114A26342B2D0032432D /* Information.swift in Sources */,
 				E447735525614CDD00B772C2 /* CoordinatesHelper.swift in Sources */,
 				E4F2ED56263AB5C7001375BE /* MethodDetailView.swift in Sources */,
+				E48AB82E264ADAF60022267B /* WeatherManager.swift in Sources */,
 				E4A89F20263AD50E009E4A5B /* ComplainView.swift in Sources */,
 				E447734E25614CC600B772C2 /* DecodableDefaultSource.swift in Sources */,
 				E431891B262DD65300530DEA /* CoffeeDetailViewModel.swift in Sources */,
 				E431890F262DD63400530DEA /* DiscoveryCafeViewModel.swift in Sources */,
 				E447734F25614CC600B772C2 /* Data.swift in Sources */,
+				E48AB836264AE1C40022267B /* WeatherModel.swift in Sources */,
 				E47796A4262CDFBB001CBE43 /* CoffeeListItemViewModel.swift in Sources */,
 				E447735425614CDD00B772C2 /* LocationStore.swift in Sources */,
 				E447735D25614CF300B772C2 /* GoogleMapsButton.swift in Sources */,
 				E447736C256166C600B772C2 /* CoffeeListItem.swift in Sources */,
 				E47796AA262CDFBE001CBE43 /* CoffeeListViewModel.swift in Sources */,
 				E447735725614CDD00B772C2 /* AnnotationsHelper.swift in Sources */,
+				E48AB832264AE1BE0022267B /* WeatherData.swift in Sources */,
 				E4F2ED55263AB5C4001375BE /* KnowledgeDetailView.swift in Sources */,
 				E43D22CA263AA70D00F586B6 /* Complain.swift in Sources */,
 				E447735625614CDD00B772C2 /* RegionStore.swift in Sources */,
@@ -779,6 +806,7 @@
 				E436F67426374B83004EA829 /* DiscoveryWidgetViewModel.swift in Sources */,
 				E46CB8B02631DACE0026F73B /* CafeAnnotation.swift in Sources */,
 				E447735C25614CF300B772C2 /* DismissButton.swift in Sources */,
+				E48AB83A264AE4430022267B /* WeatherManagerNew.swift in Sources */,
 				E447734D25614CC600B772C2 /* Coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -789,6 +817,8 @@
 			files = (
 				E491F033259D368B00EAAE2F /* LocationStore.swift in Sources */,
 				E4779698262CDD25001CBE43 /* CoffeeListViewModel.swift in Sources */,
+				E48AB82F264ADAF60022267B /* WeatherManager.swift in Sources */,
+				E48AB83B264AE4430022267B /* WeatherManagerNew.swift in Sources */,
 				E4F2ED54263AB5C4001375BE /* KnowledgeDetailView.swift in Sources */,
 				E491F03F259D368B00EAAE2F /* RegionStore.swift in Sources */,
 				E491F034259D368B00EAAE2F /* DiscoverItem.swift in Sources */,
@@ -802,11 +832,13 @@
 				E491F02E259D368B00EAAE2F /* CoordinatesHelper.swift in Sources */,
 				E491F037259D368B00EAAE2F /* MapViewStore.swift in Sources */,
 				E491F07D259E04C300EAAE2F /* KOFFIIAppClipApp.swift in Sources */,
+				E48AB833264AE1BE0022267B /* WeatherData.swift in Sources */,
 				E4318909262DD63300530DEA /* DiscoveryCafeViewModel.swift in Sources */,
 				E491F03C259D368B00EAAE2F /* CoffeeDetailView.swift in Sources */,
 				E491F041259D368B00EAAE2F /* DismissButton.swift in Sources */,
 				E477969E262CDD29001CBE43 /* CoffeeListItemViewModel.swift in Sources */,
 				E491F02D259D368B00EAAE2F /* Coffee.swift in Sources */,
+				E48AB837264AE1C40022267B /* WeatherModel.swift in Sources */,
 				E4D603562635B53700FAD1B4 /* InformationListItem.swift in Sources */,
 				E48DC2762631B99B009ED2FE /* FilterFormView.swift in Sources */,
 				E4A7114426342B2D0032432D /* Information.swift in Sources */,

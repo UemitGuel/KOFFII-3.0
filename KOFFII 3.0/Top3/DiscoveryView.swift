@@ -13,8 +13,12 @@ struct DiscoveryView: View {
     var cafe2: DiscoveryCafeViewModel
     var cafe3: DiscoveryCafeViewModel
     
+    @ObservedObject var weatherManager = WeatherManager()
+
     var body: some View {
         ScrollView {
+            Text(weatherManager.weather)
+                .foregroundColor(.blue)
             NavigationLink(
                 destination: CoffeeDetailView(coffee: cafe1.cafe)) {
                 DiscoverItem(cafe: cafe1)
