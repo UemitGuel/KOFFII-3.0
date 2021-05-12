@@ -13,12 +13,10 @@ struct DiscoveryView: View {
     var cafe2: DiscoveryCafeViewModel
     var cafe3: DiscoveryCafeViewModel
     
-    @ObservedObject var weatherManager = WeatherManager()
+    @EnvironmentObject var weatherStore: WeatherStore
 
     var body: some View {
         ScrollView {
-            Text(weatherManager.weather)
-                .foregroundColor(.blue)
             NavigationLink(
                 destination: CoffeeDetailView(coffee: cafe1.cafe)) {
                 DiscoverItem(cafe: cafe1)
@@ -47,6 +45,18 @@ struct DiscoveryView: View {
             }
             .padding(.bottom)
             .navigationTitle("Empfehlungen")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    if #available(iOS 14.5, *) {
+                        Label(weatherStore.model.temperatureString,
+                              systemImage: weatherStore.model.conditionName)    .labelStyle(TitleAndIconLabelStyle())
+                    } else {
+                        Label(weatherStore.model.temperatureString,
+                              systemImage: weatherStore.model.conditionName)
+                    }
+
+                }
+            }
         }
     }
 }
