@@ -12,7 +12,7 @@ struct TabBar: View {
     var body: some View {
         TabView {
             NavigationView {
-                DiscoveryView(cafe1: DiscoveryCafeViewModel(cafe: topThreeOfTheMonth[0]), cafe2: DiscoveryCafeViewModel(cafe: topThreeOfTheMonth[1]), cafe3: DiscoveryCafeViewModel(cafe: topThreeOfTheMonth[2])).environmentObject(WeatherStore())
+                DiscoveryView(cafe1: DiscoveryCafeViewModel(cafe: topThreeOfTheMonth[0]), cafe2: DiscoveryCafeViewModel(cafe: topThreeOfTheMonth[1]), cafe3: DiscoveryCafeViewModel(cafe: topThreeOfTheMonth[2]))
             }
             .tabItem {
                 Label("Entdecken", systemImage: "heart.text.square")

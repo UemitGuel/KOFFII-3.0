@@ -14,6 +14,7 @@ struct AllCafesMapView: View {
     
     @EnvironmentObject var mapViewStore: MapViewStore
     @EnvironmentObject var model: CoffeeListViewModel
+    @EnvironmentObject var weatherStore: WeatherStore
     
     @State private var isPresented = false
     
@@ -37,6 +38,7 @@ struct AllCafesMapView: View {
                 FilterFormView()
             }
             .navigationTitle("Karte")
+            .addWeatherToolbarItem(with: weatherStore.model)
     }
 }
 

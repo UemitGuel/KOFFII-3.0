@@ -10,7 +10,7 @@ import Combine
 
 class WeatherStore: ObservableObject {
     
-    @Published var model: WeatherModel = WeatherModel(conditionId: 0, temperature: 0)
+    @Published var model: WeatherModel = WeatherModel(conditionId: 0, temperature: 273.15)
     let weatherURL = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=Cologne&appid=d65a294fa426ac1d4632fac8ca526ec7")!
     var cancellables: Set<AnyCancellable> = []
     

@@ -82,6 +82,9 @@
 		E48DC25E2631B2E5009ED2FE /* FilterFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48DC25D2631B2E5009ED2FE /* FilterFormView.swift */; };
 		E48DC2762631B99B009ED2FE /* FilterFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48DC25D2631B2E5009ED2FE /* FilterFormView.swift */; };
 		E4909E242639D1CA0060A0A5 /* MethodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D6032626359EF500FAD1B4 /* MethodDetailView.swift */; };
+		E49119BF264C834900021A87 /* WeatherToolBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49119BE264C834900021A87 /* WeatherToolBarItem.swift */; };
+		E49119C0264C844D00021A87 /* WeatherToolBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49119BE264C834900021A87 /* WeatherToolBarItem.swift */; };
+		E49119C1264C844D00021A87 /* WeatherToolBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49119BE264C834900021A87 /* WeatherToolBarItem.swift */; };
 		E491F01A259D347300EAAE2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E491F019259D347300EAAE2F /* Assets.xcassets */; };
 		E491F01D259D347300EAAE2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E491F01C259D347300EAAE2F /* Preview Assets.xcassets */; };
 		E491F022259D347300EAAE2F /* KOFFIIAppClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = E491F013259D347200EAAE2F /* KOFFIIAppClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -234,6 +237,7 @@
 		E48AB830264AE1BE0022267B /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		E48AB834264AE1C40022267B /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		E48DC25D2631B2E5009ED2FE /* FilterFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterFormView.swift; sourceTree = "<group>"; };
+		E49119BE264C834900021A87 /* WeatherToolBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherToolBarItem.swift; sourceTree = "<group>"; };
 		E491F013259D347200EAAE2F /* KOFFIIAppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KOFFIIAppClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E491F015259D347200EAAE2F /* KOFFIIAppClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KOFFIIAppClipApp.swift; sourceTree = "<group>"; };
 		E491F019259D347300EAAE2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -350,6 +354,7 @@
 				E409A141264C437300F74EA1 /* WeatherStore.swift */,
 				E48AB830264AE1BE0022267B /* WeatherData.swift */,
 				E48AB834264AE1C40022267B /* WeatherModel.swift */,
+				E49119BE264C834900021A87 /* WeatherToolBarItem.swift */,
 				B33571DD251E0C4D00D06BC4 /* AnnotationsHelper.swift */,
 				B38960BC251B4C67001659FD /* LocationStore.swift */,
 				B38960C1251B50A2001659FD /* RegionStore.swift */,
@@ -729,6 +734,7 @@
 				B3F3F439251900CA00D91190 /* CoffeeListItem.swift in Sources */,
 				B3F3F3BA25188A1100D91190 /* KOFFII_3_0App.swift in Sources */,
 				E43188FC262DD47900530DEA /* DiscoveryCafeViewModel.swift in Sources */,
+				E49119BF264C834900021A87 /* WeatherToolBarItem.swift in Sources */,
 				E409A142264C437300F74EA1 /* WeatherStore.swift in Sources */,
 				E4F2ED51263AB480001375BE /* KnowledgeDetailView.swift in Sources */,
 				E436F66E26374AEE004EA829 /* DiscoveryWidgetViewModel.swift in Sources */,
@@ -779,6 +785,7 @@
 				E4F2ED56263AB5C7001375BE /* MethodDetailView.swift in Sources */,
 				E4A89F20263AD50E009E4A5B /* ComplainView.swift in Sources */,
 				E447734E25614CC600B772C2 /* DecodableDefaultSource.swift in Sources */,
+				E49119C0264C844D00021A87 /* WeatherToolBarItem.swift in Sources */,
 				E431891B262DD65300530DEA /* CoffeeDetailViewModel.swift in Sources */,
 				E431890F262DD63400530DEA /* DiscoveryCafeViewModel.swift in Sources */,
 				E447734F25614CC600B772C2 /* Data.swift in Sources */,
@@ -813,6 +820,7 @@
 				E4779698262CDD25001CBE43 /* CoffeeListViewModel.swift in Sources */,
 				E4F2ED54263AB5C4001375BE /* KnowledgeDetailView.swift in Sources */,
 				E491F03F259D368B00EAAE2F /* RegionStore.swift in Sources */,
+				E49119C1264C844D00021A87 /* WeatherToolBarItem.swift in Sources */,
 				E491F034259D368B00EAAE2F /* DiscoverItem.swift in Sources */,
 				E4318915262DD65300530DEA /* CoffeeDetailViewModel.swift in Sources */,
 				E4909E242639D1CA0060A0A5 /* MethodDetailView.swift in Sources */,

@@ -45,18 +45,7 @@ struct DiscoveryView: View {
             }
             .padding(.bottom)
             .navigationTitle("Empfehlungen")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    if #available(iOS 14.5, *) {
-                        Label(weatherStore.model.temperatureString,
-                              systemImage: weatherStore.model.conditionName)    .labelStyle(TitleAndIconLabelStyle())
-                    } else {
-                        Label(weatherStore.model.temperatureString,
-                              systemImage: weatherStore.model.conditionName)
-                    }
-
-                }
-            }
+            .addWeatherToolbarItem(with: weatherStore.model)
         }
     }
 }
