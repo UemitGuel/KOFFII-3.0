@@ -10,6 +10,7 @@ import SwiftUI
 struct InformationView: View {
     
     var model = informationData.sorted()
+    @EnvironmentObject var weatherStore: WeatherStore
     
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -23,6 +24,7 @@ struct InformationView: View {
             }
         }
         .navigationTitle("Zubereitung & mehr")
+        .addWeatherToolbarItem(with: weatherStore.model)
     }
 }
 

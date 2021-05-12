@@ -11,7 +11,7 @@ import SwiftUI
 struct KOFFII_3_0App: App {
     var body: some Scene {
         WindowGroup {
-            TabBar().environmentObject(MapViewStore()).environmentObject(CoffeeListViewModel())
+            TabBar().environmentObject(MapViewStore()).environmentObject(CoffeeListViewModel()).environmentObject(WeatherStore())
         }
     }
 }

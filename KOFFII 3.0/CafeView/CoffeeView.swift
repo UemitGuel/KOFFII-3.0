@@ -10,6 +10,7 @@ import SwiftUI
 struct CoffeeView: View {
     
     @EnvironmentObject var model: CoffeeListViewModel
+    @EnvironmentObject var weatherStore: WeatherStore
     
     @State private var isPresented = false
     
@@ -40,6 +41,7 @@ struct CoffeeView: View {
         .sheet(isPresented: $isPresented) {
             FilterFormView()
         }
+        .addWeatherToolbarItem(with: weatherStore.model)
     }
     
 }

@@ -13,6 +13,8 @@ struct DiscoveryView: View {
     var cafe2: DiscoveryCafeViewModel
     var cafe3: DiscoveryCafeViewModel
     
+    @EnvironmentObject var weatherStore: WeatherStore
+
     var body: some View {
         ScrollView {
             NavigationLink(
@@ -43,6 +45,7 @@ struct DiscoveryView: View {
             }
             .padding(.bottom)
             .navigationTitle("Empfehlungen")
+            .addWeatherToolbarItem(with: weatherStore.model)
         }
     }
 }
