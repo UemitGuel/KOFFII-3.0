@@ -14,13 +14,15 @@ struct InformationView: View {
     
     var body: some View {
         ScrollView(showsIndicators: false) {
-            ForEach(informationData, id: \.title) { info in
-                NavigationLink(
-                    destination: InformationDetailCoordinator(info: info),
-                    label: {
-                        InformationListItem(info: info)
-                            .padding(.bottom)
-                    })
+            VStack {
+                ForEach(informationData, id: \.title) { info in
+                    NavigationLink(
+                        destination: InformationDetailCoordinator(info: info),
+                        label: {
+                            InformationListItem(info: info)
+                                .padding(.bottom)
+                        })
+                }
             }
         }
         .navigationTitle("Zubereitung & mehr")

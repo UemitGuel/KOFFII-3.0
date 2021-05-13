@@ -30,30 +30,28 @@ struct CoffeeDetailView: View {
                     MapMarker(coordinate: item.coordinates)
                 }
                 .frame(height: geo.size.height*0.35, alignment: .center)
-                VStack(alignment: .leading) {
-                    HStack{
-                        if model.isRoastery {
-                            Label("Rösterei", image: "beans")
-                        } else {
-                            FeatureDisplayView(cafe: model.coffee)
-                        }
-                        Spacer()
-                        Text(model.distance)
-                    }
-                    .font(.system(.body, design: .rounded))
-                    .foregroundColor(.secondary)
-                    .padding([.top])
-                    Spacer()
+                VStack(alignment: .leading, spacing: 24) {
                     VStack(alignment: .leading) {
+                        HStack {
+                            if model.isRoastery {
+                                Label("Rösterei", image: "beans")
+                            } else {
+                                FeatureDisplayView(cafe: model.coffee)
+                            }
+                            Spacer()
+                            Text(model.distance)
+                        }
+                        .padding(.bottom, 4)
+                        .font(.system(.body, design: .rounded))
+                        .foregroundColor(.secondary)
                         Text(model.name)
                             .bold()
                             .font(.system(.title, design: .rounded))
                         Text(model.hood)
                             .foregroundColor(Color(.secondaryLabel))
                             .font(.system(.body, design: .rounded))
+                        GoogleMapsButton(locationURL: model.locationURL)
                     }
-                    GoogleMapsButton(locationURL: model.locationURL)
-                        .padding(.top)
                     if !model.isRoastery {
                         VStack(alignment: .leading, spacing: 2) {
                             Text("Öffnungszeiten")
@@ -68,6 +66,13 @@ struct CoffeeDetailView: View {
                                         .frame(height: geo.size.height*0.25)
                                         .cornerRadius(16)
                                     Spacer()
+                                } else {
+                                    Spacer()
+                                    VStack(alignment: .center, spacing: 8) {
+                                        Image(systemName: "rectangle.slash.fill")
+                                        Text("(Noch) kein Foto")
+                                    }
+                                    Spacer()
                                 }
                                 VStack(alignment: .leading) {
                                     WeekdayHours(day: "Mo", hours: model.hoursMo)
@@ -79,13 +84,15 @@ struct CoffeeDetailView: View {
                                     WeekdayHours(day: "So", hours: model.hoursSo)
                                 }
                                 .padding()
+                                .frame(width: 180)
                                 .background(Color(.secondarySystemBackground))
                                 .cornerRadius(16)
                             }
                         }
                     }
                 }
-                .padding(.horizontal)
+                .padding([.horizontal, .bottom])
+                .padding(.top, 8)
                 if (model.hasNotes) {
                     VStack(alignment: .leading, spacing: 4) {
                         Text("Ümit´s Notizen")
@@ -98,7 +105,7 @@ struct CoffeeDetailView: View {
                             .cornerRadius(16)
                         
                     }
-                    .padding()
+                    .padding([.horizontal, .bottom])
                 }
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Wusstest du schon..?")
@@ -123,7 +130,7 @@ struct CoffeeDetailView: View {
 
 struct CoffeeDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        CoffeeDetailView(coffee: coffeeData[38])
+        CoffeeDetailView(coffee: coffeeData[34])
     }
 }
 
@@ -136,6 +143,7 @@ struct WeekdayHours: View {
     var body: some View {
         HStack {
             Text("\(day):")
+            Spacer()
             Text("\(hours)")
         }
         .font(.system(.callout, design: .rounded))

@@ -26,6 +26,5 @@ struct GoogleMapsButton: View {
         .padding()
         .background(Color.accentColor)
         .cornerRadius(16)
-        .padding(.bottom)
     }
 }

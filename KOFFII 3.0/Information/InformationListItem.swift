@@ -21,6 +21,7 @@ struct InformationListItem: View {
                     Text(info.title)
                         .bold()
                         .font(.system(.title, design: .rounded))
+                        .foregroundColor(.white)
                     Text(info.isMethod ? "Zubereitung" : "Wissen")
                         .foregroundColor(Color(.secondaryLabel))
                         .font(.system(.body, design: .rounded))

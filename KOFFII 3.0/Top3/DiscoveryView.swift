@@ -9,19 +9,15 @@ import SwiftUI
 
 struct DiscoveryView: View {
     
-    var cafe1: DiscoveryCafeViewModel
-    var cafe2: DiscoveryCafeViewModel
-    var cafe3: DiscoveryCafeViewModel
-    
     @EnvironmentObject var weatherStore: WeatherStore
 
     var body: some View {
         ScrollView {
             NavigationLink(
-                destination: CoffeeDetailView(coffee: cafe1.cafe)) {
-                DiscoverItem(cafe: cafe1)
+                destination: CoffeeDetailView(coffee: discoverCafes[0].cafe)) {
+                DiscoverItem(cafe: discoverCafes[0])
             }
-            .padding(.vertical)
+            .padding(.bottom)
             NavigationLink(
                 destination: InformationDetailCoordinator(info: informationData[2]),
                 label: {
@@ -35,13 +31,13 @@ struct DiscoveryView: View {
             }
             .padding(.bottom)
             NavigationLink(
-                destination: CoffeeDetailView(coffee: cafe2.cafe)) {
-                DiscoverItem(cafe: cafe2)
+                destination: CoffeeDetailView(coffee: discoverCafes[1].cafe)) {
+                DiscoverItem(cafe: discoverCafes[1])
             }
             .padding(.bottom)
             NavigationLink(
-                destination: CoffeeDetailView(coffee: cafe3.cafe)) {
-                DiscoverItem(cafe: cafe3)
+                destination: CoffeeDetailView(coffee: discoverCafes[2].cafe)) {
+                DiscoverItem(cafe: discoverCafes[2])
             }
             .padding(.bottom)
             .navigationTitle("Empfehlungen")
