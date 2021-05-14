@@ -13,11 +13,6 @@ class KOFFII_CGN_2_0UITests: XCTestCase {
         super.setUp()
 
         let app = XCUIApplication()
-        var launchArguments: [AnyHashable] = []
-
-        launchArguments.append("-AppleInterfaceStyle")
-        launchArguments.append("Dark")
-        app.launchArguments = launchArguments as! [String]
         setupSnapshot(app)
         app.launch()
     }
@@ -32,18 +27,18 @@ class KOFFII_CGN_2_0UITests: XCTestCase {
             snapshot("1Liste")
             tabBar.buttons["Karte"].tap()
             snapshot("2Karte")
+            tabBar.buttons["Zubereitung"].tap()
+            snapshot("3Zubereitung")
         } else {
-            XCUIApplication().navigationBars.buttons["KOFFII CGN"].tap()
-            
             let tablesQuery = XCUIApplication().tables
-            tablesQuery.buttons["Top 3"].tap()
+            tablesQuery.buttons["Entdecken"].tap()
             snapshot("0Entdecken")
-            XCUIApplication().navigationBars["Ümit´s Top 3"].buttons["BackButton"].tap()
-            tablesQuery.buttons["Cafes"].tap()
+            tablesQuery.buttons["Liste"].tap()
             snapshot("1Liste")
-            XCUIApplication().navigationBars["KOFFII CGN"].buttons["BackButton"].tap()
-            tablesQuery.buttons["Map"].tap()
+            tablesQuery.buttons["Karte"].tap()
             snapshot("2Karte")
+            tablesQuery.buttons["Zubereitung"].tap()
+            snapshot("3Zubereitung")
         }
     }
 }
