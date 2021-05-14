@@ -9,20 +9,25 @@ import SwiftUI
 
 struct TabBar: View {
     
+    @State private var selection: Tab = .discovery
+    
     var body: some View {
-        TabView {
+        TabView(selection: $selection) {
             NavigationView {
                 DiscoveryView()
             }
             .tabItem {
                 Label("Entdecken", systemImage: "heart.text.square")
             }
+            .tag(Tab.discovery)
+            
             NavigationView {
                 CoffeeView()
             }
             .tabItem {
                 Label("Liste", systemImage: "list.dash")
             }
+            .tag(Tab.list)
             
             NavigationView {
                 AllCafesMapView()
@@ -30,6 +35,7 @@ struct TabBar: View {
             .tabItem {
                 Label("Karte", systemImage: "map")
             }
+            .tag(Tab.map)
             
             NavigationView {
                 InformationView()
@@ -37,7 +43,20 @@ struct TabBar: View {
             .tabItem {
                 Label("Zubereitung", systemImage: "book")
             }
+            .tag(Tab.method)
         }
+    }
+}
+
+// MARK: - Tab
+
+extension TabBar {
+    
+    enum Tab {
+        case discovery
+        case list
+        case map
+        case method
     }
 }
 

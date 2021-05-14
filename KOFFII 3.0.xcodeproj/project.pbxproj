@@ -120,6 +120,10 @@
 		E4A89F1E263AD2B4009E4A5B /* ComplainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A89F1D263AD2B4009E4A5B /* ComplainView.swift */; };
 		E4A89F1F263AD50D009E4A5B /* ComplainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A89F1D263AD2B4009E4A5B /* ComplainView.swift */; };
 		E4A89F20263AD50E009E4A5B /* ComplainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A89F1D263AD2B4009E4A5B /* ComplainView.swift */; };
+		E4B14DD5264E6E05008D0528 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B14DD4264E6E05008D0528 /* ContentView.swift */; };
+		E4B14DD6264E6E10008D0528 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B14DD4264E6E05008D0528 /* ContentView.swift */; };
+		E4B14DD8264E6EB6008D0528 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B14DD7264E6EB6008D0528 /* SideBar.swift */; };
+		E4B14DD9264E7080008D0528 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B14DD7264E6EB6008D0528 /* SideBar.swift */; };
 		E4D6032726359EF500FAD1B4 /* MethodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D6032626359EF500FAD1B4 /* MethodDetailView.swift */; };
 		E4D6033526359F6700FAD1B4 /* InformationListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D6033426359F6700FAD1B4 /* InformationListItem.swift */; };
 		E4D603562635B53700FAD1B4 /* InformationListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D6033426359F6700FAD1B4 /* InformationListItem.swift */; };
@@ -250,6 +254,8 @@
 		E4A7113D263429940032432D /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		E4A7115026342B3C0032432D /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		E4A89F1D263AD2B4009E4A5B /* ComplainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplainView.swift; sourceTree = "<group>"; };
+		E4B14DD4264E6E05008D0528 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E4B14DD7264E6EB6008D0528 /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
 		E4D6032626359EF500FAD1B4 /* MethodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodDetailView.swift; sourceTree = "<group>"; };
 		E4D6033426359F6700FAD1B4 /* InformationListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationListItem.swift; sourceTree = "<group>"; };
 		E4DE65E22598D370006FC81F /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
@@ -436,7 +442,9 @@
 		B3F3F43D2519022C00D91190 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				E4B14DD4264E6E05008D0528 /* ContentView.swift */,
 				B3B520922519E1C400368F47 /* TabBar.swift */,
+				E4B14DD7264E6EB6008D0528 /* SideBar.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -727,6 +735,7 @@
 				B3C3368C251DE78200755B1E /* AllCafesMapView.swift in Sources */,
 				E4318903262DD5F500530DEA /* CoffeeDetailViewModel.swift in Sources */,
 				E4F2ED4F263AB40C001375BE /* InformationDetailCoordinator.swift in Sources */,
+				E4B14DD8264E6EB6008D0528 /* SideBar.swift in Sources */,
 				E46CB8A42631D9890026F73B /* CafeAnnotation.swift in Sources */,
 				E406A5522557F1BE002D199B /* DecodableDefaultSource.swift in Sources */,
 				B31CEBF1251E279900B7501E /* MapViewStore.swift in Sources */,
@@ -740,6 +749,7 @@
 				E436F66E26374AEE004EA829 /* DiscoveryWidgetViewModel.swift in Sources */,
 				E43D22C5263AA5AD00F586B6 /* Complain.swift in Sources */,
 				E4D6033526359F6700FAD1B4 /* InformationListItem.swift in Sources */,
+				E4B14DD5264E6E05008D0528 /* ContentView.swift in Sources */,
 				B31CEC0E251E386A00B7501E /* DismissButton.swift in Sources */,
 				B3B520892519D92800368F47 /* Data.swift in Sources */,
 				B33571DE251E0C4D00D06BC4 /* AnnotationsHelper.swift in Sources */,
@@ -822,7 +832,9 @@
 				E491F03F259D368B00EAAE2F /* RegionStore.swift in Sources */,
 				E49119C1264C844D00021A87 /* WeatherToolBarItem.swift in Sources */,
 				E491F034259D368B00EAAE2F /* DiscoverItem.swift in Sources */,
+				E4B14DD9264E7080008D0528 /* SideBar.swift in Sources */,
 				E4318915262DD65300530DEA /* CoffeeDetailViewModel.swift in Sources */,
+				E4B14DD6264E6E10008D0528 /* ContentView.swift in Sources */,
 				E4909E242639D1CA0060A0A5 /* MethodDetailView.swift in Sources */,
 				E4F2ED52263AB5BA001375BE /* InformationDetailCoordinator.swift in Sources */,
 				E491F031259D368B00EAAE2F /* MapView.swift in Sources */,
