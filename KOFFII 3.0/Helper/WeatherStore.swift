@@ -10,10 +10,6 @@ import Combine
 
 class WeatherStore: ObservableObject {
     
-    @Published var model: WeatherModel = WeatherModel(conditionId: 0, temperature: 273.15)
-    let weatherURL = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=Cologne&appid=d65a294fa426ac1d4632fac8ca526ec")!
-    var cancellables: Set<AnyCancellable> = []
-    
     enum Error: Swift.Error, CustomStringConvertible {
         case network
         case parsing
@@ -42,6 +38,12 @@ class WeatherStore: ObservableObject {
         }
     }
     
+    @Published var model: WeatherModel = WeatherModel(conditionId: 0, temperature: 273.15)
+    let weatherURL = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=Cologne&appid=d65a294fa426ac1d4632fac8ca526ec7")!
+    var cancellables: Set<AnyCancellable> = []
+    @Published var errorMessage: String = ""
+    @Published var didFail = false
+    
     init() {
         URLSession.shared.dataTaskPublisher(for: weatherURL)
             .tryMap { result in
@@ -57,6 +59,13 @@ class WeatherStore: ObservableObject {
             .mapError(WeatherStore.Error.init)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
+                switch completion {
+                case .failure(let error):
+                    self.didFail = true
+                    self.errorMessage = error.description
+                default:
+                    break
+                }
                 print(completion)
             }, receiveValue: { weatherData in
                 print(weatherData)
