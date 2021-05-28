@@ -2,17 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Mit dieser Information wird nur die Entfernung zum nächsten Cafe berechnet</string>
-	<key>NSLocationTemporaryUsageDescriptionDictionary</key>
-	<dict>
-		<key>wantAccurateLocation</key>
-		<string>Die genaue Position würde helfen, deine Entfernung zum Cafe auszurechnen</string>
-	</dict>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>always</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>always</string>
+	<key>UIUserInterfaceStyle</key>
+	<string>Dark</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
@@ -40,6 +31,17 @@
 		<key>NSAppClipRequestLocationConfirmation</key>
 		<false/>
 	</dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>always</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>always</string>
+	<key>NSLocationTemporaryUsageDescriptionDictionary</key>
+	<dict>
+		<key>wantAccurateLocation</key>
+		<string>Die genaue Position würde helfen, deine Entfernung zum Cafe auszurechnen</string>
+	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Mit dieser Information wird nur die Entfernung zum nächsten Cafe berechnet</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

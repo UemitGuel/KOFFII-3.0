@@ -25,6 +25,11 @@ fastlane screenshots
 fastlane certificates
 ```
 
+### uploadWithScreenshots
+```
+fastlane uploadWithScreenshots
+```
+
 ### upload
 ```
 fastlane upload
