@@ -21,7 +21,9 @@ struct CoffeeDetailView: View {
     @State private var trackingMode = MapUserTrackingMode.follow
     
     let infoRandom = informationData.randomElement()!
+    #if !APPCLIP
     @State private var isPresented = false
+    #endif
     
     var body: some View {
         GeometryReader { geo in
@@ -107,6 +109,7 @@ struct CoffeeDetailView: View {
                     }
                     .padding([.horizontal, .bottom])
                 }
+                #if !APPCLIP
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Wusstest du schon..?")
                         .font(.system(.title2, design: .rounded))
@@ -121,6 +124,7 @@ struct CoffeeDetailView: View {
                 .sheet(isPresented: $isPresented) {
                     InformationDetailCoordinator(info: infoRandom)
                 }
+                #endif
             }
             .navigationBarTitle("", displayMode: .inline)
         }

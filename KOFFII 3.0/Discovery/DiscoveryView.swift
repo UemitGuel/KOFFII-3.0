@@ -18,6 +18,7 @@ struct DiscoveryView: View {
                 DiscoverItem(cafe: discoverCafes[0])
             }
             .padding(.bottom)
+            #if !APPCLIP
             NavigationLink(
                 destination: InformationDetailCoordinator(info: informationData[2]),
                 label: {
@@ -25,6 +26,7 @@ struct DiscoveryView: View {
                         .padding(.bottom)
                 })
                 .padding(.bottom)
+            #endif
             NavigationLink(
                 destination: CoffeeDetailView(coffee: roasteryData[0])) {
                 CoffeeListItem(coffee: roasteryData[0])
