@@ -8,9 +8,15 @@ lane :certificates do
   match(app_identifier: ["com.sketchup.PU-.a-simple-coffee-guide-endversion", "com.sketchup.PU-.a-simple-coffee-guide-endversion.KOFFII-Widget"])
 end
 
-lane :upload do
+lane :uploadWithScreenshots do
   increment_build_number
   capture_screenshots
-  build_app(scheme: "KOFFII CGN 3.0",export_xcargs: "-allowProvisioningUpdates")
+  build_app(scheme: "KOFFII 3.0",export_xcargs: "-allowProvisioningUpdates")
+  upload_to_app_store
+end
+
+lane :upload do
+  increment_build_number
+  build_app(scheme: "KOFFII 3.0",export_xcargs: "-allowProvisioningUpdates")
   upload_to_app_store
 end

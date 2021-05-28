@@ -30,6 +30,7 @@ class KOFFII_CGN_2_0UITests: XCTestCase {
             tabBar.buttons["Zubereitung"].tap()
             snapshot("3Zubereitung")
         } else {
+            XCUIDevice.shared.orientation = .landscapeLeft
             let tablesQuery = XCUIApplication().tables
             tablesQuery.buttons["Entdecken"].tap()
             snapshot("0Entdecken")

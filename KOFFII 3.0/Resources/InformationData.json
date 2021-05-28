@@ -33,7 +33,7 @@
         "quan": "38g/600ml",
         "temp": "96°",
         "time": "4-5min",
-        "isEspresso": true,
+        "isEspresso": false,
         "steps": ["Du möchtest, dass deine Kaffeezubereitung dramatisch ist? - Dann lies weiter...",
         "Wähle einen mittleren Mahlgrad (etwas gröber als beim Filterkaffee)",
         "Platziere den Filter so, dass der dreifach gefaltete Teil zur Ausgussöffnung zeigt",

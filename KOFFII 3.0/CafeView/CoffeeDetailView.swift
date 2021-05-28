@@ -133,19 +133,3 @@ struct CoffeeDetailView_Previews: PreviewProvider {
         CoffeeDetailView(coffee: coffeeData[34])
     }
 }
-
-
-struct WeekdayHours: View {
-    
-    var day: String
-    var hours: String
-    
-    var body: some View {
-        HStack {
-            Text("\(day):")
-            Spacer()
-            Text("\(hours)")
-        }
-        .font(.system(.callout, design: .rounded))
-    }
-}
