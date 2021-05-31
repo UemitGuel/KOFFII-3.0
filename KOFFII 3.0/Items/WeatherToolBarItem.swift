@@ -10,14 +10,17 @@ import SwiftUI
 struct WeatherToolBarItem: ViewModifier {
     
     var model: WeatherModel
-    
+    @EnvironmentObject var weatherStore: WeatherStore
+
     func body(content: Content) -> some View {
         content
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack(spacing: 4) {
-                        Image(systemName: model.conditionName)
-                        Text(model.temperatureString)
+                        if !weatherStore.didFail {
+                            Image(systemName: model.conditionName)
+                            Text(model.temperatureString)
+                        }
                     }
                 }
             }

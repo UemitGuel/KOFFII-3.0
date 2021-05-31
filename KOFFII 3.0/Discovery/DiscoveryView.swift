@@ -44,9 +44,6 @@ struct DiscoveryView: View {
             .padding(.bottom)
             .navigationTitle("Empfehlungen")
             .addWeatherToolbarItem(with: weatherStore.model)
-            .alert(isPresented: $weatherStore.didFail, content: {
-                Alert(title: Text("Wetter verbindung fehlgeschlagen"), message: Text(self.weatherStore.errorMessage))
-            })
         }
     }
 }
