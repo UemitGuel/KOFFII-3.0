@@ -128,12 +128,12 @@ struct KOFFII_WidgetEntryView : View {
                         VStack(alignment: .leading) {
                             VStack(alignment: .leading) {
                                 WeekdayHours(day: "Mo", hours: entry.model.hoursMo)
-                                WeekdayHours(day: "Mo", hours: entry.model.hoursDi)
-                                WeekdayHours(day: "Mo", hours: entry.model.hoursMi)
-                                WeekdayHours(day: "Mo", hours: entry.model.hoursDo)
-                                WeekdayHours(day: "Mo", hours: entry.model.hoursFr)
-                                WeekdayHours(day: "Mo", hours: entry.model.hoursSa)
-                                WeekdayHours(day: "Mo", hours: entry.model.hoursSo)
+                                WeekdayHours(day: "Di", hours: entry.model.hoursDi)
+                                WeekdayHours(day: "Mi", hours: entry.model.hoursMi)
+                                WeekdayHours(day: "Do", hours: entry.model.hoursDo)
+                                WeekdayHours(day: "Fr", hours: entry.model.hoursFr)
+                                WeekdayHours(day: "Sa", hours: entry.model.hoursSa)
+                                WeekdayHours(day: "So", hours: entry.model.hoursSo)
 
                             }
                         }

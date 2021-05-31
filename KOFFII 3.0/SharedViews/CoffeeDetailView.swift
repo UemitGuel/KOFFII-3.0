@@ -32,6 +32,7 @@ struct CoffeeDetailView: View {
                     MapMarker(coordinate: item.coordinates)
                 }
                 .frame(height: geo.size.height*0.35, alignment: .center)
+                .allowsHitTesting(false)
                 VStack(alignment: .leading, spacing: 24) {
                     VStack(alignment: .leading) {
                         HStack {
@@ -107,7 +108,8 @@ struct CoffeeDetailView: View {
                             .cornerRadius(16)
                         
                     }
-                    .padding([.horizontal, .bottom])
+                    .padding(.bottom)
+                    .padding(.horizontal, 12)
                 }
                 #if !APPCLIP
                 VStack(alignment: .leading, spacing: 2) {
