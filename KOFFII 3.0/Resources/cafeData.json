@@ -1,6 +1,7 @@
 [
     {
         "name": "Al Baretto",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "geschlossen", "end": "" },
             { "day" : "tue","start": "09:00", "end": "20:00" },
@@ -20,6 +21,7 @@
     },
     {
         "name": "Angelo Di Fini Cafe Espressino",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "08:00", "end": "18:00" },
             { "day" : "tue","start": "08:00", "end": "18:00" },
@@ -40,6 +42,7 @@
     },
     {
         "name": "Bambule.Kaffeebar",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "09:30", "end": "17:30" },
             { "day" : "tue","start": "09:30", "end": "17:30" },
@@ -47,7 +50,8 @@
             { "day" : "thu","start": "09:30", "end": "17:30" },
             { "day" : "fri","start": "09:30", "end": "17:30" },
             { "day" : "sat","start": "geschlossen", "end": "" },
-            { "day" : "sun","start": "14:00", "end": "18:00" },
+            { "day" : "sun","start": "14:00", "end":
+            "18:00" },
         ],
         
         "hood": "Deutz/Kalk",
@@ -59,6 +63,7 @@
     },
     {
         "name": "Cafe Eichhörnchen",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "09:00", "end": "20:00" },
             { "day" : "tue","start": "09:00", "end": "20:00" },
@@ -78,6 +83,7 @@
     },
     {
         "name": "Cafe Krümel",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "09:30", "end": "23:00" },
             { "day" : "tue","start": "09:30", "end": "23:00" },
@@ -97,6 +103,7 @@
     },
     {
         "name": "Cafe Vreiheit",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "09:00", "end": "00:00" },
             { "day" : "tue","start": "09:00", "end": "00:00" },
@@ -116,6 +123,7 @@
     },
     {
         "name": "Cafe Wo ist Tom?",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "09:00", "end": "19:00" },
             { "day" : "tue","start": "09:00", "end": "19:00" },
@@ -135,6 +143,7 @@
     },
     {
         "name": "Cafe e bom",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "09:00", "end": "18:30" },
             { "day" : "tue","start": "09:00", "end": "18:30" },
@@ -154,6 +163,7 @@
     },
     {
         "name": "Cafebar Rubi",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "12:00", "end": "18:00" },
             { "day" : "tue","start": "12:00", "end": "18:00" },
@@ -173,6 +183,7 @@
     },
     {
         "name": "Café Bo",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "08:00", "end": "17:00" },
             { "day" : "tue","start": "08:00", "end": "17:00" },
@@ -192,6 +203,7 @@
     },
     {
         "name": "Café Dein & Mein",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "10:00", "end": "18:30" },
             { "day" : "tue","start": "10:00", "end": "18:30" },
@@ -211,6 +223,7 @@
     },
     {
         "name": "Café Franck",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "geschlossen", "end": "" },
             { "day" : "tue","start": "10:00", "end": "19:00" },
@@ -230,6 +243,7 @@
     },
     {
         "name": "Café Heimisch",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "09:00", "end": "18:00" },
             { "day" : "tue","start": "09:00", "end": "18:00" },
@@ -249,6 +263,7 @@
     },
     {
         "name": "Café Klein Berlin",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "08:00", "end": "19:00" },
             { "day" : "tue","start": "08:00", "end": "19:00" },
@@ -268,6 +283,7 @@
     },
     {
         "name": "Café Kult",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "09:00", "end": "00:00" },
             { "day" : "tue","start": "09:00", "end": "00:00" },
@@ -287,6 +303,7 @@
     },
     {
         "name": "Café Schnurrke",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "13:00", "end": "19:00" },
             { "day" : "tue","start": "geschlossen", "end": "" },
@@ -306,6 +323,7 @@
     },
     {
         "name": "Café Sehnsucht",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "09:00", "end": "18:00" },
             { "day" : "tue","start": "09:00", "end": "22:00" },
@@ -325,6 +343,7 @@
     },
     {
         "name": "Café Toré",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "08:00", "end": "19:00" },
             { "day" : "tue","start": "geschlossen", "end": "" },
@@ -344,6 +363,7 @@
     },
     {
         "name": "Café Walter",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "geschlossen", "end": "" },
             { "day" : "tue","start": "10:00", "end": "19:00" },
@@ -363,6 +383,7 @@
     },
     {
         "name": "Cafe Wohnraum",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "08:30", "end": "19:00" },
             { "day" : "tue","start": "08:30", "end": "19:00" },
@@ -382,6 +403,7 @@
     },
     {
         "name": "Englisches Café – Tasty Pasty Co.",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "geschlossen", "end": "" },
             { "day" : "tue","start": "geschlossen", "end": "" },
@@ -401,6 +423,7 @@
     },
     {
         "name": "Ernst Kaffeeröster",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "08:30", "end": "18:00" },
             { "day" : "tue","start": "08:30", "end": "18:00" },
@@ -420,6 +443,7 @@
     },
     {
         "name": "Funkhaus Cafe-Bar-Restaurant",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "09:00", "end": "22:00" },
             { "day" : "tue","start": "09:00", "end": "22:00" },
@@ -439,6 +463,7 @@
     },
     {
         "name": "Goldmund LiteraturCafé Restaurant",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "10:00", "end": "00:00" },
             { "day" : "tue","start": "10:00", "end": "00:00" },
@@ -458,6 +483,7 @@
     },
     {
         "name": "Hallmackenreuther",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "10:00", "end": "01:00" },
             { "day" : "tue","start": "10:00", "end": "01:00" },
@@ -477,6 +503,7 @@
     },
     {
         "name": "Heilandt Kaffeemanufaktur",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "08:00", "end": "19:00" },
             { "day" : "tue","start": "08:00", "end": "19:00" },
@@ -496,6 +523,7 @@
     },
     {
         "name": "Herr Pimock",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "10:00", "end": "01:00" },
             { "day" : "tue","start": "10:00", "end": "01:00" },
@@ -515,6 +543,7 @@
     },
     {
         "name": "Jlöcklich - il caffè felice",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "09:00", "end": "19:00" },
             { "day" : "tue","start": "09:00", "end": "19:00" },
@@ -534,6 +563,7 @@
     },
     {
         "name": "Kafe Local",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "09:30", "end": "23:00" },
             { "day" : "tue","start": "09:30", "end": "23:00" },
@@ -553,6 +583,7 @@
     },
     {
         "name": "Kaffee und Kuchen",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "08:30", "end": "18:30" },
             { "day" : "tue","start": "08:30", "end": "18:30" },
@@ -572,6 +603,7 @@
     },
     {
         "name": "Kaffeebud Ehrenfeld",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "09:00", "end": "18:30" },
             { "day" : "tue","start": "09:00", "end": "18:30" },
@@ -591,6 +623,7 @@
     },
     {
         "name": "Kaffeesaurus",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "08:00", "end": "20:00" },
             { "day" : "tue","start": "08:00", "end": "20:00" },
@@ -610,6 +643,7 @@
     },
     {
         "name": "Ludwig im Museum",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "geschlossen", "end": "" },
             { "day" : "tue","start": "10:00", "end": "00:00" },
@@ -629,6 +663,7 @@
     },
     {
         "name": "Madame Tartine",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "09:00", "end": "18:00" },
             { "day" : "tue","start": "09:00", "end": "18:00" },
@@ -648,6 +683,7 @@
     },
     {
         "name": "Miss Päpki",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "12:30", "end": "19:00" },
             { "day" : "tue","start": "geschlossen", "end": "" },
@@ -667,6 +703,7 @@
     },
     {
         "name": "Petit Noir",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "09:00", "end": "18:00" },
             { "day" : "tue","start": "09:00", "end": "18:00" },
@@ -686,6 +723,7 @@
     },
     {
         "name": "Saint Louis",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "08:00", "end": "19:00" },
             { "day" : "tue","start": "08:00", "end": "19:00" },
@@ -705,6 +743,7 @@
     },
     {
         "name": "Südgold",
+        "inSpotlight": true,
         "hours": [
             { "day" : "mon","start": "08:00", "end": "18:00" },
             { "day" : "tue","start": "08:00", "end": "18:00" },
@@ -728,6 +767,7 @@
     },
     {
         "name": "THE COFFEE GANG",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "08:00", "end": "18:00" },
             { "day" : "tue","start": "08:00", "end": "18:00" },
@@ -747,6 +787,7 @@
     },
     {
         "name": "The Great Berry",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "geschlossen", "end": "" },
             { "day" : "tue","start": "09:30", "end": "16:30" },
@@ -766,6 +807,7 @@
     },
     {
         "name": "The Great Berry | Südstadt",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "10:00", "end": "18:00" },
             { "day" : "tue","start": "10:00", "end": "18:00" },
@@ -785,6 +827,7 @@
     },
     {
         "name": "Waidmeister",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "geschlossen", "end": "" },
             { "day" : "tue","start": "10:00", "end": "17:00" },
@@ -804,6 +847,7 @@
     },
     {
         "name": "Die Mehlwerkstatt",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "07:00", "end": "20:00" },
             { "day" : "tue","start": "07:00", "end": "20:00" },
@@ -823,6 +867,7 @@
     },
     {
         "name": "cafecafe",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "09:00", "end": "16:00" },
             { "day" : "tue","start": "09:00", "end": "16:00" },
@@ -842,6 +887,7 @@
     },
     {
         "name": "cafecafe ehrenfeld",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "08:00", "end": "19:00" },
             { "day" : "tue","start": "08:00", "end": "19:00" },
@@ -861,6 +907,7 @@
     },
     {
         "name": "einbrand",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "08:00", "end": "18:00" },
             { "day" : "tue","start": "08:00", "end": "18:00" },
@@ -880,6 +927,7 @@
     },
     {
         "name": "hommage Cafe",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "geschlossen", "end": "" },
             { "day" : "tue","start": "geschlossen", "end": "" },
@@ -899,6 +947,7 @@
     },
     {
         "name": "sabor 'ermoso",
+        "inSpotlight": true,
         "hours": [
             { "day" : "mon","start": "geschlossen", "end": "" },
             { "day" : "tue","start": "09:00", "end": "18:00" },
@@ -922,6 +971,7 @@
     },
     {
         "name": "vevi - veganes Vintage Café",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "09:00", "end": "17:00" },
             { "day" : "tue","start": "geschlossen", "end": "" },
@@ -941,6 +991,7 @@
     },
     {
         "name": "Café Zweiblatt",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "geschlossen", "end": "" },
             { "day" : "tue","start": "10:00", "end": "18:30" },
@@ -960,6 +1011,7 @@
     },
     {
         "name": "Café Mucki",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "09:00", "end": "18:00" },
             { "day" : "tue","start": "geschlossen", "end": "" },
@@ -979,6 +1031,7 @@
     },
     {
         "name": "Traumathek",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "13:00", "end": "22:00" },
             { "day" : "tue","start": "13:00", "end": "22:00" },
@@ -998,6 +1051,7 @@
     },
     {
         "name": "Café Vier Achtel",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "geschlossen", "end": "" },
             { "day" : "tue","start": "10:00", "end": "18:00" },
@@ -1017,6 +1071,7 @@
     },
     {
         "name": "easylivin' culture",
+        "inSpotlight": false,
         "hours": [
             { "day" : "mon","start": "10:00", "end": "18:00" },
             { "day" : "tue","start": "10:00", "end": "18:00" },
