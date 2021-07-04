@@ -58,29 +58,6 @@
         "hasPlug": false,
     },
     {
-        "name": "Cafe Duddel",
-        "hours": [
-            { "day" : "mon","start": "14:00", "end": "20:00" },
-            { "day" : "tue","start": "14:00", "end": "20:00" },
-            { "day" : "wed","start": "14:00", "end": "20:00" },
-            { "day" : "thu","start": "14:00", "end": "20:00" },
-            { "day" : "fri","start": "14:00", "end": "20:00" },
-            { "day" : "sat","start": "14:00", "end": "20:00" },
-            { "day" : "sun","start": "14:00", "end": "20:00" },
-        ],
-        
-        "notes": [
-            "Der Omi-hafte", "Ein sehr gemütlicher Ort zum Arbeiten. Das Café ist sehr liebevoll eingerichtet und gibt dem Ganzen eine richtig entspannte Atmosphäre zum Arbeiten. Den Kaffee finde ich nicht so lecker wie in anderen Cafés, aber ein frischer Minztee mit Ingwer geht immer. Wlan& Steckdosen sind auch am Start"
-        ],
-        
-        "hood": "Latin Quarter",
-        "locationURL": "https://www.google.com/maps/place/Cafe+Duddel/@50.9291919,6.9370512,16z/data=!4m12!1m6!3m5!1s0x47bf24461163cb97:0xb4ebd8bcbfabe8e4!2zZWluYnJhbmQg4oCTIENhZsOpIGRlciBSw7ZzdGVyZWkgU8O8ZHN0YWR0!8m2!3d50.9190599!4d6.9601537!3m4!1s0x0:0x751b09ed261d1c!8m2!3d50.9280349!4d6.9345188",
-        "hasWifi": true,
-        "hasFood": true,
-        "hasVegan": true,
-        "hasPlug": true,
-    },
-    {
         "name": "Cafe Eichhörnchen",
         "hours": [
             { "day" : "mon","start": "09:00", "end": "20:00" },
