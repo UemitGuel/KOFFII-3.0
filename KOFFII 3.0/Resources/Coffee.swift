@@ -21,6 +21,8 @@ struct Coffee: Codable, Comparable {
     }
     
     var name: String
+    @DecodableDefault.False var inSpotlight: Bool
+
     var hours: [Hours]?
     @DecodableDefault.EmptyList var notes: [String]
     
