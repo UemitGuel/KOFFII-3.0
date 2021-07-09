@@ -37,11 +37,6 @@ struct DiscoveryView: View {
                 DiscoverItem(cafe: discoverCafes[1])
             }
             .padding(.bottom)
-            NavigationLink(
-                destination: CoffeeDetailView(coffee: discoverCafes[2].cafe)) {
-                DiscoverItem(cafe: discoverCafes[2])
-            }
-            .padding(.bottom)
             .navigationTitle("Empfehlungen")
             .addWeatherToolbarItem(with: weatherStore.model)
         }
