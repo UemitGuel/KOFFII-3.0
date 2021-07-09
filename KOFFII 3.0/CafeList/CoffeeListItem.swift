@@ -9,10 +9,10 @@ import SwiftUI
 
 struct CoffeeListItem: View {
     
-    var model: CoffeeListItemViewModel
+    var model: CoffeeDetailViewModel
     
     init(coffee: Coffee) {
-        self.model = CoffeeListItemViewModel(coffee: coffee)
+        self.model = CoffeeDetailViewModel(coffee: coffee)
     }
         
     var body: some View {
