@@ -27,7 +27,8 @@ struct CoffeeListItemViewModel: Identifiable {
     }
     
     var distance: String {
-        return self.locationStore.getDistanceAsString(cafeLocation: coffee.location)
+        //TODO
+        return "self.locationStore.getDistanceAsString(cafeLocation: coffee.location)"
     }
     
     var hasWifi: Bool {

@@ -14,7 +14,7 @@ struct DiscoveryView: View {
     var body: some View {
         ScrollView {
             NavigationLink(
-                destination: CoffeeDetailView(coffee: discoverCafes[0].cafe)) {
+                destination: CoffeeDetailView(coffee: discoverCafes[0].coffee)) {
                 DiscoverItem(cafe: discoverCafes[0])
             }
             .padding(.bottom)
@@ -33,7 +33,7 @@ struct DiscoveryView: View {
             }
             .padding(.bottom)
             NavigationLink(
-                destination: CoffeeDetailView(coffee: discoverCafes[1].cafe)) {
+                destination: CoffeeDetailView(coffee: discoverCafes[1].coffee)) {
                 DiscoverItem(cafe: discoverCafes[1])
             }
             .padding(.bottom)

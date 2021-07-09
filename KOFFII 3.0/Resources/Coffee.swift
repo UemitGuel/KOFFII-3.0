@@ -34,10 +34,6 @@ struct Coffee: Codable, Comparable {
             longitude: CoordinatesHelper.shared.sliceURLIntoCoordinates(url: locationURL).longitude)
     }
     
-    var location: CLLocation {
-        CLLocation(latitude: coordinates.latitude, longitude: coordinates.longitude)
-    }
-    
     @DecodableDefault.False var hasWifi: Bool
     @DecodableDefault.False var hasFood: Bool
     @DecodableDefault.False var hasVegan: Bool
