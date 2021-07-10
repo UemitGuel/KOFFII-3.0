@@ -27,8 +27,12 @@ struct CoffeeDetailViewModel: Identifiable {
         return self.coffee.coordinates
     }
     
+    var location: CLLocation {
+        CLLocation(latitude: coordinates.latitude, longitude: coordinates.longitude)
+    }
+    
     var distance: String {
-        return self.locationStore.getDistanceAsString(cafeLocation: coffee.location)
+        return self.locationStore.getDistanceAsString(cafeLocation: location)
     }
     
     var locationURL: String {
@@ -39,19 +43,21 @@ struct CoffeeDetailViewModel: Identifiable {
         return self.coffee.name
     }
     
-    var hasWifi: Bool {
-        return self.coffee.hasWifi
-    }
-    var hasFood: Bool {
-        return self.coffee.hasFood
-    }
-    
-    var hasVegan: Bool {
-        return self.coffee.hasVegan
-    }
-    
-    var hasPlug: Bool {
-        return self.coffee.hasPlug
+    var featureList: [Feature] {
+        var featureList: [Feature] = []
+        if coffee.hasWifi {
+            featureList.append(.wifi)
+        }
+        if coffee.hasFood {
+            featureList.append(.food)
+        }
+        if coffee.hasVegan {
+            featureList.append(.vegan)
+        }
+        if coffee.hasPlug {
+            featureList.append(.plugin)
+        }
+        return featureList
     }
     
     var hood: String {

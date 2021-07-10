@@ -40,7 +40,8 @@ class CoffeeListViewModel: ObservableObject {
         if !includeRosteries {
             coffee = coffee.filter { $0.isRoastery == false }
         }
-        coffee.sort { LocationStore.shared.getDistance(cafeLocation: $0.location) < LocationStore.shared.getDistance(cafeLocation: $1.location) }
+        //TODO
+//        coffee.sort { LocationStore.shared.getDistance(cafeLocation: $0.location) < LocationStore.shared.getDistance(cafeLocation: $1.location) }
         self.coffeeList = coffee
     }
 }

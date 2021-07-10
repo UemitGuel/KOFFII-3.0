@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DiscoverItem: View {
     
-    var cafe: DiscoveryCafeViewModel
+    var cafe: CoffeeDetailViewModel
     
     var body: some View {
         ZStack {
