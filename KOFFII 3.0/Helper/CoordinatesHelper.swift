@@ -79,8 +79,8 @@ class CoordinatesHelper {
             return "+10 km"
         }
     }
-    
-    func setRegionMidCologne() -> MKCoordinateRegion {
-        MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50.938766, longitude: 6.959674), span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
-    }
+//
+//    func setRegionMidCologne() -> MKCoordinateRegion {
+//        MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50.938766, longitude: 6.959674), span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
+//    }
 }

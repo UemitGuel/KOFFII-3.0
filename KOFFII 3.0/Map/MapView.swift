@@ -11,22 +11,25 @@ struct MapView: UIViewRepresentable {
     @Binding var coffeeList: [Coffee]
 
     @Binding var centerCoordinate: CLLocationCoordinate2D
+    
+    let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50.938766, longitude: 6.959674), span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
+
         
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
         mapView.delegate = context.coordinator
+        mapView.setRegion(region, animated: false)
         let annotations = helper.getallAnnotation(cafeList: coffeeList)
         mapView.addAnnotations(annotations)
         mapView.showsUserLocation = true
-        mapView.region = CoordinatesHelper.shared.setRegionMidCologne()
+        let categories: [MKPointOfInterestCategory] = [.cafe]
+        let filter = MKPointOfInterestFilter(including: categories)
+        mapView.pointOfInterestFilter = filter
         return mapView
     }
     
     func updateUIView(_ view: MKMapView, context: Context) {
-        let allAnnotations = view.annotations
-        view.removeAnnotations(allAnnotations)
-        let annotations = helper.getallAnnotation(cafeList: coffeeList)
-        view.addAnnotations(annotations)
+
     }
     
     func makeCoordinator() -> Coordinator {
@@ -64,42 +67,5 @@ struct MapView: UIViewRepresentable {
             mapViewStore.showDetails = true
             mapView.deselectAnnotation(annotation, animated: false)
         }
-                
-        // Needed to show a view when User clicked on red Dot in the Map
-        
-        
-        //        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-//            guard annotation is MKPointAnnotation else { return nil }
-//
-//            let identifier = "Annotation"
-//            let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-//
-//            if annotationView == nil {
-//                let annotationView = MKMarkerAnnotationView(annotation:annotation, reuseIdentifier:identifier)
-//                annotationView.isEnabled = true
-//                annotationView.canShowCallout = true
-//
-//                let btn = UIButton(type: .detailDisclosure)
-//                annotationView.rightCalloutAccessoryView = btn
-//                return annotationView
-//            } else {
-//                annotationView!.annotation = annotation
-//            }
-//
-//            return annotationView
-//        }
-        
-//        func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-//            let choosenCafeName = view.annotation?.title
-//
-//            if let cafe = cafeData.first(where: {$0.name == choosenCafeName}) {
-//                self.mapViewStore.changeChosenCafe(cafe: cafe)
-//                print(mapViewStore.showDetails)
-//                self.mapViewStore.showDetails = true
-//                print(mapViewStore.showDetails)
-//            } else {
-//               fatalError()
-//            }
-//        }
     }
 }
