@@ -20,13 +20,13 @@ struct FeatureDisplayView: View {
             Image(systemName: "wifi")
                 .foregroundColor(cafe.featureList.contains(.wifi) ? Color(.systemOrange) : Color(.secondaryLabel).opacity(0.8))
                 .imageScale(cafe.featureList.contains(.wifi) ? .large : .small)
-            Image("FOOD")
+            Image(systemName: "fork.knife")
                 .foregroundColor(cafe.featureList.contains(.food) ? Color(.systemTeal) : Color(.secondaryLabel).opacity(0.8))
                 .imageScale(cafe.featureList.contains(.food) ? .large : .small)
             Image(systemName: "leaf")
                 .foregroundColor(cafe.featureList.contains(.vegan) ? Color(.green) : Color(.secondaryLabel).opacity(0.8))
                 .imageScale(cafe.featureList.contains(.vegan) ? .large : .small)
-            Image(systemName: "bolt")
+            Image(systemName: "powerplug")
                 .foregroundColor(cafe.featureList.contains(.plugin) ? Color(.systemYellow) : Color(.secondaryLabel).opacity(0.8))
                 .imageScale(cafe.featureList.contains(.plugin) ? .large : .small)
         }
@@ -35,6 +35,6 @@ struct FeatureDisplayView: View {
 
 struct FeatureDisplayView_Previews: PreviewProvider {
     static var previews: some View {
-        FeatureDisplayView(cafe: cafeData[0])
+        FeatureDisplayView(cafe: cafeData[6])
     }
 }

@@ -19,7 +19,7 @@ struct DismissButton: View {
                 .background(Color.accentColor)
                 .foregroundColor(Color(.systemBackground))
                 .cornerRadius(16)
-        }
+        }        
     }
 }
 

@@ -41,12 +41,7 @@ struct ComplainView: View {
                 Label(
                     title: { Text("Zurück").bold() },
                     icon: { Image(systemName: "arrow.uturn.backward.square").imageScale(.large) })
-            }.buttonStyle(PlainButtonStyle())
-            .foregroundColor(.black)
-            .frame(width: 122, height: 44, alignment: .center)
-            .foregroundColor(.white)
-            .background(Color.accentColor)
-            .cornerRadius(16)
+            }                
         }
     }
 }

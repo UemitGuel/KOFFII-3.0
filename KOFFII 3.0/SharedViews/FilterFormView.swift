@@ -24,7 +24,7 @@ struct FilterFormView: View {
                 Toggle(isOn: $model.needFood, label: {
                     Label(
                         title: { Text("Lunch") },
-                        icon: { Image("FOOD") }
+                        icon: { Image(systemName: "fork.knife")}
                     )
                 }).toggleStyle(SwitchToggleStyle(tint: Color.accentColor))
                 Toggle(isOn: $model.needVegan, label: {
@@ -36,7 +36,7 @@ struct FilterFormView: View {
                 Toggle(isOn: $model.needPlug, label: {
                     Label(
                         title: { Text("Strom") },
-                        icon: { Image(systemName: "bolt") }
+                        icon: { Image(systemName: "powerplug") }
                     )
                 }).toggleStyle(SwitchToggleStyle(tint: Color.accentColor))
             }
