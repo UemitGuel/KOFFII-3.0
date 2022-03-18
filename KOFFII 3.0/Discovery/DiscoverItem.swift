@@ -17,7 +17,7 @@ struct DiscoverItem: View {
                 Image(cafe.name)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                bar.background(Color(.secondarySystemBackground))
+                bar.background(Color("Olive2"))
             }
             .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
             .padding(.horizontal)
@@ -26,9 +26,12 @@ struct DiscoverItem: View {
     
     var bar: some View {
         HStack {
-            VStack(alignment: .leading) {
-                Text("\(cafe.name) - \(cafe.notesTitle)")
-                    .font(.system(.headline, design: .rounded))
+            VStack(alignment: .leading, spacing: 8) {
+                Text("\(cafe.hood)".capitalized)
+                    .font(.system(.subheadline, design: .rounded))
+                    .foregroundColor(Color("Olive10"))
+                Text("\(cafe.name)")
+                    .font(.system(.title, design: .rounded))
                     .bold()
                 Text(cafe.notesBody)
                     .font(.system(.subheadline, design: .rounded))
@@ -38,7 +41,6 @@ struct DiscoverItem: View {
                 }
                 .font(.system(.body, design: .rounded))
                 .foregroundColor(.secondary)
-                .padding(.leading)
             }
             .foregroundColor(Color(.label))
             Spacer()

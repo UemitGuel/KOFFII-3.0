@@ -17,7 +17,7 @@ struct DismissButton: View {
                 .frame(width: 44, height: 44)
                 .imageScale(.large)
                 .background(Color.accentColor)
-                .foregroundColor(Color(.systemBackground))
+                .foregroundColor(Color("Olive1"))
                 .cornerRadius(16)
         }        
     }

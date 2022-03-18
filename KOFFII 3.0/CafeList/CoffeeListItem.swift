@@ -42,7 +42,7 @@ struct CoffeeListItem: View {
             }
             .padding([.horizontal, .bottom])
         }
-        .background(Color(.secondarySystemBackground))
+        .background(Color("SecondaryBackground"))
         .frame(height: 125)
         .cornerRadius(16)
         .padding(.horizontal)

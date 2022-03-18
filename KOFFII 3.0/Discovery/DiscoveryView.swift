@@ -40,5 +40,6 @@ struct DiscoveryView: View {
             .navigationTitle("Empfehlungen")
             .addWeatherToolbarItem(with: weatherStore.model)
         }
+        .background(Color("Olive1"))
     }
 }

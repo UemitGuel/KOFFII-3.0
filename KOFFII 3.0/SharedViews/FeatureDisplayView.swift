@@ -16,18 +16,24 @@ struct FeatureDisplayView: View {
     }
     
     var body: some View {
-        HStack(spacing: 32) {
+        HStack {
             Image(systemName: "wifi")
-                .foregroundColor(cafe.featureList.contains(.wifi) ? Color(.systemOrange) : Color(.secondaryLabel).opacity(0.8))
+                .foregroundColor(cafe.featureList.contains(.wifi) ? Color(.white) : Color(.secondaryLabel).opacity(0.8))
                 .imageScale(cafe.featureList.contains(.wifi) ? .large : .small)
+            Divider()
+                .background(.white)
             Image(systemName: "fork.knife")
-                .foregroundColor(cafe.featureList.contains(.food) ? Color(.systemTeal) : Color(.secondaryLabel).opacity(0.8))
+                .foregroundColor(cafe.featureList.contains(.food) ? Color(.white) : Color(.secondaryLabel).opacity(0.8))
                 .imageScale(cafe.featureList.contains(.food) ? .large : .small)
+            Divider()
+                .background(.white)
             Image(systemName: "leaf")
-                .foregroundColor(cafe.featureList.contains(.vegan) ? Color(.green) : Color(.secondaryLabel).opacity(0.8))
+                .foregroundColor(cafe.featureList.contains(.vegan) ? Color(.white) : Color(.secondaryLabel).opacity(0.8))
                 .imageScale(cafe.featureList.contains(.vegan) ? .large : .small)
+            Divider()
+                .background(.white)
             Image(systemName: "powerplug")
-                .foregroundColor(cafe.featureList.contains(.plugin) ? Color(.systemYellow) : Color(.secondaryLabel).opacity(0.8))
+                .foregroundColor(cafe.featureList.contains(.plugin) ? Color(.white) : Color(.secondaryLabel).opacity(0.8))
                 .imageScale(cafe.featureList.contains(.plugin) ? .large : .small)
         }
     }
