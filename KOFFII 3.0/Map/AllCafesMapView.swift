@@ -40,8 +40,14 @@ struct AllCafesMapView: View {
             .navigationTitle("Karte")
             .addWeatherToolbarItem(with: weatherStore.model)
             .onAppear{
-                let airtbale = AirtableManager(apiBaseId: "appYnRqzu5db6Rd4A", apiKey: "keyRzhNhYf0tTGgQu")
-                airtbale.loadItems()
+                let apiKey = Bundle.main.object(forInfoDictionaryKey: "API_KEY") as? String
+                guard let key = apiKey, !key.isEmpty else {
+
+                    print("API key does not exist")
+                    return
+                }
+
+                print("REST API key:", key)
             }
     }
 }
