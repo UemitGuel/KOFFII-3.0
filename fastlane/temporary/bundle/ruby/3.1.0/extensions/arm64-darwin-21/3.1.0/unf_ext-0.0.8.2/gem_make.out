@@ -1,0 +1,16 @@
+current directory: /Users/uemit.guel/Documents/GitHub/KOFFII-3.0/fastlane/temporary/bundle/ruby/3.1.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+/opt/homebrew/opt/ruby/bin/ruby -I /opt/homebrew/Cellar/ruby/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220530-17648-4ohbnk.rb extconf.rb
+checking for -lstdc++... yes
+creating Makefile
+
+current directory: /Users/uemit.guel/Documents/GitHub/KOFFII-3.0/fastlane/temporary/bundle/ruby/3.1.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= clean
+
+current directory: /Users/uemit.guel/Documents/GitHub/KOFFII-3.0/fastlane/temporary/bundle/ruby/3.1.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\=
+compiling unf.cc
+linking shared-object unf_ext.bundle
+
+current directory: /Users/uemit.guel/Documents/GitHub/KOFFII-3.0/fastlane/temporary/bundle/ruby/3.1.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 unf_ext.bundle ./.gem.20220530-17648-9s0wkx
