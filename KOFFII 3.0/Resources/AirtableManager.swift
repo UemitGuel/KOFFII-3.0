@@ -19,9 +19,6 @@ class AirtableManager {
     /// The subscriptions of this view
     private var subscriptions: Set<AnyCancellable> = []
     
-    let apiBaseId = "appYnRqzu5db6Rd4A"
-    let apiKey = "keyRzhNhYf0tTGgQu"
-    
     init(apiBaseId: String, apiKey: String) {
         airtable = Airtable(baseID: apiBaseId, apiKey: apiKey)
     }

@@ -249,6 +249,7 @@
 		E4DE65E22598D370006FC81F /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		E4F2ED4E263AB40C001375BE /* InformationDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationDetailCoordinator.swift; sourceTree = "<group>"; };
 		E4F2ED50263AB480001375BE /* KnowledgeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeDetailView.swift; sourceTree = "<group>"; };
+		EB42AA7D28450AA1005EC437 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		EBB023DC27E88854009311FF /* AirtableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtableManager.swift; sourceTree = "<group>"; };
 		EBB023E127E896A5009311FF /* CoffeeAirtable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAirtable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -400,6 +401,7 @@
 				B3F3F3BD25188A1300D91190 /* Assets.xcassets */,
 				B3F3F3C225188A1300D91190 /* Info.plist */,
 				B3F3F3BF25188A1300D91190 /* Preview Content */,
+				EB42AA7D28450AA1005EC437 /* Config.xcconfig */,
 			);
 			path = "KOFFII 3.0";
 			sourceTree = "<group>";
