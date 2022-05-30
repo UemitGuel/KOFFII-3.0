@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "airtablekit",
+      "kind" : "remoteSourceControl",
+      "location" : "http://github.com/appledeveloperacademypucrs/AirtableKit.git",
+      "state" : {
+        "revision" : "88cf5066f3e7a5912a4e6679cde2e3da2ad59afd",
+        "version" : "1.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}

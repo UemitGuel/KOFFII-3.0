@@ -39,6 +39,16 @@ struct AllCafesMapView: View {
             }
             .navigationTitle("Karte")
             .addWeatherToolbarItem(with: weatherStore.model)
+            .onAppear{
+                let apiKey = Bundle.main.object(forInfoDictionaryKey: "API_KEY") as? String
+                guard let key = apiKey, !key.isEmpty else {
+
+                    print("API key does not exist")
+                    return
+                }
+
+                print("REST API key:", key)
+            }
     }
 }
 
