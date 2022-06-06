@@ -58,7 +58,7 @@ struct FilterFormView: View {
     
     
     func updateCafeListAndDismiss() {
-//        model.filterCoffeeList()
+        model.filterCoffeeList()
         presentationMode.wrappedValue.dismiss()
     }
 }

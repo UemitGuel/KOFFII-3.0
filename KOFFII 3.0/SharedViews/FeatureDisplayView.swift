@@ -11,7 +11,7 @@ struct FeatureDisplayView: View {
     
     var cafe: CoffeeDetailViewModel
     
-    init(cafe: Coffee) {
+    init(cafe: NewCoffeeModel) {
         self.cafe = CoffeeDetailViewModel(coffee: cafe)
     }
     
@@ -36,11 +36,5 @@ struct FeatureDisplayView: View {
                 .foregroundColor(cafe.featureList.contains(.plugin) ? Color(.white) : Color(.secondaryLabel).opacity(0.8))
                 .imageScale(cafe.featureList.contains(.plugin) ? .large : .small)
         }
-    }
-}
-
-struct FeatureDisplayView_Previews: PreviewProvider {
-    static var previews: some View {
-        FeatureDisplayView(cafe: cafeData[6])
     }
 }

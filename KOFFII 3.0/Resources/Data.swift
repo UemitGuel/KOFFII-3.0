@@ -14,7 +14,7 @@ let coffeeData = cafeData + roasteryData
 let informationData: [Information] = load("InformationData.json")
 let complainData: [Complain] = load("ComplainData.json")
 
-let discoverCafes: [CoffeeDetailViewModel] = [CoffeeDetailViewModel(coffee: cafeData[37]), CoffeeDetailViewModel(coffee: cafeData[47])]
+//let discoverCafes: [CoffeeDetailViewModel] = [CoffeeDetailViewModel(coffee: cafeData[37]), CoffeeDetailViewModel(coffee: cafeData[47])]
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

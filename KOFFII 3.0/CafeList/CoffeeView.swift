@@ -16,7 +16,7 @@ struct CoffeeView: View {
     
     var body: some View {
         ScrollView {
-            ForEach(model.coffeeList, id: \.name) { coffee in
+            ForEach(model.newCoffeeList, id: \.name) { coffee in
                 NavigationLink(
                     destination: CoffeeDetailView(coffee: coffee),
                     label: {

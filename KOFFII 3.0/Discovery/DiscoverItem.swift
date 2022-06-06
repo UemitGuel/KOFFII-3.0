@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DiscoverItem: View {
     
-    var cafe: CoffeeDetailViewModel
+    var cafe: NewCoffeeModel
     
     var body: some View {
         ZStack {
@@ -33,7 +33,7 @@ struct DiscoverItem: View {
                 Text("\(cafe.name)")
                     .font(.system(.title, design: .rounded))
                     .bold()
-                Text(cafe.notesBody)
+                Text(cafe.note ?? "")
                     .font(.system(.subheadline, design: .rounded))
                 HStack(alignment: .bottom) {
                     Spacer()

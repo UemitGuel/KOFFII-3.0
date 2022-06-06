@@ -13,15 +13,15 @@ struct CoffeeDetailViewModel: Identifiable {
     
     let id = UUID()
     let locationStore = LocationStore.shared
-    var coffee: Coffee
+    var coffee: NewCoffeeModel
     
-    init(coffee: Coffee) {
+    init(coffee: NewCoffeeModel) {
         self.coffee = coffee
     }
     
-    var isRoastery: Bool {
-        return self.coffee.isRoastery
-    }
+//    var isRoastery: Bool {
+//        return self.coffee.isRoastery
+//    }
     
     var coordinates: CLLocationCoordinate2D {
         return self.coffee.coordinates
@@ -70,75 +70,68 @@ struct CoffeeDetailViewModel: Identifiable {
     }
     
     var hasNotes: Bool {
-        return !self.coffee.notes.isEmpty
+        guard let note = self.coffee.note else { return false }
+        return !note.isEmpty
     }
     
     var notesTitle: String {
-        if hasNotes {
-            return self.coffee.notes[0]
-        } else {
-            return ""
-        }
+        self.coffee.noteHeadline ?? ""
     }
     
     var notesBody: String {
-        if hasNotes {
-            return self.coffee.notes[1]
-        } else {
-            return ""
-        }
+        return self.coffee.note ?? ""
     }
 }
 
-extension CoffeeDetailViewModel {
-
-    var hoursMo: String {
-        guard let start = self.coffee.hours?[0].start, let end = self.coffee.hours?[0].end else {
-            return ""
-        }
-        return "\(start) - \(end)"
-    }
-    
-    var hoursDi: String {
-        guard let start = self.coffee.hours?[1].start, let end = self.coffee.hours?[1].end else {
-            return ""
-        }
-        return "\(start) - \(end)"
-    }
-    
-    var hoursMi: String {
-        guard let start = self.coffee.hours?[2].start, let end = self.coffee.hours?[2].end else {
-            return ""
-        }
-        return "\(start) - \(end)"
-    }
-    
-    var hoursDo: String {
-        guard let start = self.coffee.hours?[3].start, let end = self.coffee.hours?[3].end else {
-            return ""
-        }
-        return "\(start) - \(end)"
-    }
-    
-    var hoursFr: String {
-        guard let start = self.coffee.hours?[4].start, let end = self.coffee.hours?[4].end else {
-            return ""
-        }
-        return "\(start) - \(end)"
-    }
-    
-    var hoursSa: String {
-        guard let start = self.coffee.hours?[5].start, let end = self.coffee.hours?[5].end else {
-            return ""
-        }
-        return "\(start) - \(end)"
-    }
-    
-    var hoursSo: String {
-        guard let start = self.coffee.hours?[6].start, let end = self.coffee.hours?[6].end else {
-            return ""
-        }
-        return "\(start) - \(end)"
-    }
-    
-}
+//extension CoffeeDetailViewModel {
+//
+//    var hoursMo: String {
+//        guard let start = self.coffee.hours?[0].start, let end = self.coffee.hours?[0].end else {
+//            return ""
+//        }
+//        return "\(start) - \(end)"
+//    }
+//
+//    var hoursDi: String {
+//        guard let start = self.coffee.hours?[1].start, let end = self.coffee.hours?[1].end else {
+//            return ""
+//        }
+//        return "\(start) - \(end)"
+//    }
+//
+//    var hoursMi: String {
+//        guard let start = self.coffee.hours?[2].start, let end = self.coffee.hours?[2].end else {
+//            return ""
+//        }
+//        return "\(start) - \(end)"
+//    }
+//
+//    var hoursDo: String {
+//        guard let start = self.coffee.hours?[3].start, let end = self.coffee.hours?[3].end else {
+//            return ""
+//        }
+//        return "\(start) - \(end)"
+//    }
+//
+//    var hoursFr: String {
+//        guard let start = self.coffee.hours?[4].start, let end = self.coffee.hours?[4].end else {
+//            return ""
+//        }
+//        return "\(start) - \(end)"
+//    }
+//
+//    var hoursSa: String {
+//        guard let start = self.coffee.hours?[5].start, let end = self.coffee.hours?[5].end else {
+//            return ""
+//        }
+//        return "\(start) - \(end)"
+//    }
+//
+//    var hoursSo: String {
+//        guard let start = self.coffee.hours?[6].start, let end = self.coffee.hours?[6].end else {
+//            return ""
+//        }
+//        return "\(start) - \(end)"
+//    }
+//
+//}

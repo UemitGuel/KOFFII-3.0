@@ -13,6 +13,10 @@ class CoffeeListViewModel: ObservableObject {
         
     @Published var coffeeList: [Coffee] = []
     @Published var newCoffeeList: [NewCoffeeModel] = []
+    var newCoffeeListSpotlight: [NewCoffeeModel] {
+        return newCoffeeList.filter { $0.inSpotlight ?? false }
+    }
+
     private var airtable: Airtable
     private var subscriptions: Set<AnyCancellable> = []
 
@@ -39,27 +43,27 @@ class CoffeeListViewModel: ObservableObject {
         loadItems()
     }
     
-//    func filterCoffeeList() {
-//        var coffee = coffeeData
-//        if needWifi {
-//            coffee = coffee.filter { $0.hasWifi }
-//        }
-//        if needFood {
-//            coffee = coffee.filter { $0.hasFood }
-//        }
-//        if needVegan {
-//            coffee = coffee.filter { $0.hasVegan }
-//        }
-//        if needPlug {
-//            coffee = coffee.filter { $0.hasPlug }
-//        }
+    func filterCoffeeList() {
+        var coffee = newCoffeeList
+        if needWifi {
+            coffee = coffee.filter { $0.hasWifi }
+        }
+        if needFood {
+            coffee = coffee.filter { $0.hasFood }
+        }
+        if needVegan {
+            coffee = coffee.filter { $0.hasVegan }
+        }
+        if needPlug {
+            coffee = coffee.filter { $0.hasPlug }
+        }
 //        if !includeRosteries {
 //            coffee = coffee.filter { $0.isRoastery == false }
 //        }
-//        //TODO
-////        coffee.sort { LocationStore.shared.getDistance(cafeLocation: $0.location) < LocationStore.shared.getDistance(cafeLocation: $1.location) }
-//        self.coffeeList = coffee
-//    }
+        //TODO
+//        coffee.sort { LocationStore.shared.getDistance(cafeLocation: $0.location) < LocationStore.shared.getDistance(cafeLocation: $1.location) }
+        self.newCoffeeList = coffee
+    }
 }
 
 extension CoffeeListViewModel {

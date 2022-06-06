@@ -12,7 +12,7 @@ struct CoffeeDetailView: View {
     
     var model: CoffeeDetailViewModel
     
-    init(coffee: Coffee) {
+    init(coffee: NewCoffeeModel) {
         self.model = CoffeeDetailViewModel(coffee: coffee)
     }
     
@@ -36,11 +36,11 @@ struct CoffeeDetailView: View {
                 VStack(alignment: .leading, spacing: 24) {
                     VStack(alignment: .leading) {
                         HStack {
-                            if model.isRoastery {
-                                Label("Rösterei", image: "beans")
-                            } else {
+//                            if model.isRoastery {
+//                                Label("Rösterei", image: "beans")
+//                            } else {
                                 FeatureDisplayView(cafe: model.coffee)
-                            }
+//                            }
                             Spacer()
                             Text(model.distance)
                         }
@@ -55,18 +55,12 @@ struct CoffeeDetailView: View {
                             .font(.system(.body, design: .rounded))
                         GoogleMapsButton(locationURL: model.locationURL)
                     }
-                    if !model.isRoastery {
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text("Öffnungszeiten")
-                                .font(.system(.title2, design: .rounded))
-                                .bold()
-                                .padding(.bottom, 4)
+//                    if !model.isRoastery {
                             HStack {
                                 if model.hasImage {
                                     Image(model.name)
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
-                                        .frame(height: geo.size.height*0.25)
                                         .cornerRadius(16)
                                     Spacer()
                                 } else {
@@ -77,22 +71,22 @@ struct CoffeeDetailView: View {
                                     }
                                     Spacer()
                                 }
-                                VStack(alignment: .leading) {
-                                    WeekdayHours(day: "Mo", hours: model.hoursMo)
-                                    WeekdayHours(day: "Di", hours: model.hoursDi)
-                                    WeekdayHours(day: "Mi", hours: model.hoursMi)
-                                    WeekdayHours(day: "Do", hours: model.hoursDo)
-                                    WeekdayHours(day: "Fr", hours: model.hoursFr)
-                                    WeekdayHours(day: "Sa", hours: model.hoursSa)
-                                    WeekdayHours(day: "So", hours: model.hoursSo)
-                                }
-                                .padding()
-                                .frame(width: 180)
-                                .background(Color(.secondarySystemBackground))
-                                .cornerRadius(16)
+//                                VStack(alignment: .leading) {
+//                                    WeekdayHours(day: "Mo", hours: model.hoursMo)
+//                                    WeekdayHours(day: "Di", hours: model.hoursDi)
+//                                    WeekdayHours(day: "Mi", hours: model.hoursMi)
+//                                    WeekdayHours(day: "Do", hours: model.hoursDo)
+//                                    WeekdayHours(day: "Fr", hours: model.hoursFr)
+//                                    WeekdayHours(day: "Sa", hours: model.hoursSa)
+//                                    WeekdayHours(day: "So", hours: model.hoursSo)
+//                                }
+//                                .padding()
+//                                .frame(width: 180)
+//                                .background(Color(.secondarySystemBackground))
+//                                .cornerRadius(16)
                             }
-                        }
-                    }
+                        
+//                    }
                 }
                 .padding([.horizontal, .bottom])
                 .padding(.top, 8)
@@ -132,10 +126,4 @@ struct CoffeeDetailView: View {
         }
     }
     
-}
-
-struct CoffeeDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        CoffeeDetailView(coffee: coffeeData[34])
-    }
 }

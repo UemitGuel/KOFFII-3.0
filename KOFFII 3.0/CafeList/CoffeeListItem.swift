@@ -11,18 +11,18 @@ struct CoffeeListItem: View {
     
     var model: CoffeeDetailViewModel
     
-    init(coffee: Coffee) {
+    init(coffee: NewCoffeeModel) {
         self.model = CoffeeDetailViewModel(coffee: coffee)
     }
         
     var body: some View {
         VStack(alignment: .leading) {
             HStack{
-                if model.isRoastery {
-                    Label("Rösterei", image: "beans")
-                } else {
+//                if model.isRoastery {
+//                    Label("Rösterei", image: "beans")
+//                } else {
                     FeatureDisplayView(cafe: model.coffee)
-                }
+//                }
                 Spacer()
                 Text(model.distance)
                 Image(systemName: "chevron.forward")

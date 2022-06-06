@@ -31,9 +31,9 @@ struct AllCafesMapView: View {
                     }
                 }
             }
-            .sheet(isPresented: $mapViewStore.showDetails) {
-                CoffeeDetailView(coffee: mapViewStore.chosenCafe)
-            }
+//            .sheet(isPresented: $mapViewStore.showDetails) {
+//                CoffeeDetailView(coffee: mapViewStore.chosenCafe)
+//            }
             .sheet(isPresented: $isPresented) {
                 FilterFormView()
             }
