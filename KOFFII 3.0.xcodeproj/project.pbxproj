@@ -56,7 +56,6 @@
 		E44773202561389100B772C2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E447731F2561389100B772C2 /* SwiftUI.framework */; };
 		E44773232561389100B772C2 /* KOFFII_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44773222561389100B772C2 /* KOFFII_Widget.swift */; };
 		E44773262561389200B772C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44773252561389200B772C2 /* Assets.xcassets */; };
-		E447732C2561389200B772C2 /* KOFFII WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E447731B2561389100B772C2 /* KOFFII WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E447734C25614CC600B772C2 /* cafeData.json in Resources */ = {isa = PBXBuildFile; fileRef = B3B520832519D90200368F47 /* cafeData.json */; };
 		E447734D25614CC600B772C2 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5208D2519D93100368F47 /* Coffee.swift */; };
 		E447734E25614CC600B772C2 /* DecodableDefaultSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */; };
@@ -82,8 +81,6 @@
 		E49119C1264C844D00021A87 /* WeatherToolBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49119BE264C834900021A87 /* WeatherToolBarItem.swift */; };
 		E491F01A259D347300EAAE2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E491F019259D347300EAAE2F /* Assets.xcassets */; };
 		E491F01D259D347300EAAE2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E491F01C259D347300EAAE2F /* Preview Assets.xcassets */; };
-		E491F022259D347300EAAE2F /* KOFFIIAppClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = E491F013259D347200EAAE2F /* KOFFIIAppClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		E491F02D259D368B00EAAE2F /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5208D2519D93100368F47 /* Coffee.swift */; };
 		E491F02E259D368B00EAAE2F /* CoordinatesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B330CEBF251C934900FB34E4 /* CoordinatesHelper.swift */; };
 		E491F033259D368B00EAAE2F /* LocationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38960BC251B4C67001659FD /* LocationStore.swift */; };
 		E491F036259D368B00EAAE2F /* GoogleMapsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31CEC08251E379400B7501E /* GoogleMapsButton.swift */; };
@@ -118,9 +115,13 @@
 		E4DE65E32598D370006FC81F /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DE65E22598D370006FC81F /* SnapshotHelper.swift */; };
 		E4F2ED4F263AB40C001375BE /* InformationDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2ED4E263AB40C001375BE /* InformationDetailCoordinator.swift */; };
 		E4F2ED51263AB480001375BE /* KnowledgeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2ED50263AB480001375BE /* KnowledgeDetailView.swift */; };
-		EBB023DB27E87975009311FF /* AirtableKit in Frameworks */ = {isa = PBXBuildFile; productRef = EBB023DA27E87975009311FF /* AirtableKit */; };
-		EBB023DD27E88854009311FF /* AirtableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB023DC27E88854009311FF /* AirtableManager.swift */; };
+		EB67640A284DF09000585B49 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5208D2519D93100368F47 /* Coffee.swift */; };
+		EB67640C284DF16200585B49 /* NewCoffeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB67640B284DF16200585B49 /* NewCoffeeModel.swift */; };
+		EB676410284E026100585B49 /* CoffeeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4779676262CD571001CBE43 /* CoffeeListViewModel.swift */; };
+		EB8DD097284E065C00997A11 /* NewCoffeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB67640B284DF16200585B49 /* NewCoffeeModel.swift */; };
+		EB8DD098284E065D00997A11 /* NewCoffeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB67640B284DF16200585B49 /* NewCoffeeModel.swift */; };
 		EBB023E227E896A5009311FF /* CoffeeAirtable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB023E127E896A5009311FF /* CoffeeAirtable.swift */; };
+		EBFD05E2284E080900C92223 /* AirtableKit in Frameworks */ = {isa = PBXBuildFile; productRef = EBFD05E1284E080900C92223 /* AirtableKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,20 +139,6 @@
 			remoteGlobalIDString = B3F3F3B525188A1000D91190;
 			remoteInfo = "KOFFII CGN 2.0";
 		};
-		E447732A2561389200B772C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3F3F3AE25188A1000D91190 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E447731A2561389100B772C2;
-			remoteInfo = "KOFFII WidgetExtension";
-		};
-		E491F020259D347300EAAE2F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3F3F3AE25188A1000D91190 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E491F012259D347200EAAE2F;
-			remoteInfo = KOFFIIAppClip;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -161,7 +148,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				E447732C2561389200B772C2 /* KOFFII WidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,7 +158,6 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
 			dstSubfolderSpec = 16;
 			files = (
-				E491F022259D347300EAAE2F /* KOFFIIAppClip.app in Embed App Clips */,
 			);
 			name = "Embed App Clips";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,7 +235,7 @@
 		E4F2ED4E263AB40C001375BE /* InformationDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationDetailCoordinator.swift; sourceTree = "<group>"; };
 		E4F2ED50263AB480001375BE /* KnowledgeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeDetailView.swift; sourceTree = "<group>"; };
 		EB42AA7D28450AA1005EC437 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		EBB023DC27E88854009311FF /* AirtableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtableManager.swift; sourceTree = "<group>"; };
+		EB67640B284DF16200585B49 /* NewCoffeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCoffeeModel.swift; sourceTree = "<group>"; };
 		EBB023E127E896A5009311FF /* CoffeeAirtable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAirtable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -259,7 +244,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBB023DB27E87975009311FF /* AirtableKit in Frameworks */,
+				EBFD05E2284E080900C92223 /* AirtableKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,10 +321,10 @@
 				E43D22C4263AA5AD00F586B6 /* Complain.swift */,
 				E43D22C6263AA5D900F586B6 /* ComplainData.json */,
 				B3B5208D2519D93100368F47 /* Coffee.swift */,
+				EB67640B284DF16200585B49 /* NewCoffeeModel.swift */,
 				EBB023E127E896A5009311FF /* CoffeeAirtable.swift */,
 				E4A7113D263429940032432D /* Information.swift */,
 				E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */,
-				EBB023DC27E88854009311FF /* AirtableManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -534,12 +519,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				E447732B2561389200B772C2 /* PBXTargetDependency */,
-				E491F021259D347300EAAE2F /* PBXTargetDependency */,
 			);
 			name = "KOFFII 3.0";
 			packageProductDependencies = (
-				EBB023DA27E87975009311FF /* AirtableKit */,
+				EBFD05E1284E080900C92223 /* AirtableKit */,
 			);
 			productName = "KOFFII CGN 2.0";
 			productReference = B3F3F3B625188A1000D91190 /* KOFFII 3.0.app */;
@@ -653,7 +636,7 @@
 			);
 			mainGroup = B3F3F3AD25188A1000D91190;
 			packageReferences = (
-				EBB023D927E87975009311FF /* XCRemoteSwiftPackageReference "AirtableKit" */,
+				EBFD05E0284E080900C92223 /* XCRemoteSwiftPackageReference "AirtableKit" */,
 			);
 			productRefGroup = B3F3F3B725188A1000D91190 /* Products */;
 			projectDirPath = "";
@@ -747,7 +730,7 @@
 				B3F3F3BA25188A1100D91190 /* KOFFII_3_0App.swift in Sources */,
 				E49119BF264C834900021A87 /* WeatherToolBarItem.swift in Sources */,
 				E409A142264C437300F74EA1 /* WeatherStore.swift in Sources */,
-				EBB023DD27E88854009311FF /* AirtableManager.swift in Sources */,
+				EB67640C284DF16200585B49 /* NewCoffeeModel.swift in Sources */,
 				E4F2ED51263AB480001375BE /* KnowledgeDetailView.swift in Sources */,
 				E43D22C5263AA5AD00F586B6 /* Complain.swift in Sources */,
 				E4D6033526359F6700FAD1B4 /* InformationListItem.swift in Sources */,
@@ -794,6 +777,7 @@
 			files = (
 				E4A7114A26342B2D0032432D /* Information.swift in Sources */,
 				E447735525614CDD00B772C2 /* CoordinatesHelper.swift in Sources */,
+				EB8DD098284E065D00997A11 /* NewCoffeeModel.swift in Sources */,
 				E4B5036326988A3800EACB8E /* FeatureListBuilder.swift in Sources */,
 				E447734E25614CC600B772C2 /* DecodableDefaultSource.swift in Sources */,
 				E49119C0264C844D00021A87 /* WeatherToolBarItem.swift in Sources */,
@@ -826,11 +810,13 @@
 				E4A510A5266136F100EE3B69 /* DiscoveryView.swift in Sources */,
 				E4A510AB2661385800EE3B69 /* ContentView.swift in Sources */,
 				E491F033259D368B00EAAE2F /* LocationStore.swift in Sources */,
+				EB676410284E026100585B49 /* CoffeeListViewModel.swift in Sources */,
 				E491F03F259D368B00EAAE2F /* RegionStore.swift in Sources */,
 				E4A510A72661371F00EE3B69 /* WeekdayHours.swift in Sources */,
 				E4A510A82661372800EE3B69 /* CoffeeDetailView.swift in Sources */,
 				E417E604264EC45900A72258 /* DiscoverItem.swift in Sources */,
 				E49119C1264C844D00021A87 /* WeatherToolBarItem.swift in Sources */,
+				EB8DD097284E065C00997A11 /* NewCoffeeModel.swift in Sources */,
 				E417E606264EC48800A72258 /* InformationListItem.swift in Sources */,
 				E491F036259D368B00EAAE2F /* GoogleMapsButton.swift in Sources */,
 				E491F02E259D368B00EAAE2F /* CoordinatesHelper.swift in Sources */,
@@ -842,10 +828,10 @@
 				E4A510A92661372C00EE3B69 /* CoffeeDetailViewModel.swift in Sources */,
 				E491F041259D368B00EAAE2F /* DismissButton.swift in Sources */,
 				E417E60B264EC50F00A72258 /* FeatureDisplayView.swift in Sources */,
-				E491F02D259D368B00EAAE2F /* Coffee.swift in Sources */,
 				E48AB837264AE1C40022267B /* WeatherModel.swift in Sources */,
 				E43D22C8263AA6E800F586B6 /* Complain.swift in Sources */,
 				E491F03D259D368B00EAAE2F /* DecodableDefaultSource.swift in Sources */,
+				EB67640A284DF09000585B49 /* Coffee.swift in Sources */,
 				E491F03A259D368B00EAAE2F /* Data.swift in Sources */,
 				E417E607264EC49800A72258 /* CoffeeListItem.swift in Sources */,
 			);
@@ -863,16 +849,6 @@
 			isa = PBXTargetDependency;
 			target = B3F3F3B525188A1000D91190 /* KOFFII 3.0 */;
 			targetProxy = B3F3F3D325188A1300D91190 /* PBXContainerItemProxy */;
-		};
-		E447732B2561389200B772C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E447731A2561389100B772C2 /* KOFFII WidgetExtension */;
-			targetProxy = E447732A2561389200B772C2 /* PBXContainerItemProxy */;
-		};
-		E491F021259D347300EAAE2F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E491F012259D347200EAAE2F /* KOFFIIAppClip */;
-			targetProxy = E491F020259D347300EAAE2F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1301,7 +1277,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EBB023D927E87975009311FF /* XCRemoteSwiftPackageReference "AirtableKit" */ = {
+		EBFD05E0284E080900C92223 /* XCRemoteSwiftPackageReference "AirtableKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "http://github.com/appledeveloperacademypucrs/AirtableKit.git";
 			requirement = {
@@ -1312,9 +1288,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EBB023DA27E87975009311FF /* AirtableKit */ = {
+		EBFD05E1284E080900C92223 /* AirtableKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EBB023D927E87975009311FF /* XCRemoteSwiftPackageReference "AirtableKit" */;
+			package = EBFD05E0284E080900C92223 /* XCRemoteSwiftPackageReference "AirtableKit" */;
 			productName = AirtableKit;
 		};
 /* End XCSwiftPackageProductDependency section */

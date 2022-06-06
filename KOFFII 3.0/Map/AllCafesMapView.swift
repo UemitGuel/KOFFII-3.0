@@ -39,10 +39,6 @@ struct AllCafesMapView: View {
             }
             .navigationTitle("Karte")
             .addWeatherToolbarItem(with: weatherStore.model)
-            .onAppear{
-                let airtbale = AirtableManager()
-                airtbale.loadItems()
-            }
     }
 }
 
