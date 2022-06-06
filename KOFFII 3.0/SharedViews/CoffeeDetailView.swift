@@ -11,6 +11,7 @@ import MapKit
 struct CoffeeDetailView: View {
     
     var model: CoffeeDetailViewModel
+    @Environment(\.dismiss) var dismiss
     
     init(coffee: NewCoffeeModel) {
         self.model = CoffeeDetailViewModel(coffee: coffee)

@@ -12,14 +12,25 @@ struct DiscoveryView: View {
     @EnvironmentObject var weatherStore: WeatherStore
     @EnvironmentObject var viewModel: CoffeeListViewModel
 
+    @State var sheetDetail: NewCoffeeModel?
+
     var body: some View {
         ScrollView {
             ForEach(viewModel.newCoffeeListSpotlight, id: \.name) { coffee in
-                NavigationLink(
-                    destination: CoffeeDetailView(coffee: coffee)) {
+                Button {
+                    sheetDetail = coffee
+                } label: {
                     DiscoverItem(cafe: coffee)
                 }
+                .buttonStyle(.plain)
             }
+            .navigationTitle("Empfehlungen")
+            .addWeatherToolbarItem(with: weatherStore.model)
+        }
+        .background(Color("Olive1"))
+        .sheet(item: $sheetDetail) { coffee in
+            CoffeeDetailView(coffee: coffee)
+        }
 
 //            #if !APPCLIP
 //            NavigationLink(
@@ -40,9 +51,6 @@ struct DiscoveryView: View {
 //                DiscoverItem(cafe: discoverCafes[1])
 //            }
 //            .padding(.bottom)
-            .navigationTitle("Empfehlungen")
-            .addWeatherToolbarItem(with: weatherStore.model)
-        }
-        .background(Color("Olive1"))
+
     }
 }

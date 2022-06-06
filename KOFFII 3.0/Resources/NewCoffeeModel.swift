@@ -9,8 +9,9 @@ import AirtableKit
 import Foundation
 import CoreLocation
 
-struct NewCoffeeModel {
+struct NewCoffeeModel: Identifiable {
 
+    var id = UUID()
     var name: String
 
     var hood: Hood
@@ -48,6 +49,17 @@ struct NewCoffeeModel {
         hasFood = features.contains { $0 as? String == "hasFood" }
         hasVegan = features.contains { $0 as? String == "hasVegan" }
         hasPlug = features.contains { $0 as? String == "hasPlug" }
+    }
+
+    init() {
+        name = "name"
+        hood = Hood.innenstadt
+        inSpotlight = true
+        locationURL = "https://www.google.com/maps/place/Kaffeesaurus/@50.94036,6.93858,17z/data=!4m12!1m6!3m5!1s0x47bf2510697bb22f:0xeb89da280a86feef!2sKaffeesaurus!8m2!3d50.94036!4d6.93858!3m4!1s0x47bf2510697bb22f:0xeb89da280a86feef!8m2!3d50.94036!4d6.93858"
+        hasWifi = true
+        hasFood = true
+        hasVegan = true
+        hasPlug = true
     }
 
 }

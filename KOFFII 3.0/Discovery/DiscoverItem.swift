@@ -12,16 +12,20 @@ struct DiscoverItem: View {
     var cafe: NewCoffeeModel
     
     var body: some View {
-        ZStack {
-            ZStack(alignment: .bottom) {
-                Image(cafe.name)
+        VStack(spacing: 0) {
+            AsyncImage(url: cafe.imageURL) { image in
+                image
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                bar.background(Color("Olive2"))
+                    .frame(height: 230)
+            } placeholder: {
+                Image(systemName: "wifi")
             }
-            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-            .padding(.horizontal)
+
+            bar.background(Color("Olive2"))
         }
+        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+        .padding(.horizontal)
     }
     
     var bar: some View {
@@ -35,6 +39,7 @@ struct DiscoverItem: View {
                     .bold()
                 Text(cafe.note ?? "")
                     .font(.system(.subheadline, design: .rounded))
+                    .multilineTextAlignment(.leading)
                 HStack(alignment: .bottom) {
                     Spacer()
                     Image(systemName: "chevron.forward")
