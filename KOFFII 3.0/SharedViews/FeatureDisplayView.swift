@@ -17,24 +17,35 @@ struct FeatureDisplayView: View {
     
     var body: some View {
         HStack {
-            Image(systemName: "wifi")
-                .foregroundColor(cafe.featureList.contains(.wifi) ? Color(.white) : Color(.secondaryLabel).opacity(0.8))
-                .imageScale(cafe.featureList.contains(.wifi) ? .large : .small)
-            Divider()
-                .background(.white)
-            Image(systemName: "fork.knife")
-                .foregroundColor(cafe.featureList.contains(.food) ? Color(.white) : Color(.secondaryLabel).opacity(0.8))
-                .imageScale(cafe.featureList.contains(.food) ? .large : .small)
-            Divider()
-                .background(.white)
-            Image(systemName: "leaf")
-                .foregroundColor(cafe.featureList.contains(.vegan) ? Color(.white) : Color(.secondaryLabel).opacity(0.8))
-                .imageScale(cafe.featureList.contains(.vegan) ? .large : .small)
-            Divider()
-                .background(.white)
-            Image(systemName: "powerplug")
-                .foregroundColor(cafe.featureList.contains(.plugin) ? Color(.white) : Color(.secondaryLabel).opacity(0.8))
-                .imageScale(cafe.featureList.contains(.plugin) ? .large : .small)
+            Group {
+                Image(systemName: "wifi")
+                    .foregroundColor(cafe.featureList.contains(.wifi) ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
+                    .imageScale(cafe.featureList.contains(.wifi) ? .large : .medium)
+                Spacer()
+                Divider()
+                    .background(.white)
+                Spacer()
+                Image(systemName: "fork.knife")
+                    .foregroundColor(cafe.featureList.contains(.food) ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
+                    .imageScale(cafe.featureList.contains(.food) ? .large : .medium)
+                Spacer()
+            }
+            Group {
+                Divider()
+                    .background(.white)
+                Spacer()
+                Image(systemName: "leaf")
+                    .foregroundColor(cafe.featureList.contains(.vegan) ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
+                    .imageScale(cafe.featureList.contains(.vegan) ? .large : .medium)
+                Spacer()
+                Divider()
+                    .background(.white)
+                Spacer()
+                Image(systemName: "powerplug")
+                    .foregroundColor(cafe.featureList.contains(.plugin) ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
+                    .imageScale(cafe.featureList.contains(.plugin) ? .large : .medium)
+            }
         }
+        .padding(.horizontal)
     }
 }

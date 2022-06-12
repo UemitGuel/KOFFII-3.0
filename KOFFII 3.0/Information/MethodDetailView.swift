@@ -44,6 +44,7 @@ struct MethodDetailView: View {
                 }
                 .padding([.horizontal,.top])
             }
+            .background(Color("Olive1"))
             .navigationBarTitle("", displayMode: .inline)
             .toolbar {
                 ToolbarItemGroup(placement: .bottomBar) {

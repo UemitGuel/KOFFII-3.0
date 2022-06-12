@@ -40,14 +40,14 @@ struct FilterFormView: View {
                     )
                 }).toggleStyle(SwitchToggleStyle(tint: Color.accentColor))
             }
-            Section(header: Text("Röstereien")) {
-                Toggle(isOn: $model.includeRosteries, label: {
-                    Label(
-                        title: { Text("Röstereien") },
-                        icon: { Image("beans") }
-                    )
-                }).toggleStyle(SwitchToggleStyle(tint: Color.accentColor))
-            }
+//            Section(header: Text("Röstereien")) {
+//                Toggle(isOn: $model.includeRosteries, label: {
+//                    Label(
+//                        title: { Text("Röstereien") },
+//                        icon: { Image("beans") }
+//                    )
+//                }).toggleStyle(SwitchToggleStyle(tint: Color.accentColor))
+//            }
             Button(action: { updateCafeListAndDismiss() }) {
                 Text("Filter anwenden")
                     .foregroundColor(Color.accentColor)

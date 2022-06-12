@@ -8,7 +8,7 @@ struct MapView: UIViewRepresentable {
     
     var helper = AnnotationsHelper.shared
     
-    @Binding var coffeeList: [Coffee]
+    @Binding var coffeeList: [NewCoffeeModel]
 
     @Binding var centerCoordinate: CLLocationCoordinate2D
     

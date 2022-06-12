@@ -24,8 +24,8 @@ struct CoffeeView: View {
                     })
                 
             }
-            .padding(.bottom)
         }
+        .padding(.horizontal)
         .navigationTitle("Cafes& Rösterein")
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
@@ -42,6 +42,7 @@ struct CoffeeView: View {
             FilterFormView()
         }
         .addWeatherToolbarItem(with: weatherStore.model)
+        .background(Color("Olive1"))
     }
     
 }

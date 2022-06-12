@@ -19,7 +19,7 @@ struct AllCafesMapView: View {
     @State private var isPresented = false
     
     var body: some View {
-        MapView(coffeeList: $model.coffeeList, centerCoordinate: $centerCoordinate)
+        MapView(coffeeList: $model.newCoffeeList, centerCoordinate: $centerCoordinate)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: { isPresented.toggle() } ) {
@@ -31,14 +31,15 @@ struct AllCafesMapView: View {
                     }
                 }
             }
-//            .sheet(isPresented: $mapViewStore.showDetails) {
-//                CoffeeDetailView(coffee: mapViewStore.chosenCafe)
-//            }
+            .sheet(isPresented: $mapViewStore.showDetails) {
+                CoffeeDetailView(coffee: mapViewStore.chosenCafe)
+            }
             .sheet(isPresented: $isPresented) {
                 FilterFormView()
             }
             .navigationTitle("Karte")
             .addWeatherToolbarItem(with: weatherStore.model)
+            .background(Color("Olive1"))
     }
 }
 

@@ -19,10 +19,9 @@ struct DiscoverItem: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(height: 230)
             } placeholder: {
-                Image(systemName: "wifi")
+                Image("Placeholder")
             }
-
-            bar.background(Color("Olive2"))
+            bar.background(Color("Olive3"))
         }
         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         .padding(.horizontal)
@@ -49,7 +48,6 @@ struct DiscoverItem: View {
             }
             .foregroundColor(Color(.label))
             Spacer()
-            
         }
         .padding()
         .frame(maxWidth: .infinity)

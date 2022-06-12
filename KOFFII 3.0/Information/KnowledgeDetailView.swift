@@ -38,6 +38,7 @@ struct KnowledgeDetailView: View {
                 .padding([.horizontal,.top])
             }
             .navigationBarTitle("", displayMode: .inline)
+            .background(Color("Olive1"))
         }
     }
 }

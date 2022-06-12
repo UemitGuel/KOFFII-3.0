@@ -23,18 +23,18 @@ struct InformationListItem: View {
                         .font(.system(.title, design: .rounded))
                         .foregroundColor(.white)
                     Text(info.isMethod ? "Zubereitung" : "Wissen")
-                        .foregroundColor(Color(.secondaryLabel))
+                        .foregroundColor(Color("Olive10"))
                         .font(.system(.body, design: .rounded))
                 }
                 Spacer()
                 HStack {
                     Image(systemName: "chevron.forward")
+                        .foregroundColor(.white)
                 }
                 .font(.system(.body, design: .rounded))
-                .foregroundColor(.secondary)
             }
             .padding()
-            .background(Color(.secondarySystemBackground))
+            .background(Color("Olive3"))
         }
         .cornerRadius(16)
         .padding(.horizontal)

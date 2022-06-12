@@ -9,10 +9,10 @@ import MapKit
 
 class CafeAnnotation: NSObject, MKAnnotation {
     var coordinate: CLLocationCoordinate2D
-    let cafe: Coffee
+    let cafe: NewCoffeeModel
     let title: String?
    
-    init(cafe: Coffee) {
+    init(cafe: NewCoffeeModel) {
         self.cafe = cafe
         self.title = cafe.name
         self.coordinate = cafe.coordinates

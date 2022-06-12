@@ -12,7 +12,7 @@ class AnnotationsHelper {
     
     static let shared = AnnotationsHelper()
     
-    func getallAnnotation(cafeList: [Coffee]) -> [MKAnnotation] {
+    func getallAnnotation(cafeList: [NewCoffeeModel]) -> [MKAnnotation] {
         var annotations: [MKAnnotation] = []
         for cafe in cafeList {
             let annotation = CafeAnnotation(cafe: cafe)

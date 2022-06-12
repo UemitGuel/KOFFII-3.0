@@ -23,6 +23,7 @@ struct DiscoveryView: View {
                     DiscoverItem(cafe: coffee)
                 }
                 .buttonStyle(.plain)
+                .padding(.bottom)
             }
             .navigationTitle("Empfehlungen")
             .addWeatherToolbarItem(with: weatherStore.model)

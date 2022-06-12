@@ -27,6 +27,7 @@ struct InformationView: View {
         }
         .navigationTitle("Zubereitung & mehr")
         .addWeatherToolbarItem(with: weatherStore.model)
+        .background(Color("Olive1"))
     }
 }
 

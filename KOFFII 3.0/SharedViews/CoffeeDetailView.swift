@@ -29,22 +29,25 @@ struct CoffeeDetailView: View {
     var body: some View {
         GeometryReader { geo in
             ScrollView(showsIndicators: false) {
-                Map(coordinateRegion: $regionVM, interactionModes: .all, showsUserLocation: true, userTrackingMode: $trackingMode, annotationItems: [model]) { item in
-                    MapMarker(coordinate: item.coordinates)
+                ZStack(alignment: .topTrailing) {
+                    Map(coordinateRegion: $regionVM, interactionModes: .all, showsUserLocation: true, userTrackingMode: $trackingMode, annotationItems: [model]) { item in
+                        MapMarker(coordinate: item.coordinates)
+                    }
+                    .frame(height: geo.size.height*0.35, alignment: .center)
+                    .allowsHitTesting(false)
+                    Text("Entfernung: \(model.distance)")
+                        .padding()
+                        .background(Color("Olive1"))
+                        .cornerRadius(16)
+                        .padding(8)
                 }
-                .frame(height: geo.size.height*0.35, alignment: .center)
-                .allowsHitTesting(false)
                 VStack(alignment: .leading, spacing: 24) {
                     VStack(alignment: .leading) {
-                        HStack {
 //                            if model.isRoastery {
 //                                Label("Rösterei", image: "beans")
 //                            } else {
                                 FeatureDisplayView(cafe: model.coffee)
 //                            }
-                            Spacer()
-                            Text(model.distance)
-                        }
                         .padding(.bottom, 4)
                         .font(.system(.body, design: .rounded))
                         .foregroundColor(.secondary)
@@ -58,33 +61,17 @@ struct CoffeeDetailView: View {
                     }
 //                    if !model.isRoastery {
                             HStack {
-                                if model.hasImage {
-                                    Image(model.name)
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .cornerRadius(16)
-                                    Spacer()
-                                } else {
-                                    Spacer()
-                                    VStack(alignment: .center, spacing: 8) {
-                                        Image(systemName: "rectangle.slash.fill")
-                                        Text("(Noch) kein Foto")
+                                if model.coffee.imageURL != nil {
+                                    AsyncImage(url: model.coffee.imageURL) { image in
+                                        image
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .cornerRadius(16)
+                                    } placeholder: {
+                                        EmptyView()
                                     }
                                     Spacer()
                                 }
-//                                VStack(alignment: .leading) {
-//                                    WeekdayHours(day: "Mo", hours: model.hoursMo)
-//                                    WeekdayHours(day: "Di", hours: model.hoursDi)
-//                                    WeekdayHours(day: "Mi", hours: model.hoursMi)
-//                                    WeekdayHours(day: "Do", hours: model.hoursDo)
-//                                    WeekdayHours(day: "Fr", hours: model.hoursFr)
-//                                    WeekdayHours(day: "Sa", hours: model.hoursSa)
-//                                    WeekdayHours(day: "So", hours: model.hoursSo)
-//                                }
-//                                .padding()
-//                                .frame(width: 180)
-//                                .background(Color(.secondarySystemBackground))
-//                                .cornerRadius(16)
                             }
                         
 //                    }
@@ -98,10 +85,7 @@ struct CoffeeDetailView: View {
                             .bold()
                             .padding(.bottom, 4)
                         Text(model.notesBody)
-                            .padding()
-                            .background(Color(.secondarySystemBackground))
-                            .cornerRadius(16)
-                        
+
                     }
                     .padding(.bottom)
                     .padding(.horizontal, 12)
@@ -124,6 +108,7 @@ struct CoffeeDetailView: View {
                 #endif
             }
             .navigationBarTitle("", displayMode: .inline)
+            .background(Color("Olive1"))
         }
     }
     
