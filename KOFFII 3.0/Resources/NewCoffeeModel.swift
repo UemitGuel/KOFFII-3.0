@@ -23,6 +23,7 @@ struct NewCoffeeModel: Identifiable {
     var imageURL: URL?
 
     var locationURL: String
+    var latAndLong: String
 
     var hasWifi: Bool
     var hasFood: Bool
@@ -32,8 +33,8 @@ struct NewCoffeeModel: Identifiable {
 
     var coordinates: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
-            latitude: CoordinatesHelper.shared.sliceURLIntoCoordinates(url: locationURL).latitude,
-            longitude: CoordinatesHelper.shared.sliceURLIntoCoordinates(url: locationURL).longitude)
+            latitude: CoordinatesHelper.shared.sliceURLIntoCoordinates(url: latAndLong).latitude,
+            longitude: CoordinatesHelper.shared.sliceURLIntoCoordinates(url: latAndLong).longitude)
     }
 
     init(record: Record) {
@@ -44,6 +45,7 @@ struct NewCoffeeModel: Identifiable {
         note = record.fields["note"] as? String
         imageURL = record.attachments["image"]?.first?.url as? URL ?? URL(string: "https://placehold.it/300")!
         locationURL = record.fields["url"] as? String ?? ""
+        latAndLong = record.fields["latAndLong"] as? String ?? ""
         let features = record.fields["features"] as? Array<Any> ?? []
         hasWifi = features.contains { $0 as? String == "hasWifi" }
         hasFood = features.contains { $0 as? String == "hasFood" }
@@ -60,6 +62,7 @@ struct NewCoffeeModel: Identifiable {
         hasFood = true
         hasVegan = true
         hasPlug = true
+        latAndLong = "50.921004288702065, 6.965932380099694"
     }
 
 }

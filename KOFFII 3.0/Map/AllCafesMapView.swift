@@ -42,9 +42,3 @@ struct AllCafesMapView: View {
             .background(Color("Olive1"))
     }
 }
-
-struct AllCafesMapView_Previews: PreviewProvider {
-    static var previews: some View {
-        AllCafesMapView()
-    }
-}
