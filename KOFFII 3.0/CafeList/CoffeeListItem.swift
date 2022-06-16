@@ -6,10 +6,21 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct CoffeeListItem: View {
     
     var model: NewCoffeeModel
+
+    let locationStore = LocationStore.shared
+
+    var location: CLLocation {
+        CLLocation(latitude: model.coordinates.latitude, longitude: model.coordinates.longitude)
+    }
+
+    var distance: String {
+        return self.locationStore.getDistanceAsString(cafeLocation: location)
+    }
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -22,7 +33,7 @@ struct CoffeeListItem: View {
                 Text(model.hood.rawValue)
                     .foregroundColor(Color("Olive10"))
                 Spacer()
-                Text(model.distance)
+                Text(distance)
                 Image(systemName: "chevron.forward")
             }
             .font(.system(.body, design: .default))

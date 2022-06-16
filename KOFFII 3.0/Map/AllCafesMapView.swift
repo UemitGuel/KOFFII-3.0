@@ -17,7 +17,7 @@ struct AllCafesMapView: View {
     @EnvironmentObject var weatherStore: WeatherStore
     
     @State private var isPresented = false
-    
+
     var body: some View {
         MapView(coffeeList: $model.newCoffeeList, centerCoordinate: $centerCoordinate)
             .toolbar {

@@ -21,6 +21,17 @@ struct CoffeeDetailView: View {
     #if !APPCLIP
     @State private var isPresented = false
     #endif
+
+
+    let locationStore = LocationStore.shared
+
+    var location: CLLocation {
+        CLLocation(latitude: model.coordinates.latitude, longitude: model.coordinates.longitude)
+    }
+
+    var distance: String {
+        return self.locationStore.getDistanceAsString(cafeLocation: location)
+    }
     
     var body: some View {
         GeometryReader { geo in
@@ -31,7 +42,7 @@ struct CoffeeDetailView: View {
                     }
                     .frame(height: geo.size.height*0.35, alignment: .center)
                     .allowsHitTesting(false)
-                    Text("Entfernung: \(model.distance)")
+                    Text("Entfernung: \(distance)")
                         .padding()
                         .background(Color("Olive1"))
                         .cornerRadius(16)

@@ -11,8 +11,6 @@ import CoreLocation
 
 struct NewCoffeeModel: Identifiable {
 
-    let locationStore = LocationStore.shared
-
     var id = UUID()
     var name: String
 
@@ -36,14 +34,6 @@ struct NewCoffeeModel: Identifiable {
         CLLocationCoordinate2D(
             latitude: CoordinatesHelper.shared.sliceURLIntoCoordinates(url: latAndLong).latitude,
             longitude: CoordinatesHelper.shared.sliceURLIntoCoordinates(url: latAndLong).longitude)
-    }
-
-    var location: CLLocation {
-        CLLocation(latitude: coordinates.latitude, longitude: coordinates.longitude)
-    }
-
-    var distance: String {
-        return self.locationStore.getDistanceAsString(cafeLocation: location)
     }
 
     init(record: Record) {

@@ -16,9 +16,7 @@
 		B33571DE251E0C4D00D06BC4 /* AnnotationsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33571DD251E0C4D00D06BC4 /* AnnotationsHelper.swift */; };
 		B38960BD251B4C68001659FD /* LocationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38960BC251B4C67001659FD /* LocationStore.swift */; };
 		B38960C2251B50A2001659FD /* RegionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38960C1251B50A2001659FD /* RegionStore.swift */; };
-		B3B520842519D90200368F47 /* cafeData.json in Resources */ = {isa = PBXBuildFile; fileRef = B3B520832519D90200368F47 /* cafeData.json */; };
 		B3B520892519D92800368F47 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B520882519D92800368F47 /* Data.swift */; };
-		B3B5208E2519D93100368F47 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5208D2519D93100368F47 /* Coffee.swift */; };
 		B3B520932519E1C400368F47 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B520922519E1C400368F47 /* TabBar.swift */; };
 		B3B8738B251B3EBD006CA136 /* CoffeeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B8738A251B3EBD006CA136 /* CoffeeDetailView.swift */; };
 		B3C3368C251DE78200755B1E /* AllCafesMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C3368B251DE78200755B1E /* AllCafesMapView.swift */; };
@@ -54,8 +52,6 @@
 		E44773202561389100B772C2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E447731F2561389100B772C2 /* SwiftUI.framework */; };
 		E44773232561389100B772C2 /* KOFFII_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44773222561389100B772C2 /* KOFFII_Widget.swift */; };
 		E44773262561389200B772C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44773252561389200B772C2 /* Assets.xcassets */; };
-		E447734C25614CC600B772C2 /* cafeData.json in Resources */ = {isa = PBXBuildFile; fileRef = B3B520832519D90200368F47 /* cafeData.json */; };
-		E447734D25614CC600B772C2 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5208D2519D93100368F47 /* Coffee.swift */; };
 		E447734E25614CC600B772C2 /* DecodableDefaultSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */; };
 		E447734F25614CC600B772C2 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B520882519D92800368F47 /* Data.swift */; };
 		E447735425614CDD00B772C2 /* LocationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38960BC251B4C67001659FD /* LocationStore.swift */; };
@@ -82,7 +78,6 @@
 		E491F02E259D368B00EAAE2F /* CoordinatesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B330CEBF251C934900FB34E4 /* CoordinatesHelper.swift */; };
 		E491F033259D368B00EAAE2F /* LocationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38960BC251B4C67001659FD /* LocationStore.swift */; };
 		E491F036259D368B00EAAE2F /* GoogleMapsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31CEC08251E379400B7501E /* GoogleMapsButton.swift */; };
-		E491F039259D368B00EAAE2F /* cafeData.json in Resources */ = {isa = PBXBuildFile; fileRef = B3B520832519D90200368F47 /* cafeData.json */; };
 		E491F03A259D368B00EAAE2F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B520882519D92800368F47 /* Data.swift */; };
 		E491F03D259D368B00EAAE2F /* DecodableDefaultSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */; };
 		E491F03F259D368B00EAAE2F /* RegionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38960C1251B50A2001659FD /* RegionStore.swift */; };
@@ -113,7 +108,6 @@
 		E4F2ED4F263AB40C001375BE /* InformationDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2ED4E263AB40C001375BE /* InformationDetailCoordinator.swift */; };
 		E4F2ED51263AB480001375BE /* KnowledgeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2ED50263AB480001375BE /* KnowledgeDetailView.swift */; };
 		EB5787E0285B615F001A555F /* DiscoverFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5787DF285B615F001A555F /* DiscoverFeatureView.swift */; };
-		EB67640A284DF09000585B49 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5208D2519D93100368F47 /* Coffee.swift */; };
 		EB67640C284DF16200585B49 /* NewCoffeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB67640B284DF16200585B49 /* NewCoffeeModel.swift */; };
 		EB676410284E026100585B49 /* CoffeeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4779676262CD571001CBE43 /* CoffeeListViewModel.swift */; };
 		EB8DD097284E065C00997A11 /* NewCoffeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB67640B284DF16200585B49 /* NewCoffeeModel.swift */; };
@@ -172,9 +166,7 @@
 		B33571DD251E0C4D00D06BC4 /* AnnotationsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationsHelper.swift; sourceTree = "<group>"; };
 		B38960BC251B4C67001659FD /* LocationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationStore.swift; sourceTree = "<group>"; };
 		B38960C1251B50A2001659FD /* RegionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionStore.swift; sourceTree = "<group>"; };
-		B3B520832519D90200368F47 /* cafeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cafeData.json; sourceTree = "<group>"; };
 		B3B520882519D92800368F47 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		B3B5208D2519D93100368F47 /* Coffee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 		B3B520922519E1C400368F47 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		B3B8738A251B3EBD006CA136 /* CoffeeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailView.swift; sourceTree = "<group>"; };
 		B3C3368B251DE78200755B1E /* AllCafesMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCafesMapView.swift; sourceTree = "<group>"; };
@@ -305,6 +297,7 @@
 			children = (
 				B32897AD251FA1BA0098A6E7 /* DiscoveryView.swift */,
 				E492FEFA2590EAEC00881C1F /* DiscoverItem.swift */,
+				EB5787DF285B615F001A555F /* DiscoverFeatureView.swift */,
 			);
 			path = Discovery;
 			sourceTree = "<group>";
@@ -312,13 +305,11 @@
 		B3B520822519D90200368F47 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B3B520832519D90200368F47 /* cafeData.json */,
 				E4A375E32632FC1A005695C5 /* RoasteryData.json */,
 				E4A71136263427860032432D /* InformationData.json */,
 				B3B520882519D92800368F47 /* Data.swift */,
 				E43D22C4263AA5AD00F586B6 /* Complain.swift */,
 				E43D22C6263AA5D900F586B6 /* ComplainData.json */,
-				B3B5208D2519D93100368F47 /* Coffee.swift */,
 				EB67640B284DF16200585B49 /* NewCoffeeModel.swift */,
 				EBB023E127E896A5009311FF /* CoffeeAirtable.swift */,
 				E4A7113D263429940032432D /* Information.swift */,
@@ -345,7 +336,6 @@
 		B3F3F3AD25188A1000D91190 = {
 			isa = PBXGroup;
 			children = (
-				EB5787DF285B615F001A555F /* DiscoverFeatureView.swift */,
 				B3F3F3B825188A1100D91190 /* KOFFII 3.0 */,
 				B3F3F3CA25188A1300D91190 /* KOFFII CGN 2.0Tests */,
 				B3F3F3D525188A1300D91190 /* KOFFII CGN 2.0UITests */,
@@ -654,7 +644,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3B520842519D90200368F47 /* cafeData.json in Resources */,
 				B3F3F3C125188A1300D91190 /* Preview Assets.xcassets in Resources */,
 				B3F3F3BE25188A1300D91190 /* Assets.xcassets in Resources */,
 				E4A375E42632FC1A005695C5 /* RoasteryData.json in Resources */,
@@ -681,7 +670,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E447734C25614CC600B772C2 /* cafeData.json in Resources */,
 				E447736225615D9E00B772C2 /* Assets.xcassets in Resources */,
 				E44773262561389200B772C2 /* Assets.xcassets in Resources */,
 			);
@@ -691,7 +679,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E491F039259D368B00EAAE2F /* cafeData.json in Resources */,
 				E491F01D259D347300EAAE2F /* Preview Assets.xcassets in Resources */,
 				E417E610264EC6EA00A72258 /* RoasteryData.json in Resources */,
 				E417E60F264EC6DC00A72258 /* InformationData.json in Resources */,
@@ -738,7 +725,6 @@
 				E417E5F5264EC1B300A72258 /* WeekdayHours.swift in Sources */,
 				B33571DE251E0C4D00D06BC4 /* AnnotationsHelper.swift in Sources */,
 				E4A7113E263429940032432D /* Information.swift in Sources */,
-				B3B5208E2519D93100368F47 /* Coffee.swift in Sources */,
 				E4A89F1E263AD2B4009E4A5B /* ComplainView.swift in Sources */,
 				E48DC25E2631B2E5009ED2FE /* FilterFormView.swift in Sources */,
 				E4779677262CD571001CBE43 /* CoffeeListViewModel.swift in Sources */,
@@ -795,7 +781,6 @@
 				E44773232561389100B772C2 /* KOFFII_Widget.swift in Sources */,
 				E447735C25614CF300B772C2 /* DismissButton.swift in Sources */,
 				E417E5F6264EC1C000A72258 /* WeekdayHours.swift in Sources */,
-				E447734D25614CC600B772C2 /* Coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -827,7 +812,6 @@
 				E48AB837264AE1C40022267B /* WeatherModel.swift in Sources */,
 				E43D22C8263AA6E800F586B6 /* Complain.swift in Sources */,
 				E491F03D259D368B00EAAE2F /* DecodableDefaultSource.swift in Sources */,
-				EB67640A284DF09000585B49 /* Coffee.swift in Sources */,
 				E491F03A259D368B00EAAE2F /* Data.swift in Sources */,
 				E417E607264EC49800A72258 /* CoffeeListItem.swift in Sources */,
 			);

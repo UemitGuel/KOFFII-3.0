@@ -8,9 +8,7 @@
 
 import Foundation
 
-let cafeData: [Coffee] = load("cafeData.json")
-let roasteryData: [Coffee] = load("RoasteryData.json")
-let coffeeData = cafeData + roasteryData
+//let roasteryData: [Coffee] = load("RoasteryData.json")
 let informationData: [Information] = load("InformationData.json")
 let complainData: [Complain] = load("ComplainData.json")
 

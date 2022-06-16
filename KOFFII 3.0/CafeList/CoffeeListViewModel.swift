@@ -11,7 +11,6 @@ import Combine
 
 class CoffeeListViewModel: ObservableObject {
 
-    @Published var coffeeList: [Coffee] = []
     @Published var newCoffeeList: [NewCoffeeModel] = []
     var newCoffeeListSpotlight: [NewCoffeeModel] {
         return newCoffeeList.filter { $0.inSpotlight ?? false }
@@ -38,8 +37,6 @@ class CoffeeListViewModel: ObservableObject {
     @Published var includeRosteries = true
 
     init() {
-        self.coffeeList = coffeeData
-
         let apiKey = Bundle.main.object(forInfoDictionaryKey: "API_KEY") as? String
         let baseID = Bundle.main.object(forInfoDictionaryKey: "API_BASE_ID") as? String
 
