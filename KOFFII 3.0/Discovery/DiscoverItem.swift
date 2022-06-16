@@ -31,7 +31,7 @@ struct DiscoverItem: View {
         HStack {
             VStack(alignment: .leading, spacing: 8) {
                 Text("\(cafe.hood)".capitalized)
-                    .font(.system(.subheadline, design: .rounded))
+                    .font(.system(.subheadline, design: .default))
                     .foregroundColor(Color("Olive10"))
                 Text("\(cafe.name)")
                     .font(.system(.title, design: .rounded))
@@ -39,6 +39,8 @@ struct DiscoverItem: View {
                 Text(cafe.note ?? "")
                     .font(.system(.subheadline, design: .rounded))
                     .multilineTextAlignment(.leading)
+                DiscoverFeatureView(cafe: cafe)
+                    .padding(.vertical, 2)
                 HStack(alignment: .bottom) {
                     Spacer()
                     Image(systemName: "chevron.forward")

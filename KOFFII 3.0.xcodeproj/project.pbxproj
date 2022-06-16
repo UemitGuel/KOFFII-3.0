@@ -115,6 +115,7 @@
 		E4DE65E32598D370006FC81F /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DE65E22598D370006FC81F /* SnapshotHelper.swift */; };
 		E4F2ED4F263AB40C001375BE /* InformationDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2ED4E263AB40C001375BE /* InformationDetailCoordinator.swift */; };
 		E4F2ED51263AB480001375BE /* KnowledgeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2ED50263AB480001375BE /* KnowledgeDetailView.swift */; };
+		EB5787E0285B615F001A555F /* DiscoverFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5787DF285B615F001A555F /* DiscoverFeatureView.swift */; };
 		EB67640A284DF09000585B49 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B5208D2519D93100368F47 /* Coffee.swift */; };
 		EB67640C284DF16200585B49 /* NewCoffeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB67640B284DF16200585B49 /* NewCoffeeModel.swift */; };
 		EB676410284E026100585B49 /* CoffeeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4779676262CD571001CBE43 /* CoffeeListViewModel.swift */; };
@@ -235,6 +236,7 @@
 		E4F2ED4E263AB40C001375BE /* InformationDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationDetailCoordinator.swift; sourceTree = "<group>"; };
 		E4F2ED50263AB480001375BE /* KnowledgeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeDetailView.swift; sourceTree = "<group>"; };
 		EB42AA7D28450AA1005EC437 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		EB5787DF285B615F001A555F /* DiscoverFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverFeatureView.swift; sourceTree = "<group>"; };
 		EB67640B284DF16200585B49 /* NewCoffeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCoffeeModel.swift; sourceTree = "<group>"; };
 		EBB023E127E896A5009311FF /* CoffeeAirtable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAirtable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -347,6 +349,7 @@
 		B3F3F3AD25188A1000D91190 = {
 			isa = PBXGroup;
 			children = (
+				EB5787DF285B615F001A555F /* DiscoverFeatureView.swift */,
 				B3F3F3B825188A1100D91190 /* KOFFII 3.0 */,
 				B3F3F3CA25188A1300D91190 /* KOFFII CGN 2.0Tests */,
 				B3F3F3D525188A1300D91190 /* KOFFII CGN 2.0UITests */,
@@ -718,6 +721,7 @@
 				B31CEBE9251E1FF900B7501E /* MapView.swift in Sources */,
 				B3C3368C251DE78200755B1E /* AllCafesMapView.swift in Sources */,
 				E4318903262DD5F500530DEA /* CoffeeDetailViewModel.swift in Sources */,
+				EB5787E0285B615F001A555F /* DiscoverFeatureView.swift in Sources */,
 				E4B503612698895700EACB8E /* FeatureListBuilder.swift in Sources */,
 				E4F2ED4F263AB40C001375BE /* InformationDetailCoordinator.swift in Sources */,
 				E4B14DD8264E6EB6008D0528 /* SideBar.swift in Sources */,
