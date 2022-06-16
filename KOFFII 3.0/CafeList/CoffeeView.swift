@@ -16,7 +16,7 @@ struct CoffeeView: View {
     
     var body: some View {
         ScrollView {
-            ForEach(model.newCoffeeList, id: \.name) { coffee in
+            ForEach(model.filteredCoffeePlaces, id: \.name) { coffee in
                 NavigationLink(
                     destination: CoffeeDetailView(model: coffee),
                     label: {
@@ -43,6 +43,7 @@ struct CoffeeView: View {
         }
         .addWeatherToolbarItem(with: weatherStore.model)
         .background(Color("Olive1"))
+        .searchable(text: $model.searchQuery, placement: .navigationBarDrawer(displayMode: .always))
     }
     
 }

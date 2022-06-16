@@ -10,11 +10,21 @@ import AirtableKit
 import Combine
 
 class CoffeeListViewModel: ObservableObject {
-        
+
     @Published var coffeeList: [Coffee] = []
     @Published var newCoffeeList: [NewCoffeeModel] = []
     var newCoffeeListSpotlight: [NewCoffeeModel] {
         return newCoffeeList.filter { $0.inSpotlight ?? false }
+    }
+
+    @Published var searchQuery = ""
+
+    var filteredCoffeePlaces: [NewCoffeeModel] {
+        if searchQuery.isEmpty {
+            return newCoffeeList
+        } else {
+            return newCoffeeList.filter { $0.name.localizedCaseInsensitiveContains(searchQuery) }
+        }
     }
 
     private var airtable: Airtable
@@ -57,11 +67,11 @@ class CoffeeListViewModel: ObservableObject {
         if needPlug {
             coffee = coffee.filter { $0.hasPlug }
         }
-//        if !includeRosteries {
-//            coffee = coffee.filter { $0.isRoastery == false }
-//        }
+        //        if !includeRosteries {
+        //            coffee = coffee.filter { $0.isRoastery == false }
+        //        }
         //TODO
-//        coffee.sort { LocationStore.shared.getDistance(cafeLocation: $0.location) < LocationStore.shared.getDistance(cafeLocation: $1.location) }
+        //        coffee.sort { LocationStore.shared.getDistance(cafeLocation: $0.location) < LocationStore.shared.getDistance(cafeLocation: $1.location) }
         self.newCoffeeList = coffee
     }
 }
@@ -91,5 +101,5 @@ extension CoffeeListViewModel {
             newCoffeeList.append(model)
             print(model)
         }
-     }
+    }
 }
