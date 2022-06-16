@@ -20,18 +20,18 @@ struct InformationListItem: View {
                 VStack(alignment: .leading) {
                     Text(info.title)
                         .bold()
-                        .font(.system(.title, design: .rounded))
+                        .font(.system(.title2, design: .default))
                         .foregroundColor(.white)
                     Text(info.isMethod ? "Zubereitung" : "Wissen")
                         .foregroundColor(Color("Olive10"))
-                        .font(.system(.body, design: .rounded))
+                        .font(.system(.body, design: .default))
                 }
                 Spacer()
                 HStack {
                     Image(systemName: "chevron.forward")
                         .foregroundColor(.white)
                 }
-                .font(.system(.body, design: .rounded))
+                .font(.system(.body, design: .default))
             }
             .padding()
             .background(Color("Olive3"))

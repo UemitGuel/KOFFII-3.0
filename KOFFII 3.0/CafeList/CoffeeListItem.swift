@@ -24,17 +24,17 @@ struct CoffeeListItem: View {
                 //                }
                 //
                 Text(model.hood)
-                    .font(.system(.body, design: .rounded))
                     .foregroundColor(Color("Olive10"))
                 Spacer()
                 Text(model.distance)
                 Image(systemName: "chevron.forward")
             }
-            .font(.system(.body, design: .rounded))
+            .font(.system(.body, design: .default))
             .foregroundColor(.white)
+            .padding(2)
             Text(model.name)
                 .bold()
-                .font(.system(.title, design: .rounded))
+                .font(.system(.title2, design: .default))
                 .foregroundColor(.white)
             FeatureDisplayView(cafe: model.coffee)
         }

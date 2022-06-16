@@ -27,10 +27,10 @@ struct MethodDetailView: View {
                     Divider()
                     Text(info.title)
                         .bold()
-                        .font(.system(.title, design: .rounded))
+                        .font(.system(.title, design: .default))
                     Text("Zubereitung")
                         .foregroundColor(Color(.secondaryLabel))
-                        .font(.system(.body, design: .rounded))
+                        .font(.system(.body, design: .default))
                     ForEach(0..<info.steps.count) { index in
                         HStack {
                             Label(

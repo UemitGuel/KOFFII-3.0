@@ -18,6 +18,6 @@ struct WeekdayHours: View {
             Spacer()
             Text("\(hours)")
         }
-        .font(.system(.callout, design: .rounded))
+        .font(.system(.callout, design: .default))
     }
 }

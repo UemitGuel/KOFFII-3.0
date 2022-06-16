@@ -71,19 +71,19 @@ struct KOFFII_WidgetEntryView : View {
     
     var titleLong: some View {
         Text("Ümit´s Empfehlung: \(entry.model.name)")
-            .font(.system(.headline, design: .rounded))
+            .font(.system(.headline, design: .default))
             .foregroundColor(.primary)
     }
     
     var titleShort: some View {
         Text(entry.model.name)
-            .font(.system(.headline, design: .rounded))
+            .font(.system(.headline, design: .default))
             .foregroundColor(.primary)
     }
     
     var notes: some View {
         Text(entry.model.notesBody)
-            .font(.system(.subheadline, design: .rounded))
+            .font(.system(.subheadline, design: .default))
             .foregroundColor(.primary).opacity(0.8)
     }
     

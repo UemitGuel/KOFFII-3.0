@@ -34,10 +34,10 @@ struct DiscoverItem: View {
                     .font(.system(.subheadline, design: .default))
                     .foregroundColor(Color("Olive10"))
                 Text("\(cafe.name)")
-                    .font(.system(.title, design: .rounded))
+                    .font(.system(.title2, design: .default))
                     .bold()
                 Text(cafe.note ?? "")
-                    .font(.system(.subheadline, design: .rounded))
+                    .font(.system(.subheadline, design: .default))
                     .multilineTextAlignment(.leading)
                 DiscoverFeatureView(cafe: cafe)
                     .padding(.vertical, 2)
@@ -45,7 +45,7 @@ struct DiscoverItem: View {
                     Spacer()
                     Image(systemName: "chevron.forward")
                 }
-                .font(.system(.body, design: .rounded))
+                .font(.system(.body, design: .default))
                 .foregroundColor(.secondary)
             }
             .foregroundColor(Color(.label))

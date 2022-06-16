@@ -49,14 +49,14 @@ struct CoffeeDetailView: View {
                                 FeatureDisplayView(cafe: model.coffee)
 //                            }
                         .padding(.bottom, 4)
-                        .font(.system(.body, design: .rounded))
+                        .font(.system(.body, design: .default))
                         .foregroundColor(.secondary)
                         Text(model.name)
                             .bold()
-                            .font(.system(.title, design: .rounded))
+                            .font(.system(.title, design: .default))
                         Text(model.hood)
                             .foregroundColor(Color(.secondaryLabel))
-                            .font(.system(.body, design: .rounded))
+                            .font(.system(.body, design: .default))
                         GoogleMapsButton(locationURL: model.locationURL)
                     }
 //                    if !model.isRoastery {
@@ -81,7 +81,7 @@ struct CoffeeDetailView: View {
                 if (model.hasNotes) {
                     VStack(alignment: .leading, spacing: 4) {
                         Text("Ümit´s Notizen")
-                            .font(.system(.title2, design: .rounded))
+                            .font(.system(.title2, design: .default))
                             .bold()
                             .padding(.bottom, 4)
                         Text(model.notesBody)
@@ -93,7 +93,7 @@ struct CoffeeDetailView: View {
                 #if !APPCLIP
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Wusstest du schon..?")
-                        .font(.system(.title2, design: .rounded))
+                        .font(.system(.title2, design: .default))
                         .bold()
                         .padding(.bottom, 4)
                         .padding([.leading])

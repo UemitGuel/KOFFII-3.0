@@ -30,7 +30,7 @@ struct ComplainView: View {
     var header: some View {
         Text(complain.title)
             .bold()
-            .font(.system(.title, design: .rounded))
+            .font(.system(.title, design: .default))
     }
     
     var backButton: some View {

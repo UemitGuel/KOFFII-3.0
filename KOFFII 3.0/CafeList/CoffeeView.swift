@@ -34,7 +34,7 @@ struct CoffeeView: View {
                         Text("FILTER")
                         Image(systemName: "line.horizontal.3.decrease.circle")
                     }
-                    .font(.system(.headline, design: .rounded))
+                    .font(.system(.headline, design: .default))
                 }
             }
         }
