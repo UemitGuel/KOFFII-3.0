@@ -14,10 +14,13 @@ struct MapView: UIViewRepresentable {
     
     let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50.938766, longitude: 6.959674), span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
 
+    var locationStore = LocationStore.shared
         
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
         mapView.delegate = context.coordinator
+        var locationStore = locationStore
+        mapView.showsUserLocation = true
         mapView.setRegion(region, animated: false)
         let annotations = helper.getallAnnotation(cafeList: coffeeList)
         mapView.addAnnotations(annotations)
