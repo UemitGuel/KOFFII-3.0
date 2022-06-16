@@ -9,25 +9,21 @@ import SwiftUI
 
 struct FeatureDisplayView: View {
     
-    var cafe: CoffeeDetailViewModel
-    
-    init(cafe: NewCoffeeModel) {
-        self.cafe = CoffeeDetailViewModel(coffee: cafe)
-    }
+    var cafe: NewCoffeeModel
     
     var body: some View {
         HStack {
             Group {
                 Image(systemName: "wifi")
-                    .foregroundColor(cafe.featureList.contains(.wifi) ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
-                    .imageScale(cafe.featureList.contains(.wifi) ? .large : .medium)
+                    .foregroundColor(cafe.hasWifi ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
+                    .imageScale(cafe.hasWifi ? .large : .medium)
                 Spacer()
                 Divider()
                     .background(.white)
                 Spacer()
                 Image(systemName: "fork.knife")
-                    .foregroundColor(cafe.featureList.contains(.food) ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
-                    .imageScale(cafe.featureList.contains(.food) ? .large : .medium)
+                    .foregroundColor(cafe.hasFood ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
+                    .imageScale(cafe.hasFood ? .large : .medium)
                 Spacer()
             }
             Group {
@@ -35,15 +31,15 @@ struct FeatureDisplayView: View {
                     .background(.white)
                 Spacer()
                 Image(systemName: "leaf")
-                    .foregroundColor(cafe.featureList.contains(.vegan) ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
-                    .imageScale(cafe.featureList.contains(.vegan) ? .large : .medium)
+                    .foregroundColor(cafe.hasVegan ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
+                    .imageScale(cafe.hasVegan ? .large : .medium)
                 Spacer()
                 Divider()
                     .background(.white)
                 Spacer()
                 Image(systemName: "powerplug")
-                    .foregroundColor(cafe.featureList.contains(.plugin) ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
-                    .imageScale(cafe.featureList.contains(.plugin) ? .large : .medium)
+                    .foregroundColor(cafe.hasPlug ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
+                    .imageScale(cafe.hasPlug ? .large : .medium)
             }
         }
         .padding(.horizontal)

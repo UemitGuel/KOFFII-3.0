@@ -30,7 +30,7 @@ struct DiscoveryView: View {
         }
         .background(Color("Olive1"))
         .sheet(item: $sheetDetail) { coffee in
-            CoffeeDetailView(coffee: coffee)
+            CoffeeDetailView(model: coffee)
         }
 
 //            #if !APPCLIP

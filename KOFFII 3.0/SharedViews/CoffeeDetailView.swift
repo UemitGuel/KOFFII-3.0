@@ -10,12 +10,8 @@ import MapKit
 
 struct CoffeeDetailView: View {
     
-    var model: CoffeeDetailViewModel
+    var model: NewCoffeeModel
     @Environment(\.dismiss) var dismiss
-    
-    init(coffee: NewCoffeeModel) {
-        self.model = CoffeeDetailViewModel(coffee: coffee)
-    }
     
     @State var regionVM = RegionStore.shared.region
     
@@ -46,7 +42,7 @@ struct CoffeeDetailView: View {
 //                            if model.isRoastery {
 //                                Label("Rösterei", image: "beans")
 //                            } else {
-                                FeatureDisplayView(cafe: model.coffee)
+                                FeatureDisplayView(cafe: model)
 //                            }
                         .padding(.bottom, 4)
                         .font(.system(.body, design: .default))
@@ -54,38 +50,33 @@ struct CoffeeDetailView: View {
                         Text(model.name)
                             .bold()
                             .font(.system(.title, design: .default))
-                        Text(model.hood)
+                        Text(model.hood.rawValue)
                             .foregroundColor(Color(.secondaryLabel))
                             .font(.system(.body, design: .default))
                         GoogleMapsButton(locationURL: model.locationURL)
                     }
-//                    if !model.isRoastery {
-                            HStack {
-                                if model.coffee.imageURL != nil {
-                                    AsyncImage(url: model.coffee.imageURL) { image in
-                                        image
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .cornerRadius(16)
-                                    } placeholder: {
-                                        EmptyView()
-                                    }
-                                    Spacer()
-                                }
-                            }
-                        
-//                    }
+                    // TODO: Roastery
+                    if let imageURL = model.imageURL {
+                        AsyncImage(url: imageURL) { image in
+                            image
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .cornerRadius(16)
+                        } placeholder: {
+                            EmptyView()
+                        }
+                        Spacer()
+                    }
                 }
                 .padding([.horizontal, .bottom])
                 .padding(.top, 8)
-                if (model.hasNotes) {
+                if let note = model.note {
                     VStack(alignment: .leading, spacing: 4) {
                         Text("Ümit´s Notizen")
                             .font(.system(.title2, design: .default))
                             .bold()
                             .padding(.bottom, 4)
-                        Text(model.notesBody)
-
+                        Text(note)
                     }
                     .padding(.bottom)
                     .padding(.horizontal, 12)

@@ -18,9 +18,9 @@ struct CoffeeView: View {
         ScrollView {
             ForEach(model.newCoffeeList, id: \.name) { coffee in
                 NavigationLink(
-                    destination: CoffeeDetailView(coffee: coffee),
+                    destination: CoffeeDetailView(model: coffee),
                     label: {
-                        CoffeeListItem(coffee: coffee)
+                        CoffeeListItem(model: coffee)
                     })
                 
             }

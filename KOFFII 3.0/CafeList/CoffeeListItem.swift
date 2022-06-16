@@ -9,11 +9,7 @@ import SwiftUI
 
 struct CoffeeListItem: View {
     
-    var model: CoffeeDetailViewModel
-    
-    init(coffee: NewCoffeeModel) {
-        self.model = CoffeeDetailViewModel(coffee: coffee)
-    }
+    var model: NewCoffeeModel
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -23,7 +19,7 @@ struct CoffeeListItem: View {
                 //                } else {
                 //                }
                 //
-                Text(model.hood)
+                Text(model.hood.rawValue)
                     .foregroundColor(Color("Olive10"))
                 Spacer()
                 Text(model.distance)
@@ -36,7 +32,7 @@ struct CoffeeListItem: View {
                 .bold()
                 .font(.system(.title2, design: .default))
                 .foregroundColor(.white)
-            FeatureDisplayView(cafe: model.coffee)
+            FeatureDisplayView(cafe: model)
         }
         .padding()
         .background(Color("Olive3"))

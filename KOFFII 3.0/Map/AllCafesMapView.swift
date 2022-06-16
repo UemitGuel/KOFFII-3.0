@@ -32,7 +32,7 @@ struct AllCafesMapView: View {
                 }
             }
             .sheet(isPresented: $mapViewStore.showDetails) {
-                CoffeeDetailView(coffee: mapViewStore.chosenCafe)
+                CoffeeDetailView(model: mapViewStore.chosenCafe)
             }
             .sheet(isPresented: $isPresented) {
                 FilterFormView()

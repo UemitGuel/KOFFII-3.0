@@ -9,11 +9,7 @@ import SwiftUI
 
 struct DiscoverFeatureView: View {
 
-    var cafe: CoffeeDetailViewModel
-
-    init(cafe: NewCoffeeModel) {
-        self.cafe = CoffeeDetailViewModel(coffee: cafe)
-    }
+    var cafe: NewCoffeeModel
 
     var body: some View {
         VStack(spacing: 16) {
@@ -33,13 +29,13 @@ struct DiscoverViewFeatureItem: View {
 
     let title: String
     let imageName: String
-    let cafe: CoffeeDetailViewModel
+    let cafe: NewCoffeeModel
 
     var body: some View {
         HStack {
             Text(title)
             Image(systemName: imageName)
-                .foregroundColor(cafe.featureList.contains(.wifi) ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
+                .foregroundColor(cafe.hasWifi ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
         }
         .padding(4)
         .frame(maxWidth: .infinity)
