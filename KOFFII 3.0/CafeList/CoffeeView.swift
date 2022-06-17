@@ -16,13 +16,25 @@ struct CoffeeView: View {
     
     var body: some View {
         ScrollView {
-            ForEach(model.filteredCoffeePlaces, id: \.name) { coffee in
-                NavigationLink(
-                    destination: CoffeeDetailView(model: coffee),
-                    label: {
-                        CoffeeListItem(model: coffee)
-                    })
-                
+            if model.filteredCoffeePlaces.isEmpty {
+                HStack(alignment: .center) {
+                    Spacer()
+                    VStack(alignment: .center) {
+                        Spacer()
+                        Text("Keine Suchergebnisse gefunden")
+                            .padding(.top)
+                        Spacer()
+                    }
+                    Spacer()
+                }
+            } else {
+                ForEach(model.filteredCoffeePlaces, id: \.name) { coffee in
+                    NavigationLink(
+                        destination: CoffeeDetailView(model: coffee),
+                        label: {
+                            CoffeeListItem(model: coffee)
+                        })
+                }
             }
         }
         .padding(.horizontal)
@@ -43,8 +55,9 @@ struct CoffeeView: View {
         }
         .addWeatherToolbarItem(with: weatherStore.model)
         .background(Color("Olive1"))
-        .searchable(text: $model.searchQuery, placement: .navigationBarDrawer(displayMode: .always))
-    }
+        .searchable(text: $model.searchQuery, placement: .navigationBarDrawer(displayMode: .always),
+                    prompt: model.filteredCoffeePlaces.isEmpty ? Text("Keine Suchergebnisse") : nil
+        )    }
     
 }
 

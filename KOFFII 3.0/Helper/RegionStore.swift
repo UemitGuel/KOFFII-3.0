@@ -15,7 +15,7 @@ struct RegionStore {
     var region: MKCoordinateRegion
     
     private init() {
-        self.region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50.939506, longitude: 6.946490), span: MKCoordinateSpan(latitudeDelta: 0.06, longitudeDelta: 0.06))
+        self.region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50.939506, longitude: 6.946490), span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
     }
     
     mutating func setRegion(coordinates: CLLocationCoordinate2D) {

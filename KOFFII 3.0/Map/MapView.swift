@@ -12,14 +12,16 @@ struct MapView: UIViewRepresentable {
 
     @Binding var centerCoordinate: CLLocationCoordinate2D
     
-    let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50.938766, longitude: 6.959674), span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
+    let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50.938766, longitude: 6.959674), span: MKCoordinateSpan(latitudeDelta: 0.15, longitudeDelta: 0.15))
 
     var locationStore = LocationStore.shared
         
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
         mapView.delegate = context.coordinator
-        var locationStore = locationStore
+
+        // use locationStore to ask user for permission for there user location
+        _ = locationStore
         mapView.showsUserLocation = true
         mapView.setRegion(region, animated: false)
         let annotations = helper.getallAnnotation(cafeList: coffeeList)
