@@ -11,7 +11,7 @@ struct FilterFormView: View {
     
     @EnvironmentObject var model: CoffeeListViewModel
     @Environment(\.presentationMode) var presentationMode
-    
+
     var body: some View {
         Form {
             Section(header: Text("Cafe - Features")) {

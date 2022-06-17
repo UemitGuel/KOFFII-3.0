@@ -9,17 +9,17 @@ import SwiftUI
 
 struct DiscoverFeatureView: View {
 
-    var cafe: NewCoffeeModel
+    let features: [Feature]
 
     var body: some View {
         VStack(spacing: 16) {
             HStack(spacing: 16) {
-                DiscoverViewFeatureItem(title: "WIFI", imageName: "wifi", cafe: cafe)
-                DiscoverViewFeatureItem(title: "LUNCH", imageName: "fork.knife", cafe: cafe)
+                DiscoverViewFeatureItem(feature: features[0])
+                DiscoverViewFeatureItem(feature: features[1])
             }
             HStack(spacing: 16) {
-                DiscoverViewFeatureItem(title: "VEGAN", imageName: "leaf", cafe: cafe)
-                DiscoverViewFeatureItem(title: "STROM", imageName: "powerplug", cafe: cafe)
+                DiscoverViewFeatureItem(feature: features[2])
+                DiscoverViewFeatureItem(feature: features[3])
             }
         }
     }
@@ -27,16 +27,14 @@ struct DiscoverFeatureView: View {
 
 struct DiscoverViewFeatureItem: View {
 
-    let title: String
-    let imageName: String
-    let cafe: NewCoffeeModel
+    let feature: Feature
 
     var body: some View {
         HStack {
-            Text(title)
-            Image(systemName: imageName)
-                .foregroundColor(cafe.hasWifi ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
+            Text(feature.kind.title)
+            feature.kind.icon
         }
+        .foregroundColor(feature.isActive ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
         .padding(4)
         .frame(maxWidth: .infinity)
         .overlay(

@@ -39,7 +39,7 @@ struct DiscoverItem: View {
                 Text(cafe.note ?? "")
                     .font(.system(.subheadline, design: .default))
                     .multilineTextAlignment(.leading)
-                DiscoverFeatureView(cafe: cafe)
+                DiscoverFeatureView(features: cafe.features)
                     .padding(.vertical, 2)
                 HStack(alignment: .bottom) {
                     Spacer()

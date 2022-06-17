@@ -99,9 +99,6 @@
 		E4B5035526987BE800EACB8E /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B5035426987BE800EACB8E /* Feature.swift */; };
 		E4B5035626987C0000EACB8E /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B5035426987BE800EACB8E /* Feature.swift */; };
 		E4B5035926987C5C00EACB8E /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B5035426987BE800EACB8E /* Feature.swift */; };
-		E4B503612698895700EACB8E /* FeatureListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B503602698895700EACB8E /* FeatureListBuilder.swift */; };
-		E4B5036226988A3700EACB8E /* FeatureListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B503602698895700EACB8E /* FeatureListBuilder.swift */; };
-		E4B5036326988A3800EACB8E /* FeatureListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B503602698895700EACB8E /* FeatureListBuilder.swift */; };
 		E4D6032726359EF500FAD1B4 /* MethodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D6032626359EF500FAD1B4 /* MethodDetailView.swift */; };
 		E4D6033526359F6700FAD1B4 /* InformationListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D6033426359F6700FAD1B4 /* InformationListItem.swift */; };
 		E4DE65E32598D370006FC81F /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DE65E22598D370006FC81F /* SnapshotHelper.swift */; };
@@ -217,7 +214,6 @@
 		E4B14DD4264E6E05008D0528 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E4B14DD7264E6EB6008D0528 /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
 		E4B5035426987BE800EACB8E /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
-		E4B503602698895700EACB8E /* FeatureListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureListBuilder.swift; sourceTree = "<group>"; };
 		E4D6032626359EF500FAD1B4 /* MethodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodDetailView.swift; sourceTree = "<group>"; };
 		E4D6033426359F6700FAD1B4 /* InformationListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationListItem.swift; sourceTree = "<group>"; };
 		E4DE65E22598D370006FC81F /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
@@ -323,7 +319,6 @@
 			children = (
 				B330CEBF251C934900FB34E4 /* CoordinatesHelper.swift */,
 				E409A141264C437300F74EA1 /* WeatherStore.swift */,
-				E4B503602698895700EACB8E /* FeatureListBuilder.swift */,
 				E48AB830264AE1BE0022267B /* WeatherData.swift */,
 				E48AB834264AE1C40022267B /* WeatherModel.swift */,
 				B33571DD251E0C4D00D06BC4 /* AnnotationsHelper.swift */,
@@ -703,7 +698,6 @@
 				B31CEBE9251E1FF900B7501E /* MapView.swift in Sources */,
 				B3C3368C251DE78200755B1E /* AllCafesMapView.swift in Sources */,
 				EB5787E0285B615F001A555F /* DiscoverFeatureView.swift in Sources */,
-				E4B503612698895700EACB8E /* FeatureListBuilder.swift in Sources */,
 				E4F2ED4F263AB40C001375BE /* InformationDetailCoordinator.swift in Sources */,
 				E4B14DD8264E6EB6008D0528 /* SideBar.swift in Sources */,
 				E46CB8A42631D9890026F73B /* CafeAnnotation.swift in Sources */,
@@ -762,7 +756,6 @@
 				E4A7114A26342B2D0032432D /* Information.swift in Sources */,
 				E447735525614CDD00B772C2 /* CoordinatesHelper.swift in Sources */,
 				EB8DD098284E065D00997A11 /* NewCoffeeModel.swift in Sources */,
-				E4B5036326988A3800EACB8E /* FeatureListBuilder.swift in Sources */,
 				E447734E25614CC600B772C2 /* DecodableDefaultSource.swift in Sources */,
 				E49119C0264C844D00021A87 /* WeatherToolBarItem.swift in Sources */,
 				E4B5035926987C5C00EACB8E /* Feature.swift in Sources */,
@@ -802,7 +795,6 @@
 				E417E606264EC48800A72258 /* InformationListItem.swift in Sources */,
 				E491F036259D368B00EAAE2F /* GoogleMapsButton.swift in Sources */,
 				E491F02E259D368B00EAAE2F /* CoordinatesHelper.swift in Sources */,
-				E4B5036226988A3700EACB8E /* FeatureListBuilder.swift in Sources */,
 				E491F07D259E04C300EAAE2F /* KOFFIIAppClipApp.swift in Sources */,
 				E417E603264EC40100A72258 /* Information.swift in Sources */,
 				E4B5035626987C0000EACB8E /* Feature.swift in Sources */,

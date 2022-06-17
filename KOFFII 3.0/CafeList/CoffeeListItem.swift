@@ -43,7 +43,7 @@ struct CoffeeListItem: View {
                 .bold()
                 .font(.system(.title2, design: .default))
                 .foregroundColor(.white)
-            FeatureDisplayView(cafe: model)
+            FeatureDisplayView(features: model.features)
         }
         .padding()
         .background(Color("Olive3"))

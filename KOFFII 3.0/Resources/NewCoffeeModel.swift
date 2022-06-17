@@ -25,10 +25,7 @@ struct NewCoffeeModel: Identifiable {
     var locationURL: String
     var latAndLong: String
 
-    var hasWifi: Bool
-    var hasFood: Bool
-    var hasVegan: Bool
-    var hasPlug: Bool
+    var features: [Feature] = []
 
     var coordinates: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
@@ -45,11 +42,20 @@ struct NewCoffeeModel: Identifiable {
         imageURL = record.attachments["image"]?.first?.url as? URL ?? URL(string: "https://placehold.it/300")!
         locationURL = record.fields["url"] as? String ?? ""
         latAndLong = record.fields["latAndLong"] as? String ?? ""
-        let features = record.fields["features"] as? Array<Any> ?? []
-        hasWifi = features.contains { $0 as? String == "hasWifi" }
-        hasFood = features.contains { $0 as? String == "hasFood" }
-        hasVegan = features.contains { $0 as? String == "hasVegan" }
-        hasPlug = features.contains { $0 as? String == "hasPlug" }
+
+        // MARK: Features
+        let featuresArray = record.fields["features"] as? Array<String> ?? []
+        handle(featuresArray: featuresArray)
+    }
+
+    private mutating func handle(featuresArray: Array<String>) {
+        for kind in Feature.Kind.allCases {
+            if featuresArray.contains(where: { $0 == kind.airtableName }) {
+                self.features.append(.init(kind: kind, isActive: true))
+            } else {
+                self.features.append(.init(kind: kind, isActive: false))
+            }
+        }
     }
 
     init() {
@@ -57,11 +63,8 @@ struct NewCoffeeModel: Identifiable {
         hood = Hood.innenstadt
         inSpotlight = true
         locationURL = "https://www.google.com/maps/place/Kaffeesaurus/@50.94036,6.93858,17z/data=!4m12!1m6!3m5!1s0x47bf2510697bb22f:0xeb89da280a86feef!2sKaffeesaurus!8m2!3d50.94036!4d6.93858!3m4!1s0x47bf2510697bb22f:0xeb89da280a86feef!8m2!3d50.94036!4d6.93858"
-        hasWifi = true
-        hasFood = true
-        hasVegan = true
-        hasPlug = true
         latAndLong = "50.921004288702065, 6.965932380099694"
+        features.append(.init(kind: .wifi, isActive: true))
     }
 
 }

@@ -53,7 +53,7 @@ struct CoffeeDetailView: View {
 //                            if model.isRoastery {
 //                                Label("Rösterei", image: "beans")
 //                            } else {
-                                FeatureDisplayView(cafe: model)
+                        FeatureDisplayView(features: model.features)
 //                            }
                         .padding(.bottom, 4)
                         .font(.system(.body, design: .default))

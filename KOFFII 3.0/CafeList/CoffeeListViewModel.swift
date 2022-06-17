@@ -53,16 +53,16 @@ class CoffeeListViewModel: ObservableObject {
     func filterCoffeeList() {
         var coffee = newCoffeeList
         if needWifi {
-            coffee = coffee.filter { $0.hasWifi }
+            coffee = coffee.filter { $0.features[0].isActive }
         }
         if needFood {
-            coffee = coffee.filter { $0.hasFood }
+            coffee = coffee.filter { $0.features[1].isActive }
         }
         if needVegan {
-            coffee = coffee.filter { $0.hasVegan }
+            coffee = coffee.filter { $0.features[2].isActive }
         }
         if needPlug {
-            coffee = coffee.filter { $0.hasPlug }
+            coffee = coffee.filter { $0.features[3].isActive }
         }
         //        if !includeRosteries {
         //            coffee = coffee.filter { $0.isRoastery == false }
