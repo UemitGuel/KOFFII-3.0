@@ -89,6 +89,7 @@ struct CoffeeDetailView: View {
                             .padding(.bottom, 4)
                         Text(note)
                     }
+                    .multilineTextAlignment(.leading)
                     .padding(.bottom)
                     .padding(.horizontal, 12)
                 }

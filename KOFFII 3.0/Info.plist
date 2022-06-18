@@ -60,15 +60,9 @@
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UINavigationBar</key>
-		<dict>
-			<key>UIImageName</key>
-			<string></string>
-		</dict>
+		<dict/>
 		<key>UITabBar</key>
-		<dict>
-			<key>UIImageName</key>
-			<string></string>
-		</dict>
+		<dict/>
 	</dict>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>

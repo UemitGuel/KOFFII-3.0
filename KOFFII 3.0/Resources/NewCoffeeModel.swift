@@ -39,7 +39,7 @@ struct NewCoffeeModel: Identifiable {
         inSpotlight = record.fields["inSpotlight"] as? Int == 1
         noteHeadline = record.fields["noteHeadline"] as? String
         note = record.fields["note"] as? String
-        imageURL = record.attachments["image"]?.first?.url as? URL ?? URL(string: "https://placehold.it/300")!
+        imageURL = record.attachments["image"]?.first?.url as? URL ?? nil
         locationURL = record.fields["url"] as? String ?? ""
         latAndLong = record.fields["latAndLong"] as? String ?? ""
 
@@ -79,4 +79,5 @@ enum Hood: String, CaseIterable, Codable, Hashable {
     case innenstadt = "Innenstadt"
     case belgisches = "Belgisches Viertel"
     case latin = "Latin Quarter"
+    case mülheim = "Mülheim"
 }

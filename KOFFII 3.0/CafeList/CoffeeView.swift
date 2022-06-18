@@ -57,7 +57,9 @@ struct CoffeeView: View {
         .background(Color("Olive1"))
         .searchable(text: $model.searchQuery, placement: .navigationBarDrawer(displayMode: .always),
                     prompt: model.filteredCoffeePlaces.isEmpty ? Text("Keine Suchergebnisse") : nil
-        )    }
+        )
+        .animation(.default)
+    }
     
 }
 

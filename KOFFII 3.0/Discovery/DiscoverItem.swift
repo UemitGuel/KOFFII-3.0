@@ -17,10 +17,10 @@ struct DiscoverItem: View {
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(height: 230)
             } placeholder: {
-                Image("Placeholder")
+                Image(systemName: "photo")
             }
+            .frame(height: 230)
             bar.background(Color("Olive3"))
         }
         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
@@ -31,19 +31,21 @@ struct DiscoverItem: View {
         HStack {
             VStack(alignment: .leading, spacing: 8) {
                 Text("\(cafe.hood)".capitalized)
-                    .font(.system(.subheadline, design: .default))
+                    .font(.subheadline)
                     .foregroundColor(Color("Olive10"))
                 Text("\(cafe.name)")
-                    .font(.system(.title2, design: .default))
+                    .font(.title2)
                     .bold()
                 Text(cafe.note ?? "")
-                    .font(.system(.subheadline, design: .default))
+                    .font(.subheadline)
+                    .lineLimit(5)
                     .multilineTextAlignment(.leading)
                 DiscoverFeatureView(features: cafe.features)
-                    .padding(.vertical, 2)
+                    .padding(.vertical, 4)
                 HStack(alignment: .bottom) {
                     Spacer()
                     Image(systemName: "chevron.forward")
+                        .foregroundColor(.accentColor)
                 }
                 .font(.system(.body, design: .default))
                 .foregroundColor(.secondary)
