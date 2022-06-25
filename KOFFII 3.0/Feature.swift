@@ -1,17 +1,9 @@
-//
-//  Feature.swift
-//  KOFFII 3.0
-//
-//  Created by Gül, Ümit on 09.07.21.
-//
-
 import SwiftUI
 
 struct Feature {
 
     let kind: Kind
     var isActive = false
-    var isRequested = false
 
     mutating func setActiveStatus(_ status: Bool) {
         self.isActive = status

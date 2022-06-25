@@ -1,10 +1,3 @@
-//
-//  CoffeeView.swift
-//  KOFFII CGN 2.0
-//
-//  Created by Ümit Gül on 21.09.20.
-//
-
 import SwiftUI
 
 struct CoffeeView: View {
@@ -58,9 +51,8 @@ struct CoffeeView: View {
         .searchable(text: $model.searchQuery, placement: .navigationBarDrawer(displayMode: .always),
                     prompt: model.filteredCoffeePlaces.isEmpty ? Text("Keine Suchergebnisse") : nil
         )
-        .animation(.default)
     }
-    
+
 }
 
 struct CoffeeView_Previews: PreviewProvider {

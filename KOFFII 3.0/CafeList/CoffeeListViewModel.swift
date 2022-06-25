@@ -1,10 +1,3 @@
-//
-//  CafeViewModel.swift
-//  KOFFII 3.0
-//
-//  Created by Gül, Ümit on 18.04.21.
-//
-
 import Foundation
 import AirtableKit
 import Combine
