@@ -9,14 +9,14 @@ import SwiftUI
 
 struct FeatureDisplayView: View {
     
-    var features: [Feature]
+    var features: [AvailableFeature]
     
     var body: some View {
         HStack {
             ForEach(features.indices, id: \.self) { index in
-                features[index].kind.icon
-                    .foregroundColor(features[index].isActive ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
-                    .imageScale(features[index].isActive ? .large : .medium)
+                features[index].feature.icon
+                    .foregroundColor(features[index].isAvailable ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
+                    .imageScale(features[index].isAvailable ? .large : .medium)
                 if index != features.count - 1 {
                     Spacer()
                     Divider()

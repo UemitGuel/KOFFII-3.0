@@ -1,15 +1,8 @@
-//
-//  DiscoverFeatureView.swift
-//  KOFFII 3.0
-//
-//  Created by Ümit Gül on 16.06.22.
-//
-
 import SwiftUI
 
 struct DiscoverFeatureView: View {
 
-    let features: [Feature]
+    let features: [AvailableFeature]
 
     var body: some View {
         VStack(spacing: 16) {
@@ -27,14 +20,14 @@ struct DiscoverFeatureView: View {
 
 struct DiscoverViewFeatureItem: View {
 
-    let feature: Feature
+    let feature: AvailableFeature
 
     var body: some View {
         HStack {
-            Text(feature.kind.title)
-            feature.kind.icon
+            Text(feature.feature.title)
+            feature.feature.icon
         }
-        .foregroundColor(feature.isActive ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
+        .foregroundColor(feature.isAvailable ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
         .padding(4)
         .frame(maxWidth: .infinity)
         .overlay(

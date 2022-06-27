@@ -1,10 +1,3 @@
-//
-//  NewCoffeeModel.swift
-//  KOFFII 3.0
-//
-//  Created by Ümit Gül on 06.06.22.
-//
-
 import AirtableKit
 import Foundation
 import CoreLocation
@@ -25,7 +18,7 @@ struct NewCoffeeModel: Identifiable {
     var locationURL: String
     var latAndLong: String
 
-    var features: [Feature] = []
+    var features: [AvailableFeature] = []
 
     var coordinates: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
@@ -49,11 +42,11 @@ struct NewCoffeeModel: Identifiable {
     }
 
     private mutating func handle(featuresArray: Array<String>) {
-        for kind in Feature.Kind.allCases {
-            if featuresArray.contains(where: { $0 == kind.airtableName }) {
-                self.features.append(.init(kind: kind, isActive: true))
+        for feature in Feature.allCases {
+            if featuresArray.contains(where: { $0 == feature.airtableName }) {
+                self.features.append(AvailableFeature(feature: feature, isAvailable: true))
             } else {
-                self.features.append(.init(kind: kind, isActive: false))
+                self.features.append(AvailableFeature(feature: feature, isAvailable: false))
             }
         }
     }
@@ -64,7 +57,8 @@ struct NewCoffeeModel: Identifiable {
         inSpotlight = true
         locationURL = "https://www.google.com/maps/place/Kaffeesaurus/@50.94036,6.93858,17z/data=!4m12!1m6!3m5!1s0x47bf2510697bb22f:0xeb89da280a86feef!2sKaffeesaurus!8m2!3d50.94036!4d6.93858!3m4!1s0x47bf2510697bb22f:0xeb89da280a86feef!8m2!3d50.94036!4d6.93858"
         latAndLong = "50.921004288702065, 6.965932380099694"
-        features.append(.init(kind: .wifi, isActive: true))
+        features.append(AvailableFeature(feature: .wifi, isAvailable: true))
+
     }
 
 }

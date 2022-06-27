@@ -4,11 +4,14 @@ import Combine
 
 class CoffeeListViewModel: ObservableObject {
 
+    private var airtable: Airtable
+    private var subscriptions: Set<AnyCancellable> = []
+    private var allCoffeeList: [NewCoffeeModel] = []
+
     @Published var newCoffeeList: [NewCoffeeModel] = []
     var newCoffeeListSpotlight: [NewCoffeeModel] {
         return newCoffeeList.filter { $0.inSpotlight ?? false }
     }
-
     @Published var searchQuery = ""
 
     var filteredCoffeePlaces: [NewCoffeeModel] {
@@ -19,13 +22,21 @@ class CoffeeListViewModel: ObservableObject {
         }
     }
 
-    private var airtable: Airtable
-    private var subscriptions: Set<AnyCancellable> = []
+    @Published var requestedFeatures: [RequestedFeature] = [
+        RequestedFeature(feature: .wifi),
+        RequestedFeature(feature: .food),
+        RequestedFeature(feature: .vegan),
+        RequestedFeature(feature: .plugin),
+    ]
 
-    @Published var needWifi = false
-    @Published var needFood = false
-    @Published var needVegan = false
-    @Published var needPlug = false
+    class RequestedFeature: Featureable {
+        var feature: Feature
+        var isUserRequested: Bool = false
+
+        init(feature: Feature) {
+            self.feature = feature
+        }
+    }
     
     @Published var includeRosteries = true
 
@@ -44,18 +55,9 @@ class CoffeeListViewModel: ObservableObject {
     }
     
     func filterCoffeeList() {
-        var coffee = newCoffeeList
-        if needWifi {
-            coffee = coffee.filter { $0.features[0].isActive }
-        }
-        if needFood {
-            coffee = coffee.filter { $0.features[1].isActive }
-        }
-        if needVegan {
-            coffee = coffee.filter { $0.features[2].isActive }
-        }
-        if needPlug {
-            coffee = coffee.filter { $0.features[3].isActive }
+        var coffee = allCoffeeList
+        for feature in requestedFeatures where feature.isUserRequested {
+            coffee = coffee.filter { $0.features[feature.feature.rawValue].isAvailable }
         }
         //        if !includeRosteries {
         //            coffee = coffee.filter { $0.isRoastery == false }
@@ -88,8 +90,9 @@ extension CoffeeListViewModel {
     func update(with record: [AirtableKit.Record]) {
         for rec in record {
             let model = NewCoffeeModel(record: rec)
-            newCoffeeList.append(model)
+            allCoffeeList.append(model)
             print(model)
         }
+        newCoffeeList = allCoffeeList
     }
 }

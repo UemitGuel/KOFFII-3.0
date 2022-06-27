@@ -1,10 +1,3 @@
-//
-//  FilterFormView.swift
-//  KOFFII 3.0
-//
-//  Created by Gül, Ümit on 22.04.21.
-//
-
 import SwiftUI
 
 struct FilterFormView: View {
@@ -15,39 +8,19 @@ struct FilterFormView: View {
     var body: some View {
         Form {
             Section(header: Text("Cafe - Features")) {
-                Toggle(isOn: $model.needWifi, label: {
-                    Label(
-                        title: { Text("Wifi") },
-                        icon: { Image(systemName: "wifi") }
-                    )
-                }).toggleStyle(SwitchToggleStyle(tint: Color.accentColor))
-                Toggle(isOn: $model.needFood, label: {
-                    Label(
-                        title: { Text("Lunch") },
-                        icon: { Image(systemName: "fork.knife")}
-                    )
-                }).toggleStyle(SwitchToggleStyle(tint: Color.accentColor))
-                Toggle(isOn: $model.needVegan, label: {
-                    Label(
-                        title: { Text("Vegan") },
-                        icon: { Image(systemName: "leaf") }
-                    )
-                }).toggleStyle(SwitchToggleStyle(tint: Color.accentColor))
-                Toggle(isOn: $model.needPlug, label: {
-                    Label(
-                        title: { Text("Strom") },
-                        icon: { Image(systemName: "powerplug") }
-                    )
-                }).toggleStyle(SwitchToggleStyle(tint: Color.accentColor))
+                ForEach(model.requestedFeatures, id: \.feature) { feature in
+                    Toggle(isOn: Binding(get: {
+                        feature.isUserRequested
+                    }, set: { newValue in
+                        feature.isUserRequested = newValue
+                    }), label: {
+                        Label(
+                            title: { Text(feature.feature.title) },
+                            icon: { feature.feature.icon }
+                        )
+                    }).toggleStyle(SwitchToggleStyle(tint: Color.accentColor))
+                }
             }
-//            Section(header: Text("Röstereien")) {
-//                Toggle(isOn: $model.includeRosteries, label: {
-//                    Label(
-//                        title: { Text("Röstereien") },
-//                        icon: { Image("beans") }
-//                    )
-//                }).toggleStyle(SwitchToggleStyle(tint: Color.accentColor))
-//            }
             Button(action: { updateCafeListAndDismiss() }) {
                 Text("Filter anwenden")
                     .foregroundColor(Color.accentColor)
