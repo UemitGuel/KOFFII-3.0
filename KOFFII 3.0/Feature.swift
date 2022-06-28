@@ -4,16 +4,6 @@ protocol Featureable {
     var feature: Feature { get }
 }
 
-// MARK: Global
-//struct GlobalCompleteFeatureSet {
-//    var features: [RequestedFeature]
-//}
-
-// MARK: Local
-//struct LocalCoffeePlaceFeatureSet {
-//    var features: [AvailableFeature]
-//}
-
 struct AvailableFeature: Featureable {
     var feature: Feature
     var isAvailable: Bool

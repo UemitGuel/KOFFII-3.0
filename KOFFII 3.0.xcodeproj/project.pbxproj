@@ -31,8 +31,6 @@
 		E409A142264C437300F74EA1 /* WeatherStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E409A141264C437300F74EA1 /* WeatherStore.swift */; };
 		E409A143264C4DBA00F74EA1 /* WeatherStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E409A141264C437300F74EA1 /* WeatherStore.swift */; };
 		E409A144264C4DBB00F74EA1 /* WeatherStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E409A141264C437300F74EA1 /* WeatherStore.swift */; };
-		E417E5F5264EC1B300A72258 /* WeekdayHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = E417E5F4264EC1B300A72258 /* WeekdayHours.swift */; };
-		E417E5F6264EC1C000A72258 /* WeekdayHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = E417E5F4264EC1B300A72258 /* WeekdayHours.swift */; };
 		E417E5FF264EC2D900A72258 /* KnowledgeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F2ED50263AB480001375BE /* KnowledgeDetailView.swift */; };
 		E417E600264EC2F600A72258 /* InformationListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D6033426359F6700FAD1B4 /* InformationListItem.swift */; };
 		E417E602264EC31400A72258 /* FilterFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48DC25D2631B2E5009ED2FE /* FilterFormView.swift */; };
@@ -86,7 +84,6 @@
 		E492FEFB2590EAEC00881C1F /* DiscoverItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E492FEFA2590EAEC00881C1F /* DiscoverItem.swift */; };
 		E4A375E42632FC1A005695C5 /* RoasteryData.json in Resources */ = {isa = PBXBuildFile; fileRef = E4A375E32632FC1A005695C5 /* RoasteryData.json */; };
 		E4A510A5266136F100EE3B69 /* DiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32897AD251FA1BA0098A6E7 /* DiscoveryView.swift */; };
-		E4A510A72661371F00EE3B69 /* WeekdayHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = E417E5F4264EC1B300A72258 /* WeekdayHours.swift */; };
 		E4A510A82661372800EE3B69 /* CoffeeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B8738A251B3EBD006CA136 /* CoffeeDetailView.swift */; };
 		E4A510AB2661385800EE3B69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A510AA2661385800EE3B69 /* ContentView.swift */; };
 		E4A71137263427860032432D /* InformationData.json in Resources */ = {isa = PBXBuildFile; fileRef = E4A71136263427860032432D /* InformationData.json */; };
@@ -109,7 +106,6 @@
 		EB676410284E026100585B49 /* CoffeeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4779676262CD571001CBE43 /* CoffeeListViewModel.swift */; };
 		EB8DD097284E065C00997A11 /* NewCoffeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB67640B284DF16200585B49 /* NewCoffeeModel.swift */; };
 		EB8DD098284E065D00997A11 /* NewCoffeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB67640B284DF16200585B49 /* NewCoffeeModel.swift */; };
-		EBB023E227E896A5009311FF /* CoffeeAirtable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB023E127E896A5009311FF /* CoffeeAirtable.swift */; };
 		EBFD05E2284E080900C92223 /* AirtableKit in Frameworks */ = {isa = PBXBuildFile; productRef = EBFD05E1284E080900C92223 /* AirtableKit */; };
 /* End PBXBuildFile section */
 
@@ -182,7 +178,6 @@
 		B3F3F438251900CA00D91190 /* CoffeeListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeListItem.swift; sourceTree = "<group>"; };
 		E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableDefaultSource.swift; sourceTree = "<group>"; };
 		E409A141264C437300F74EA1 /* WeatherStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStore.swift; sourceTree = "<group>"; };
-		E417E5F4264EC1B300A72258 /* WeekdayHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayHours.swift; sourceTree = "<group>"; };
 		E417E609264EC4F500A72258 /* FeatureDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureDisplayView.swift; sourceTree = "<group>"; };
 		E43D22C4263AA5AD00F586B6 /* Complain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Complain.swift; sourceTree = "<group>"; };
 		E43D22C6263AA5D900F586B6 /* ComplainData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ComplainData.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
@@ -222,7 +217,6 @@
 		EB42AA7D28450AA1005EC437 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		EB5787DF285B615F001A555F /* DiscoverFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverFeatureView.swift; sourceTree = "<group>"; };
 		EB67640B284DF16200585B49 /* NewCoffeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCoffeeModel.swift; sourceTree = "<group>"; };
-		EBB023E127E896A5009311FF /* CoffeeAirtable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAirtable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,7 +301,6 @@
 				E43D22C4263AA5AD00F586B6 /* Complain.swift */,
 				E43D22C6263AA5D900F586B6 /* ComplainData.json */,
 				EB67640B284DF16200585B49 /* NewCoffeeModel.swift */,
-				EBB023E127E896A5009311FF /* CoffeeAirtable.swift */,
 				E4A7113D263429940032432D /* Information.swift */,
 				E406A5512557F1BE002D199B /* DecodableDefaultSource.swift */,
 			);
@@ -465,7 +458,6 @@
 		E4A510A22661358700EE3B69 /* SharedViews */ = {
 			isa = PBXGroup;
 			children = (
-				E417E5F4264EC1B300A72258 /* WeekdayHours.swift */,
 				E48DC25D2631B2E5009ED2FE /* FilterFormView.swift */,
 				E417E609264EC4F500A72258 /* FeatureDisplayView.swift */,
 				B3B8738A251B3EBD006CA136 /* CoffeeDetailView.swift */,
@@ -691,7 +683,6 @@
 				B31CEC09251E379400B7501E /* GoogleMapsButton.swift in Sources */,
 				B38960C2251B50A2001659FD /* RegionStore.swift in Sources */,
 				E4D6032726359EF500FAD1B4 /* MethodDetailView.swift in Sources */,
-				EBB023E227E896A5009311FF /* CoffeeAirtable.swift in Sources */,
 				B32897AE251FA1BA0098A6E7 /* DiscoveryView.swift in Sources */,
 				E48AB835264AE1C40022267B /* WeatherModel.swift in Sources */,
 				B3F3F3ED25188DD300D91190 /* CoffeeView.swift in Sources */,
@@ -716,7 +707,6 @@
 				E4B14DD5264E6E05008D0528 /* ContentView.swift in Sources */,
 				B31CEC0E251E386A00B7501E /* DismissButton.swift in Sources */,
 				B3B520892519D92800368F47 /* Data.swift in Sources */,
-				E417E5F5264EC1B300A72258 /* WeekdayHours.swift in Sources */,
 				B33571DE251E0C4D00D06BC4 /* AnnotationsHelper.swift in Sources */,
 				E4A7113E263429940032432D /* Information.swift in Sources */,
 				E4A89F1E263AD2B4009E4A5B /* ComplainView.swift in Sources */,
@@ -773,7 +763,6 @@
 				E447735625614CDD00B772C2 /* RegionStore.swift in Sources */,
 				E44773232561389100B772C2 /* KOFFII_Widget.swift in Sources */,
 				E447735C25614CF300B772C2 /* DismissButton.swift in Sources */,
-				E417E5F6264EC1C000A72258 /* WeekdayHours.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -787,7 +776,6 @@
 				E491F033259D368B00EAAE2F /* LocationStore.swift in Sources */,
 				EB676410284E026100585B49 /* CoffeeListViewModel.swift in Sources */,
 				E491F03F259D368B00EAAE2F /* RegionStore.swift in Sources */,
-				E4A510A72661371F00EE3B69 /* WeekdayHours.swift in Sources */,
 				E4A510A82661372800EE3B69 /* CoffeeDetailView.swift in Sources */,
 				E417E604264EC45900A72258 /* DiscoverItem.swift in Sources */,
 				E49119C1264C844D00021A87 /* WeatherToolBarItem.swift in Sources */,
