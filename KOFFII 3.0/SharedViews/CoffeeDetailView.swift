@@ -23,7 +23,7 @@ struct CoffeeDetailView: View {
     #endif
 
 
-    let locationStore = LocationStore.shared
+    @EnvironmentObject var locationStore: LocationStore
 
     var location: CLLocation {
         CLLocation(latitude: model.coordinates.latitude, longitude: model.coordinates.longitude)

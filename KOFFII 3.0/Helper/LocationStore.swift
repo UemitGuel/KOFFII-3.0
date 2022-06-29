@@ -1,47 +1,55 @@
-//
-//  LocationViewModel.swift
-//  KOFFII CGN 2.0
-//
-//  Created by Ümit Gül on 23.09.20.
-//
-
 import Foundation
 import CoreLocation
 
-class LocationStore: NSObject {
-    
-    static let shared = LocationStore()
-    
-    var userLatitude: Double = 0
-    var userLongitude: Double = 0
-    
-    private let locationManager = CLLocationManager()
-    
+class LocationStore: NSObject, ObservableObject {
+
+    var locationManager = CLLocationManager()
+    var previousLocation: CLLocation?
+
+    @Published var userPermission: Bool = false
+
     override init() {
         super.init()
-        self.locationManager.delegate = self
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-        self.locationManager.requestWhenInUseAuthorization()
-        self.locationManager.startUpdatingLocation()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
-    
-    func getDistance(cafeLocation: CLLocation) -> Double {
-        let userLocation = CLLocation(latitude: userLatitude, longitude: userLongitude)
-        return CoordinatesHelper.shared.getDistance(cafeLocation: cafeLocation, userLocation: userLocation)
+
+    func startLocationServices() {
+      if locationManager.authorizationStatus == .authorizedAlways || locationManager.authorizationStatus == .authorizedWhenInUse {
+          userPermission = true
+        locationManager.startUpdatingLocation()
+      } else {
+        locationManager.requestWhenInUseAuthorization()
+      }
     }
     
     func getDistanceAsString(cafeLocation: CLLocation) -> String {
-        let distance = getDistance(cafeLocation: cafeLocation)
+        let distance = CoordinatesHelper.shared.getDistance(cafeLocation: cafeLocation, userLocation: previousLocation)
         return CoordinatesHelper.shared.mapDistanceForDisplay(distance)
     }
     
 }
 
 extension LocationStore: CLLocationManagerDelegate {
-    
+
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+      if locationManager.authorizationStatus == .authorizedAlways || locationManager.authorizationStatus == .authorizedWhenInUse {
+        locationManager.startUpdatingLocation()
+      }
+    }
+
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let location = locations.last else { return }
-        userLatitude = location.coordinate.latitude
-        userLongitude = location.coordinate.longitude
+        guard let latest = locations.first else { return }
+        previousLocation = latest
+    }
+
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+      guard let clError = error as? CLError else { return }
+      switch clError {
+      case CLError.denied:
+        print("Access denied")
+      default:
+        print("Catch all errors")
+      }
     }
 }

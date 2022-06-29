@@ -310,6 +310,7 @@
 		B3C33687251DE74B00755B1E /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				E4B5035426987BE800EACB8E /* Feature.swift */,
 				B330CEBF251C934900FB34E4 /* CoordinatesHelper.swift */,
 				E409A141264C437300F74EA1 /* WeatherStore.swift */,
 				E48AB830264AE1BE0022267B /* WeatherData.swift */,
@@ -349,7 +350,6 @@
 		B3F3F3B825188A1100D91190 /* KOFFII 3.0 */ = {
 			isa = PBXGroup;
 			children = (
-				E4B5035426987BE800EACB8E /* Feature.swift */,
 				B3F3F3B925188A1100D91190 /* KOFFII_3_0App.swift */,
 				B3F3F43D2519022C00D91190 /* Navigation */,
 				B32897B2251FA3340098A6E7 /* Discovery */,

@@ -4,6 +4,7 @@ struct CoffeeView: View {
     
     @EnvironmentObject var model: CoffeeListViewModel
     @EnvironmentObject var weatherStore: WeatherStore
+    @EnvironmentObject var locationStore: LocationStore
     
     @State private var isPresented = false
     
@@ -51,6 +52,9 @@ struct CoffeeView: View {
         .searchable(text: $model.searchQuery, placement: .navigationBarDrawer(displayMode: .always),
                     prompt: model.filteredCoffeePlaces.isEmpty ? Text("Keine Suchergebnisse") : nil
         )
+        .onAppear {
+            locationStore.startLocationServices()
+        }
     }
 
 }

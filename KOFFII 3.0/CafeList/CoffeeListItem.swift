@@ -12,7 +12,8 @@ struct CoffeeListItem: View {
     
     var model: NewCoffeeModel
 
-    let locationStore = LocationStore.shared
+    @EnvironmentObject var locationStore: LocationStore
+
 
     var location: CLLocation {
         CLLocation(latitude: model.coordinates.latitude, longitude: model.coordinates.longitude)
@@ -21,7 +22,6 @@ struct CoffeeListItem: View {
     var distance: String {
         return self.locationStore.getDistanceAsString(cafeLocation: location)
     }
-
     var body: some View {
         VStack(alignment: .leading) {
             HStack{
