@@ -22,9 +22,15 @@ struct CoffeeDetailView: View {
     @State private var isPresented = false
     #endif
 
+    @StateObject var locationManager = LocationManager()
 
-    @EnvironmentObject var locationStore: LocationStore
-
+    var distance: String {
+        guard let lastLocation = locationManager.lastLocation,
+              locationManager.locationStatus == .authorizedAlways ||
+                locationManager.locationStatus == .authorizedWhenInUse else { return "" }
+        return CoordinatesHelper.shared.getDistanceFor(model, userLocation: lastLocation) ?? "0"
+    }
+    
     var body: some View {
         GeometryReader { geo in
             ScrollView(showsIndicators: false) {
@@ -34,11 +40,13 @@ struct CoffeeDetailView: View {
                     }
                     .frame(height: geo.size.height*0.35, alignment: .center)
                     .allowsHitTesting(false)
-                    Text("Entfernung: \("distance")")
-                        .padding()
-                        .background(Color("Olive1"))
-                        .cornerRadius(16)
-                        .padding(8)
+                    if locationManager.locationStatus == .authorizedWhenInUse || locationManager.locationStatus == .authorizedAlways {
+                        Text("Entfernung: \(distance)")
+                            .padding()
+                            .background(Color("Olive1"))
+                            .cornerRadius(16)
+                            .padding(8)
+                    }
                 }
                 VStack(alignment: .leading, spacing: 24) {
                     VStack(alignment: .leading) {

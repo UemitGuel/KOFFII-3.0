@@ -9,13 +9,15 @@ import SwiftUI
 import CoreLocation
 
 struct CoffeeListItem: View {
-    
+
+    @StateObject var locationManager = LocationManager()
     var model: NewCoffeeModel
 
-    @EnvironmentObject var locationStore: LocationStore
-
-    var distance: String? {
-        locationStore.getDistanceFor(model)
+    var distance: String {
+        guard let lastLocation = locationManager.lastLocation,
+              locationManager.locationStatus == .authorizedAlways ||
+                locationManager.locationStatus == .authorizedWhenInUse else { return "" }
+        return CoordinatesHelper.shared.getDistanceFor(model, userLocation: lastLocation) ?? "0"
     }
 
     var body: some View {
@@ -29,7 +31,7 @@ struct CoffeeListItem: View {
                 Text(model.hood.rawValue)
                     .foregroundColor(Color("Olive10"))
                 Spacer()
-                Text(distance ?? "")
+                Text(distance)
                 Image(systemName: "chevron.forward")
             }
             .font(.system(.body, design: .default))
