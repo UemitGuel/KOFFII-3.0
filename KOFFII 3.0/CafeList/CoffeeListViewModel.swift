@@ -6,20 +6,11 @@ class CoffeeListViewModel: ObservableObject {
 
     private var airtable: Airtable
     private var subscriptions: Set<AnyCancellable> = []
-    private var allCoffeeList: [NewCoffeeModel] = []
+    var allCoffeeList: [NewCoffeeModel] = []
 
-    @Published var newCoffeeList: [NewCoffeeModel] = []
+    @Published var filteredCoffeeList: [NewCoffeeModel] = []
     var newCoffeeListSpotlight: [NewCoffeeModel] {
-        return newCoffeeList.filter { $0.inSpotlight ?? false }
-    }
-    @Published var searchQuery = ""
-
-    var filteredCoffeePlaces: [NewCoffeeModel] {
-        if searchQuery.isEmpty {
-            return newCoffeeList
-        } else {
-            return newCoffeeList.filter { $0.name.localizedCaseInsensitiveContains(searchQuery) }
-        }
+        return filteredCoffeeList.filter { $0.inSpotlight ?? false }
     }
 
     @Published var requestedFeatures: [RequestedFeature] = [
@@ -64,7 +55,7 @@ class CoffeeListViewModel: ObservableObject {
         //        }
         //TODO
 //        coffee.sort { LocationStore.shared.getDistance(cafeLocation: $0.location) < LocationStore.shared.getDistance(cafeLocation: $1.location) }
-        self.newCoffeeList = coffee
+        self.filteredCoffeeList = coffee
     }
 }
 
@@ -93,6 +84,6 @@ extension CoffeeListViewModel {
             allCoffeeList.append(model)
             print(model)
         }
-        newCoffeeList = allCoffeeList
+        filteredCoffeeList = allCoffeeList
     }
 }

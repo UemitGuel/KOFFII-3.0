@@ -10,7 +10,7 @@ import SwiftUI
 struct TabBar: View {
     
     @State private var selection: Tab = .discovery
-    
+
     var body: some View {
         TabView(selection: $selection) {
             NavigationView {
@@ -28,7 +28,7 @@ struct TabBar: View {
                 Label("Liste", systemImage: "list.dash")
             }
             .tag(Tab.list)
-            
+
             NavigationView {
                 AllCafesMapView()
             }

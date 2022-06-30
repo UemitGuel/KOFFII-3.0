@@ -14,7 +14,7 @@ struct AllCafesMapView: View {
 
     var body: some View {
         ZStack {
-            MapView(coffeeList: $model.newCoffeeList, centerCoordinate: $centerCoordinate)
+            MapView(coffeeList: $model.filteredCoffeeList, centerCoordinate: $centerCoordinate)
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button(action: { isPresented.toggle() } ) {
