@@ -56,7 +56,6 @@ struct CoffeeView: View {
             locationStore.startLocationServices()
         }
     }
-
 }
 
 struct CoffeeView_Previews: PreviewProvider {
