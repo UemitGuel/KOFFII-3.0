@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DiscoverItem: View {
     
-    var cafe: NewCoffeeModel
+    var cafe: CoffeeModel
     
     var body: some View {
         VStack(spacing: 0) {

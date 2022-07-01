@@ -2,7 +2,7 @@ import AirtableKit
 import Foundation
 import CoreLocation
 
-struct NewCoffeeModel: Identifiable {
+struct CoffeeModel: Identifiable {
 
     var id = UUID()
     var name: String
@@ -20,6 +20,12 @@ struct NewCoffeeModel: Identifiable {
 
     var features: [AvailableFeature] = []
 
+    var hasWifiSpeed: Bool {
+        return wifiDownload != nil && wifiUpload != nil
+    }
+    var wifiDownload: String?
+    var wifiUpload: String?
+
     var coordinates: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
             latitude: CoordinatesHelper.shared.sliceURLIntoCoordinates(url: latAndLong).latitude,
@@ -35,6 +41,8 @@ struct NewCoffeeModel: Identifiable {
         imageURL = record.attachments["image"]?.first?.url as? URL ?? nil
         locationURL = record.fields["url"] as? String ?? ""
         latAndLong = record.fields["latAndLong"] as? String ?? ""
+        wifiDownload = record.fields["wifiDownload"] as? String
+        wifiUpload = record.fields["wifiUpload"] as? String
 
         // MARK: Features
         let featuresArray = record.fields["features"] as? Array<String> ?? []
@@ -44,7 +52,7 @@ struct NewCoffeeModel: Identifiable {
     private mutating func handle(featuresArray: Array<String>) {
         for feature in Feature.allCases {
             if featuresArray.contains(where: { $0 == feature.airtableName }) {
-                self.features.append(AvailableFeature(feature: feature, isAvailable: true))
+                self.features.append(AvailableFeature(feature: feature, isAvailable: true, wifiDownload: wifiDownload, wifiUpload: wifiUpload))
             } else {
                 self.features.append(AvailableFeature(feature: feature, isAvailable: false))
             }

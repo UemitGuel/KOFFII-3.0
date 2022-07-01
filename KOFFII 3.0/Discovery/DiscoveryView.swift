@@ -12,7 +12,7 @@ struct DiscoveryView: View {
     @EnvironmentObject var weatherStore: WeatherStore
     @EnvironmentObject var viewModel: CoffeeListViewModel
 
-    @State var sheetDetail: NewCoffeeModel?
+    @State var sheetDetail: CoffeeModel?
 
     var body: some View {
         ScrollView {

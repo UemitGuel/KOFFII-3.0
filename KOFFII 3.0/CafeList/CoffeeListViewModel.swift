@@ -6,10 +6,10 @@ class CoffeeListViewModel: ObservableObject {
 
     private var airtable: Airtable
     private var subscriptions: Set<AnyCancellable> = []
-    var allCoffeeList: [NewCoffeeModel] = []
+    var allCoffeeList: [CoffeeModel] = []
 
-    @Published var filteredCoffeeList: [NewCoffeeModel] = []
-    var newCoffeeListSpotlight: [NewCoffeeModel] {
+    @Published var filteredCoffeeList: [CoffeeModel] = []
+    var newCoffeeListSpotlight: [CoffeeModel] {
         return filteredCoffeeList.filter { $0.inSpotlight ?? false }
     }
 
@@ -80,7 +80,7 @@ extension CoffeeListViewModel {
     /// Update the viewModel
     func update(with record: [AirtableKit.Record]) {
         for rec in record {
-            let model = NewCoffeeModel(record: rec)
+            let model = CoffeeModel(record: rec)
             allCoffeeList.append(model)
             print(model)
         }

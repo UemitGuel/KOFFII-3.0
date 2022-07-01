@@ -10,7 +10,7 @@ import MapKit
 
 struct CoffeeDetailView: View {
     
-    var model: NewCoffeeModel
+    var model: CoffeeModel
     @Environment(\.dismiss) var dismiss
     
     @State var regionVM = RegionStore.shared.region
@@ -54,6 +54,8 @@ struct CoffeeDetailView: View {
 //                                Label("Rösterei", image: "beans")
 //                            } else {
                         FeatureDisplayView(features: model.features)
+                        DiscoverViewFeatureItem(feature: model.features[0])
+                            .padding(.top, 4)
 //                            }
                         .padding(.bottom, 4)
                         .font(.system(.body, design: .default))
@@ -67,17 +69,6 @@ struct CoffeeDetailView: View {
                         GoogleMapsButton(locationURL: model.locationURL)
                     }
                     // TODO: Roastery
-                    if let imageURL = model.imageURL {
-                        AsyncImage(url: imageURL) { image in
-                            image
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .cornerRadius(16)
-                        } placeholder: {
-                            EmptyView()
-                        }
-                        Spacer()
-                    }
                 }
                 .padding([.horizontal, .bottom])
                 .padding(.top, 8)
@@ -93,6 +84,15 @@ struct CoffeeDetailView: View {
                     .padding(.bottom)
                     .padding(.horizontal, 12)
                 }
+                AsyncImage(url: model.imageURL) { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .cornerRadius(16)
+                } placeholder: {
+                    Image(systemName: "photo")
+                }
+                .padding()
                 #if !APPCLIP
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Wusstest du schon..?")

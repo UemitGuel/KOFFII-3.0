@@ -7,6 +7,8 @@ protocol Featureable {
 struct AvailableFeature: Featureable {
     var feature: Feature
     var isAvailable: Bool
+    var wifiDownload: String?
+    var wifiUpload: String?
 }
 
 enum Feature: Int, CaseIterable {

@@ -11,7 +11,7 @@ import CoreLocation
 struct CoffeeListItem: View {
 
     @StateObject var locationManager = LocationManager()
-    var model: NewCoffeeModel
+    var model: CoffeeModel
 
     var distance: String {
         guard let lastLocation = locationManager.lastLocation,

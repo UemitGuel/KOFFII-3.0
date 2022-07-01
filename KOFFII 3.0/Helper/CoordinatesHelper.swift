@@ -25,7 +25,7 @@ class CoordinatesHelper {
         return coordinates
     }
 
-    func getDistanceFor(_ model: NewCoffeeModel, userLocation: CLLocation) -> String? {
+    func getDistanceFor(_ model: CoffeeModel, userLocation: CLLocation) -> String? {
         let cafeLocation = CLLocation(latitude: model.coordinates.latitude, longitude: model.coordinates.longitude)
         let distance = cafeLocation.distance(from: userLocation)
 
