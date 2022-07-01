@@ -42,7 +42,7 @@ struct DiscoverViewFeatureItem: View {
                 HStack(spacing: 4) {
                     Image(systemName: "square.and.arrow.down")
                     Image(systemName: "square.and.arrow.up")
-                    Text(": Down/Upload Geschwindigkeit")
+                    Text(": Down-/Upload Speed")
                     Spacer()
                 }
                 .padding(.top, 8)

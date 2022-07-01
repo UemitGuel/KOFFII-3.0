@@ -34,7 +34,7 @@ struct DiscoverItem: View {
                         .padding(8)
                         .background(Color("Olive3"))
                         .cornerRadius(16)
-                        
+
                     }
                     .foregroundColor(.secondary)
                     .padding()
@@ -64,7 +64,6 @@ struct DiscoverItem: View {
                     .padding(.vertical, 4)
             }
             .foregroundColor(Color(.label))
-            Spacer()
         }
         .padding()
         .frame(maxWidth: .infinity)

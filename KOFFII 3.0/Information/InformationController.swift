@@ -8,6 +8,7 @@ class InformationController: ObservableObject {
     private var subscriptions: Set<AnyCancellable> = []
 
     @Published var allInformation: [Information] = []
+    @Published var randomElement: Information?
 
     init() {
         let apiKey = Bundle.main.object(forInfoDictionaryKey: "API_KEY") as? String
@@ -21,6 +22,10 @@ class InformationController: ObservableObject {
 
         airtable = Airtable(baseID: base, apiKey: key)
         loadItems()
+    }
+
+    func selectNewRandomElement() {
+        randomElement = allInformation.randomElement() ?? nil
     }
 }
 
@@ -49,5 +54,6 @@ extension InformationController {
             allInformation.append(model)
             print(model)
         }
+        randomElement = allInformation.randomElement() ?? nil
     }
 }

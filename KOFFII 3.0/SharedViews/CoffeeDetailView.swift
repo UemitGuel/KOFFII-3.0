@@ -101,21 +101,24 @@ struct CoffeeDetailView: View {
                         .padding(.bottom, 4)
                         .padding([.leading])
                     Button(action: { isPresented.toggle() }, label: {
-                        if !infoController.allInformation.isEmpty {
-                            InformationDetailCoordinator(info: infoController.allInformation.randomElement()!)
+                        if let infoRandom = infoController.randomElement {
+                            InformationListItem(info: infoRandom)
                         }
                     })
                 }
                 .padding(.bottom)
                 .sheet(isPresented: $isPresented) {
-                    if !infoController.allInformation.isEmpty {
-                        InformationDetailCoordinator(info: infoController.allInformation.randomElement()!)
+                    if let infoRandom = infoController.randomElement {
+                        InformationDetailCoordinator(info: infoRandom)
                     }
                 }
                 #endif
             }
             .navigationBarTitle("", displayMode: .inline)
             .background(Color("Olive1"))
+            .onAppear {
+                infoController.selectNewRandomElement()
+            }
         }
     }
 }
