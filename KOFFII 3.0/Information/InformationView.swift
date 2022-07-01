@@ -9,13 +9,13 @@ import SwiftUI
 
 struct InformationView: View {
     
-    var model = informationData.sorted()
+    @EnvironmentObject var model: InformationController
     @EnvironmentObject var weatherStore: WeatherStore
     
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack {
-                ForEach(informationData, id: \.title) { info in
+                ForEach(model.allInformation, id: \.title) { info in
                     NavigationLink(
                         destination: InformationDetailCoordinator(info: info),
                         label: {

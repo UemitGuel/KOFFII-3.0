@@ -18,9 +18,16 @@ struct MethodDetailView: View {
     var body: some View {
         GeometryReader { geo in
             ScrollView(showsIndicators: false) {
-                info.image
-                    .resizable()
-                    .frame(height: geo.size.height*0.35, alignment: .center)
+                AsyncImage(url: info.imageURL) { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                } placeholder: {
+                    Image(systemName: "photo")
+                }
+                //                info.image
+                //                    .resizable()
+                //                    .frame(height: geo.size.height*0.35, alignment: .center)
                 VStack(alignment: .leading) {
                     InformationDetailHeader(info: info)
                         .padding(.bottom)
@@ -63,14 +70,6 @@ struct MethodDetailView: View {
             .sheet(isPresented: $isSourPressed) {
                 ComplainView(complain: info.isEspresso ? complain[3] : complain[1])
             }
-        }
-    }
-}
-
-struct InformationDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            MethodDetailView(info: informationData[0])
         }
     }
 }

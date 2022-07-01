@@ -15,6 +15,7 @@ struct KOFFII_3_0App: App {
                 .environmentObject(MapViewStore())
                 .environmentObject(CoffeeListViewModel())
                 .environmentObject(WeatherStore())
+                .environmentObject(InformationController())
         }
     }
 }

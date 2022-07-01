@@ -19,9 +19,3 @@ struct InformationDetailCoordinator: View {
         }
     }
 }
-
-struct InformationDetailCoordinator_Previews: PreviewProvider {
-    static var previews: some View {
-        InformationDetailCoordinator(info: informationData[0])
-    }
-}

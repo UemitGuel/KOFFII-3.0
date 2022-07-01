@@ -12,12 +12,12 @@ struct CoffeeDetailView: View {
     
     var model: CoffeeModel
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var infoController: InformationController
     
     @State var regionVM = RegionStore.shared.region
     
     @State private var trackingMode = MapUserTrackingMode.follow
-    
-    let infoRandom = informationData.randomElement()!
+
     #if !APPCLIP
     @State private var isPresented = false
     #endif
@@ -101,12 +101,16 @@ struct CoffeeDetailView: View {
                         .padding(.bottom, 4)
                         .padding([.leading])
                     Button(action: { isPresented.toggle() }, label: {
-                        InformationListItem(info: infoRandom)
+                        if !infoController.allInformation.isEmpty {
+                            InformationDetailCoordinator(info: infoController.allInformation.randomElement()!)
+                        }
                     })
                 }
                 .padding(.bottom)
                 .sheet(isPresented: $isPresented) {
-                    InformationDetailCoordinator(info: infoRandom)
+                    if !infoController.allInformation.isEmpty {
+                        InformationDetailCoordinator(info: infoController.allInformation.randomElement()!)
+                    }
                 }
                 #endif
             }

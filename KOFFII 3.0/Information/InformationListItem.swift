@@ -13,9 +13,13 @@ struct InformationListItem: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            info.image
-                .resizable()
-                .aspectRatio(contentMode: .fit)
+            AsyncImage(url: info.imageURL) { image in
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+            } placeholder: {
+                Image(systemName: "photo")
+            }
             HStack(alignment: .bottom) {
                 VStack(alignment: .leading) {
                     Text(info.title)
@@ -41,8 +45,3 @@ struct InformationListItem: View {
     }
 }
 
-struct InformationListItem_Previews: PreviewProvider {
-    static var previews: some View {
-        InformationListItem(info: informationData[0])
-    }
-}

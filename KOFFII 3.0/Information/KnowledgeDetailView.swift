@@ -14,9 +14,16 @@ struct KnowledgeDetailView: View {
     var body: some View {
         GeometryReader { geo in
             ScrollView(showsIndicators: false) {
-                info.image
-                    .resizable()
-                    .frame(height: geo.size.height*0.35, alignment: .center)
+                AsyncImage(url: info.imageURL) { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                } placeholder: {
+                    Image(systemName: "photo")
+                }
+                //                info.image
+                //                    .resizable()
+                //                    .frame(height: geo.size.height*0.35, alignment: .center)
                 VStack(alignment: .leading) {
                     Text(info.title)
                         .bold()
@@ -40,10 +47,5 @@ struct KnowledgeDetailView: View {
             .navigationBarTitle("", displayMode: .inline)
             .background(Color("Olive1"))
         }
-    }
-}
-struct KnowledgeDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        KnowledgeDetailView(info: informationData[0])
     }
 }
