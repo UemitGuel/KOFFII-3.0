@@ -1,10 +1,3 @@
-//
-//  CafeDetailView.swift
-//  KOFFII CGN 2.0
-//
-//  Created by Ümit Gül on 23.09.20.
-//
-
 import SwiftUI
 import MapKit
 
@@ -54,12 +47,14 @@ struct CoffeeDetailView: View {
 //                                Label("Rösterei", image: "beans")
 //                            } else {
                         FeatureDisplayView(features: model.features)
-                        DiscoverViewFeatureItem(feature: model.features[0])
-                            .padding(.top, 4)
 //                            }
                         .padding(.bottom, 4)
                         .font(.system(.body, design: .default))
                         .foregroundColor(.secondary)
+                        if model.features[0].wifiUpload != nil {
+                            DiscoverViewFeatureItem(feature: model.features[0])
+                                .padding(.top, 4)
+                        }
                         Text(model.name)
                             .bold()
                             .font(.system(.title, design: .default))

@@ -38,18 +38,9 @@ struct DiscoverViewFeatureItem: View {
                     Text("Mbps")
                 }
             }
-            if feature.feature == .wifi {
-                HStack(spacing: 4) {
-                    Image(systemName: "square.and.arrow.down")
-                    Image(systemName: "square.and.arrow.up")
-                    Text(": Down-/Upload Speed")
-                    Spacer()
-                }
-                .padding(.top, 8)
-            }
         }
         .foregroundColor(feature.isAvailable ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
-        .padding(.vertical)
+        .padding(.vertical, 8)
         .padding(.horizontal, feature.feature == .wifi ? 16 : 0)
         .frame(maxWidth: .infinity)
         .overlay(

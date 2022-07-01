@@ -10,7 +10,7 @@ class CoffeeListViewModel: ObservableObject {
 
     @Published var filteredCoffeeList: [CoffeeModel] = []
     var newCoffeeListSpotlight: [CoffeeModel] {
-        return filteredCoffeeList.filter { $0.inSpotlight ?? false }
+        return allCoffeeList.filter { $0.inSpotlight ?? false }
     }
 
     @Published var requestedFeatures: [RequestedFeature] = [
