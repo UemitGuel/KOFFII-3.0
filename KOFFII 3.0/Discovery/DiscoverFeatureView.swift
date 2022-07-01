@@ -21,29 +21,40 @@ struct DiscoverViewFeatureItem: View {
     let feature: AvailableFeature
 
     var body: some View {
-        HStack(spacing: 4) {
-            Text(feature.feature.title)
-            feature.feature.icon
-            if feature.feature == .wifi, let download = feature.wifiDownload, let upload = feature.wifiUpload {
-                Spacer()
-                HStack(alignment: .firstTextBaseline, spacing: 2) {
-                    Text(download)
+        VStack {
+            HStack(spacing: 4) {
+                Text(feature.feature.title)
+                feature.feature.icon
+                if feature.feature == .wifi, let download = feature.wifiDownload, let upload = feature.wifiUpload {
+                    Spacer()
+                    HStack(alignment: .firstTextBaseline, spacing: 2) {
+                        Text(download)
+                        Image(systemName: "square.and.arrow.down")
+                    }
+                    HStack(alignment: .firstTextBaseline, spacing: 2) {
+                        Text(upload)
+                        Image(systemName: "square.and.arrow.up")
+                    }
+                    Text("Mbps")
+                }
+            }
+            if feature.feature == .wifi {
+                HStack(spacing: 4) {
                     Image(systemName: "square.and.arrow.down")
-                }
-                HStack(alignment: .firstTextBaseline, spacing: 2) {
-                    Text(upload)
                     Image(systemName: "square.and.arrow.up")
+                    Text(": Down/Upload Geschwindigkeit")
+                    Spacer()
                 }
-                Text("Mbps")
+                .padding(.top, 8)
             }
         }
         .foregroundColor(feature.isAvailable ? Color(.white) : Color(.secondaryLabel).opacity(0.7))
         .padding(.vertical)
-        .padding(.horizontal, feature.feature == .wifi ? 16 : 0) 
+        .padding(.horizontal, feature.feature == .wifi ? 16 : 0)
         .frame(maxWidth: .infinity)
         .overlay(
             RoundedRectangle(cornerRadius: 8)
                 .stroke(.white, lineWidth: 0.5)
-        )
+    )
     }
 }

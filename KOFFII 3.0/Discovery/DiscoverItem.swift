@@ -13,14 +13,34 @@ struct DiscoverItem: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            AsyncImage(url: cafe.imageURL) { image in
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-            } placeholder: {
-                Image(systemName: "photo")
+            ZStack {
+                AsyncImage(url: cafe.imageURL) { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                } placeholder: {
+                    Image(systemName: "photo")
+                }
+                .frame(height: 230)
+                VStack {
+                    HStack(alignment: .bottom) {
+                        Spacer()
+                        
+                        HStack {
+                            Text("Mehr")
+                            Image(systemName: "chevron.forward")
+                        }
+                        .foregroundColor(.white)
+                        .padding(8)
+                        .background(Color("Olive3"))
+                        .cornerRadius(16)
+                        
+                    }
+                    .foregroundColor(.secondary)
+                    .padding()
+                    Spacer()
+                }
             }
-            .frame(height: 230)
             bar.background(Color("Olive3"))
         }
         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
@@ -42,13 +62,6 @@ struct DiscoverItem: View {
                     .multilineTextAlignment(.leading)
                 DiscoverFeatureView(features: cafe.features)
                     .padding(.vertical, 4)
-                HStack(alignment: .bottom) {
-                    Spacer()
-                    Image(systemName: "chevron.forward")
-                        .foregroundColor(.accentColor)
-                }
-                .font(.system(.body, design: .default))
-                .foregroundColor(.secondary)
             }
             .foregroundColor(Color(.label))
             Spacer()

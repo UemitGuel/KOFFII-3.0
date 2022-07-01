@@ -38,11 +38,11 @@ struct MethodDetailView: View {
                     Text("Zubereitung")
                         .foregroundColor(Color(.secondaryLabel))
                         .font(.system(.body, design: .default))
-                    ForEach(0..<info.steps.count) { index in
+                    ForEach(info.steps, id: \.self) { step in
                         HStack {
                             Label(
-                                title: { Text(info.steps[index]) },
-                                icon: { Image(systemName: "\(index + 1).square") })
+                                title: { Text(step) },
+                                icon: { Image(systemName: "diamond") })
                             Spacer()
                         }
                     }
