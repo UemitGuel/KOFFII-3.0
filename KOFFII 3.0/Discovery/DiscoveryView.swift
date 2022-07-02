@@ -40,26 +40,5 @@ struct DiscoveryView: View {
         .sheet(item: $sheetDetail) { coffee in
             CoffeeDetailView(model: coffee)
         }
-
-        //            #if !APPCLIP
-        //            NavigationLink(
-        //                destination: InformationDetailCoordinator(info: informationData[2]),
-        //                label: {
-        //                    InformationListItem(info: informationData[2])
-        //                        .padding(.bottom)
-        //                })
-        //                .padding(.bottom)
-        //            #endif
-        //            NavigationLink(
-        //                destination: CoffeeDetailView(coffee: roasteryData[0])) {
-        //                CoffeeListItem(coffee: roasteryData[0])
-        //            }
-        //            .padding(.bottom)
-        //            NavigationLink(
-        //                destination: CoffeeDetailView(coffee: discoverCafes[1].coffee)) {
-        //                DiscoverItem(cafe: discoverCafes[1])
-        //            }
-        //            .padding(.bottom)
-
     }
 }

@@ -1,10 +1,3 @@
-//
-//  SideBar.swift
-//  KOFFII 3.0
-//
-//  Created by Gül, Ümit on 14.05.21.
-//
-
 import SwiftUI
 
 struct SideBar: View {

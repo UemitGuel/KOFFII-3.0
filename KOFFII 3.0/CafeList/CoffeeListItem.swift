@@ -1,10 +1,3 @@
-//
-//  CoffeeItem.swift
-//  KOFFII CGN 2.0
-//
-//  Created by Ümit Gül on 21.09.20.
-//
-
 import SwiftUI
 import CoreLocation
 

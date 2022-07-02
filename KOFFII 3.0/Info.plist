@@ -23,7 +23,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>googlechromes</string>
@@ -32,13 +32,6 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSAppClip</key>
-	<dict>
-		<key>NSAppClipRequestEphemeralUserNotification</key>
-		<false/>
-		<key>NSAppClipRequestLocationConfirmation</key>
-		<false/>
-	</dict>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>always</string>
 	<key>NSLocationAlwaysUsageDescription</key>
@@ -60,8 +53,6 @@
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UINavigationBar</key>
-		<dict/>
-		<key>UITabBar</key>
 		<dict/>
 	</dict>
 	<key>UIRequiredDeviceCapabilities</key>

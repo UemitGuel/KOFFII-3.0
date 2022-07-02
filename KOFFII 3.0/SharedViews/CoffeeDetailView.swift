@@ -11,9 +11,7 @@ struct CoffeeDetailView: View {
     
     @State private var trackingMode = MapUserTrackingMode.follow
 
-    #if !APPCLIP
     @State private var isPresented = false
-    #endif
 
     @StateObject var locationManager = LocationManager()
 
@@ -88,7 +86,6 @@ struct CoffeeDetailView: View {
                     Image(systemName: "photo")
                 }
                 .padding()
-                #if !APPCLIP
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Wusstest du schon..?")
                         .font(.system(.title2, design: .default))
@@ -107,7 +104,6 @@ struct CoffeeDetailView: View {
                         InformationDetailCoordinator(info: infoRandom)
                     }
                 }
-                #endif
             }
             .navigationBarTitle("", displayMode: .inline)
             .background(Color("Olive1"))
