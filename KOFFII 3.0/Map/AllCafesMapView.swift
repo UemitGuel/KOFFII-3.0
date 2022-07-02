@@ -15,24 +15,11 @@ struct AllCafesMapView: View {
     var body: some View {
         ZStack {
             MapView(coffeeList: $model.filteredCoffeeList, centerCoordinate: $centerCoordinate)
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button(action: { isPresented.toggle() } ) {
-                            HStack(spacing: 4) {
-                                Text("FILTER")
-                                Image(systemName: "line.horizontal.3.decrease.circle")
-                            }
-                            .font(.system(.headline, design: .default))
-                        }
-                    }
-                }
                 .sheet(isPresented: $mapViewStore.showDetails) {
                     CoffeeDetailView(model: mapViewStore.chosenCafe)
                 }
-                .sheet(isPresented: $isPresented) {
-                    FilterFormView()
-                }
                 .navigationTitle("Karte")
+                .navigationBarTitleDisplayMode(.inline)
                 .addWeatherToolbarItem(with: weatherStore.model)
             .background(Color("Olive1"))
         }

@@ -17,14 +17,16 @@ struct GoogleMapsButton: View {
     }
     
     var body: some View {
-        HStack(alignment: .top) {
-            Spacer()
-            Link("In Google Maps öffnen", destination: googleMapsUrl)
-            Spacer()
+        Link(destination: googleMapsUrl) {
+            HStack(alignment: .top) {
+                Spacer()
+                Text("In Google Maps öffnen")
+                Spacer()
+            }
+            .foregroundColor(.black)
+            .padding()
+            .background(Color.accentColor)
+            .cornerRadius(16)
         }
-        .foregroundColor(.black)
-        .padding()
-        .background(Color.accentColor)
-        .cornerRadius(16)
     }
 }

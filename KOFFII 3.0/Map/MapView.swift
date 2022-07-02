@@ -12,7 +12,7 @@ struct MapView: UIViewRepresentable {
 
     @Binding var centerCoordinate: CLLocationCoordinate2D
     
-    let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50.938766, longitude: 6.959674), span: MKCoordinateSpan(latitudeDelta: 0.15, longitudeDelta: 0.15))
+    let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50.938766, longitude: 6.959674), span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
 
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
@@ -52,13 +52,18 @@ struct MapView: UIViewRepresentable {
         }
         
         func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-
             if let annotation = view.annotation as? CafeAnnotation {
                 showDetails(mapView, for: annotation)
             } else {
                 return
             }
             
+        }
+
+        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+            let view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: nil)
+            view.displayPriority = .required
+            return view
         }
         
         private func showDetails(_ mapView: MKMapView, for annotation: CafeAnnotation) {

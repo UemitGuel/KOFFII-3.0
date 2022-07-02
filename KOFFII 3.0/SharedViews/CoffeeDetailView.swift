@@ -77,15 +77,17 @@ struct CoffeeDetailView: View {
                     .padding(.bottom)
                     .padding(.horizontal, 12)
                 }
-                AsyncImage(url: model.imageURL) { image in
-                    image
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .cornerRadius(16)
-                } placeholder: {
-                    Image(systemName: "photo")
+                if let url = model.imageURL {
+                    AsyncImage(url: url) { image in
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .cornerRadius(16)
+                    } placeholder: {
+                        Image(systemName: "photo")
+                    }
+                    .padding()
                 }
-                .padding()
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Wusstest du schon..?")
                         .font(.system(.title2, design: .default))
