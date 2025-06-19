@@ -9,6 +9,8 @@ class CoffeeListViewModel: ObservableObject {
     var allCoffeeList: [CoffeeModel] = []
 
     @Published var filteredCoffeeList: [CoffeeModel] = []
+    @Published var error: String? = nil
+
     var newCoffeeListSpotlight: [CoffeeModel] {
         return allCoffeeList.filter { $0.inSpotlight ?? false }
     }
@@ -28,23 +30,17 @@ class CoffeeListViewModel: ObservableObject {
             self.feature = feature
         }
     }
-    
+
     @Published var includeRosteries = true
 
     init() {
-        let apiKey = Bundle.main.object(forInfoDictionaryKey: "API_KEY") as? String
-        let baseID = Bundle.main.object(forInfoDictionaryKey: "API_BASE_ID") as? String
-
-        guard let key = apiKey, !key.isEmpty, let base = baseID, !base.isEmpty else {
-            print("API key does not exist")
-            airtable = Airtable(baseID: "base", apiKey: "key")
-            return
-        }
-
-        airtable = Airtable(baseID: base, apiKey: key)
+        // Use the correct Base ID instead of the table ID
+        airtable = Airtable(baseID: Constants.APIKeys.airtableBaseID, apiKey: Constants.APIKeys.airtableAPIKey)
+        print("Initializing Airtable with baseID: \(Constants.APIKeys.airtableBaseID)")
+        print("Table ID that will be used: \(Constants.APIKeys.airtableCoffeeTableKey)")
         loadItems()
     }
-    
+
     func filterCoffeeList() {
         var coffee = allCoffeeList
         for feature in requestedFeatures where feature.isUserRequested {
@@ -63,8 +59,9 @@ extension CoffeeListViewModel {
 
     /// A publisher that lists the items from Airtable
     var coffeePlaceslistFromAirtablePublisher: AnyPublisher<[AirtableKit.Record], AirtableError> {
+        // Use the correct table ID constant
         airtable
-            .list(tableName: "CoffeePlaces")
+            .list(tableName: Constants.APIKeys.airtableCoffeeTableKey)
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
@@ -72,18 +69,39 @@ extension CoffeeListViewModel {
     /// Loads the items stored in Airtable
     func loadItems() {
         self.coffeePlaceslistFromAirtablePublisher
-            .replaceError(with: [])
-            .sink(receiveValue: update(with:))
+            .sink(
+                receiveCompletion: { [weak self] completion in
+                    switch completion {
+                    case .finished:
+                        print("Airtable request completed successfully")
+                    case .failure(let error):
+                        print("Airtable error: \(error.localizedDescription)")
+                        self?.error = "Failed to load data: \(error.localizedDescription)"
+                    }
+                },
+                receiveValue: { [weak self] records in
+                    print("Received \(records.count) records from Airtable")
+                    self?.update(with: records)
+                }
+            )
             .store(in: &subscriptions)
     }
 
     /// Update the viewModel
-    func update(with record: [AirtableKit.Record]) {
-        for rec in record {
+    func update(with records: [AirtableKit.Record]) {
+        allCoffeeList.removeAll()
+
+        if records.isEmpty {
+            print("Warning: No records received from Airtable")
+        }
+
+        for rec in records {
             let model = CoffeeModel(record: rec)
             allCoffeeList.append(model)
-            print(model)
+            print("Added record: \(model.name ?? "Unnamed")")
         }
+
+        print("Total records processed: \(allCoffeeList.count)")
         filteredCoffeeList = allCoffeeList
     }
 }

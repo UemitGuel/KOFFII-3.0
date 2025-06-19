@@ -11,16 +11,7 @@ class InformationController: ObservableObject {
     @Published var randomElement: Information?
 
     init() {
-        let apiKey = Bundle.main.object(forInfoDictionaryKey: "API_KEY") as? String
-        let baseID = Bundle.main.object(forInfoDictionaryKey: "API_BASE_ID") as? String
-
-        guard let key = apiKey, !key.isEmpty, let base = baseID, !base.isEmpty else {
-            print("API key does not exist")
-            airtable = Airtable(baseID: "base", apiKey: "key")
-            return
-        }
-
-        airtable = Airtable(baseID: base, apiKey: key)
+        airtable = Airtable(baseID: Constants.APIKeys.airtableBaseID, apiKey: Constants.APIKeys.airtableAPIKey)
         loadItems()
     }
 

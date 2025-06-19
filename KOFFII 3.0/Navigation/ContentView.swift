@@ -8,20 +8,49 @@
 import SwiftUI
 
 struct ContentView: View {
-    #if os(iOS)
-    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
-    #endif
-    
+    @State private var selection: Tab = .discovery
+
+    enum Tab {
+        case discovery
+        case list
+        case map
+        case method
+    }
+
     var body: some View {
-        #if os(iOS)
-        if horizontalSizeClass == .compact {
-            TabBar()
-        } else {
-            SideBar()
+        TabView(selection: $selection) {
+            NavigationStack {
+                DiscoveryView()
+            }
+            .tabItem {
+                Label("Entdecken", systemImage: "heart.text.square")
+            }
+            .tag(Tab.discovery)
+
+            NavigationStack {
+                CoffeeView()
+            }
+            .tabItem {
+                Label("Liste", systemImage: "list.dash")
+            }
+            .tag(Tab.list)
+
+            NavigationStack {
+                AllCafesMapView()
+            }
+            .tabItem {
+                Label("Karte", systemImage: "map")
+            }
+            .tag(Tab.map)
+
+            NavigationStack {
+                InformationView()
+            }
+            .tabItem {
+                Label("Zubereitung", systemImage: "book")
+            }
+            .tag(Tab.method)
         }
-        #else
-        SideBar()
-        #endif
     }
 }
 

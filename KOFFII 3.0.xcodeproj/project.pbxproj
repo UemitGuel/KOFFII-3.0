@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,6 @@
 		B38960BD251B4C68001659FD /* LocationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38960BC251B4C67001659FD /* LocationStore.swift */; };
 		B38960C2251B50A2001659FD /* RegionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38960C1251B50A2001659FD /* RegionStore.swift */; };
 		B3B520892519D92800368F47 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B520882519D92800368F47 /* Data.swift */; };
-		B3B520932519E1C400368F47 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B520922519E1C400368F47 /* TabBar.swift */; };
 		B3B8738B251B3EBD006CA136 /* CoffeeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B8738A251B3EBD006CA136 /* CoffeeDetailView.swift */; };
 		B3C3368C251DE78200755B1E /* AllCafesMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C3368B251DE78200755B1E /* AllCafesMapView.swift */; };
 		B3F3F3BA25188A1100D91190 /* KOFFII_3_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3B925188A1100D91190 /* KOFFII_3_0App.swift */; };
@@ -27,6 +26,7 @@
 		B3F3F3D725188A1300D91190 /* KOFFII_CGN_2_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3D625188A1300D91190 /* KOFFII_CGN_2_0UITests.swift */; };
 		B3F3F3ED25188DD300D91190 /* CoffeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F3EC25188DD300D91190 /* CoffeeView.swift */; };
 		B3F3F439251900CA00D91190 /* CoffeeListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F3F438251900CA00D91190 /* CoffeeListItem.swift */; };
+		B6A57F0A2E046F8F00DC1BA8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A57F092E046F8F00DC1BA8 /* Constants.swift */; };
 		E409A142264C437300F74EA1 /* WeatherStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E409A141264C437300F74EA1 /* WeatherStore.swift */; };
 		E417E60A264EC4F500A72258 /* FeatureDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E417E609264EC4F500A72258 /* FeatureDisplayView.swift */; };
 		E43D22C5263AA5AD00F586B6 /* Complain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43D22C4263AA5AD00F586B6 /* Complain.swift */; };
@@ -43,7 +43,6 @@
 		E4A7115126342B3C0032432D /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A7115026342B3C0032432D /* InformationView.swift */; };
 		E4A89F1E263AD2B4009E4A5B /* ComplainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A89F1D263AD2B4009E4A5B /* ComplainView.swift */; };
 		E4B14DD5264E6E05008D0528 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B14DD4264E6E05008D0528 /* ContentView.swift */; };
-		E4B14DD8264E6EB6008D0528 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B14DD7264E6EB6008D0528 /* SideBar.swift */; };
 		E4B5035526987BE800EACB8E /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B5035426987BE800EACB8E /* Feature.swift */; };
 		E4D6032726359EF500FAD1B4 /* MethodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D6032626359EF500FAD1B4 /* MethodDetailView.swift */; };
 		E4D6033526359F6700FAD1B4 /* InformationListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D6033426359F6700FAD1B4 /* InformationListItem.swift */; };
@@ -107,7 +106,6 @@
 		B38960BC251B4C67001659FD /* LocationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationStore.swift; sourceTree = "<group>"; };
 		B38960C1251B50A2001659FD /* RegionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionStore.swift; sourceTree = "<group>"; };
 		B3B520882519D92800368F47 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		B3B520922519E1C400368F47 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		B3B8738A251B3EBD006CA136 /* CoffeeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailView.swift; sourceTree = "<group>"; };
 		B3C3368B251DE78200755B1E /* AllCafesMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCafesMapView.swift; sourceTree = "<group>"; };
 		B3F3F3B625188A1000D91190 /* KOFFII 3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KOFFII 3.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +121,7 @@
 		B3F3F3D825188A1300D91190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3F3F3EC25188DD300D91190 /* CoffeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeView.swift; sourceTree = "<group>"; };
 		B3F3F438251900CA00D91190 /* CoffeeListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeListItem.swift; sourceTree = "<group>"; };
+		B6A57F092E046F8F00DC1BA8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E409A141264C437300F74EA1 /* WeatherStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStore.swift; sourceTree = "<group>"; };
 		E417E609264EC4F500A72258 /* FeatureDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureDisplayView.swift; sourceTree = "<group>"; };
 		E43D22C4263AA5AD00F586B6 /* Complain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Complain.swift; sourceTree = "<group>"; };
@@ -141,14 +140,12 @@
 		E4A7115026342B3C0032432D /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		E4A89F1D263AD2B4009E4A5B /* ComplainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplainView.swift; sourceTree = "<group>"; };
 		E4B14DD4264E6E05008D0528 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E4B14DD7264E6EB6008D0528 /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
 		E4B5035426987BE800EACB8E /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		E4D6032626359EF500FAD1B4 /* MethodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodDetailView.swift; sourceTree = "<group>"; };
 		E4D6033426359F6700FAD1B4 /* InformationListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationListItem.swift; sourceTree = "<group>"; };
 		E4DE65E22598D370006FC81F /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		E4F2ED4E263AB40C001375BE /* InformationDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationDetailCoordinator.swift; sourceTree = "<group>"; };
 		E4F2ED50263AB480001375BE /* KnowledgeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeDetailView.swift; sourceTree = "<group>"; };
-		EB42AA7D28450AA1005EC437 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		EB5787DF285B615F001A555F /* DiscoverFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverFeatureView.swift; sourceTree = "<group>"; };
 		EB67640B284DF16200585B49 /* CoffeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeModel.swift; sourceTree = "<group>"; };
 		EBD124BB286F186500ABBD10 /* InformationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationController.swift; sourceTree = "<group>"; };
@@ -235,6 +232,7 @@
 				B33571DD251E0C4D00D06BC4 /* AnnotationsHelper.swift */,
 				B38960BC251B4C67001659FD /* LocationStore.swift */,
 				B38960C1251B50A2001659FD /* RegionStore.swift */,
+				B6A57F092E046F8F00DC1BA8 /* Constants.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -276,7 +274,6 @@
 				B3F3F3BD25188A1300D91190 /* Assets.xcassets */,
 				B3F3F3C225188A1300D91190 /* Info.plist */,
 				B3F3F3BF25188A1300D91190 /* Preview Content */,
-				EB42AA7D28450AA1005EC437 /* Config.xcconfig */,
 			);
 			path = "KOFFII 3.0";
 			sourceTree = "<group>";
@@ -312,8 +309,6 @@
 			isa = PBXGroup;
 			children = (
 				E4B14DD4264E6E05008D0528 /* ContentView.swift */,
-				B3B520922519E1C400368F47 /* TabBar.swift */,
-				E4B14DD7264E6EB6008D0528 /* SideBar.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -510,11 +505,11 @@
 				B3C3368C251DE78200755B1E /* AllCafesMapView.swift in Sources */,
 				EB5787E0285B615F001A555F /* DiscoverFeatureView.swift in Sources */,
 				E4F2ED4F263AB40C001375BE /* InformationDetailCoordinator.swift in Sources */,
-				E4B14DD8264E6EB6008D0528 /* SideBar.swift in Sources */,
 				E46CB8A42631D9890026F73B /* CafeAnnotation.swift in Sources */,
 				B31CEBF1251E279900B7501E /* MapViewStore.swift in Sources */,
 				E417E60A264EC4F500A72258 /* FeatureDisplayView.swift in Sources */,
 				B3B8738B251B3EBD006CA136 /* CoffeeDetailView.swift in Sources */,
+				B6A57F0A2E046F8F00DC1BA8 /* Constants.swift in Sources */,
 				B3F3F439251900CA00D91190 /* CoffeeListItem.swift in Sources */,
 				B3F3F3BA25188A1100D91190 /* KOFFII_3_0App.swift in Sources */,
 				E49119BF264C834900021A87 /* WeatherToolBarItem.swift in Sources */,
@@ -535,7 +530,6 @@
 				B38960BD251B4C68001659FD /* LocationStore.swift in Sources */,
 				E492FEFB2590EAEC00881C1F /* DiscoverItem.swift in Sources */,
 				E4A7115126342B3C0032432D /* InformationView.swift in Sources */,
-				B3B520932519E1C400368F47 /* TabBar.swift in Sources */,
 				E4B5035526987BE800EACB8E /* Feature.swift in Sources */,
 				E48AB831264AE1BE0022267B /* WeatherData.swift in Sources */,
 				B330CEC0251C934900FB34E4 /* CoordinatesHelper.swift in Sources */,
@@ -577,7 +571,6 @@
 /* Begin XCBuildConfiguration section */
 		B3F3F3D925188A1300D91190 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB42AA7D28450AA1005EC437 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -639,7 +632,6 @@
 		};
 		B3F3F3DA25188A1300D91190 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB42AA7D28450AA1005EC437 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -706,7 +698,7 @@
 				DEVELOPMENT_TEAM = YLGTKU7SLK;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "KOFFII 3.0/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -733,7 +725,7 @@
 				DEVELOPMENT_TEAM = YLGTKU7SLK;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "KOFFII 3.0/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
